@@ -1,7 +1,7 @@
 import { cities } from "@/data/cities";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-
+import { getCityInsights } from "@/lib/cityInsights";
 export async function generateStaticParams() {
   return cities.map((c) => ({ slug: c.slug }));
 }
@@ -10,7 +10,7 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const city = cities.find((c) => c.slug === slug);
   if (!city) notFound();
-
+const { strengths, considerations } = getCityInsights(city, cities);
   const stats = [
     { label: "Coste/mes", value: `${city.currency} ${city.costPerMonth.toLocaleString()}`, icon: "💰" },
     { label: "Internet", value: `${city.internetSpeed} Mbps`, icon: "🛜" },
@@ -65,28 +65,39 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
             </section>
 
             {/* Pros & Cons */}
+            {/* Strengths & Considerations */}
             <section>
-              <h2 className="text-lg font-semibold mb-4">Pros y contras</h2>
+              <h2 className="text-lg font-semibold mb-4">Datos destacados</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="bg-green-950/30 border border-green-500/20 rounded-2xl p-5">
-                  <h3 className="text-sm font-semibold text-green-400 mb-3">✓ Pros</h3>
-                  <ul className="space-y-2">
-                    {city.pros.map((p) => (
-                      <li key={p} className="text-sm text-white/70 flex gap-2">
-                        <span className="text-green-400 mt-0.5">·</span>{p}
-                      </li>
-                    ))}
-                  </ul>
+                  <h3 className="text-sm font-semibold text-green-400 mb-3">✓ Puntos fuertes</h3>
+                  {strengths.length > 0 ? (
+                    <ul className="space-y-3">
+                      {strengths.map((s) => (
+                        <li key={s.label} className="text-sm text-white/70">
+                          <span className="text-white font-medium block">{s.label}</span>
+                          {s.detail}
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p className="text-sm text-white/40">Sin datos destacados por encima de la media.</p>
+                  )}
                 </div>
                 <div className="bg-red-950/30 border border-red-500/20 rounded-2xl p-5">
-                  <h3 className="text-sm font-semibold text-red-400 mb-3">✗ Contras</h3>
-                  <ul className="space-y-2">
-                    {city.cons.map((c) => (
-                      <li key={c} className="text-sm text-white/70 flex gap-2">
-                        <span className="text-red-400 mt-0.5">·</span>{c}
-                      </li>
-                    ))}
-                  </ul>
+                  <h3 className="text-sm font-semibold text-red-400 mb-3">A tener en cuenta</h3>
+                  {considerations.length > 0 ? (
+                    <ul className="space-y-3">
+                      {considerations.map((c) => (
+                        <li key={c.label} className="text-sm text-white/70">
+                          <span className="text-white font-medium block">{c.label}</span>
+                          {c.detail}
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p className="text-sm text-white/40">Sin datos por debajo de la media.</p>
+                  )}
                 </div>
               </div>
             </section>
