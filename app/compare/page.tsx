@@ -50,7 +50,7 @@ export default function ComparePage() {
             <img src="/logo-icon.png" alt="NomadGrid" className="h-6 w-auto" />
             NomadGrid
           </Link>
-          <div className="flex items-center gap-6">
+          <div className="hidden sm:flex items-center gap-6">
             <Link href="/cities" className="text-sm text-muted hover:text-accent transition-colors">Explorar</Link>
             <Link href="/compare" className="text-sm text-foreground hover:text-accent transition-colors">Comparar</Link>
           </div>
@@ -112,55 +112,93 @@ export default function ComparePage() {
 
         {/* Comparison */}
         {selectedCities.length >= 2 ? (
-          <div className="bg-card border border-border rounded-2xl overflow-hidden">
-           {/* City header row */}
-            <div
-              className="grid border-b border-border"
-              style={{ gridTemplateColumns: `10rem repeat(${selectedCities.length}, 1fr)` }}
-            >
-              <div className="flex items-center justify-center">
-  <img src="/logo-icon.png" alt="NomadGrid" className="h-12 w-auto opacity-30" />
-</div>
+          <>
+            {/* Desktop / tablet: side-by-side grid */}
+            <div className="hidden sm:block bg-card border border-border rounded-2xl overflow-hidden">
+              {/* City header row */}
+              <div
+                className="grid border-b border-border"
+                style={{ gridTemplateColumns: `10rem repeat(${selectedCities.length}, 1fr)` }}
+              >
+                <div className="py-5 px-5 flex items-center">
+                  <img src="/logo-icon.png" alt="NomadGrid" className="h-6 w-auto opacity-30" />
+                </div>
+                {selectedCities.map((city) => (
+                  <div key={city.slug} className="border-l border-border">
+                    <div className="relative h-28 overflow-hidden">
+                      <img src={city.imageUrl} alt={city.name} className="w-full h-full object-cover" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/10 to-transparent" />
+                    </div>
+                    <div className="py-4 px-5">
+                      <div className="font-semibold text-foreground">{city.name}</div>
+                      <div className="text-xs text-muted mt-0.5">{city.country}</div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Metric rows */}
+              {metrics.map((metric, i) => {
+                const best = getBest(metric, selectedCities);
+                return (
+                  <div
+                    key={metric.key}
+                    className={`grid ${i !== metrics.length - 1 ? "border-b border-border/60" : ""}`}
+                    style={{ gridTemplateColumns: `10rem repeat(${selectedCities.length}, 1fr)` }}
+                  >
+                    <div className="py-4 px-5 text-sm text-muted flex items-center">{metric.label}</div>
+                    {selectedCities.map((city) => {
+                      const raw = city[metric.key as keyof City] as number;
+                      const isBest = best !== null && raw === best;
+                      return (
+                        <div key={city.slug} className="py-4 px-5 border-l border-border/60 flex items-center gap-2">
+                          <span className={`text-sm font-medium ${isBest ? "text-accent" : "text-foreground"}`}>
+                            {metric.format(city)}
+                          </span>
+                          {isBest && <span className="w-1.5 h-1.5 rounded-full bg-accent" />}
+                        </div>
+                      );
+                    })}
+                  </div>
+                );
+              })}
+            </div>
+
+            {/* Mobile: stacked cards, one per city */}
+            <div className="sm:hidden space-y-6">
               {selectedCities.map((city) => (
-                <div key={city.slug} className="border-l border-border">
-                  <div className="relative h-28 overflow-hidden">
+                <div key={city.slug} className="bg-card border border-border rounded-2xl overflow-hidden">
+                  <div className="relative h-36 overflow-hidden">
                     <img src={city.imageUrl} alt={city.name} className="w-full h-full object-cover" />
                     <div className="absolute inset-0 bg-gradient-to-t from-background via-background/10 to-transparent" />
+                    <div className="absolute bottom-0 left-0 right-0 p-4">
+                      <div className="font-semibold text-foreground text-lg">{city.name}</div>
+                      <div className="text-xs text-muted">{city.country}</div>
+                    </div>
                   </div>
-                  <div className="py-4 px-5">
-                    <div className="font-semibold text-foreground">{city.name}</div>
-                    <div className="text-xs text-muted mt-0.5">{city.country}</div>
+                  <div>
+                    {metrics.map((metric, i) => {
+                      const best = getBest(metric, selectedCities);
+                      const raw = city[metric.key as keyof City] as number;
+                      const isBest = best !== null && raw === best;
+                      return (
+                        <div
+                          key={metric.key}
+                          className={`flex items-center justify-between px-5 py-3.5 ${i !== metrics.length - 1 ? "border-b border-border/60" : ""}`}
+                        >
+                          <span className="text-sm text-muted">{metric.label}</span>
+                          <span className={`text-sm font-medium flex items-center gap-2 ${isBest ? "text-accent" : "text-foreground"}`}>
+                            {metric.format(city)}
+                            {isBest && <span className="w-1.5 h-1.5 rounded-full bg-accent" />}
+                          </span>
+                        </div>
+                      );
+                    })}
                   </div>
                 </div>
               ))}
-            </div> 
-            
-            {/* Metric rows */}
-            {metrics.map((metric, i) => {
-              const best = getBest(metric, selectedCities);
-              return (
-                <div
-                  key={metric.key}
-                  className={`grid ${i !== metrics.length - 1 ? "border-b border-border/60" : ""}`}
-                  style={{ gridTemplateColumns: `10rem repeat(${selectedCities.length}, 1fr)` }}
-                >
-                  <div className="py-4 px-5 text-sm text-muted flex items-center">{metric.label}</div>
-                  {selectedCities.map((city) => {
-                    const raw = city[metric.key as keyof City] as number;
-                    const isBest = best !== null && raw === best;
-                    return (
-                      <div key={city.slug} className="py-4 px-5 border-l border-border/60 flex items-center gap-2">
-                        <span className={`text-sm font-medium ${isBest ? "text-accent" : "text-foreground"}`}>
-                          {metric.format(city)}
-                        </span>
-                        {isBest && <span className="w-1.5 h-1.5 rounded-full bg-accent" />}
-                      </div>
-                    );
-                  })}
-                </div>
-              );
-            })}
-          </div>
+            </div>
+          </>
         ) : (
           <div className="text-center py-24 border border-dashed border-border rounded-2xl">
             <p className="text-muted">Selecciona al menos 2 ciudades para empezar a comparar</p>
