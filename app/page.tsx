@@ -14,7 +14,7 @@ export default function Home() {
             NomadGrid
           </Link>
           <div className="flex items-center gap-3 sm:gap-6">
-            <Link href="/cities" className="text-sm text-muted hover:text-accent transition-colors">Explorar</Link>
+            
             <Link href="/compare" className="text-sm text-muted hover:text-accent transition-colors">Comparar</Link>
             <Link href="/cities" className="text-sm bg-accent text-white px-4 py-1.5 rounded-full font-medium hover:opacity-90 transition-opacity">
               Ver ciudades
