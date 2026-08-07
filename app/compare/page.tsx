@@ -51,7 +51,7 @@ export default function ComparePage() {
             NomadGrid
           </Link>
           <div className="hidden sm:flex items-center gap-6">
-            <Link href="/cities" className="text-sm text-muted hover:text-accent transition-colors">Explorar</Link>
+            
             <Link href="/compare" className="text-sm text-foreground hover:text-accent transition-colors">Comparar</Link>
           </div>
         </div>
