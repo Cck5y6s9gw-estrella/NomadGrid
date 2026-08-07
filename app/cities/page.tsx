@@ -31,15 +31,18 @@ export default function CitiesPage() {
     });
 
   return (
-    <main className="min-h-screen bg-black text-white">
+    <main className="min-h-screen bg-background text-foreground">
       {/* Navbar */}
-      <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur-md">
+      <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-6 h-14 flex items-center justify-between">
-          <Link href="/" className="text-white font-semibold text-lg tracking-tight">NomadGrid</Link>
+          <Link href="/" className="flex items-center gap-2 text-foreground font-semibold text-lg tracking-tight">
+            <img src="/logo-icon.png" alt="NomadGrid" className="h-6 w-auto" />
+            NomadGrid
+          </Link>
           <div className="flex items-center gap-6">
-            <Link href="/cities" className="text-sm text-white hover:text-white transition-colors">Explorar</Link>
-            <Link href="/compare" className="text-sm text-white/60 hover:text-white transition-colors">Comparar</Link>
-            <Link href="/cities" className="text-sm bg-white text-black px-4 py-1.5 rounded-full font-medium hover:bg-white/90 transition-colors">Ver ciudades</Link>
+            <Link href="/cities" className="text-sm text-foreground hover:text-accent transition-colors">Explorar</Link>
+            <Link href="/compare" className="text-sm text-muted hover:text-accent transition-colors">Comparar</Link>
+            <Link href="/cities" className="text-sm bg-accent text-white px-4 py-1.5 rounded-full font-medium hover:opacity-90 transition-opacity">Ver ciudades</Link>
           </div>
         </div>
       </nav>
@@ -48,7 +51,7 @@ export default function CitiesPage() {
         {/* Header */}
         <div className="mb-8">
           <h1 className="text-3xl font-semibold mb-1">Explorar ciudades</h1>
-          <p className="text-white/40 text-sm">{filtered.length} ciudades encontradas</p>
+          <p className="text-muted text-sm">{filtered.length} ciudades encontradas</p>
         </div>
 
         {/* Search + Sort */}
@@ -58,12 +61,12 @@ export default function CitiesPage() {
             placeholder="Buscar ciudad o país..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="flex-1 bg-white/5 border border-white/10 rounded-xl px-4 py-2.5 text-sm text-white placeholder-white/30 focus:outline-none focus:border-white/30"
+            className="flex-1 bg-card border border-border rounded-xl px-4 py-2.5 text-sm text-foreground placeholder-muted focus:outline-none focus:border-accent"
           />
           <select
             value={sortBy}
             onChange={(e) => setSortBy(e.target.value)}
-            className="bg-white/5 border border-white/10 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-white/30"
+            className="bg-card border border-border rounded-xl px-4 py-2.5 text-sm text-foreground focus:outline-none focus:border-accent"
           >
             <option value="name">Ordenar: A–Z</option>
             <option value="cost">Ordenar: Más barato</option>
@@ -79,19 +82,19 @@ export default function CitiesPage() {
             <button
               key={c}
               onClick={() => setContinent(c)}
-              className={`text-xs px-3 py-1.5 rounded-full border transition-colors ${continent === c ? "bg-white text-black border-white" : "border-white/20 text-white/60 hover:border-white/40"}`}
+              className={`text-xs px-3 py-1.5 rounded-full border transition-colors ${continent === c ? "bg-accent text-white border-accent" : "border-border text-muted hover:border-accent"}`}
             >
               {c}
             </button>
           ))}
           <button
             onClick={() => setBeachOnly(!beachOnly)}
-            className={`text-xs px-3 py-1.5 rounded-full border transition-colors ${beachOnly ? "bg-white text-black border-white" : "border-white/20 text-white/60 hover:border-white/40"}`}
+            className={`text-xs px-3 py-1.5 rounded-full border transition-colors ${beachOnly ? "bg-accent text-white border-accent" : "border-border text-muted hover:border-accent"}`}
           >
             🏖 Solo playa
           </button>
           <div className="flex items-center gap-2 ml-2">
-            <span className="text-xs text-white/40">Presupuesto máx:</span>
+            <span className="text-xs text-muted">Presupuesto máx:</span>
             <input
               type="range"
               min={500}
@@ -99,15 +102,15 @@ export default function CitiesPage() {
               step={100}
               value={maxBudget}
               onChange={(e) => setMaxBudget(Number(e.target.value))}
-              className="w-24 accent-white"
+              className="w-24 accent-accent"
             />
-            <span className="text-xs text-white/60 w-16">${maxBudget.toLocaleString()}</span>
+            <span className="text-xs text-muted w-16">${maxBudget.toLocaleString("es-ES")}</span>
           </div>
         </div>
 
         {/* Grid */}
         {filtered.length === 0 ? (
-          <div className="text-center py-20 text-white/30">
+          <div className="text-center py-20 text-muted">
             <p className="text-lg">No se encontraron ciudades</p>
             <p className="text-sm mt-2">Prueba a cambiar los filtros</p>
           </div>
@@ -120,7 +123,7 @@ export default function CitiesPage() {
         )}
       </div>
 
-      <footer className="border-t border-white/10 py-8 px-6 text-center text-xs text-white/20">
+      <footer className="border-t border-border py-8 px-6 text-center text-xs text-muted">
         NomadGrid · Datos orientativos basados en Numbeo y Nomad List · Actualizado 2025
       </footer>
     </main>
@@ -129,29 +132,29 @@ export default function CitiesPage() {
 
 function CityCard({ city }: { city: City }) {
   return (
-    <Link href={`/cities/${city.slug}`} className="group relative overflow-hidden rounded-2xl border border-white/10 hover:border-white/30 transition-all duration-300">
+    <Link href={`/cities/${city.slug}`} className="group relative overflow-hidden rounded-2xl border border-border hover:border-accent transition-all duration-300">
       <img
         src={city.imageUrl}
         alt={city.name}
         className="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-500"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-background/95 via-background/20 to-transparent" />
       <div className="absolute bottom-0 left-0 right-0 p-4">
         <div className="flex items-end justify-between mb-2">
           <div>
-            <h3 className="text-sm font-semibold leading-tight">{city.name}</h3>
-            <p className="text-xs text-white/50">{city.country}</p>
+            <h3 className="text-sm font-semibold leading-tight text-foreground">{city.name}</h3>
+            <p className="text-xs text-muted">{city.country}</p>
           </div>
           <div className="text-right">
-            <div className="text-sm font-medium">{city.currency} {city.costPerMonth.toLocaleString()}</div>
-            <div className="text-xs text-white/40">al mes</div>
+            <div className="text-sm font-medium text-foreground">{city.currency} {city.costPerMonth.toLocaleString("es-ES")}</div>
+            <div className="text-xs text-muted">al mes</div>
           </div>
         </div>
         <div className="flex gap-1.5 flex-wrap">
-          {city.hasBeach && <span className="text-xs bg-white/10 px-2 py-0.5 rounded-full">🏖</span>}
-          <span className="text-xs bg-white/10 px-2 py-0.5 rounded-full">⭐ {city.qualityOfLife}</span>
-          <span className="text-xs bg-white/10 px-2 py-0.5 rounded-full">🔒 {city.safetyScore}</span>
-          <span className="text-xs bg-white/10 px-2 py-0.5 rounded-full">🛜 {city.internetSpeed}M</span>
+          {city.hasBeach && <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full">🏖</span>}
+          <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full">⭐ {city.qualityOfLife}</span>
+          <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full">🔒 {city.safetyScore}</span>
+          <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full">🛜 {city.internetSpeed}M</span>
         </div>
       </div>
     </Link>
