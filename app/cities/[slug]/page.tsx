@@ -32,7 +32,7 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
             <img src="/logo-icon.png" alt="NomadGrid" className="h-6 w-auto" />
             NomadGrid
           </Link>
-          <div className="hidden sm:flex items-center gap-6">
+          <div className="flex items-center gap-3 sm:gap-6">
             <Link href="/cities" className="text-sm text-muted hover:text-accent transition-colors">← Explorar</Link>
             <Link href="/compare" className="text-sm text-muted hover:text-accent transition-colors">Comparar</Link>
           </div>
