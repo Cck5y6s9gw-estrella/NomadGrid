@@ -58,7 +58,10 @@ export default function ComparePage() {
 
       <div className="max-w-6xl mx-auto px-6 pt-28 pb-20">
         <div className="mb-10">
-          <h1 className="text-3xl font-semibold mb-2 tracking-tight">Comparar ciudades</h1>
+          <div className="text-xs font-medium tracking-widest text-accent uppercase mb-3">Comparador</div>
+          <h1 className="text-3xl font-semibold mb-2 tracking-tight">
+            Comparar <span className="text-accent">ciudades</span>
+          </h1>
           <p className="text-muted text-sm">Selecciona hasta 3 ciudades para comparar sus datos lado a lado</p>
         </div>
 
@@ -66,23 +69,26 @@ export default function ComparePage() {
         <div className="mb-10">
           <div className="flex flex-wrap gap-2 mb-4">
             {selectedCities.map((city) => (
-              <div key={city.slug} className="flex items-center gap-2.5 bg-card border border-border rounded-full pl-4 pr-2 py-2">
+              <div key={city.slug} className="flex items-center gap-2.5 bg-accent/5 border border-accent/30 rounded-full pl-4 pr-2 py-2">
                 <span className="text-sm font-medium text-foreground">{city.name}</span>
                 <button
                   onClick={() => removeCity(city.slug)}
-                  className="w-5 h-5 flex items-center justify-center rounded-full text-muted hover:text-foreground hover:bg-border transition-colors text-sm leading-none"
+                  className="w-5 h-5 flex items-center justify-center rounded-full text-muted hover:text-accent hover:bg-accent/10 transition-colors text-sm leading-none"
                 >
                   ×
                 </button>
               </div>
             ))}
             {selected.length === 0 && (
-              <div className="text-sm text-muted px-1 py-2">Ninguna ciudad seleccionada todavía</div>
+              <div className="flex items-center gap-2 text-sm text-muted px-1 py-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-accent" />
+                Ninguna ciudad seleccionada todavía
+              </div>
             )}
           </div>
 
           {selected.length < 3 && (
-            <div className="bg-card border border-border rounded-2xl p-1.5">
+            <div className="bg-card border border-border focus-within:border-accent/60 rounded-2xl p-1.5 transition-colors">
               <input
                 type="text"
                 placeholder="Buscar ciudad o país..."
@@ -90,15 +96,23 @@ export default function ComparePage() {
                 onChange={(e) => setSearch(e.target.value)}
                 className="w-full bg-transparent text-sm text-foreground placeholder-muted focus:outline-none px-3.5 py-2.5 border-b border-border"
               />
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-1 max-h-52 overflow-y-auto p-1.5">
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 max-h-72 overflow-y-auto p-1.5">
                 {filtered.map((city) => (
                   <button
                     key={city.slug}
                     onClick={() => addCity(city.slug)}
-                    className="text-left px-3.5 py-2.5 rounded-xl hover:bg-border/60 transition-colors touch-manipulation"
+                    className="group relative overflow-hidden rounded-xl border border-transparent hover:border-accent/50 transition-colors touch-manipulation"
                   >
-                    <div className="text-sm font-medium text-foreground">{city.name}</div>
-                    <div className="text-xs text-muted">{city.country}</div>
+                    <img
+                      src={city.imageUrl}
+                      alt={city.name}
+                      className="w-full h-20 object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-background/95 via-background/25 to-transparent" />
+                    <div className="absolute bottom-0 left-0 right-0 p-2 text-left">
+                      <div className="text-xs font-medium text-foreground leading-tight">{city.name}</div>
+                      <div className="text-[10px] text-muted leading-tight">{city.country}</div>
+                    </div>
                   </button>
                 ))}
                 {filtered.length === 0 && (
@@ -150,7 +164,10 @@ export default function ComparePage() {
                       const raw = city[metric.key as keyof City] as number;
                       const isBest = best !== null && raw === best;
                       return (
-                        <div key={city.slug} className="py-4 px-5 border-l border-border/60 flex items-center gap-2">
+                        <div
+                          key={city.slug}
+                          className={`py-4 px-5 border-l flex items-center gap-2 ${isBest ? "border-accent/30 bg-accent/5" : "border-border/60"}`}
+                        >
                           <span className={`text-sm font-medium ${isBest ? "text-accent" : "text-foreground"}`}>
                             {metric.format(city)}
                           </span>
@@ -183,7 +200,7 @@ export default function ComparePage() {
                       return (
                         <div
                           key={metric.key}
-                          className={`flex items-center justify-between px-5 py-3.5 ${i !== metrics.length - 1 ? "border-b border-border/60" : ""}`}
+                          className={`flex items-center justify-between px-5 py-3.5 ${isBest ? "bg-accent/5" : ""} ${i !== metrics.length - 1 ? "border-b border-border/60" : ""}`}
                         >
                           <span className="text-sm text-muted">{metric.label}</span>
                           <span className={`text-sm font-medium flex items-center gap-2 ${isBest ? "text-accent" : "text-foreground"}`}>
@@ -199,7 +216,10 @@ export default function ComparePage() {
             </div>
           </>
         ) : (
-          <div className="text-center py-24 border border-dashed border-border rounded-2xl">
+          <div className="text-center py-24 border border-dashed border-accent/30 rounded-2xl">
+            <div className="w-10 h-10 rounded-full bg-accent/10 text-accent flex items-center justify-center mx-auto mb-4 text-lg">
+              ⚖
+            </div>
             <p className="text-muted">Selecciona al menos 2 ciudades para empezar a comparar</p>
           </div>
         )}
