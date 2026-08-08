@@ -23,6 +23,33 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
     { label: "Playa", value: city.hasBeach ? "Sí" : "No", icon: "🏖" },
   ];
 
+  const sourceRows = [
+    {
+      label: "Coste de vida",
+      value: `${city.currency} ${city.costPerMonth.toLocaleString("es-ES")}/mes`,
+      method: "Índice de Coste de Vida de Numbeo (sin alquiler), convertido a USD usando Nueva York como referencia.",
+      url: city.sources.costOfLiving,
+    },
+    {
+      label: "Velocidad de internet",
+      value: `${city.internetSpeed} Mbps`,
+      method: "Velocidad media de banda ancha fija por país, Speedtest Global Index (Ookla).",
+      url: city.sources.internet,
+    },
+    {
+      label: "Seguridad",
+      value: `${city.safetyScore} / 10`,
+      method: "Índice de Seguridad de Numbeo (percepción de seguridad de residentes), reescalado a una nota sobre 10.",
+      url: city.sources.safety,
+    },
+    {
+      label: "Calidad de vida",
+      value: `${city.qualityOfLife} / 10`,
+      method: "Índice de Calidad de Vida de Numbeo (combina poder adquisitivo, sanidad, clima, coste, tráfico y contaminación), reescalado a una nota sobre 10.",
+      url: city.sources.qualityOfLife,
+    },
+  ];
+
   return (
     <main className="min-h-screen bg-background text-foreground">
       {/* Navbar */}
@@ -106,16 +133,40 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
                 </div>
               </div>
             </section>
+
+            {/* Sources */}
+            <section>
+              <h2 className="text-lg font-semibold mb-1">Fuentes de los datos</h2>
+              <p className="text-sm text-muted mb-4">
+                Así calculamos cada cifra de esta ficha. Todos los enlaces llevan a la fuente original.
+              </p>
+              <div className="bg-card border border-border rounded-2xl divide-y divide-border">
+                {sourceRows.map((row) => (
+                  <div key={row.label} className="p-5 flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
+                    <div className="sm:max-w-md">
+                      <div className="flex items-center gap-2 mb-1">
+                        <span className="text-sm font-medium text-foreground">{row.label}</span>
+                        <span className="text-xs text-accent font-medium">{row.value}</span>
+                      </div>
+                      <p className="text-xs text-muted leading-relaxed">{row.method}</p>
+                    </div>
+                    
+                      <a
+                      href={row.url}
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      className="shrink-0 text-xs font-medium text-accent hover:underline whitespace-nowrap"
+                    >
+                      Ver fuente →
+                    </a>
+                  </div>
+                ))}
+              </div>
+            </section>
           </div>
 
           {/* Right column */}
           <div className="space-y-4">
-            {/* Best time */}
-            <div className="bg-card border border-border rounded-2xl p-5">
-              <h3 className="text-sm font-semibold mb-2">📅 Mejor época para visitar</h3>
-              <p className="text-sm text-muted">{city.bestTimeToVisit}</p>
-            </div>
-
             {/* Quick stats */}
             <div className="bg-card border border-border rounded-2xl p-5 space-y-3">
               <h3 className="text-sm font-semibold mb-3">Resumen</h3>
@@ -146,7 +197,7 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
       </div>
 
       <footer className="border-t border-border py-8 px-6 text-center text-xs text-muted mt-12">
-        Roavio · Datos orientativos basados en Numbeo y Nomad List · Actualizado 2025
+        Roavio · Datos de coste, internet, seguridad y calidad de vida basados en Numbeo y Speedtest Global Index (Ookla) · Actualizado 2026
       </footer>
     </main>
   );

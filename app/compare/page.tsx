@@ -11,7 +11,6 @@ const metrics = [
   { key: "qualityOfLife", label: "Calidad de vida", format: (c: City) => `${c.qualityOfLife} / 10`, best: "max" },
   { key: "climateType", label: "Clima", format: (c: City) => c.climateType, best: "none" },
   { key: "hasBeach", label: "Playa", format: (c: City) => (c.hasBeach ? "Sí" : "No"), best: "none" },
-  { key: "bestTimeToVisit", label: "Mejor época", format: (c: City) => c.bestTimeToVisit, best: "none" },
   { key: "continent", label: "Continente", format: (c: City) => c.continent, best: "none" },
 ];
 
@@ -51,7 +50,7 @@ export default function ComparePage() {
             Roavio
           </Link>
           <div className="hidden sm:flex items-center gap-6">
-            
+
             <Link href="/compare" className="text-sm text-foreground hover:text-accent transition-colors">Comparar</Link>
           </div>
         </div>
