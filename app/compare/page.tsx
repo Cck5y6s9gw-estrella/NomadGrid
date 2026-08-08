@@ -166,7 +166,7 @@ export default function ComparePage() {
                       return (
                         <div
                           key={city.slug}
-                          className={`py-4 px-5 border-l flex items-center gap-2 ${isBest ? "border-accent/30 bg-accent/5" : "border-border/60"}`}
+                          className="py-4 px-5 border-l border-border/60 flex items-center gap-2"
                         >
                           <span className={`text-sm font-medium ${isBest ? "text-accent" : "text-foreground"}`}>
                             {metric.format(city)}
@@ -200,7 +200,7 @@ export default function ComparePage() {
                       return (
                         <div
                           key={metric.key}
-                          className={`flex items-center justify-between px-5 py-3.5 ${isBest ? "bg-accent/5" : ""} ${i !== metrics.length - 1 ? "border-b border-border/60" : ""}`}
+                          className={`flex items-center justify-between px-5 py-3.5 ${i !== metrics.length - 1 ? "border-b border-border/60" : ""}`}
                         >
                           <span className="text-sm text-muted">{metric.label}</span>
                           <span className={`text-sm font-medium flex items-center gap-2 ${isBest ? "text-accent" : "text-foreground"}`}>
