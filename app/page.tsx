@@ -4,6 +4,20 @@ import { cities } from "@/data/cities";
 export default function Home() {
   const featured = cities.slice(0, 6);
 
+  const cheapest = cities.reduce((min, c) => (c.costPerMonth < min.costPerMonth ? c : min), cities[0]);
+  const fastestInternet = Math.max(...cities.map((c) => c.internetSpeed));
+  const safest = Math.max(...cities.map((c) => c.safetyScore));
+  const continentCount = new Set(cities.map((c) => c.continent)).size;
+
+  const stats = [
+    { label: "Ciudades", value: String(cities.length) },
+    { label: "Continentes", value: String(continentCount) },
+    { label: "Indicadores", value: "4" },
+    { label: "Más barata", value: `${cheapest.currency} ${cheapest.costPerMonth}/mes` },
+    { label: "Internet max", value: `${fastestInternet} Mbps` },
+    { label: "Más segura", value: `${safest.toFixed(1)}/10` },
+  ];
+
   return (
     <main className="min-h-screen bg-background text-foreground">
       {/* Navbar */}
@@ -14,7 +28,7 @@ export default function Home() {
             Roavio
           </Link>
           <div className="flex items-center gap-3 sm:gap-6">
-            
+
             <Link href="/compare" className="text-sm text-muted hover:text-accent transition-colors">Comparar</Link>
             <Link href="/cities" className="text-sm bg-accent text-white px-4 py-1.5 rounded-full font-medium hover:opacity-90 transition-opacity">
               Ver ciudades
@@ -26,7 +40,7 @@ export default function Home() {
       {/* Hero */}
       <section className="pt-40 pb-24 px-6 text-center max-w-4xl mx-auto">
         <div className="inline-block text-xs font-medium tracking-widest text-muted uppercase mb-6 border border-border px-3 py-1 rounded-full">
-          20 ciudades · Datos actualizados 2025
+          20 ciudades · Datos actualizados 2026
         </div>
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-tight mb-6">
           Encuentra tu próxima<br />
@@ -48,14 +62,7 @@ export default function Home() {
       {/* Stats bar */}
       <section className="border-y border-border py-6">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-3 md:grid-cols-6 gap-6 text-center">
-          {[
-            { label: "Ciudades", value: "20" },
-            { label: "Continentes", value: "5" },
-            { label: "Indicadores", value: "8" },
-            { label: "Más barata", value: "$800/mes" },
-            { label: "Internet max", value: "500 Mbps" },
-            { label: "Más segura", value: "9.8/10" },
-          ].map((s) => (
+          {stats.map((s) => (
             <div key={s.label}>
               <div className="text-xl font-semibold text-foreground">{s.value}</div>
               <div className="text-xs text-muted mt-0.5">{s.label}</div>
