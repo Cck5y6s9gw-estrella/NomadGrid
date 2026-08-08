@@ -116,7 +116,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="border-t border-border py-8 px-6 text-center text-xs text-muted">
-        Roavio · Datos orientativos basados en Numbeo y Nomad List · Actualizado 2025
+        Roavio · Datos de coste, internet, seguridad y calidad de vida basados en Numbeo y Speedtest Global Index (Ookla) · Actualizado 2026
       </footer>
     </main>
   );
