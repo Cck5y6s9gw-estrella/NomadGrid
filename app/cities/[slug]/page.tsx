@@ -29,8 +29,8 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
       <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-6 h-14 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2 text-foreground font-semibold text-lg tracking-tight">
-            <img src="/logo-icon.png" alt="NomadGrid" className="h-6 w-auto" />
-            NomadGrid
+            <img src="/logo-icon.png" alt="Roavio" className="h-6 w-auto" />
+            Roavio
           </Link>
           <div className="flex items-center gap-3 sm:gap-6">
             <Link href="/cities" className="text-sm text-muted hover:text-accent transition-colors">← Explorar</Link>
@@ -146,7 +146,7 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
       </div>
 
       <footer className="border-t border-border py-8 px-6 text-center text-xs text-muted mt-12">
-        NomadGrid · Datos orientativos basados en Numbeo y Nomad List · Actualizado 2025
+        Roavio · Datos orientativos basados en Numbeo y Nomad List · Actualizado 2025
       </footer>
     </main>
   );
