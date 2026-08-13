@@ -1,6 +1,7 @@
 import { cities } from "@/data/cities";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Show, SignInButton, UserButton } from "@clerk/nextjs";
 import { getCityInsights } from "@/lib/cityInsights";
 
 export async function generateStaticParams() {
@@ -27,7 +28,7 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
     {
       label: "Coste de vida",
       value: `${city.currency} ${city.costPerMonth.toLocaleString("es-ES")}/mes`,
-      method: "Índice de Coste de Vida de Numbeo (sin alquiler), convertido a USD usando Nueva York como referencia.",
+      method: "Índice de Coste de Vida de Numbeo (sin alquiler), calculado usando Nueva York como referencia y convertido a euros al tipo de cambio actual.",
       url: city.sources.costOfLiving,
     },
     {
@@ -62,6 +63,18 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
           <div className="flex items-center gap-3 sm:gap-6">
             <Link href="/cities" className="text-sm text-muted hover:text-accent transition-colors">← Explorar</Link>
             <Link href="/compare" className="text-sm text-muted hover:text-accent transition-colors">Comparar</Link>
+            <Show
+              when="signed-in"
+              fallback={
+                <SignInButton mode="modal">
+                  <button className="text-sm text-muted hover:text-accent transition-colors">
+                    Registro/Inicio de sesión
+                  </button>
+                </SignInButton>
+              }
+            >
+              <UserButton />
+            </Show>
           </div>
         </div>
       </nav>
@@ -150,13 +163,7 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
                       </div>
                       <p className="text-xs text-muted leading-relaxed">{row.method}</p>
                     </div>
-                    
-                      <a
-                      href={row.url}
-                      target="_blank"
-                      rel="noopener noreferrer nofollow"
-                      className="shrink-0 text-xs font-medium text-accent hover:underline whitespace-nowrap"
-                    >
+                    <a href={row.url} target="_blank" rel="noopener noreferrer nofollow" className="shrink-0 text-xs font-medium text-accent hover:underline whitespace-nowrap">
                       Ver fuente →
                     </a>
                   </div>

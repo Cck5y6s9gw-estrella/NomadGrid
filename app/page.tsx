@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Show, SignInButton, UserButton } from "@clerk/nextjs";
 import { cities } from "@/data/cities";
 
 export default function Home() {
@@ -28,11 +29,22 @@ export default function Home() {
             Roavio
           </Link>
           <div className="flex items-center gap-3 sm:gap-6">
-
             <Link href="/compare" className="text-sm text-muted hover:text-accent transition-colors">Comparar</Link>
             <Link href="/cities" className="text-sm bg-accent text-white px-4 py-1.5 rounded-full font-medium hover:opacity-90 transition-opacity">
               Ver ciudades
             </Link>
+            <Show
+              when="signed-in"
+              fallback={
+                <SignInButton mode="modal">
+                  <button className="text-sm text-muted hover:text-accent transition-colors">
+                    Registro/Inicio de sesión
+                  </button>
+                </SignInButton>
+              }
+            >
+              <UserButton />
+            </Show>
           </div>
         </div>
       </nav>

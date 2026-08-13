@@ -24,7 +24,38 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
+    <ClerkProvider
+      appearance={{
+        variables: {
+          colorPrimary: "#ea580c",
+          colorBackground: "#121723",
+          colorInput: "#0b0f1a",
+          colorForeground: "#f5f5f4",
+          colorMutedForeground: "#8b8f99",
+          colorNeutral: "#f5f5f4",
+          colorDanger: "#ef4444",
+          colorSuccess: "#22c55e",
+          borderRadius: "0.75rem",
+          fontFamily: "var(--font-geist-sans), Arial, Helvetica, sans-serif",
+        },
+        elements: {
+          card: "border border-[#1f2430] shadow-none",
+          headerTitle: "text-[#f5f5f4]",
+          headerSubtitle: "text-[#8b8f99]",
+          socialButtonsBlockButton: "border border-[#1f2430] bg-[#0b0f1a] hover:bg-[#1f2430] text-[#f5f5f4]",
+          socialButtonsBlockButtonText: "text-[#f5f5f4]",
+          dividerLine: "bg-[#1f2430]",
+          dividerText: "text-[#8b8f99]",
+          formFieldLabel: "text-[#f5f5f4]",
+          formFieldInput: "bg-[#0b0f1a] border border-[#1f2430] text-[#f5f5f4]",
+          formButtonPrimary: "bg-[#ea580c] hover:bg-[#ea580c]/90 text-white",
+          footerActionText: "text-[#8b8f99]",
+          footerActionLink: "text-[#ea580c] hover:text-[#ea580c]/80",
+          identityPreviewText: "text-[#f5f5f4]",
+          identityPreviewEditButton: "text-[#ea580c]",
+        },
+      }}
+    >
       <html
         lang="es"
         className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}

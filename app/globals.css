@@ -7,6 +7,7 @@
   --border: #1f2430;
   --accent: #ea580c;
   --card: #121723;
+  color-scheme: dark;
 }
 
 @theme inline {

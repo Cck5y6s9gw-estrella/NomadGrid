@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { Show, SignInButton, UserButton } from "@clerk/nextjs";
 import { cities, City } from "@/data/cities";
 
 const continents = ["Todos", "Europa", "Asia", "América", "Oriente Medio"];
@@ -43,6 +44,18 @@ export default function CitiesPage() {
             <Link href="/cities" className="text-sm text-foreground hover:text-accent transition-colors">Explorar</Link>
             <Link href="/compare" className="text-sm text-muted hover:text-accent transition-colors">Comparar</Link>
             <Link href="/cities" className="hidden sm:inline-block text-sm bg-accent text-white px-4 py-1.5 rounded-full font-medium hover:opacity-90 transition-opacity">Ver ciudades</Link>
+            <Show
+              when="signed-in"
+              fallback={
+                <SignInButton mode="modal">
+                  <button className="text-sm text-muted hover:text-accent transition-colors">
+                    Registro/Inicio de sesión
+                  </button>
+                </SignInButton>
+              }
+            >
+              <UserButton />
+            </Show>
           </div>
         </div>
       </nav>
@@ -104,7 +117,7 @@ export default function CitiesPage() {
               onChange={(e) => setMaxBudget(Number(e.target.value))}
               className="w-24 accent-accent"
             />
-            <span className="text-xs text-muted w-16">${maxBudget.toLocaleString("es-ES")}</span>
+            <span className="text-xs text-muted w-16">€{maxBudget.toLocaleString("es-ES")}</span>
           </div>
         </div>
 

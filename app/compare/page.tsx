@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { Show, SignInButton, UserButton } from "@clerk/nextjs";
 import { cities, City } from "@/data/cities";
 
 const metrics = [
@@ -49,9 +50,20 @@ export default function ComparePage() {
             <img src="/logo-icon.png" alt="Roavio" className="h-6 w-auto" />
             Roavio
           </Link>
-          <div className="hidden sm:flex items-center gap-6">
-
+          <div className="flex items-center gap-3 sm:gap-6">
             <Link href="/compare" className="text-sm text-foreground hover:text-accent transition-colors">Comparar</Link>
+            <Show
+              when="signed-in"
+              fallback={
+                <SignInButton mode="modal">
+                  <button className="text-sm text-muted hover:text-accent transition-colors">
+                    Registro/Inicio de sesión
+                  </button>
+                </SignInButton>
+              }
+            >
+              <UserButton />
+            </Show>
           </div>
         </div>
       </nav>
