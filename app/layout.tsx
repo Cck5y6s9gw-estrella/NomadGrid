@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
+import { Analytics } from "@vercel/analytics/next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -33,6 +35,7 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
 };
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -45,8 +48,6 @@ export default function RootLayout({
           colorPrimary: "#ea580c",
           colorBackground: "#121723",
           colorInput: "#0b0f1a",
-          colorForeground: "#f5f5f4",
-          colorMutedForeground: "#8b8f99",
           colorNeutral: "#f5f5f4",
           colorDanger: "#ef4444",
           colorSuccess: "#22c55e",
@@ -75,7 +76,11 @@ export default function RootLayout({
         lang="es"
         className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
       >
-        <body className="min-h-full flex flex-col">{children}</body>
+        <body className="min-h-full flex flex-col">
+          {children}
+          <Analytics />
+          <GoogleAnalytics gaId="G-L7XED99X63" />
+        </body>
       </html>
     </ClerkProvider>
   );
