@@ -204,7 +204,9 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
       </div>
 
       <footer className="border-t border-border py-8 px-6 text-center text-xs text-muted mt-12">
-        Roavio · Datos de coste, internet, seguridad y calidad de vida basados en Numbeo y Speedtest Global Index (Ookla) · Actualizado 2026
+              Roavio · Datos de coste, internet, seguridad y calidad de vida basados en Numbeo y Speedtest Global Index (Ookla) · Actualizado 2026
+        <span className="mx-2">·</span>
+        <Link href="/feedback" className="hover:text-accent transition-colors">Feedback</Link>
       </footer>
     </main>
   );
