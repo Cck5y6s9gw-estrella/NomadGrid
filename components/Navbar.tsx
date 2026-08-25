@@ -44,8 +44,7 @@ export default function Navbar() {
             fallback={
               <SignInButton mode="modal">
                 <button className="text-sm text-muted hover:text-accent transition-colors">
-                  <span className="hidden sm:inline">Registro/Inicio de sesión</span>
-                  <span className="sm:hidden">Entrar</span>
+                  Registro/Inicio de sesión
                 </button>
               </SignInButton>
             }
