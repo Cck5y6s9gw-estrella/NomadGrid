@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Show, SignInButton, UserButton } from "@clerk/nextjs";
+import Navbar from "@/components/Navbar";
 import { cities, City } from "@/data/cities";
 
 const continents = ["Todos", "Europa", "Asia", "América", "Oriente Medio"];
@@ -33,32 +33,7 @@ export default function CitiesPage() {
 
   return (
     <main className="min-h-screen bg-background text-foreground">
-      {/* Navbar */}
-      <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
-        <div className="max-w-7xl mx-auto px-6 h-14 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 text-foreground font-semibold text-lg tracking-tight">
-            <img src="/logo-icon.png" alt="Roavio" className="h-6 w-auto" />
-            Roavio
-          </Link>
-          <div className="flex items-center gap-3 sm:gap-6">
-            <Link href="/cities" className="text-sm text-foreground hover:text-accent transition-colors">Explorar</Link>
-            <Link href="/compare" className="text-sm text-muted hover:text-accent transition-colors">Comparar</Link>
-            <Link href="/cities" className="hidden sm:inline-block text-sm bg-accent text-white px-4 py-1.5 rounded-full font-medium hover:opacity-90 transition-opacity">Ver ciudades</Link>
-            <Show
-              when="signed-in"
-              fallback={
-                <SignInButton mode="modal">
-                  <button className="text-sm text-muted hover:text-accent transition-colors">
-                    Registro/Inicio de sesión
-                  </button>
-                </SignInButton>
-              }
-            >
-              <UserButton />
-            </Show>
-          </div>
-        </div>
-      </nav>
+      <Navbar />
 
       <div className="max-w-7xl mx-auto px-6 pt-24 pb-16">
         {/* Header */}
