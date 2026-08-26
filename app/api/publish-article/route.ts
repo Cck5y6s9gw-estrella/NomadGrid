@@ -12,6 +12,18 @@ function slugify(text: string): string {
     .replace(/^-+|-+$/g, "");
 }
 
+// Convierte cualquier texto en una cadena segura para YAML: la envuelve
+// entre comillas dobles y escapa las comillas/barras que pueda contener,
+// para que un ":" o un "\"" dentro del texto no rompa el archivo.
+function yamlString(value: string): string {
+  const escaped = value
+    .replace(/\\/g, "\\\\")
+    .replace(/"/g, '\\"')
+    .replace(/\r?\n/g, " ")
+    .trim();
+  return `"${escaped}"`;
+}
+
 export async function POST(request: Request) {
   const user = await currentUser();
   const email = user?.emailAddresses?.[0]?.emailAddress;
@@ -70,12 +82,12 @@ export async function POST(request: Request) {
 
     const frontmatter = [
       "---",
-      `title_es: ${titleEs.replace(/\n/g, " ")}`,
-      `title_en: ${titleEn.replace(/\n/g, " ")}`,
-      `dek_es: ${dekEs.replace(/\n/g, " ")}`,
-      `dek_en: ${dekEn.replace(/\n/g, " ")}`,
+      `title_es: ${yamlString(titleEs)}`,
+      `title_en: ${yamlString(titleEn)}`,
+      `dek_es: ${yamlString(dekEs)}`,
+      `dek_en: ${yamlString(dekEn)}`,
       `date: "${date}"`,
-      `cover: ${coverPath}`,
+      `cover: ${yamlString(coverPath)}`,
       "---",
       "",
     ].join("\n");
