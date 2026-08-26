@@ -8,9 +8,9 @@ import { Show, SignInButton, UserButton } from "@clerk/nextjs";
 const links = [
   { href: "/cities", label: "Ver ciudades" },
   { href: "/compare", label: "Comparar" },
+  { href: "/articulos", label: "Artículos" },
   { href: "/feedback", label: "Feedback" },
 ];
-
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
