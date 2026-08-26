@@ -1,8 +1,8 @@
 ---
-title_es: Cómo elegir la mejor ciudad para ser nómada digital en 2026
-title_en: How to Choose the Best City for Digital Nomads in 2026
-dek_es: Coste de vida, internet, seguridad, visados y calidad de vida: la guía práctica para decidir tu próximo destino sin perder semanas investigando.
-dek_en: Cost of living, internet speed, safety, visas and quality of life: a practical guide to picking your next destination without weeks of research.
+title_es: "Cómo elegir la mejor ciudad para ser nómada digital en 2026"
+title_en: "How to Choose the Best City for Digital Nomads in 2026"
+dek_es: "Coste de vida, internet, seguridad, visados y calidad de vida: la guía práctica para decidir tu próximo destino sin perder semanas investigando."
+dek_en: "Cost of living, internet speed, safety, visas and quality of life: a practical guide to picking your next destination without weeks of research."
 date: "2026-08-26"
 cover: 
 ---
