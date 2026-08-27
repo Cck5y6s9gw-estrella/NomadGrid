@@ -1,7 +1,9 @@
 import { cities } from "@/data/cities";
+import { cityGuides, visaDisclaimer } from "@/data/cityGuides";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Navbar from "@/components/Navbar";
+import CityGuideSection from "@/components/CityGuideSection";
 import { getCityInsights } from "@/lib/cityInsights";
 
 export async function generateStaticParams() {
@@ -14,6 +16,7 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
   if (!city) notFound();
 
   const { strengths, considerations } = getCityInsights(city, cities);
+  const guide = cityGuides[city.slug];
 
   const stats = [
     { label: "Coste/mes", value: `${city.currency} ${city.costPerMonth.toLocaleString("es-ES")}`, icon: "💰" },
@@ -122,6 +125,18 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
                 </div>
               </div>
             </section>
+
+            {/* Visa, sanidad y barrios (guía ampliada) */}
+            {guide && (
+              <>
+                <div className="bg-card border border-border rounded-2xl p-4 text-xs text-muted leading-relaxed">
+                  {visaDisclaimer}
+                </div>
+                <CityGuideSection title="Visado y fiscalidad" section={guide.visaFiscal} />
+                <CityGuideSection title="Sanidad y seguro médico" section={guide.sanidad} />
+                <CityGuideSection title="Barrios y coworkings" section={guide.barrios} />
+              </>
+            )}
 
             {/* Sources */}
             <section>
