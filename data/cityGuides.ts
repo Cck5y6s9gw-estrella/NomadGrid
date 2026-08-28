@@ -1210,5 +1210,123 @@ export const cityGuides: Record<string, CityGuide> = {
         }
       ]
     }
-  }
+  },
+  oporto: {
+    visaFiscal: {
+      content: "Los ciudadanos de la Unión Europea y del Espacio Económico Europeo pueden instalarse en Oporto sin ningún trámite de visado, amparados por la libre circulación de personas; basta con registrarse ante las autoridades locales pasados tres meses de residencia. Para los nómadas digitales no comunitarios, Portugal ofrece el visado D8, que exige acreditar unos ingresos mensuales de al menos 3.680 € (cuatro veces el salario mínimo portugués), demostrados mediante nóminas, contrato y extractos bancarios reales.\n\nEl antiguo régimen fiscal NHR (Non-Habitual Resident), que durante años atrajo a miles de extranjeros con tipos reducidos, dejó de aceptar nuevas solicitudes el 31 de marzo de 2025 y fue sustituido por el IFICI (Incentivo Fiscal à Investigação Científica e Inovação), un régimen mucho más restringido y orientado a perfiles de investigación e innovación, no disponible para la mayoría de nómadas digitales. Para el resto de contribuyentes rige la regla general de residencia fiscal: se considera residente en Portugal a quien permanece más de 183 días al año en el país.",
+      sources: [
+        { label: "Guía de la visa de nómada digital en Portugal 2026 — Integrate Abroad", url: "https://integrateabroad.com/blog/visa-nomada-digital-espana-requisitos" },
+        { label: "Fin del régimen NHR y llegada del IFICI — Portugal.com", url: "https://www.portugal.com/moving-to-portugal/nhr-tax-regime-portugal/" },
+      ],
+    },
+    sanidad: {
+      content: "Los residentes legales en Portugal tienen acceso al Serviço Nacional de Saúde (SNS) una vez formalizada su inscripción en el centro de salud de su zona, con una atención pública de bajo coste para el paciente. Sin embargo, para tramitar el visado D8 es obligatorio presentar un seguro médico privado con cobertura mínima de 30.000 € que cubra tratamiento y hospitalización en Portugal durante todo el periodo de la solicitud.\n\nEl coste de una póliza privada adecuada para este requisito en Oporto ronda entre 30 € y 60 € al mes para un adulto joven sin patologías previas. La sanidad privada en la ciudad es de calidad alta y con tiempos de espera mucho menores que en la red pública, por lo que buena parte de los nómadas mantiene el seguro privado incluso tras acceder al SNS.",
+      sources: [
+        { label: "Requisitos de seguro médico para el visado D8 — Global Citizen Solutions", url: "https://www.globalcitizensolutions.com/portugal-d8-visa/" },
+        { label: "Sistema de salud en Portugal — Numbeo Healthcare Portugal", url: "https://www.numbeo.com/health-care/country_result.jsp?country=Portugal" },
+      ],
+    },
+    barrios: {
+      content: "Cedofeita es el barrio de referencia para nómadas digitales jóvenes por su ambiente bohemio, sus galerías de arte y su alta densidad de cafeterías con wifi; un piso de un dormitorio ronda entre 700 € y 950 € al mes. Bonfim, más residencial y algo más asequible, atrae a quienes buscan tranquilidad sin alejarse del centro, con alquileres desde 650 € para un dormitorio. Foz do Douro, junto a la desembocadura del río, es la zona más cotizada por su cercanía a la playa, con rentas que superan los 1.100 € mensuales, mientras que Baixa, el centro histórico, combina turismo y vida local con precios intermedios, en torno a 900 € para un dormitorio.\n\nEntre los coworkings destaca Porto i/o, uno de los espacios más consolidados de la ciudad, con puestos flexibles y una comunidad activa de startups; Selina Navis, que combina coworking y coliving junto al río Duero; y Vertical Coworking, en el centro, orientado a freelancers y pequeños equipos con salas de reuniones y acceso 24/7.",
+      sources: [
+        { label: "Precios de alquiler por zonas en Oporto — Investropa", url: "https://investropa.com/blogs/news/florence-rents" },
+        { label: "Porto i/o Coworking", url: "https://portoio.com/" },
+        { label: "Selina Porto", url: "https://www.selina.com/portugal/porto/" },
+      ],
+    },
+  },
+  madrid: {
+    visaFiscal: {
+      content: "Los ciudadanos de la Unión Europea y del Espacio Económico Europeo no necesitan visado ni permiso de trabajo para instalarse en Madrid: la libre circulación les permite residir y trabajar sin más trámite que empadronarse y solicitar el certificado de registro de ciudadano de la UE. Para los nómadas digitales no comunitarios, España ofrece desde 2023 el visado para teletrabajadores de carácter internacional, creado por la Ley de Startups y gestionado por la Unidad de Grandes Empresas. El solicitante debe acreditar unos ingresos mensuales equivalentes al 200% del salario mínimo interprofesional, en torno a 2.849 €/mes en 2026, demostrados mediante nóminas, contrato y extractos bancarios reales.\n\nLa autorización inicial se concede por hasta tres años, renovable por periodos de dos años, con acceso a la residencia de larga duración a los cinco años. Quienes obtienen este visado pueden acogerse además al régimen especial para trabajadores desplazados o Ley Beckham, que fija un tipo fijo del 24% en el IRPF sobre los primeros 600.000 € de renta (47% por encima de ese umbral) durante el año de llegada más los cinco siguientes. Para el resto de contribuyentes rige la regla general de residencia fiscal: más de 183 días naturales en España durante el año natural.",
+      sources: [
+        { label: "Visado para nómadas digitales — Legalitas", url: "https://www.legalitas.com/actualidad/visado-nomada-digital" },
+        { label: "La ley Beckham en España 2026 — Raisin", url: "https://www.raisin.com/es-es/tributacion/ley-beckham/" },
+      ],
+    },
+    sanidad: {
+      content: "Los residentes legales en Madrid tienen acceso al Sistema Nacional de Salud una vez formalizada su afiliación a la Seguridad Social o su empadronamiento, con una atención pública de amplia cobertura y coste muy bajo para el paciente. Sin embargo, para tramitar el visado de teletrabajador es obligatorio presentar una póliza de seguro médico privado, contratada con una aseguradora autorizada por la Dirección General de Seguros y Fondos de Pensiones, que cubra asistencia sanitaria en España sin copagos ni carencias; los seguros de viaje quedan expresamente excluidos.\n\nEl coste de una póliza privada de este tipo en Madrid para un adulto joven sin patologías previas ronda entre 50 € y 100 € al mes según la cobertura y la aseguradora (Sanitas, Adeslas, Asisa, DKV o Cigna, entre las más habituales). La sanidad privada en Madrid es de calidad alta, con tiempos de espera mucho menores que en la pública y una amplia red de clínicas y hospitales privados en toda la ciudad.",
+      sources: [
+        { label: "Seguro médico para el visado de nómada digital — Cohen y Aguirre", url: "https://cohenyaguirre.es/seguro-medico-para-visa-nomada-digital" },
+        { label: "Precio del seguro médico privado en España 2026 — Calculates", url: "https://www.calculates.es/blog/seguro-medico-privado-precio-mensual-2026/" },
+      ],
+    },
+    barrios: {
+      content: "Malasaña es el barrio de referencia para nómadas digitales jóvenes por su ambiente alternativo, su vida nocturna y su alta densidad de cafeterías con wifi; el alquiler ronda entre 1.200 € y 1.460 € al mes para un piso de 50-60 m². Chueca, contiguo, destaca por su ambiente cosmopolita y precios similares. Salamanca es el barrio más elegante y caro, con arquitectura señorial, en torno a 1.165 € a 1.400 € para un piso de ese tamaño. La Latina conserva el sabor más castizo de la ciudad, con un alquiler medio algo más asequible, en torno a 900 € a 1.200 € según la zona.\n\nEntre los coworkings, Impact Hub Madrid opera varios espacios en la ciudad, entre ellos Alameda (junto a Atocha) y Barceló (junto a Malasaña), con puestos flexibles y una comunidad activa de emprendedores. Utopicus tiene su sede principal en Paseo de la Castellana 163, además de otras cinco ubicaciones repartidas por Madrid, todas con acceso 24/7. LOOM es otra cadena consolidada con varios espacios en el centro y en la zona de negocios de la capital.",
+      sources: [
+        { label: "Precio del alquiler por barrios en Madrid — Bankinter", url: "https://www.bankinter.com/blog/finanzas-personales/precio-alquiler-barrios-madrid" },
+        { label: "Impact Hub Madrid", url: "https://madrid.impacthub.net/en/" },
+        { label: "Utopicus Coworking Madrid", url: "https://loom.es/en/coworking-spaces/madrid/" },
+      ],
+    },
+  },
+  barcelona: {
+    visaFiscal: {
+      content: "Los ciudadanos de la Unión Europea y del Espacio Económico Europeo no necesitan visado ni permiso de trabajo para instalarse en Barcelona: la libre circulación les permite residir y trabajar sin más trámite que registrarse en el padrón municipal y solicitar el NIE. Para los nómadas digitales de fuera de la UE, España ofrece desde 2023 el mismo visado para teletrabajadores de carácter internacional que en el resto del país, con un requisito de ingresos mensuales de en torno a 2.849 €/mes en 2026 y una validez inicial de tres años, prorrogable por periodos de dos.\n\nQuienes obtienen este visado pueden acogerse además al régimen especial para trabajadores desplazados o Ley Beckham, que fija un tipo fijo del 24% en el IRPF sobre los primeros 600.000 € de renta durante seis ejercicios fiscales, siempre que no hayan sido residentes fiscales en España en los cinco años anteriores. Para el resto de contribuyentes rige la regla general de residencia fiscal: más de 183 días al año en el país.",
+      sources: [
+        { label: "Visado para nómadas digitales — Legalitas", url: "https://www.legalitas.com/actualidad/visado-nomada-digital" },
+        { label: "La ley Beckham: lo que debes saber en 2026 — Raisin", url: "https://www.raisin.com/es-es/tributacion/ley-beckham/" },
+      ],
+    },
+    sanidad: {
+      content: "Los residentes legales en Barcelona dan de alta su tarjeta sanitaria en el CatSalut, el servicio público de salud de Cataluña integrado en el Sistema Nacional de Salud, con cobertura gratuita o muy subvencionada una vez formalizada la afiliación a la Seguridad Social. Sin embargo, el visado de teletrabajador internacional exige contratar un seguro médico privado con cobertura completa en España antes de solicitar la autorización, ya que el acceso al sistema público no está garantizado desde el primer día del trámite.\n\nEn Barcelona, las pólizas privadas que cumplen los requisitos del visado oscilan entre 80 € y 130 €/mes para adultos de entre 30 y 45 años en compañías como Adeslas o Asisa, mientras que las opciones de gama alta con cobertura internacional pueden costar entre 250 € y 400 €/mes. La sanidad privada española tiene fama de rapidez y buena calidad diagnóstica, con hospitales de referencia como el Hospital Quirónsalud Barcelona.",
+      sources: [
+        { label: "Los mejores seguros médicos para nómadas digitales en España — Haycare", url: "https://haycare.es/mejores-seguros-nomadas-digitales-espana/" },
+        { label: "Seguro médico para visado — Sanitas", url: "https://www.sanitas.es/seguros/seguro-medico-para-visado" },
+      ],
+    },
+    barrios: {
+      content: "Gràcia es el barrio bohemio favorito de la comunidad de nómadas digitales, con plazas peatonales y ambiente de pueblo dentro de la ciudad; un alquiler de un dormitorio ronda entre 600 € y 1.200 €/mes. El Born, en el casco antiguo, combina arquitectura medieval con vida social intensa y precios similares o algo superiores. El Eixample, con su trazado en cuadrícula y excelente conexión de metro, es la zona más versátil para vivir y trabajar, con alquileres de un dormitorio entre 750 € y 1.600 €/mes. Poblenou, antiguo barrio industrial reconvertido en el distrito tecnológico 22@, es el más elegido por perfiles tech por su cercanía a la playa, con alquileres desde unos 700 €/mes.\n\nEntre los coworkings destaca Betahaus Barcelona, pionero del sector desde 2010, ubicado en Gràcia, con puestos flexibles desde 150 €/mes; Cloudworks, en Gran Vía, con terrazas y ambiente corporativo desde 250 €/mes; y Aticco Bogatell, cerca del Parque de la Ciutadella, con azotea y puestos desde 200 €/mes.",
+      sources: [
+        { label: "Los mejores barrios y zonas para vivir en Barcelona — Holafly", url: "https://esim.holafly.com/es/blog/nomada-digital/mejores-barrios-vivir-barcelona/" },
+        { label: "Los 10 mejores espacios coworking en Barcelona — Holafly", url: "https://esim.holafly.com/es/blog/nomada-digital/coworking-barcelona/" },
+      ],
+    },
+  },
+  berlin: {
+    visaFiscal: {
+      content: "Los ciudadanos de la Unión Europea, el Espacio Económico Europeo y Suiza no necesitan visado ni permiso de residencia para instalarse en Berlín gracias a la libertad de movimiento: solo deben empadronarse (Anmeldung) si se quedan más de tres meses. Alemania no tiene un visado de nómada digital propiamente dicho como el de Portugal o España. La vía que usan la mayoría de trabajadores remotos no comunitarios es el permiso de residencia para autónomos (Freiberufler-Aufenthaltserlaubnis), que exige demostrar cualificación profesional, un plan de negocio, contratos o clientes previstos, seguro médico y normalmente un contrato de alquiler en Alemania.\n\nExiste además una vía específica para ciudadanos de once países (entre ellos Estados Unidos, Reino Unido, Canadá, Australia, Japón y Corea del Sur), que pueden entrar sin visado durante 90 días y solicitar el permiso directamente ya en Alemania. Para el resto de nacionalidades no comunitarias que entran solo como turistas rige la norma Schengen de 90 días dentro de un periodo de 180, pero esa autorización no da derecho a trabajar. Quien pasa más de 183 días en un periodo de doce meses en Alemania se convierte en residente fiscal alemán y queda sujeto a tributación sobre su renta mundial.",
+      sources: [
+        { label: "Remote Work and Digital Nomad Visas in Germany 2026 — SE Legal", url: "https://se-legal.de/digital-nomads-in-germany-residence-permits-and-visas/?lang=en" },
+        { label: "Germany Tax Residency: 183-Day Rule 2026", url: "https://www.countrytaxcalc.com/tax-guides/germany/183-day-rule-2026/" },
+      ],
+    },
+    sanidad: {
+      content: "Alemania exige seguro médico obligatorio a todos sus residentes, incluidos los autónomos, y este es un requisito indispensable para tramitar el permiso de residencia freelance: la falta de una póliza adecuada es una de las causas más comunes de rechazo de la solicitud. Existen dos sistemas: el seguro público (gesetzliche Krankenversicherung), cuyo coste equivale a entre el 19,1% y el 22,6% de los ingresos declarados con una cuota mínima de alrededor de 250 € al mes, y el seguro privado (private Krankenversicherung), habitualmente recomendado para quienes ganan más de 35.000 € anuales.\n\nPara la primera solicitud de residencia se acepta también un seguro de viaje homologado, pero en la renovación solo se admiten pólizas públicas o privadas alemanas. En la práctica, la mayoría de freelancers extranjeros en Berlín optan por el seguro privado al inicio, por su coste fijo y previsible.",
+      sources: [
+        { label: "Health insurance for freelancers in Germany — All About Berlin", url: "https://allaboutberlin.com/guides/german-health-insurance/for-freelancers" },
+        { label: "Health insurance for freelancers in Germany: 2026 guide — Feather", url: "https://feather-insurance.com/blog/health-insurance-germany-freelancer-guide" },
+      ],
+    },
+    barrios: {
+      content: "Kreuzberg y Friedrichshain concentran gran parte de la vida nocturna y cultural alternativa de Berlín y atraen a jóvenes profesionales de toda Europa; un piso de un dormitorio ronda entre 1.000 € y 1.400 € al mes. Neukölln, especialmente su zona norte, se ha consolidado como el barrio más dinámico y asequible para nómadas digitales, con alquileres de un dormitorio entre 500 € y 900 €. Prenzlauer Berg combina cafés con buen wifi y calles tranquilas, con rentas de entre 800 € y 1.500 € para un dormitorio.\n\nEntre los coworkings, betahaus, fundado en 2009 en Kreuzberg, fue uno de los primeros espacios de coworking de Berlín, con bonos de día desde 35 € y membresías mensuales desde 115 €. St. Oberholz, en Mitte, es un clásico de la cultura de trabajar desde el café berlinesa. Factory Berlin atrae a un perfil más tecnológico y de startups, con una comunidad más seleccionada que los espacios de acceso abierto.",
+      sources: [
+        { label: "Best Neighbourhoods to Live in Berlin: 2026 Guide — Faraway Home", url: "https://www.farawayhome.com/en/berlin/neighbourhoods" },
+        { label: "Berlin for Digital Nomads: 2026 Guide to Coworking — betahaus", url: "https://www.betahaus.com/magazine/berlin-for-digital-nomads-the-ultimate-2026-guide-to-coworking-cafes-and-community" },
+      ],
+    },
+  },
+  florencia: {
+    visaFiscal: {
+      content: "Los ciudadanos de la Unión Europea no necesitan ningún visado para vivir y trabajar en Florencia gracias a la libre circulación, y solo deben registrarse en el municipio si permanecen más de tres meses. Los ciudadanos de fuera de la UE pueden optar al visto per nomadi digitali, el visado de nómada digital italiano, que exige acreditar ingresos anuales por trabajo remoto de al menos tres veces el umbral de exención sanitaria (entre 24.789 € y 25.500 € aproximadamente según el consulado), cualificación profesional y un mínimo de seis meses de experiencia previa demostrable.\n\nEs obligatorio contratar un seguro médico privado que cubra tratamiento y hospitalización en Italia durante todo el periodo solicitado, y la solicitud se tramita en el consulado italiano correspondiente, con un plazo de resolución habitual de 30 a 90 días. En materia fiscal, quien traslada su residencia a Italia y permanece más de 183 días al año en el país puede acogerse al régimen de trabajadores impatriados, que ofrece una exención del 50% sobre la renta imponible durante hasta cinco años para quienes cumplan los requisitos de cualificación y traslado efectivo de residencia.",
+      sources: [
+        { label: "Italy Digital Nomad Visa — Citizen Remote", url: "https://citizenremote.com/visas/italy-digital-nomad-visa/" },
+        { label: "Requisitos Visto Nomadi Digitali Italia 2026 — Future Italian", url: "https://www.futureitalian.com/blog/italy-digital-nomad-visa-requirements-2026-official-rules-and-updates" },
+      ],
+    },
+    sanidad: {
+      content: "Italia cuenta con un sistema público de salud, el Servizio Sanitario Nazionale, al que los ciudadanos extracomunitarios con permiso de residencia tienen derecho a inscribirse ante la ASL de su distrito, con acceso a médico de cabecera y atención hospitalaria en las mismas condiciones que los residentes italianos. Sin embargo, para obtener el visado de nómada digital es obligatorio presentar previamente un seguro médico privado válido en todo el territorio italiano que cubra tratamiento y hospitalización durante el periodo de estancia solicitado.\n\nEl coste de un seguro internacional privado adecuado suele partir de unos 50 € mensuales para coberturas básicas, aunque las pólizas más completas pueden superar los 100-150 € al mes según la edad y el nivel de cobertura. La sanidad privada en Florencia, con clínicas como Villa Donatello, es de calidad alta y se usa habitualmente como complemento del sistema público.",
+      sources: [
+        { label: "Iscrizione degli stranieri extra-UE al SSN — AUSL Romagna", url: "https://www.auslromagna.it/servizi/assistenza-sanitaria-agli-stranieri/iscrizione-degli-stranieri-extra-ue-al-servizio-sanitario-nazionale" },
+        { label: "Italy Digital Nomad Visa Requirements 2026 — Future Italian", url: "https://www.futureitalian.com/blog/italy-digital-nomad-visa-requirements-2026-official-rules-and-updates" },
+      ],
+    },
+    barrios: {
+      content: "Santo Spirito, en el barrio del Oltrarno al otro lado del río Arno, es la zona favorita de nómadas digitales y expatriados por su ambiente artesanal y menos turístico, con alquileres de un dormitorio entre 900 € y 1.500 € mensuales. San Niccolò-Porta Romana, también en el Oltrarno, ofrece un ambiente similar con vistas a las colinas de Fiesole, entre 1.100 € y 2.200 €. El centro histórico tiene los precios más altos de la ciudad, mientras que Campo di Marte, más residencial y con mejor conexión al aeropuerto, resulta más asequible para quienes buscan tranquilidad.\n\nEntre los coworkings, Nana Bianca, junto al río a pocos minutos de la estación de Santa Maria Novella, es el más grande de la ciudad con 6.500 m² orientados a creadores digitales y startups. Impact Hub Florence, cerca de la estación de Rifredi, destaca por su diseño con mobiliario reciclado y membresías flexibles. The Social Hub Coworking Lavagnini combina espacio de trabajo con alojamiento y azotea con vistas al Duomo.",
+      sources: [
+        { label: "Updated Rents in Florence 2026 — Investropa", url: "https://investropa.com/blogs/news/florence-rents" },
+        { label: "Top coworking spaces in Florence 2024 — Remotely Serious", url: "https://www.remotelyserious.com/coworking-spaces-florence/" },
+        { label: "Nana Bianca", url: "https://www.nanabianca.it/en" },
+      ],
+    },
+  },
 };
