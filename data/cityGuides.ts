@@ -22,6 +22,8 @@ export type CityGuide = {
 
 export const visaDisclaimer = "las cifras de tasas, umbrales de ingresos y tramos fiscales cambian con frecuencia. Esta información es orientativa — antes de viajar o iniciar cualquier trámite, verificar siempre los datos vigentes en la fuente oficial (embajada, consulado o portal gubernamental correspondiente).";
 
+export const visaDisclaimerEn = "fees, income thresholds, and tax brackets change frequently. This information is for guidance only — before traveling or starting any procedure, always verify the current figures with the official source (embassy, consulate, or the relevant government portal).";
+
 export const cityGuides: Record<string, CityGuide> = {
   "valencia": {
     "visaFiscal": {

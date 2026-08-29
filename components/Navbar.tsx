@@ -4,17 +4,22 @@ import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Show, SignInButton, UserButton } from "@clerk/nextjs";
+import { useLanguage } from "@/lib/i18n";
+import { t } from "@/lib/dictionary";
 
-const links = [
-  { href: "/cities", label: "Ver ciudades" },
-  { href: "/compare", label: "Comparar" },
-  { href: "/articulos", label: "Artículos" },
-  { href: "/feedback", label: "Feedback" },
-];
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
   const menuRef = useRef<HTMLDivElement>(null);
+  const { lang, setLang } = useLanguage();
+  const d = t(lang);
+
+  const links = [
+    { href: "/cities", label: d.navCities },
+    { href: "/compare", label: d.navCompare },
+    { href: "/articulos", label: d.navArticles },
+    { href: "/feedback", label: d.navFeedback },
+  ];
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
@@ -39,12 +44,31 @@ export default function Navbar() {
         </Link>
 
         <div className="flex items-center gap-3">
+          <div className="flex items-center border border-border rounded-full p-0.5 text-xs font-medium">
+            <button
+              onClick={() => setLang("es")}
+              className={`px-2.5 py-1 rounded-full transition-colors ${
+                lang === "es" ? "bg-accent text-white" : "text-muted hover:text-foreground"
+              }`}
+            >
+              ES
+            </button>
+            <button
+              onClick={() => setLang("en")}
+              className={`px-2.5 py-1 rounded-full transition-colors ${
+                lang === "en" ? "bg-accent text-white" : "text-muted hover:text-foreground"
+              }`}
+            >
+              EN
+            </button>
+          </div>
+
           <Show
             when="signed-in"
             fallback={
               <SignInButton mode="modal">
                 <button className="text-sm text-muted hover:text-accent transition-colors">
-                  Registro/Inicio de sesión
+                  {d.signIn}
                 </button>
               </SignInButton>
             }
@@ -55,7 +79,7 @@ export default function Navbar() {
           <div className="relative" ref={menuRef}>
             <button
               onClick={() => setOpen((o) => !o)}
-              aria-label="Abrir menú"
+              aria-label={d.navOpenMenu}
               className="flex items-center gap-2 text-sm text-foreground border border-border rounded-full px-3.5 py-1.5 hover:border-accent/60 transition-colors"
             >
               <span className="flex flex-col gap-[3px] w-4">
@@ -63,7 +87,7 @@ export default function Navbar() {
                 <span className="h-[2px] w-full bg-foreground rounded-full" />
                 <span className="h-[2px] w-full bg-foreground rounded-full" />
               </span>
-              Menú
+              {d.navMenu}
             </button>
 
             {open && (

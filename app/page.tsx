@@ -1,8 +1,14 @@
+"use client";
+
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import { cities } from "@/data/cities";
+import { useLanguage } from "@/lib/i18n";
+import { t, formatMoney, tCountry } from "@/lib/dictionary";
 
 export default function Home() {
+  const { lang } = useLanguage();
+  const d = t(lang);
   const featured = cities.slice(0, 6);
 
   const cheapest = cities.reduce((min, c) => (c.costPerMonth < min.costPerMonth ? c : min), cities[0]);
@@ -11,12 +17,12 @@ export default function Home() {
   const continentCount = new Set(cities.map((c) => c.continent)).size;
 
   const stats = [
-    { label: "Ciudades", value: String(cities.length) },
-    { label: "Continentes", value: String(continentCount) },
-    { label: "Indicadores", value: "4" },
-    { label: "Más barata", value: `${cheapest.currency} ${cheapest.costPerMonth}/mes` },
-    { label: "Internet max", value: `${fastestInternet} Mbps` },
-    { label: "Más segura", value: `${safest.toFixed(1)}/10` },
+    { label: d.statCities, value: String(cities.length) },
+    { label: d.statContinents, value: String(continentCount) },
+    { label: d.statIndicators, value: "4" },
+    { label: d.statCheapest, value: `${cheapest.currency} ${cheapest.costPerMonth}${d.perMonth}` },
+    { label: d.statFastestInternet, value: `${fastestInternet} Mbps` },
+    { label: d.statSafest, value: `${safest.toFixed(1)}/10` },
   ];
 
   return (
@@ -26,21 +32,21 @@ export default function Home() {
       {/* Hero */}
       <section className="pt-40 pb-24 px-6 text-center max-w-4xl mx-auto">
         <div className="inline-block text-xs font-medium tracking-widest text-muted uppercase mb-6 border border-border px-3 py-1 rounded-full">
-          20 ciudades · Datos actualizados 2026
+          {d.heroBadge(cities.length)}
         </div>
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-tight mb-6">
-          Encuentra tu próxima<br />
-          <span className="text-accent">ciudad nómada</span>
+          {d.heroTitle1}<br />
+          <span className="text-accent">{d.heroTitle2}</span>
         </h1>
         <p className="text-lg text-muted mb-10 max-w-xl mx-auto leading-relaxed">
-          Compara coste de vida, internet, seguridad y clima en las mejores ciudades del mundo para trabajar en remoto.
+          {d.heroSubtitle}
         </p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <Link href="/cities" className="bg-accent text-white px-8 py-3 rounded-full font-medium text-sm hover:opacity-90 transition-opacity">
-            Explorar ciudades →
+            {d.exploreCities}
           </Link>
           <Link href="/compare" className="border border-border text-foreground px-8 py-3 rounded-full font-medium text-sm hover:border-accent transition-colors">
-            Comparar ciudades
+            {d.compareCities}
           </Link>
         </div>
       </section>
@@ -60,9 +66,9 @@ export default function Home() {
       {/* Featured cities */}
       <section className="max-w-7xl mx-auto px-6 py-20">
         <div className="flex items-center justify-between mb-10">
-          <h2 className="text-2xl font-semibold">Ciudades destacadas</h2>
+          <h2 className="text-2xl font-semibold">{d.featuredCities}</h2>
           <Link href="/cities" className="text-sm text-muted hover:text-accent transition-colors">
-            Ver todas →
+            {d.seeAll}
           </Link>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -78,16 +84,16 @@ export default function Home() {
                 <div className="flex items-end justify-between">
                   <div>
                     <h3 className="text-lg font-semibold text-foreground">{city.name}</h3>
-                    <p className="text-sm text-muted">{city.country}</p>
+                    <p className="text-sm text-muted">{tCountry(city.country, lang)}</p>
                   </div>
                   <div className="text-right">
-                    <div className="text-sm font-medium text-foreground">{city.currency} {city.costPerMonth.toLocaleString("es-ES")}</div>
-                    <div className="text-xs text-muted">al mes</div>
+                    <div className="text-sm font-medium text-foreground">{city.currency} {formatMoney(city.costPerMonth, lang)}</div>
+                    <div className="text-xs text-muted">{d.monthly}</div>
                   </div>
                 </div>
                 <div className="flex gap-2 mt-3">
                   {city.hasBeach && (
-                    <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full">🏖 Playa</span>
+                    <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full">🏖 {d.beach}</span>
                   )}
                   <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full">⭐ {city.qualityOfLife}</span>
                   <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full">🛜 {city.internetSpeed} Mbps</span>
@@ -100,18 +106,18 @@ export default function Home() {
 
       {/* CTA */}
       <section className="border-t border-border py-20 text-center px-6">
-        <h2 className="text-3xl font-semibold mb-4">¿Listo para encontrar tu ciudad?</h2>
-        <p className="text-muted mb-8">Compara todas las métricas que importan en un solo lugar.</p>
+        <h2 className="text-3xl font-semibold mb-4">{d.ctaTitle}</h2>
+        <p className="text-muted mb-8">{d.ctaSubtitle}</p>
         <Link href="/cities" className="bg-accent text-white px-8 py-3 rounded-full font-medium text-sm hover:opacity-90 transition-opacity">
-          Ver las 20 ciudades →
+          {d.ctaButton(cities.length)}
         </Link>
       </section>
 
       {/* Footer */}
       <footer className="border-t border-border py-8 px-6 text-center text-xs text-muted">
-        Roavio · Datos de coste, internet, seguridad y calidad de vida basados en Numbeo y Speedtest Global Index (Ookla) · Actualizado 2026
+        {d.footerText}
         <span className="mx-2">·</span>
-        <Link href="/feedback" className="hover:text-accent transition-colors">Feedback</Link>
+        <Link href="/feedback" className="hover:text-accent transition-colors">{d.footerFeedback}</Link>
       </footer>
     </main>
   );

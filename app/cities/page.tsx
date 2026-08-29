@@ -4,11 +4,14 @@ import { useState } from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import { cities, City } from "@/data/cities";
+import { useLanguage } from "@/lib/i18n";
+import { t, formatMoney, tCountry, tContinent } from "@/lib/dictionary";
 
-const continents = ["Todos", "Europa", "Asia", "América", "Oriente Medio"];
-const climates = ["Todos", "Mediterráneo", "Tropical", "Continental", "Subtropical", "Templado", "Desértico"];
+const continentValues = ["Todos", "Europa", "Asia", "América", "Norteamérica", "Oriente Medio"];
 
 export default function CitiesPage() {
+  const { lang } = useLanguage();
+  const d = t(lang);
   const [search, setSearch] = useState("");
   const [continent, setContinent] = useState("Todos");
   const [beachOnly, setBeachOnly] = useState(false);
@@ -17,7 +20,10 @@ export default function CitiesPage() {
 
   const filtered = cities
     .filter((c) => {
-      const matchSearch = c.name.toLowerCase().includes(search.toLowerCase()) || c.country.toLowerCase().includes(search.toLowerCase());
+      const matchSearch =
+        c.name.toLowerCase().includes(search.toLowerCase()) ||
+        c.country.toLowerCase().includes(search.toLowerCase()) ||
+        tCountry(c.country, lang).toLowerCase().includes(search.toLowerCase());
       const matchContinent = continent === "Todos" || c.continent === continent;
       const matchBeach = !beachOnly || c.hasBeach;
       const matchBudget = c.costPerMonth <= maxBudget;
@@ -38,15 +44,15 @@ export default function CitiesPage() {
       <div className="max-w-7xl mx-auto px-6 pt-24 pb-16">
         {/* Header */}
         <div className="mb-8">
-          <h1 className="text-3xl font-semibold mb-1">Explorar ciudades</h1>
-          <p className="text-muted text-sm">{filtered.length} ciudades encontradas</p>
+          <h1 className="text-3xl font-semibold mb-1">{d.exploreTitle}</h1>
+          <p className="text-muted text-sm">{d.citiesFound(filtered.length)}</p>
         </div>
 
         {/* Search + Sort */}
         <div className="flex flex-col sm:flex-row gap-3 mb-6">
           <input
             type="text"
-            placeholder="Buscar ciudad o país..."
+            placeholder={d.searchPlaceholder}
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             className="flex-1 bg-card border border-border rounded-xl px-4 py-2.5 text-sm text-foreground placeholder-muted focus:outline-none focus:border-accent"
@@ -56,33 +62,33 @@ export default function CitiesPage() {
             onChange={(e) => setSortBy(e.target.value)}
             className="bg-card border border-border rounded-xl px-4 py-2.5 text-sm text-foreground focus:outline-none focus:border-accent"
           >
-            <option value="name">Ordenar: A–Z</option>
-            <option value="cost">Ordenar: Más barato</option>
-            <option value="quality">Ordenar: Calidad de vida</option>
-            <option value="safety">Ordenar: Seguridad</option>
-            <option value="internet">Ordenar: Internet</option>
+            <option value="name">{d.sortName}</option>
+            <option value="cost">{d.sortCost}</option>
+            <option value="quality">{d.sortQuality}</option>
+            <option value="safety">{d.sortSafety}</option>
+            <option value="internet">{d.sortInternet}</option>
           </select>
         </div>
 
         {/* Filters */}
         <div className="flex flex-wrap gap-2 mb-8">
-          {continents.map((c) => (
+          {continentValues.map((c) => (
             <button
               key={c}
               onClick={() => setContinent(c)}
               className={`text-xs px-3 py-1.5 rounded-full border transition-colors ${continent === c ? "bg-accent text-white border-accent" : "border-border text-muted hover:border-accent"}`}
             >
-              {c}
+              {c === "Todos" ? d.filterAll : tContinent(c, lang)}
             </button>
           ))}
           <button
             onClick={() => setBeachOnly(!beachOnly)}
             className={`text-xs px-3 py-1.5 rounded-full border transition-colors ${beachOnly ? "bg-accent text-white border-accent" : "border-border text-muted hover:border-accent"}`}
           >
-            🏖 Solo playa
+            🏖 {d.filterBeachOnly}
           </button>
           <div className="flex items-center gap-2 ml-2">
-            <span className="text-xs text-muted">Presupuesto máx:</span>
+            <span className="text-xs text-muted">{d.maxBudget}</span>
             <input
               type="range"
               min={500}
@@ -92,35 +98,35 @@ export default function CitiesPage() {
               onChange={(e) => setMaxBudget(Number(e.target.value))}
               className="w-24 accent-accent"
             />
-            <span className="text-xs text-muted w-16">€{maxBudget.toLocaleString("es-ES")}</span>
+            <span className="text-xs text-muted w-16">€{formatMoney(maxBudget, lang)}</span>
           </div>
         </div>
 
         {/* Grid */}
         {filtered.length === 0 ? (
           <div className="text-center py-20 text-muted">
-            <p className="text-lg">No se encontraron ciudades</p>
-            <p className="text-sm mt-2">Prueba a cambiar los filtros</p>
+            <p className="text-lg">{d.noCitiesFound}</p>
+            <p className="text-sm mt-2">{d.tryOtherFilters}</p>
           </div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {filtered.map((city) => (
-              <CityCard key={city.slug} city={city} />
+              <CityCard key={city.slug} city={city} lang={lang} monthly={d.monthly} />
             ))}
           </div>
         )}
       </div>
 
       <footer className="border-t border-border py-8 px-6 text-center text-xs text-muted">
-               Roavio · Datos de coste, internet, seguridad y calidad de vida basados en Numbeo y Speedtest Global Index (Ookla) · Actualizado 2026
+        {d.footerText}
         <span className="mx-2">·</span>
-        <Link href="/feedback" className="hover:text-accent transition-colors">Feedback</Link>
+        <Link href="/feedback" className="hover:text-accent transition-colors">{d.footerFeedback}</Link>
       </footer>
     </main>
   );
 }
 
-function CityCard({ city }: { city: City }) {
+function CityCard({ city, lang, monthly }: { city: City; lang: "es" | "en"; monthly: string }) {
   return (
     <Link href={`/cities/${city.slug}`} className="group relative overflow-hidden rounded-2xl border border-border hover:border-accent transition-all duration-300">
       <img
@@ -133,11 +139,11 @@ function CityCard({ city }: { city: City }) {
         <div className="flex items-end justify-between mb-2">
           <div>
             <h3 className="text-sm font-semibold leading-tight text-foreground">{city.name}</h3>
-            <p className="text-xs text-muted">{city.country}</p>
+            <p className="text-xs text-muted">{tCountry(city.country, lang)}</p>
           </div>
           <div className="text-right">
-            <div className="text-sm font-medium text-foreground">{city.currency} {city.costPerMonth.toLocaleString("es-ES")}</div>
-            <div className="text-xs text-muted">al mes</div>
+            <div className="text-sm font-medium text-foreground">{city.currency} {formatMoney(city.costPerMonth, lang)}</div>
+            <div className="text-xs text-muted">{monthly}</div>
           </div>
         </div>
         <div className="flex gap-1.5 flex-wrap">
