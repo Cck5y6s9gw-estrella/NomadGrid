@@ -1329,4 +1329,107 @@ export const cityGuides: Record<string, CityGuide> = {
       ],
     },
   },
+  colombo: {
+    visaFiscal: {
+      content: "Un ciudadano español puede entrar en Sri Lanka con la autorización electrónica de viaje (ETA), gratuita desde 2026 para más de 40 nacionalidades entre las que se incluye España, y que permite una estancia inicial de hasta 30 días con dos entradas dentro de ese periodo. Esta autorización turística se puede ampliar sucesivamente hasta acumular un máximo teórico de 270 días, tramitando cada extensión de forma online en el portal eta.gov.lk o presencialmente en el Departamento de Inmigración de Colombo, aunque no está pensada legalmente para ejercer trabajo remoto de forma continuada. Para una estancia más estable, Sri Lanka introdujo en 2026 un visado de nómada digital que exige ingresos mínimos de 2.000 dólares mensuales procedentes de fuentes extranjeras, certificado de antecedentes penales, seguro médico internacional y una tasa de 500 dólares por persona; concede un año de residencia legal renovable, aunque su renovación exige acreditar el registro fiscal ante el Departamento de Rentas Internas de Sri Lanka. En materia fiscal, ni la ETA ni el visado de nómada digital eximen de tributar en España: quien pasa más de 183 días al año en territorio español, o mantiene allí el centro de sus intereses económicos, sigue siendo considerado residente fiscal español y debe declarar su renta mundial en la Agencia Tributaria con independencia de dónde trabaje físicamente.",
+      sources: [
+        { label: "Sri Lanka Digital Nomad Visa 2026 – Citizen Remote", url: "https://citizenremote.com/visas/sri-lanka-digital-nomad-visa/" },
+        { label: "Sri Lanka ETA: Visa Fees Waived for 40 Nationalities en 2026 – VisaMundi", url: "https://www.visamundi.co/en/blog/sri-lanka-eta-visa-fees-waived-2026/" },
+        { label: "Guía completa del visado de turista de Sri Lanka 2026 – Sithiyam Travel", url: "https://www.sithiyam.com/post/sri-lanka-tourist-visa-guide-2026" },
+      ],
+    },
+    sanidad: {
+      content: "El sistema público de Sri Lanka ofrece atención gratuita a sus ciudadanos pero presenta largas listas de espera para servicios especializados, por lo que los extranjeros residentes recurren de forma casi generalizada a la sanidad privada, concentrada sobre todo en Colombo. Hospitales como Nawaloka Hospital, Asiri Health y Lanka Hospitals cuentan con personal que habla inglés, especialistas formados en el extranjero y estándares de atención comparables a los occidentales en las principales especialidades, aunque la calidad se reduce notablemente fuera de la capital y de las grandes ciudades. Se recomienda encarecidamente contratar un seguro médico internacional antes de instalarse, tanto porque el visado de nómada digital lo exige como requisito de entrada como por la posibilidad de necesitar una evacuación médica, un gasto que sin cobertura puede alcanzar varios miles de dólares. Antes del viaje conviene revisar el calendario de vacunación (hepatitis A y B, fiebre tifoidea y, según la zona, profilaxis antipalúdica) y durante la estancia extremar precauciones frente al dengue, transmitido por mosquitos y presente de forma habitual en la isla, además de evitar el agua del grifo y optar por agua embotellada.",
+      sources: [
+        { label: "Sri Lanka Health Insurance for Expats – Pacific Prime", url: "https://www.pacificprime.com/country/asia/sri-lanka-health-insurance/" },
+        { label: "Sri Lanka Healthcare System & Medical Insurance Options – Expat Financial", url: "https://expatfinancial.com/healthcare-information-by-region/asian-healthcare-system/sri-lanka-healthcare-system/" },
+        { label: "Nawaloka Hospital – Wikipedia", url: "https://en.wikipedia.org/wiki/Nawaloka_Hospital" },
+      ],
+    },
+    barrios: {
+      content: "Colombo 7 (Cinnamon Gardens) es el barrio más prestigioso de la ciudad, con calles arboladas, mansiones de época colonial, los mejores colegios y hospitales privados y coworkings como Catalyst by Hub9 o The Office Colombo, aunque también los alquileres más elevados. Colombo 5 (Havelock Town) es la zona preferida por buena parte de la comunidad expatriada por su ubicación central, su mezcla de apartamentos modernos y casas coloniales, sus parques y colegios internacionales, y alberga espacios como Worx Jawatte House o CO-LABs, con cuotas de coworking que van desde unos 90 hasta más de 200 dólares al mes según los servicios incluidos. Colombo 3 (Kollupitiya), junto al frente marítimo de Galle Face Green, es la opción más cosmopolita y con más vida nocturna, mientras que Colombo 6 (Wellawatte) ofrece una alternativa más asequible con ambiente costero y buena oferta de restaurantes. Los alquileres de un apartamento de un dormitorio en estas zonas suelen moverse aproximadamente entre 300 y 600 dólares mensuales en Havelock Town o Wellawatte, y pueden superar los 1.000 dólares en los edificios más nuevos de Cinnamon Gardens o junto a Galle Face.",
+      sources: [
+        { label: "Exploring 9 Neighborhoods of Colombo – Luxe Nautilus Realty", url: "https://luxenautilusrealty.com/neighborhoods-of-colombo/" },
+        { label: "Best Coworking Spaces in Colombo (2026) – Geronimo AI", url: "https://geronimo-ai.com/best-coworking/colombo" },
+        { label: "Apartments for rent in Colombo 5 & suburbs – LankaPropertyWeb", url: "https://www.lankapropertyweb.com/rentals/lease-Colombo+All_Colombo+5-Apartment.html" },
+      ],
+    },
+  },
+  londres: {
+    visaFiscal: {
+      content: "Desde el Brexit, un ciudadano español ya no tiene libertad de movimiento en el Reino Unido y debe entrar como visitante estándar (Standard Visitor), lo que permite estancias de hasta seis meses sin necesidad de visado previo, pero con una prohibición general de trabajar para una empresa británica o como autónomo en el país. Desde enero de 2024, el Gobierno británico admite el llamado 'trabajo remoto incidental': responder correos, asistir a reuniones online o realizar tareas administrativas puntuales para un empleador extranjero mientras el propósito principal de la visita es turístico o de negocios, pero esta tolerancia no permite convertir el Reino Unido en base habitual de trabajo remoto ni encadenar visitas sucesivas con ese fin, algo que el Border Force vigila activamente. No existe un visado específico de nómada digital en el Reino Unido, por lo que quien quiera residir allí de forma prolongada y trabajar debe optar por rutas migratorias formales. A efectos fiscales españoles, mientras la estancia en el Reino Unido no supere los 183 días naturales en el año y no se traslade el centro de intereses económicos, el trabajador remoto sigue siendo residente fiscal en España y debe declarar sus ingresos allí; superar ese umbral o instalarse de facto puede abrir un conflicto de doble residencia entre ambas administraciones.",
+      sources: [
+        { label: "Standard Visitor visa – reglas de trabajo y estancia – GOV.UK", url: "https://www.gov.uk/standard-visitor-visa" },
+        { label: "Remote Working in the UK 2026: Visa & Immigration Rules – DavidsonMorris", url: "https://www.davidsonmorris.com/remote-work-immigration-visa-rules/" },
+        { label: "Spain tax residency: 183-day rule explained – Wise", url: "https://wise.com/us/blog/spain-tax-residency-183-days-rule" },
+      ],
+    },
+    sanidad: {
+      content: "Un visitante español en el Reino Unido no tiene acceso gratuito al NHS salvo en supuestos muy concretos: la atención de urgencias en A&E es gratuita, igual que el tratamiento de determinadas enfermedades infecciosas, pero la mayoría de la atención hospitalaria, las recetas, el dentista y el óptico se cobran aparte. La Tarjeta Sanitaria Europea (EHIC) española sigue siendo aceptada en el Reino Unido gracias al acuerdo de reciprocidad post-Brexit, lo que cubre parte de la atención médica necesaria durante la estancia, aunque no sustituye a un seguro de viaje completo. El NHS recomienda expresamente a los visitantes contratar un seguro médico privado, ya que quien no acredite cobertura puede enfrentarse a facturas equivalentes al 150% de la tarifa nacional del NHS por tratamientos no exentos. Un seguro de viaje o salud privado con cobertura médica de calidad en el Reino Unido suele costar entre 30 y 80 GBP al mes según edad y cobertura, una cifra que conviene sumar al presupuesto mensual de cualquier nómada digital que se instale temporalmente en Londres.",
+      sources: [
+        { label: "How to access NHS services in England if you are visiting from abroad – NHS", url: "https://www.nhs.uk/nhs-services/visiting-or-moving-to-england/how-to-access-nhs-services-in-england-if-you-are-visiting-from-abroad/" },
+        { label: "UK Global Health Insurance Card – Wikipedia", url: "https://en.wikipedia.org/wiki/UK_Global_Health_Insurance_Card" },
+        { label: "Overseas visitors and charges – British Medical Association", url: "https://www.bma.org.uk/advice-and-support/ethics/refugees-overseas-visitors-and-vulnerable-migrants/access-to-healthcare-for-overseas-visitors/overseas-visitors-and-charges" },
+      ],
+    },
+    barrios: {
+      content: "Shoreditch y Hoxton, en el este de Londres, son el epicentro histórico de la escena creativa y tecnológica, con una altísima densidad de cafeterías aptas para trabajar y coworkings como WeWork, Huckletree o Uncommon; los alquileres de un dormitorio en la zona suelen moverse entre 1.600 y 2.700 GBP al mes. Hackney, justo al norte, ofrece un ambiente más residencial y asequible sin perder la cercanía a la vida nocturna y los espacios de trabajo compartido del este londinense. Canary Wharf, el distrito financiero, concentra oficinas corporativas y coworkings orientados a finanzas y consultoría, con conexiones rápidas en metro al centro, aunque el ambiente es más corporativo que bohemio. Para quien busca un ritmo más tranquilo y verde sin renunciar a buena conexión de transporte, Clapham y Crystal Palace combinan parques, cafés con buen wifi y trenes de 20-35 minutos hasta el centro; el alquiler medio de un piso de un dormitorio en Londres en su conjunto ronda las 1.750 GBP mensuales, con un rango habitual de 1.350 a 2.700 GBP según la zona.",
+      sources: [
+        { label: "London's Top Neighbourhoods for Digital Nomads – Coworking London", url: "https://www.coworkinglondon.com/londons-top-neighbourhoods-for-digital-nomads/" },
+        { label: "10 Awesome Yet Affordable Coworking Spaces in London – Coworking Mag", url: "https://coworkingmag.com/united-kingdom/coworking-space-london/" },
+        { label: "Updated Rents in London (2026) – Investropa", url: "https://investropa.com/blogs/news/london-rents" },
+      ],
+    },
+  },
+  seattle: {
+    visaFiscal: {
+      content: "Estados Unidos no ofrece ningún visado de nómada digital, a diferencia de países como España o Portugal. Los ciudadanos españoles pueden entrar sin visado previo mediante el Programa de Exención de Visado (ESTA), válido para estancias de hasta 90 días con fines de turismo o negocios, pero la normativa migratoria estadounidense es explícita: trabajar en remoto para un empleador extranjero mientras se está físicamente en el país no está autorizado bajo el estatus de visitante B-2 ni bajo ESTA. No se trata de una zona gris real, sino de una infracción técnica que en la práctica rara vez se detecta pero que expone a riesgos serios: denegación de entrada, cancelación del ESTA o inadmisibilidad futura si un oficial de aduanas considera que la actividad constituye 'trabajo'. El visado B-1 de visitante de negocios permite asistir a reuniones o negociar contratos, pero tampoco cubre el trabajo remoto continuado. Además, quien pase largas temporadas en Estados Unidos debe vigilar su residencia fiscal en España: estancias prolongadas en EE. UU. pueden activar el 'Substantial Presence Test' del IRS, generando una posible doble obligación tributaria que conviene consultar con un asesor fiscal antes de planificar estancias largas.",
+      sources: [
+        { label: "¿Pueden los nómadas digitales trabajar legalmente en EE. UU.? – RJ Immigration Law", url: "https://rjimmigrationlaw.com/resources/can-digital-nomads-legally-work-in-the-u-s/" },
+        { label: "Working Remotely in the US: Visas, Taxes and Legal Rules – Expatica", url: "https://www.expatica.com/us/working/employment-basics/working-remotely-in-the-us-2174135/" },
+        { label: "USA Digital Nomad Visa 2026 – Citizen Remote", url: "https://citizenremote.com/visas/digital-nomad-visa-usa/" },
+      ],
+    },
+    sanidad: {
+      content: "La sanidad en Estados Unidos es privada y notoriamente cara para cualquier visitante que no cuente con un seguro médico adecuado, ya que el sistema público no cubre a extranjeros de paso. Una simple consulta con un médico general sin seguro puede costar entre 150 y 400 dólares, mientras que una visita a urgencias por algo tan común como una deshidratación o una infección puede fácilmente superar los 1.000 a 3.000 dólares, y las cifras se disparan si hace falta hospitalización o cirugía. Por ello es imprescindible contratar un seguro de viaje o salud internacional con cobertura específica para EE. UU. antes de llegar a Seattle, revisando que incluya evacuación médica y una cobertura mínima de 50.000 a 100.000 dólares. La tarjeta sanitaria europea no tiene validez en territorio estadounidense, por lo que quienes viajen desde España deben tratar el seguro médico como un gasto obligatorio, no opcional, dentro del presupuesto mensual.",
+      sources: [
+        { label: "¿Qué pasa si un turista enferma en EE. UU. sin seguro? – Visitor Guard", url: "https://www.visitorguard.com/tourist-gets-sick-in-the-us-without-insurance/" },
+        { label: "Coste del seguro médico de viaje para visitantes a EE. UU. 2026 – Visitor Guard", url: "https://www.visitorguard.com/travel-medical-insurance-cost-visitors-us/" },
+        { label: "¿Necesitas seguro de viaje para visitar EE. UU.? – MoneyGeek", url: "https://www.moneygeek.com/insurance/travel/usa-visitors/" },
+      ],
+    },
+    barrios: {
+      content: "Capitol Hill es el barrio favorito de la comunidad creativa y tecnológica joven, con una vida nocturna intensa, cafeterías con buen wifi y el coworking boutique The Cloud Room, con bonos de día desde unos 40 dólares y membresías mensuales entre 160 y 590 dólares; el alquiler de un estudio en la zona ronda los 1.600 dólares al mes. Fremont y Ballard, al norte del canal, ofrecen un ambiente más tranquilo y residencial con mercados de artesanos, cervecerías y el espacio comunitario Collective Chemistry en Fremont, orientado a autónomos y creativos. Belltown y el centro concentran las opciones más profesionales, como el histórico The Pioneer Collective o el WeWork de Hawk Tower, con vistas al skyline; los alquileres de un apartamento de un dormitorio en el centro rondan los 2.200 dólares mensuales, cifra representativa del conjunto de la ciudad. Para quienes buscan algo más económico, Wallingford ofrece el espacio cooperativo Works Progress Cooperative desde 225 dólares al mes, y Lake Union cuenta con Thinkspace, un coworking junto al lago muy popular entre startups.",
+      sources: [
+        { label: "6 mejores coworkings en Seattle para trabajadores remotos – The Nomad Cloud", url: "https://thenomadcloud.com/6-best-coworking-spaces-in-seattle-for-remote-workers/" },
+        { label: "Dónde alojarse en Seattle: 12 mejores zonas para nómadas digitales – Hello Landing", url: "https://www.hellolanding.com/blog/where-to-stay-in-seattle/" },
+        { label: "Alquiler medio en Seattle, WA por barrio 2026 – RentCafe", url: "https://www.rentcafe.com/average-rent-market-trends/us/wa/seattle/" },
+      ],
+    },
+  },
+  toronto: {
+    visaFiscal: {
+      content: "Los ciudadanos españoles pueden entrar en Canadá como visitantes sin necesidad de visado tradicional, pero sí deben solicitar una autorización electrónica de viaje (eTA) antes de volar, un trámite online rápido y de bajo coste. Como visitantes, pueden permanecer en el país hasta seis meses por estancia, aunque el oficial de fronteras tiene la última palabra sobre la duración exacta autorizada en cada entrada. El problema es que Canadá no dispone, a día de hoy, de un visado de nómada digital: la práctica habitual de trabajar remotamente para un empleador o clientes extranjeros mientras se está de visita se tolera de facto en la frontera, pero no está regulada explícitamente por Immigration, Refugees and Citizenship Canada (IRCC), lo que la sitúa en una zona gris legal que exige discreción y honestidad si se pregunta en el control migratorio. En materia fiscal, quien mantenga su residencia habitual en España (pasando más de 183 días al año en territorio español o teniendo allí el centro de sus intereses económicos) seguirá siendo residente fiscal español y deberá declarar sus ingresos globales a la Agencia Tributaria, independientemente del tiempo que pase trabajando desde Toronto.",
+      sources: [
+        { label: "eTA: datos básicos – Gobierno de Canadá (IRCC)", url: "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta/facts.html" },
+        { label: "Canada Digital Nomad Visa: Requirements and program – Saily", url: "https://saily.com/blog/canada-digital-nomad-visa/" },
+        { label: "Residencia fiscal en España: la regla de los 183 días – Infohispanos", url: "https://infohispanos.com/residencia-fiscal-espana-183-dias/" },
+      ],
+    },
+    sanidad: {
+      content: "El sistema público de salud de Ontario (OHIP) no está disponible para visitantes temporales ni para no residentes: solo cubre a quienes cumplen requisitos de residencia permanente en la provincia, por lo que ningún nómada digital extranjero puede acceder a él durante una estancia turística. Esto convierte la contratación de un seguro médico de viaje privado en un requisito prácticamente obligatorio, ya que la atención médica de urgencia en Canadá sin cobertura puede resultar extremadamente cara. El coste de un seguro de viajero para Canadá ronda entre 50 y 400 dólares canadienses al mes según la edad y la cobertura elegida; para una persona de entre 30 y 45 años con una cobertura estándar de 100.000 dólares canadienses, el coste habitual se sitúa en torno a 90-105 CAD mensuales. Es recomendable contratar una póliza que cubra específicamente urgencias, hospitalización y repatriación antes de viajar, y revisar bien las exclusiones por condiciones preexistentes.",
+      sources: [
+        { label: "OHIP coverage while outside Canada – Government of Ontario", url: "https://www.ontario.ca/page/ohip-coverage-while-outside-canada" },
+        { label: "Cost of Visitor Insurance to Canada in 2026 – PolicyAdvisor", url: "https://www.policyadvisor.com/visitor-insurance-canada/cost-of-visitors-insurance-to-canada/" },
+      ],
+    },
+    barrios: {
+      content: "Para quienes trabajan en remoto, los barrios más recomendables de Toronto combinan buena conexión de transporte, ambiente joven y oferta de cafeterías y espacios de coworking. The Annex, cerca de la Universidad de Toronto, ofrece precios algo más asequibles y gran vida universitaria; Queen West y Liberty Village son zonas muy populares entre profesionales jóvenes, con antiguos edificios industriales convertidos en lofts, bares y estudios; y Kensington Market aporta un ambiente bohemio y multicultural con mercados y cafés independientes ideales para trabajar por horas. En cuanto a coworkings, destacan WeWork (varias sedes, desde unos 370 CAD al mes por escritorio compartido), East Room en Riverside (desde 245 CAD/mes) y WorkHaus, con membresías flexibles mes a mes. Los alquileres varían mucho según la zona: un apartamento de una habitación en pleno centro ronda los 1.800 CAD al mes, mientras que compartir piso en barrios como Annex, Queen West o Danforth puede bajar el coste a unos 800 CAD por persona.",
+      sources: [
+        { label: "The Full Digital Nomad Guide to Toronto – Digital Nomads World", url: "https://digitalnomads.world/city-guide/toronto/" },
+        { label: "51 Best Coworking Spaces in Toronto – DropDesk Blog", url: "https://drop-desk.com/blog/best/coworking-spaces-toronto/" },
+        { label: "Cost of Living in Toronto – Numbeo", url: "https://www.numbeo.com/cost-of-living/in/Toronto" },
+      ],
+    },
+  },
 };
