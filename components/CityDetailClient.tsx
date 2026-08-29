@@ -5,6 +5,7 @@ import Navbar from "./Navbar";
 import CityGuideSection from "./CityGuideSection";
 import { cities, type City } from "@/data/cities";
 import { visaDisclaimer, visaDisclaimerEn, type CityGuide } from "@/data/cityGuides";
+import { cityGuidesEn } from "@/data/cityGuidesEn";
 import { useLanguage } from "@/lib/i18n";
 import { t, formatMoney, tCountry, tContinent, tClimate } from "@/lib/dictionary";
 import { getCityInsights } from "@/lib/cityInsights";
@@ -14,6 +15,10 @@ export default function CityDetailClient({ city, guide }: { city: City; guide: C
   const d = t(lang);
 
   const { strengths, considerations } = getCityInsights(city, cities, lang);
+
+  const guideEn = cityGuidesEn[city.slug];
+  const hasEnGuide = Boolean(guideEn);
+  const activeGuide = lang === "en" && guideEn ? guideEn : guide;
 
   const stats = [
     { label: d.statCostMonth, value: `${city.currency} ${formatMoney(city.costPerMonth, lang)}`, icon: "💰" },
@@ -129,14 +134,14 @@ export default function CityDetailClient({ city, guide }: { city: City; guide: C
                 <div className="bg-card border border-border rounded-2xl p-4 text-xs text-muted leading-relaxed">
                   {lang === "en" ? visaDisclaimerEn : visaDisclaimer}
                 </div>
-                {lang === "en" && (
+                {lang === "en" && !hasEnGuide && (
                   <div className="bg-accent/5 border border-accent/20 rounded-2xl p-4 text-xs text-muted leading-relaxed">
                     {d.guideNotTranslatedYet}
                   </div>
                 )}
-                <CityGuideSection title={d.visaFiscal} section={guide.visaFiscal} sourcesLabel={d.sources} />
-                <CityGuideSection title={d.sanidad} section={guide.sanidad} sourcesLabel={d.sources} />
-                <CityGuideSection title={d.barrios} section={guide.barrios} sourcesLabel={d.sources} />
+                <CityGuideSection title={d.visaFiscal} section={activeGuide.visaFiscal} sourcesLabel={d.sources} />
+                <CityGuideSection title={d.sanidad} section={activeGuide.sanidad} sourcesLabel={d.sources} />
+                <CityGuideSection title={d.barrios} section={activeGuide.barrios} sourcesLabel={d.sources} />
               </>
             )}
 
