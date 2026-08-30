@@ -25,6 +25,10 @@ export const countryNames: Record<string, string> = {
   "Estados Unidos": "United States",
   "Canadá": "Canada",
   "China": "China",
+  "Sudáfrica": "South Africa",
+  "Taiwán": "Taiwan",
+  "Bulgaria": "Bulgaria",
+  "Serbia": "Serbia",
 };
 
 export const continentNames: Record<string, string> = {
@@ -33,6 +37,7 @@ export const continentNames: Record<string, string> = {
   "América": "Americas",
   "Norteamérica": "North America",
   "Oriente Medio": "Middle East",
+  "África": "Africa",
 };
 
 export const climateNames: Record<string, string> = {
