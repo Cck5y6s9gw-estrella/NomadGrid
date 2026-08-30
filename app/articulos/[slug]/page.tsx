@@ -18,6 +18,18 @@ export async function generateMetadata({
   return {
     title: `${article.title.es} | Roavio`,
     description: article.dek.es,
+    openGraph: {
+      title: article.title.es,
+      description: article.dek.es,
+      url: `https://roavio.es/articulos/${article.slug}`,
+      images: [{ url: article.cover, width: 1600, height: 900 }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: article.title.es,
+      description: article.dek.es,
+      images: [article.cover],
+    },
   };
 }
 
