@@ -858,7 +858,7 @@ export const cities: City[] = [
     country: "Portugal",
     continent: "Europa",
     description: { es: "Braga es una de las ciudades más antiguas de Portugal (de origen romano, la antigua Bracara Augusta) y hoy combina un centro histórico monumental —con el santuario de Bom Jesus do Monte como gran icono— con un coste de vida claramente más bajo que Lisboa y Oporto. Es sede de la Universidad do Minho, lo que le da una población joven y una vida cultural muy activa, y en los últimos años ha desarrollado un ecosistema tecnológico creciente que convive con su carácter tradicional. Está a menos de una hora en tren de Oporto, lo que facilita el acceso a un aeropuerto internacional sin vivir en una gran ciudad.", en: "Braga is one of Portugal's oldest cities (of Roman origin, the ancient Bracara Augusta) and today combines a monumental historic centre — with the Bom Jesus do Monte sanctuary as its great icon — with a cost of living noticeably lower than Lisbon or Porto. It's home to the University of Minho, giving it a young population and a lively cultural scene, and in recent years it has developed a growing tech ecosystem alongside its traditional character. It sits under an hour by train from Porto, giving easy access to an international airport without living in a big city." },
-    imageUrl: "https://images.unsplash.com/photo-1761071300593-901f8d4c6a98?w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1568473743492-31c69e885c0f?w=800&q=80",
     costPerMonth: 676,
     currency: "EUR",
     internetSpeed: 237,
