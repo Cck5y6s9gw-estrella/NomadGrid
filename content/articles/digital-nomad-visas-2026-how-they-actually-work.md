@@ -4,7 +4,7 @@ title_en: "Digital Nomad Visas in 2026: How They Actually Work"
 dek_es: "No todos los 'visados de nómada digital' son lo mismo, y a veces el visado de turista que ya tienes es suficiente. Esto es lo que hay que entender antes de comprometerte con un país."
 dek_en: "Not every 'digital nomad visa' is the same thing, and sometimes the tourist stay you already have is enough. Here's what to actually understand before committing to a country."
 date: "2026-08-30"
-cover: "/articles/digital-nomad-visas-2026-how-they-actually-work.png"
+cover: "https://images.unsplash.com/photo-1581553673739-c4906b5d0de8?w=1600&q=80"
 ---
 El término "visado de nómada digital" se usa para cosas muy distintas, y esa confusión es la causa de la mayoría de los problemas legales que se pueden evitar. Antes de decidir si necesitas uno para un país concreto, conviene entender qué tipo de estancia estás mirando en realidad, porque no todas implican los mismos trámites, plazos ni obligaciones fiscales.
 
