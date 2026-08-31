@@ -69,18 +69,12 @@ export default function Navbar() {
             when="signed-in"
             fallback={
               <SignInButton mode="modal">
-                <button className="text-sm text-muted hover:text-accent transition-colors">
+                <button className="text-xs font-medium tracking-wide text-accent border border-accent/50 rounded-full px-4 py-1.5 hover:bg-accent hover:text-white hover:border-accent transition-all duration-200 shadow-[0_0_0_1px_rgba(234,88,12,0.08)]">
                   {d.signIn}
                 </button>
               </SignInButton>
             }
           >
-            <Link
-              href="/favoritos"
-              className="text-sm text-muted hover:text-accent transition-colors hidden sm:inline"
-            >
-              {d.navFavorites}
-            </Link>
             <UserButton />
           </Show>
 
