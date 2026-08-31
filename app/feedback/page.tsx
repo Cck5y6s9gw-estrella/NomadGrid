@@ -58,11 +58,7 @@ export default function FeedbackPage() {
 
         <div className="bg-accent/10 border border-accent/30 rounded-2xl px-5 py-4 mb-8 flex items-start gap-3">
           <span className="text-lg leading-none mt-0.5">💬</span>
-          <p className="text-sm text-foreground">
-            {d.feedbackIncentivePre}
-            <strong>{d.feedbackIncentiveName}</strong>
-            {d.feedbackIncentivePost}
-          </p>
+          <p className="text-sm text-foreground">{d.feedbackIncentive}</p>
         </div>
 
         {status === "success" ? (
