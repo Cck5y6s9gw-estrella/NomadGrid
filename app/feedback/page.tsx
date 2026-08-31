@@ -4,24 +4,24 @@ import { useState } from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import { trackEvent } from "@/lib/gtag";
-
-const types = [
-  "Feedback general",
-  "Incidencia o error",
-  "Sugerencia de ciudad",
-  "Otra cosa",
-];
+import { useLanguage } from "@/lib/i18n";
+import { t } from "@/lib/dictionary";
 
 export default function FeedbackPage() {
+  const { lang } = useLanguage();
+  const d = t(lang);
+  const types = d.feedbackTypes;
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [type, setType] = useState(types[0]);
+  const [typeIndex, setTypeIndex] = useState(0);
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("loading");
+    const type = types[typeIndex];
     try {
       const res = await fetch("/api/feedback", {
         method: "POST",
@@ -33,7 +33,7 @@ export default function FeedbackPage() {
       setStatus("success");
       setName("");
       setEmail("");
-      setType(types[0]);
+      setTypeIndex(0);
       setMessage("");
     } catch {
       setStatus("error");
@@ -46,20 +46,22 @@ export default function FeedbackPage() {
 
       <div className="max-w-xl mx-auto px-6 pt-28 pb-20">
         <div className="mb-10">
-          <div className="text-xs font-medium tracking-widest text-accent uppercase mb-3">Feedback</div>
+          <div className="text-xs font-medium tracking-widest text-accent uppercase mb-3">
+            {d.feedbackBadge}
+          </div>
           <h1 className="text-3xl font-semibold mb-2 tracking-tight">
-            Cuéntanos qué <span className="text-accent">falta</span>
+            {d.feedbackTitlePre}
+            <span className="text-accent">{d.feedbackTitleHighlight}</span>
           </h1>
-          <p className="text-muted text-sm">
-            Roavio está en beta. Si algo no funciona, echas en falta una ciudad, o tienes una idea, este es el sitio.
-          </p>
+          <p className="text-muted text-sm">{d.feedbackSubtitle}</p>
         </div>
 
         <div className="bg-accent/10 border border-accent/30 rounded-2xl px-5 py-4 mb-8 flex items-start gap-3">
           <span className="text-lg leading-none mt-0.5">💬</span>
           <p className="text-sm text-foreground">
-            Cada mensaje lo lee <strong>Álvaro</strong> en persona, no un equipo de soporte. Roavio se está construyendo
-            ahora mismo con lo que nos contáis: si algo te falta o no te convence, es el momento de decirlo.
+            {d.feedbackIncentivePre}
+            <strong>{d.feedbackIncentiveName}</strong>
+            {d.feedbackIncentivePost}
           </p>
         </div>
 
@@ -68,45 +70,47 @@ export default function FeedbackPage() {
             <div className="w-10 h-10 rounded-full bg-accent/10 text-accent flex items-center justify-center mx-auto mb-4 text-lg">
               ✓
             </div>
-            <p className="text-foreground font-medium mb-1">Mensaje enviado</p>
-            <p className="text-muted text-sm mb-6">Gracias, lo leeré personalmente.</p>
+            <p className="text-foreground font-medium mb-1">{d.feedbackSuccessTitle}</p>
+            <p className="text-muted text-sm mb-6">{d.feedbackSuccessSubtitle}</p>
             <button
               onClick={() => setStatus("idle")}
               className="text-sm text-accent hover:underline"
             >
-              Enviar otro mensaje
+              {d.feedbackSendAnother}
             </button>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="bg-card border border-border rounded-2xl p-6 space-y-5">
             <div>
-              <label className="block text-sm text-muted mb-2">Tipo</label>
+              <label className="block text-sm text-muted mb-2">{d.feedbackTypeLabel}</label>
               <select
-                value={type}
-                onChange={(e) => setType(e.target.value)}
+                value={typeIndex}
+                onChange={(e) => setTypeIndex(Number(e.target.value))}
                 className="w-full bg-background border border-border rounded-xl px-3.5 py-2.5 text-sm text-foreground focus:outline-none focus:border-accent/60 transition-colors"
               >
-                {types.map((t) => (
-                  <option key={t} value={t}>{t}</option>
+                {types.map((typeLabel, i) => (
+                  <option key={typeLabel} value={i}>
+                    {typeLabel}
+                  </option>
                 ))}
               </select>
             </div>
 
             <div>
-              <label className="block text-sm text-muted mb-2">Mensaje</label>
+              <label className="block text-sm text-muted mb-2">{d.feedbackMessageLabel}</label>
               <textarea
                 required
                 rows={5}
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                placeholder="Cuéntanos con el máximo detalle posible..."
+                placeholder={d.feedbackMessagePlaceholder}
                 className="w-full bg-background border border-border rounded-xl px-3.5 py-2.5 text-sm text-foreground placeholder-muted focus:outline-none focus:border-accent/60 transition-colors resize-none"
               />
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block text-sm text-muted mb-2">Nombre (opcional)</label>
+                <label className="block text-sm text-muted mb-2">{d.feedbackNameLabel}</label>
                 <input
                   type="text"
                   value={name}
@@ -115,36 +119,36 @@ export default function FeedbackPage() {
                 />
               </div>
               <div>
-                <label className="block text-sm text-muted mb-2">Email (opcional)</label>
+                <label className="block text-sm text-muted mb-2">{d.feedbackEmailLabel}</label>
                 <input
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Si quieres respuesta"
+                  placeholder={d.feedbackEmailPlaceholder}
                   className="w-full bg-background border border-border rounded-xl px-3.5 py-2.5 text-sm text-foreground focus:outline-none focus:border-accent/60 transition-colors"
                 />
               </div>
             </div>
 
-            {status === "error" && (
-              <p className="text-sm text-red-400">Algo ha fallado. Inténtalo de nuevo en un momento.</p>
-            )}
+            {status === "error" && <p className="text-sm text-red-400">{d.feedbackError}</p>}
 
             <button
               type="submit"
               disabled={status === "loading"}
               className="w-full bg-accent text-white py-2.5 rounded-full font-medium text-sm hover:opacity-90 transition-opacity disabled:opacity-50"
             >
-              {status === "loading" ? "Enviando..." : "Enviar mensaje"}
+              {status === "loading" ? d.feedbackSubmitting : d.feedbackSubmit}
             </button>
           </form>
         )}
       </div>
 
       <footer className="border-t border-border py-8 px-6 text-center text-xs text-muted">
-        Roavio · Datos de coste, internet, seguridad y calidad de vida basados en Numbeo y Speedtest Global Index (Ookla) · Actualizado 2026
+        {d.footerText}
         <span className="mx-2">·</span>
-        <Link href="/feedback" className="hover:text-accent transition-colors">Feedback</Link>
+        <Link href="/feedback" className="hover:text-accent transition-colors">
+          {d.footerFeedback}
+        </Link>
       </footer>
     </main>
   );
