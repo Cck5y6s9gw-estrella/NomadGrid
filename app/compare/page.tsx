@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import { cities, City } from "@/data/cities";
 import { useLanguage, type Lang } from "@/lib/i18n";
 import { t, formatMoney, tCountry, tContinent, tClimate } from "@/lib/dictionary";
+import { trackEvent } from "@/lib/gtag";
 
 function buildMetrics(lang: Lang) {
   const d = t(lang);
@@ -38,7 +39,13 @@ export default function ComparePage() {
   const selectedCities = selected.map((s) => cities.find((c) => c.slug === s)!);
 
   const addCity = (slug: string) => {
-    if (selected.length < 3) setSelected([...selected, slug]);
+    if (selected.length < 3) {
+      const next = [...selected, slug];
+      setSelected(next);
+      if (next.length === 2) {
+        trackEvent("comparison_started", { cities: next.join(",") });
+      }
+    }
   };
 
   const removeCity = (slug: string) => {

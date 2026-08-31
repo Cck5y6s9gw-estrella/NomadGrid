@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
+import { trackEvent } from "@/lib/gtag";
 
 const types = [
   "Feedback general",
@@ -28,6 +29,7 @@ export default function FeedbackPage() {
         body: JSON.stringify({ name, email, type, message }),
       });
       if (!res.ok) throw new Error();
+      trackEvent("feedback_submitted", { type });
       setStatus("success");
       setName("");
       setEmail("");
