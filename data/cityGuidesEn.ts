@@ -280,4 +280,120 @@ export const cityGuidesEn: Record<string, CityGuide> = {
       ]
     }
   },
+  munich: {
+    visaFiscal: {
+      content: "As an EU citizen, a Spanish national can enter and reside in Germany without a visa, thanks to EU freedom of movement; a valid ID or passport is enough. There's no 90-day limit for EU citizens, but if the stay exceeds 90 days it's mandatory to register residence via the 'Anmeldung' process at the local Bürgeramt/Einwohnermeldeamt within 14 days of moving; you receive the 'Anmeldebestätigung', a document required for nearly every subsequent step (banking, health insurance, employment contract). To work as self-employed, the process is 'Gewerbeanmeldung' (commercial activity) or registering as a 'Freiberufler' (liberal profession, more common for consultants, programmers and creatives) with the Finanzamt, obtaining a tax ID (Steuer-ID). Germany offers the simplified 'Kleinunternehmerregelung' for small businesses: it exempts you from charging VAT if the previous year's income didn't exceed €25,000 and you don't expect to exceed €100,000 in the current year (figures still in force in 2026). Tax residents (more than 183 days/year) are taxed on worldwide income under German income tax (Einkommensteuer), with progressive rates up to 45%. Spain and Germany have a double taxation treaty.",
+      sources: [
+        { label: "iamexpat.de – Registering residence in Germany (Anmeldung)", url: "https://www.iamexpat.de/expat-info/immigration-residency/registration-germany-anmeldung" },
+        { label: "accountable.de – Kleinunternehmer regime 2026", url: "https://www.accountable.de/en/help-center/kleinunternehmer-in-2025-everything-you-need-to-know/" },
+        { label: "expatica.com – Freelancer taxes in Germany", url: "https://www.expatica.com/de/finance/taxes/tax-and-freelancers-in-germany-100950/" }
+      ]
+    },
+    sanidad: {
+      content: "In Germany, health insurance is mandatory for every resident, either through the public system (GKV) or private insurance (PKV). A Spanish citizen relocating short-term can use the European Health Insurance Card (EHIC), which covers necessary medical care during the first 90 days, but once established as a resident (Anmeldung) they must enroll in the German system. For employees, the contribution is 14.6% of gross salary split between employer and employee, while freelancers negotiate their rate directly with a public fund (TK, AOK, Barmer) or can opt for private insurance above a certain income threshold. German public healthcare is high quality, with access to top-tier specialists and hospitals, though waiting lists for non-urgent specialists can be longer than primary care. Private insurance offers single rooms and faster appointments, but switching back from private to public afterwards isn't always straightforward.",
+      sources: [
+        { label: "expatica.com – Guide to German health insurance", url: "https://www.expatica.com/de/healthcare/healthcare-basics/a-guide-to-german-health-insurance-693463/" },
+        { label: "iamexpat.de – Health insurance for expats in Germany", url: "https://www.iamexpat.de/expat-info/german-health-insurance" }
+      ]
+    },
+    barrios: {
+      content: "Schwabing: bohemian, university-adjacent neighborhood north of the center, next to the Englischer Garten; young vibe, plenty of wifi-friendly cafés and moderate nightlife; mid-to-high rents. Maxvorstadt: the museum and university district (LMU, TU München); a high density of libraries, work-friendly cafés and an active student/intellectual community; very central and well connected. Glockenbachviertel: trendy area south of the center, creative vibe, specialty bars, markets and one of the city's liveliest food scenes; popular with freelancers and designers; high prices offset by the social life. Haidhausen: quieter, more 'village-like' neighborhood east of the Isar river, with traditional Bavarian charm, better value than Schwabing or Glockenbachviertel, and easy S-Bahn/tram access to the center; ideal for those seeking calm without moving too far out.",
+      sources: [
+        { label: "iamexpat.de – Munich neighborhood guides", url: "https://www.iamexpat.de/expat-info" },
+        { label: "Migaku – Where to live in Munich, a neighborhood guide", url: "https://migaku.com/blog/language-fun/where-to-live-in-munich-a-neighborhood-guide-for-foreigners" }
+      ]
+    }
+  },
+  sevilla: {
+    visaFiscal: {
+      content: "For a Spanish citizen there's no visa process: settling in Seville is simply a change of residence within the country. The two key steps are municipal registration (empadronamiento) and, for the self-employed, registering with the Special Regime for Self-Employed Workers (RETA). Registration is handled at Seville's City Hall (Servicio de Estadística – Padrón Municipal), by appointment, and certifies residence in the city; it's required to access Andalusian public healthcare, schooling and other local procedures. Anyone registering as self-employed in 2026 can access the flat-rate scheme: an €80/month fixed contribution for the first 12 months, extendable to a second year if net earnings stay below the minimum wage; afterwards contributions shift to RETA's real-income-based bracket system. Requirements: not having been registered as self-employed in the previous 2 years, not being a collaborating self-employed worker, and having no debts with Social Security or the Tax Agency. The process is done through Importass (Social Security) together with tax registration at the Tax Agency (form 036/037). For income tax purposes, Andalusia has authority over the regional portion of the tax, with its own rate scale and deductions.",
+      sources: [
+        { label: "Seville City Council – Municipal registration", url: "https://www.sevilla.org/servicios/empadronamiento" },
+        { label: "InfoAutonomos – Self-employed flat-rate scheme", url: "https://www.infoautonomos.com/seguridad-social/tarifa-plana-autonomos/" },
+        { label: "Social Security – Self-employed registration", url: "https://www.seg-social.es/wps/portal/wss/internet/HerramientasWeb/9d2fd4f1-ab0f-42a6-8d10-2e74b378ee24" }
+      ]
+    },
+    sanidad: {
+      content: "In Seville, public healthcare falls under the Andalusian Health Service (SAS), the regional system managing primary care, hospitals, emergencies and prevention programs across Andalusia, within Spain's National Health System. To access it as a resident, you must be registered (empadronado) in the city and request the Andalusian Health Card through the SAS portal or the 'Salud Andalucía' app. The card assigns a local health center and family doctor based on your address, and enables access to ClicSalud+ for booking appointments, checking medical records and handling procedures online. Unlike other Spanish regions, each one manages its own health service (SAS in Andalusia, SERMAS in Madrid, ICS in Catalonia, etc.), so anyone moving from another region needs to re-register their local health card after registering at their new address. As a complement, there's a wide range of private health insurers in Seville (Sanitas, Adeslas, DKV, Asisa), useful for those seeking shorter waiting lists.",
+      sources: [
+        { label: "SAS – Andalusian Health Card", url: "https://www.sspa.juntadeandalucia.es/servicioandaluzdesalud/ciudadania/tarjeta-sanitaria-de-andalucia" },
+        { label: "Junta de Andalucía – Health card", url: "https://www.juntadeandalucia.es/temas/salud/servicios/tarjeta.html" }
+      ]
+    },
+    barrios: {
+      content: "Triana: across the Guadalquivir river, the neighborhood with the strongest flamenco and pottery tradition in Seville, with an authentic and lively atmosphere. Rents run around €700-750 for a one- or two-bedroom flat, with easy walking access to the center across the Triana bridge. Alameda de Hércules: the city's most bohemian and alternative neighborhood, packed with bars, terraces and restaurants; a favorite among young expats and digital nomads for its nightlife and proximity to the center and several coworking spaces. Nervión: a modern, commercial and business area, with good office and coworking supply; prices are higher (€850-1,385 for 2-3 bedrooms), but it offers more services and convenience. Los Remedios: a quiet, family-friendly residential neighborhood with wide avenues; prices are mid-to-high (€575-750 for 1-2 bedrooms) and it's a solid choice for those seeking calm without moving far from the center.",
+      sources: [
+        { label: "Holafly – Best neighborhoods in Seville", url: "https://esim.holafly.com/es/blog/expatriados/mejores-barrios-sevilla/" },
+        { label: "Holafly – Coworking in Seville", url: "https://esim.holafly.com/es/blog/nomada-digital/coworking-sevilla/" }
+      ]
+    }
+  },
+  paris: {
+    visaFiscal: {
+      content: "As an EU citizen, a Spanish national can enter, reside and work in France without a visa or residence permit, under EU freedom of movement. Unlike Germany, France doesn't require mandatory registration like 'Anmeldung' upon arrival. However, if the stay exceeds 3 months, it's advisable to be able to prove sufficient means, health insurance or economic activity, and it's recommended to request the Certificat d'Immatriculation at the prefecture if working or studying long-term. Anyone working will need to register for a numéro de sécurité sociale (through Assurance Maladie/CPAM) to access public healthcare and make contributions. For freelancers, the most common regime is auto-entrepreneur (micro-entrepreneur), which allows online registration at autoentrepreneur.urssaf.fr, with simplified social contributions calculated as a percentage of revenue (approx. 21.1-24.6% for services) and no need to charge VAT below certain thresholds (in 2026, around €39,100 for services). For tax purposes, a French tax resident (more than 183 days/year) is taxed under French income tax, with progressive rates up to 45%, and there's a double taxation treaty between Spain and France.",
+      sources: [
+        { label: "Europa.eu – Registering residence in the EU", url: "https://europa.eu/youreurope/citizens/residence/documents-formalities/registering-residence/index_es.htm" },
+        { label: "Spanish Ministry of Labour – Spaniards in France", url: "https://www.mites.gob.es/mundo/consejerias/francia/es/al-llegar/index.html" },
+        { label: "URSSAF – Auto-entrepreneur regime", url: "https://www.autoentrepreneur.urssaf.fr" }
+      ]
+    },
+    sanidad: {
+      content: "France has a universal public healthcare system managed by Assurance Maladie, under the framework of Protection Universelle Maladie (PUMA). PUMA guarantees healthcare coverage to anyone residing in France stably (more than 3 months) and legally, covering consultations, hospitalization and medication with a reimbursement rate (typically 70% for consultations, 80% for hospitalization). A resident Spanish citizen must register with the local Caisse Primaire d'Assurance Maladie (CPAM), providing a passport/ID and proof of stable residence, to obtain a numéro de sécurité sociale and, later, the Carte Vitale — the health card that enables automatic reimbursement of medical expenses. Since Sécurité Sociale doesn't cover 100% of medical costs, most residents take out a mutuelle (private supplementary insurance), covering the remaining co-payment and benefits not otherwise covered such as dental or vision; cost varies by age and coverage, starting around €30-50/month.",
+      sources: [
+        { label: "French-Property.com – Guide to PUMA", url: "https://www.french-property.com/guides/france/public-services/health/puma" },
+        { label: "Service-Public.fr – Universal health protection", url: "https://www.service-public.gouv.fr/particuliers/vosdroits/F32824" }
+      ]
+    },
+    barrios: {
+      content: "Le Marais (3rd and 4th arrondissement): historic, elegant and very lively, with museums, art galleries, cafés and design shops. High prices, but central and well connected; cosmopolitan vibe. Canal Saint-Martin (10th and 11th arrondissement): a creative, less touristy neighborhood with a bohemian feel along the canal, terraces and independent shops; more affordable than the center, with coworking spaces like Le Tank. Bastille (11th arrondissement): young, cultural energy, good nightlife, moderate prices, with coworking spaces like Remix Coworking Bastille. Montmartre (18th arrondissement): bohemian and artistic atmosphere, with theaters, cabarets and charming cafés; mid-range prices, somewhat removed from the business center but very well connected by metro.",
+      sources: [
+        { label: "Holafly – Best neighborhoods in Paris for expats", url: "https://esim.holafly.com/expats/best-neighborhood-stay-paris/" }
+      ]
+    }
+  },
+  milan: {
+    visaFiscal: {
+      content: "As a Spanish citizen, you enjoy free movement within the EU and can enter, reside and work in Italy without a visa. If your stay exceeds 3 months, you must register as an EU resident via iscrizione anagrafica at the relevant Comune, presenting a passport/ID, proof of accommodation and, if not employed, proof of sufficient economic resources and health insurance. The Comune has 2 working days to record the application and up to 45 days to verify actual residence. You'll also need to request a codice fiscale (equivalent to Spain's NIE/NIF), required for almost any procedure. To work as self-employed, you need to open a partita IVA. Many digital nomads opt for the regime forfettario, a simplified tax regime with a reduced 5% rate for the first 5 years of activity (15% afterward), applicable up to an annual income threshold of €85,000 (limit still in force in 2026). Additional limits apply, such as a maximum of €35,000 in prior-year employment/pension income to qualify.",
+      sources: [
+        { label: "Anagrafe Nazionale – Registration for EU citizens", url: "https://www.anagrafenazionale.interno.it/area-cittadino/servizi-per-cittadini-europei/" },
+        { label: "WaitAly – How iscrizione anagrafica works", url: "https://www.waitaly.net/iscrizione-allanagrafe-cose-chi-la-puo-fare-come-si-fa/" },
+        { label: "Quickfisco – Regime forfettario 2026", url: "https://quickfisco.it/blog/regime-forfettario/regime-forfettario-2026-cosa-cambia-e-cosa-rimane-invariato/" }
+      ]
+    },
+    sanidad: {
+      content: "Italy has the Servizio Sanitario Nazionale (SSN), a universal public system funded through taxes. EU citizens, including Spaniards, can register with the SSN for free if they can prove residence and fit a recognized category: employee or self-employed worker, family member of a worker or Italian citizen, or permanent resident after 5 years. Registration is handled at the local ASL (Azienda Sanitaria Locale) for your area of residence, presenting your codice fiscale, iscrizione anagrafica and employment or income documentation. Once registered, you receive the tessera sanitaria, granting access to public care and allowing you to choose a medico di base (general practitioner), who handles consultations, prescriptions and specialist referrals for free or with a reduced co-payment (ticket sanitario). For those who don't yet meet the mandatory registration requirements, there's the option of voluntary registration for an annual fee, or taking out private supplementary insurance.",
+      sources: [
+        { label: "AUSL Modena – Access to the SSN", url: "https://www.ausl.mo.it/servizi-e-prestazioni/percorsi-di-cura-e-assistenza/accesso-ssn/" },
+        { label: "ASL Napoli 1 Centro – Healthcare for EU citizens", url: "https://www.aslnapoli1centro.it/assistenza-sanitaria-in-italia-ai-cittadini-u.e.-e-s.e.e." }
+      ]
+    },
+    barrios: {
+      content: "Navigli, with its iconic canals, is the most popular neighborhood among expats and digital nomads: quiet by day, lively nightlife at sunset, terraces and an antiques market. Studios of about 45 sqm run €650-800/month plus bills. Isola is Milan's creative and innovative hub, with boutiques, vintage shops and the Santeria cultural space; shared-flat rooms from €500, studios from €690. Porta Venezia stands out for its artistic vibe, parks and an established LGBTQ+ community, with galleries and frequent cultural events. Città Studi, the university area, offers somewhat lower prices (studios from €600) and a young, multicultural atmosphere thanks to its proximity to the Politecnico di Milano.",
+      sources: [
+        { label: "Digital Nomads World – Milan city guide", url: "https://digitalnomads.world/city-guide/milan/" }
+      ]
+    }
+  },
+  manila: {
+    visaFiscal: {
+      content: "Spanish citizens can enter the Philippines visa-free and stay for 30 days, extendable through the Bureau of Immigration up to a cumulative maximum of roughly 36 months through successive extensions, with fees between PHP 6,000-9,000 for the first extension. Since 2025, the Philippines has an official digital nomad visa created by Executive Order (EO) 86 of 2025, aimed at remote workers with foreign income of at least USD 24,000/year (~USD 2,000/month). It offers an initial 12-month validity, renewable once for another 12 (2-year maximum), multiple entries and exits, and online application. It requires proof of remote work, income documentation, valid international health insurance, a criminal background certificate, and a passport valid for at least 6 months. The most restrictive requirement is reciprocity: the applicant's country must offer an equivalent visa to Filipino citizens — as of mid-2026 the Philippine government has not yet published the official list of eligible countries, so it's worth confirming whether Spain qualifies before applying. On taxes, the Philippines generally doesn't tax foreign-source income unless the person exceeds 183 days of stay and becomes a Philippine tax resident; Spain will continue to require worldwide income to be declared while the nomad keeps their Spanish tax residency.",
+      sources: [
+        { label: "InCorp Philippines – Tourist visa extension", url: "https://philippines.incorp.asia/guides/tourist-visa-extension/" },
+        { label: "Emerhub – Philippine digital nomad visa", url: "https://emerhub.com/philippines/visas/digital-nomad-visa/" },
+        { label: "Divina Law – Digital nomad visa analysis", url: "https://www.divinalaw.com/dose-of-law/digital-nomad-visa/" }
+      ]
+    },
+    sanidad: {
+      content: "The Philippines has a dual healthcare system: PhilHealth, the mandatory public insurance for local workers, only covers accredited centers within the country through fixed rates per condition, well below the real cost at high-end private hospitals — the difference falls on the patient (so-called 'balance billing'). For digital nomads and expats, the usual route is private healthcare, of very good quality in Metro Manila: hospitals like Makati Medical Center, St. Luke's Medical Center, The Medical City and Asian Hospital hold international accreditation, modern equipment and fluent English-speaking staff. These centers typically require proof of insurance or an upfront deposit before admitting a patient. Since PhilHealth doesn't cover non-resident foreigners or medical evacuations, it's essential to take out international health/travel insurance before settling in Manila — an uninsured medical evacuation can cost between USD 15,000 and 50,000.",
+      sources: [
+        { label: "Feather Insurance – Health insurance guide for the Philippines", url: "https://feather-insurance.com/en-ph/blog/health-insurance-philippines-guide" }
+      ]
+    },
+    barrios: {
+      content: "Makati is the financial district and the most popular with nomads: very walkable, with numerous coworking spaces, cafés and malls, and perceived as one of the safest areas of Manila. Bonifacio Global City (BGC), in Taguig, is the most modern and international area: wide streets, new buildings, a good restaurant scene and a clean, orderly feel — probably the safest and most comfortable option, though also the priciest. Poblacion (within Makati) is the creative and nightlife neighborhood, with independent cafés and art spaces, though noisier and less quiet for working. Ortigas Center (Pasig) is a more affordable business alternative to Makati/BGC; Quezon City offers a more local, university feel, with a good café scene at lower prices.",
+      sources: [
+        { label: "My Nomad Space – Best areas in Manila for digital nomads", url: "https://www.mynomadspace.com/articles/best-areas-in-manila-for-digital-nomads/" }
+      ]
+    }
+  },
 };

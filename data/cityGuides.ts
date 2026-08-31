@@ -1582,4 +1582,120 @@ export const cityGuides: Record<string, CityGuide> = {
       ]
     }
   },
+  "munich": {
+    "visaFiscal": {
+      "content": "Como ciudadano de la UE, un español puede entrar y residir en Alemania sin visado, amparado por la libre circulación comunitaria; basta con el DNI o pasaporte en vigor. No existe límite de 90 días para ciudadanos UE, pero si la estancia supera los 90 días es obligatorio registrar la residencia mediante el trámite de 'Anmeldung' en la Bürgeramt/Einwohnermeldeamt del municipio, dentro de los 14 días siguientes a la mudanza; se obtiene la 'Anmeldebestätigung', documento necesario para casi todo trámite posterior (banco, seguro médico, contrato de trabajo). Para trabajar por cuenta propia, el trámite es el 'Gewerbeanmeldung' (actividad comercial) o darse de alta como 'Freiberufler' (profesión liberal, más habitual para consultores, programadores y creativos) ante el Finanzamt, obteniendo un número de identificación fiscal (Steuer-ID). Alemania ofrece el régimen simplificado 'Kleinunternehmerregelung' para pequeños negocios: exime de repercutir IVA si los ingresos del año anterior no superaron los 25.000 € y no se prevé superar los 100.000 € en el año en curso (cifras vigentes en 2026). Los residentes fiscales (más de 183 días/año) tributan por renta mundial en el IRPF alemán (Einkommensteuer), con tipos progresivos de hasta el 45%. España y Alemania tienen convenio de doble imposición.",
+      "sources": [
+        { "label": "iamexpat.de – Registro de residencia en Alemania (Anmeldung)", "url": "https://www.iamexpat.de/expat-info/immigration-residency/registration-germany-anmeldung" },
+        { "label": "accountable.de – Régimen Kleinunternehmer 2026", "url": "https://www.accountable.de/en/help-center/kleinunternehmer-in-2025-everything-you-need-to-know/" },
+        { "label": "expatica.com – Fiscalidad para autónomos en Alemania", "url": "https://www.expatica.com/de/finance/taxes/tax-and-freelancers-in-germany-100950/" }
+      ]
+    },
+    "sanidad": {
+      "content": "En Alemania el seguro médico es obligatorio para todos los residentes, ya sea a través del sistema público (GKV) o privado (PKV). Un ciudadano español que se traslade por poco tiempo puede usar la Tarjeta Sanitaria Europea (TSE), que cubre atención médica necesaria durante los primeros 90 días, pero en cuanto se establece como residente (Anmeldung) debe darse de alta en el sistema alemán. Para trabajadores por cuenta ajena, la cuota es del 14,6% del salario bruto repartida entre empresa y trabajador, mientras que autónomos y freelancers negocian su cuota directamente con la caja pública (TK, AOK, Barmer) o pueden optar por un seguro privado si superan cierto umbral de ingresos. La sanidad pública alemana es de alta calidad, con acceso a especialistas y hospitales de primer nivel, aunque las listas de espera para especialistas no urgentes pueden ser más largas que la atención primaria. El seguro privado ofrece habitaciones individuales y citas más rápidas, pero conviene valorarlo con cuidado porque salir del sistema privado para volver al público después no siempre es sencillo.",
+      "sources": [
+        { "label": "expatica.com – Guía del seguro médico alemán", "url": "https://www.expatica.com/de/healthcare/healthcare-basics/a-guide-to-german-health-insurance-693463/" },
+        { "label": "iamexpat.de – Seguro médico para expatriados en Alemania", "url": "https://www.iamexpat.de/expat-info/german-health-insurance" }
+      ]
+    },
+    "barrios": {
+      "content": "Schwabing: barrio bohemio y universitario al norte del centro, junto al Englischer Garten; ambiente joven, muchas cafeterías con wifi y buena vida nocturna moderada; alquileres medio-altos. Maxvorstadt: el distrito de los museos y la universidad (LMU, TU München); gran densidad de bibliotecas, cafés para trabajar y una comunidad estudiantil e intelectual activa; muy céntrico y bien conectado. Glockenbachviertel: zona trendy al sur del centro, con ambiente creativo, bares de especialidad, mercados y una de las escenas gastronómicas más vivas de la ciudad; popular entre freelancers y diseñadores; precios altos pero compensados por la vida social. Haidhausen: barrio más tranquilo y 'de pueblo' al este del río Isar, con encanto bávaro tradicional, buena relación calidad-precio frente a Schwabing o Glockenbachviertel, y fácil acceso en S-Bahn/tranvía al centro; ideal para quien busca calma sin alejarse demasiado.",
+      "sources": [
+        { "label": "iamexpat.de – Guías de barrios en Múnich", "url": "https://www.iamexpat.de/expat-info" },
+        { "label": "Migaku – Dónde vivir en Múnich, guía de barrios", "url": "https://migaku.com/blog/language-fun/where-to-live-in-munich-a-neighborhood-guide-for-foreigners" }
+      ]
+    }
+  },
+  "sevilla": {
+    "visaFiscal": {
+      "content": "Para un ciudadano español no existe trámite de visado: instalarse en Sevilla es simplemente un cambio de residencia dentro del país. Los dos trámites clave son el empadronamiento municipal y, si se trabaja por cuenta propia, el alta en el Régimen Especial de Trabajadores Autónomos (RETA). El empadronamiento se gestiona en el Ayuntamiento de Sevilla (Servicio de Estadística - Padrón Municipal), con cita previa, y certifica la residencia en la ciudad; es necesario para acceder a la sanidad pública andaluza, escolarización y otros trámites locales. Quien se dé de alta como autónomo puede acogerse en 2026 a la tarifa plana: 80 €/mes de cuota fija durante los primeros 12 meses, ampliable a un segundo año si los rendimientos netos quedan por debajo del SMI; después se pasa al sistema de cotización por tramos de ingresos reales del RETA. Requisitos: no haber estado de alta como autónomo en los 2 años anteriores, no ser autónomo colaborador y no tener deudas con la Seguridad Social o Hacienda. El trámite se hace en Importass (Seguridad Social) junto con el alta censal en la Agencia Tributaria (modelo 036/037). A efectos de IRPF, Andalucía tiene competencia sobre el tramo autonómico del impuesto, con su propia escala de tipos y deducciones.",
+      "sources": [
+        { "label": "Ayuntamiento de Sevilla – Empadronamiento", "url": "https://www.sevilla.org/servicios/empadronamiento" },
+        { "label": "InfoAutonomos – Tarifa plana de autónomos", "url": "https://www.infoautonomos.com/seguridad-social/tarifa-plana-autonomos/" },
+        { "label": "Seguridad Social – Alta de autónomos", "url": "https://www.seg-social.es/wps/portal/wss/internet/HerramientasWeb/9d2fd4f1-ab0f-42a6-8d10-2e74b378ee24" }
+      ]
+    },
+    "sanidad": {
+      "content": "En Sevilla, la sanidad pública depende del Servicio Andaluz de Salud (SAS), el sistema regional que gestiona atención primaria, hospitales, urgencias y programas de prevención en toda Andalucía, dentro del marco del Sistema Nacional de Salud. Para acceder a él como residente hay que estar empadronado en la ciudad y solicitar la Tarjeta Sanitaria de Andalucía a través del portal del SAS o de la app 'Salud Andalucía'. Con la tarjeta se asigna un centro de salud y médico de familia de referencia según el domicilio, y se habilita el acceso a ClicSalud+ para pedir citas, consultar el historial clínico y gestionar trámites online. A diferencia de otras comunidades autónomas, cada una gestiona su propio servicio de salud (SAS en Andalucía, SERMAS en Madrid, ICS en Cataluña, etc.), por lo que quien se traslada desde otra región debe volver a tramitar la tarjeta sanitaria local tras empadronarse. Como complemento, hay una oferta amplia de seguros de salud privados en Sevilla (Sanitas, Adeslas, DKV, Asisa), útiles para quien busca listas de espera más cortas.",
+      "sources": [
+        { "label": "SAS – Tarjeta Sanitaria de Andalucía", "url": "https://www.sspa.juntadeandalucia.es/servicioandaluzdesalud/ciudadania/tarjeta-sanitaria-de-andalucia" },
+        { "label": "Junta de Andalucía – Tarjeta sanitaria", "url": "https://www.juntadeandalucia.es/temas/salud/servicios/tarjeta.html" }
+      ]
+    },
+    "barrios": {
+      "content": "Triana: al otro lado del Guadalquivir, es el barrio con más tradición flamenca y alfarera de Sevilla, con un ambiente auténtico y muy vivo. Los alquileres rondan los 700-750 € para un piso de una o dos habitaciones, y ofrece buena conexión a pie con el centro cruzando el puente de Triana. Alameda de Hércules: el barrio más bohemio y alternativo de la ciudad, con gran densidad de bares, terrazas y restaurantes; es una de las zonas favoritas de expats y nómadas digitales jóvenes por su vida social nocturna y su cercanía al centro y a varios coworkings. Nervión: zona moderna, comercial y de negocios, con buena oferta de oficinas y coworkings; los precios son más altos (850-1.385 € para 2-3 habitaciones), pero ofrece más servicios y comodidad. Los Remedios: barrio residencial y familiar, tranquilo, de avenidas amplias; los precios son medio-altos (575-750 € para 1-2 habitaciones) y es una opción sólida para quien busca tranquilidad sin alejarse del centro.",
+      "sources": [
+        { "label": "Holafly – Mejores barrios de Sevilla", "url": "https://esim.holafly.com/es/blog/expatriados/mejores-barrios-sevilla/" },
+        { "label": "Holafly – Coworking en Sevilla", "url": "https://esim.holafly.com/es/blog/nomada-digital/coworking-sevilla/" }
+      ]
+    }
+  },
+  "paris": {
+    "visaFiscal": {
+      "content": "Como ciudadano de la UE, un español puede entrar, residir y trabajar en Francia sin visado ni permiso de residencia, amparado por la libre circulación de personas. A diferencia de Alemania, Francia no exige un registro obligatorio tipo 'Anmeldung' al llegar. Sin embargo, si la estancia supera los 3 meses, conviene poder acreditar medios de vida, seguro médico o actividad económica, y se recomienda solicitar el Certificat d'Immatriculation en la prefectura si se va a trabajar o estudiar de forma prolongada. Quien trabaje deberá tramitar un numéro de sécurité sociale (a través de la Assurance Maladie/CPAM) para acceder a la sanidad pública y cotizar. Para autónomos, el régimen más habitual es el de auto-entrepreneur (micro-entrepreneur), que permite darse de alta online en autoentrepreneur.urssaf.fr, con cotizaciones sociales simplificadas calculadas como porcentaje de la facturación (aprox. 21,1-24,6% para servicios) y sin necesidad de facturar IVA hasta ciertos umbrales (en 2026, en torno a 39.100 € para servicios). Fiscalmente, un residente fiscal en Francia (más de 183 días/año) tributa por el IRPF francés, con tipos progresivos hasta el 45%, y existe convenio de doble imposición España-Francia.",
+      "sources": [
+        { "label": "Europa.eu – Registro de residencia en la UE", "url": "https://europa.eu/youreurope/citizens/residence/documents-formalities/registering-residence/index_es.htm" },
+        { "label": "Ministerio de Trabajo – Españoles en Francia", "url": "https://www.mites.gob.es/mundo/consejerias/francia/es/al-llegar/index.html" },
+        { "label": "URSSAF – Régimen auto-entrepreneur", "url": "https://www.autoentrepreneur.urssaf.fr" }
+      ]
+    },
+    "sanidad": {
+      "content": "Francia cuenta con un sistema de sanidad pública universal gestionado por la Assurance Maladie, bajo el marco de la Protection Universelle Maladie (PUMA). PUMA garantiza cobertura sanitaria a cualquier persona que resida en Francia de forma estable (más de 3 meses) y regular, cubriendo consultas, hospitalización y medicamentos con un porcentaje de reembolso (normalmente 70% en consultas, 80% en hospitalización). Un ciudadano español residente debe darse de alta en la Caisse Primaire d'Assurance Maladie (CPAM) de su zona aportando pasaporte/DNI y justificante de residencia estable, para obtener su numéro de sécurité sociale y, posteriormente, la Carte Vitale —la tarjeta sanitaria que permite el reembolso automático de gastos médicos—. Dado que la Sécurité Sociale no cubre el 100% del gasto médico, la mayoría de residentes contrata una mutuelle (seguro complementario privado), que cubre el copago restante y prestaciones no cubiertas como dental u óptica; su coste varía según edad y cobertura, desde unos 30-50 €/mes.",
+      "sources": [
+        { "label": "French-Property.com – Guía de PUMA", "url": "https://www.french-property.com/guides/france/public-services/health/puma" },
+        { "label": "Service-Public.fr – Protección universal de enfermedad", "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F32824" }
+      ]
+    },
+    "barrios": {
+      "content": "Le Marais (III y IV distrito): histórico, elegante y muy vivo, con museos, galerías de arte, cafés y tiendas de diseño. Precios altos, pero céntrico y muy bien conectado; ambiente cosmopolita. Canal Saint-Martin (X y XI distrito): barrio creativo y menos turístico, con ambiente bohemio junto al canal, terrazas y tiendas independientes; precios más asequibles que el centro, con coworkings como Le Tank. Bastille (XI distrito): energía joven y cultural, buena vida nocturna, precios moderados, con coworkings como Remix Coworking Bastille. Montmartre (XVIII distrito): ambiente bohemio y artístico, con teatros, cabarets y cafés con encanto; precios en rango medio, algo alejado del centro de negocios pero muy bien comunicado por metro.",
+      "sources": [
+        { "label": "Holafly – Mejores barrios de París para expats", "url": "https://esim.holafly.com/expats/best-neighborhood-stay-paris/" }
+      ]
+    }
+  },
+  "milan": {
+    "visaFiscal": {
+      "content": "Como ciudadano español, gozas de libre circulación dentro de la UE y puedes entrar, residir y trabajar en Italia sin visado. Si tu estancia supera los 3 meses, debes registrarte como residente comunitario mediante la iscrizione anagrafica en el Comune correspondiente, presentando pasaporte/DNI, prueba de alojamiento y, si no trabajas por cuenta ajena, justificación de recursos económicos suficientes y seguro de salud. El Comune tiene 2 días hábiles para registrar la solicitud y hasta 45 días para verificar la residencia efectiva. Es imprescindible además solicitar el codice fiscale (equivalente al NIE/NIF italiano), necesario para casi cualquier trámite. Para trabajar como autónomo, se debe abrir una partita IVA. Muchos nómadas digitales optan por el regime forfettario, un régimen fiscal simplificado con tipo impositivo reducido del 5% durante los primeros 5 años de actividad (15% después), aplicable hasta un umbral de ingresos anuales de 85.000 € (límite vigente también en 2026). Existen límites adicionales, como un máximo de 35.000 € en ingresos por trabajo dependiente/pensión del año anterior para poder acceder.",
+      "sources": [
+        { "label": "Anagrafe Nazionale – Registro para ciudadanos europeos", "url": "https://www.anagrafenazionale.interno.it/area-cittadino/servizi-per-cittadini-europei/" },
+        { "label": "WaitAly – Iscrizione anagrafica, cómo se hace", "url": "https://www.waitaly.net/iscrizione-allanagrafe-cose-chi-la-puo-fare-come-si-fa/" },
+        { "label": "Quickfisco – Régimen forfettario 2026", "url": "https://quickfisco.it/blog/regime-forfettario/regime-forfettario-2026-cosa-cambia-e-cosa-rimane-invariato/" }
+      ]
+    },
+    "sanidad": {
+      "content": "Italia cuenta con el Servizio Sanitario Nazionale (SSN), un sistema público universal financiado por impuestos. Los ciudadanos de la UE, incluidos los españoles, pueden inscribirse gratuitamente al SSN si acreditan residencia y encajan en categorías reconocidas: trabajador por cuenta ajena o propia, familiar de trabajador o de ciudadano italiano, o residente permanente tras 5 años. La inscripción se tramita en la ASL (Azienda Sanitaria Locale) de tu zona de residencia, presentando codice fiscale, iscrizione anagrafica y documentación laboral o de recursos suficientes. Una vez inscrito, se recibe la tessera sanitaria, que da acceso a la atención pública y permite elegir un medico di base (médico de cabecera), quien gestiona consultas, recetas y derivaciones a especialistas de forma gratuita o con copago reducido (ticket sanitario). Para quienes aún no cumplen los requisitos de inscripción obligatoria, existe la opción de inscripción voluntaria pagando una cuota anual, o contratar un seguro privado complementario.",
+      "sources": [
+        { "label": "AUSL Modena – Acceso al SSN", "url": "https://www.ausl.mo.it/servizi-e-prestazioni/percorsi-di-cura-e-assistenza/accesso-ssn/" },
+        { "label": "ASL Napoli 1 Centro – Asistencia sanitaria a ciudadanos UE", "url": "https://www.aslnapoli1centro.it/assistenza-sanitaria-in-italia-ai-cittadini-u.e.-e-s.e.e." }
+      ]
+    },
+    "barrios": {
+      "content": "Navigli, con sus icónicos canales, es el barrio más popular entre expatriados y nómadas digitales: ambiente tranquilo de día, vida nocturna intensa al atardecer, terrazas y mercado de antigüedades. Estudios de unos 45 m² rondan los 650-800 €/mes más gastos. Isola es el polo creativo e innovador de Milán, con boutiques, tiendas de segunda mano y el espacio cultural Santeria; habitaciones en piso compartido desde 500 €, estudios desde 690 €. Porta Venezia destaca por su ambiente artístico, parques y una consolidada comunidad LGBTQ+, con galerías y eventos culturales frecuentes. Città Studi, zona universitaria, ofrece precios algo más bajos (estudios desde 600 €) y ambiente joven y multicultural gracias a la proximidad del Politecnico di Milano.",
+      "sources": [
+        { "label": "Digital Nomads World – Guía de Milán", "url": "https://digitalnomads.world/city-guide/milan/" }
+      ]
+    }
+  },
+  "manila": {
+    "visaFiscal": {
+      "content": "Los ciudadanos españoles pueden entrar en Filipinas sin visado y permanecer 30 días, ampliables en la Bureau of Immigration hasta un máximo acumulado de aproximadamente 36 meses mediante extensiones sucesivas, con tasas de entre PHP 6.000-9.000 en la primera extensión. Desde 2025, Filipinas cuenta con un visado de nómada digital oficial creado por la Orden Ejecutiva (EO) 86 de 2025, dirigido a trabajadores remotos con ingresos extranjeros de al menos 24.000 USD/año (~2.000 USD/mes). Ofrece una validez inicial de 12 meses, renovable una vez por otros 12 (máximo 2 años), entradas y salidas múltiples, y solicitud online. Requiere prueba de trabajo remoto, documentación de ingresos, seguro de salud internacional válido, certificado de antecedentes penales y pasaporte con validez de al menos 6 meses. El requisito más restrictivo es la reciprocidad: el país del solicitante debe ofrecer un visado equivalente a ciudadanos filipinos — a mediados de 2026 el gobierno filipino aún no ha publicado la lista oficial de países elegibles, por lo que conviene confirmar si España está incluida antes de aplicar. En cuanto a fiscalidad, Filipinas generalmente no grava los ingresos de fuente extranjera a menos que la persona supere los 183 días de estancia y se convierta en residente fiscal filipino; España seguirá exigiendo declarar la renta mundial mientras el nómada mantenga su residencia fiscal española.",
+      "sources": [
+        { "label": "InCorp Philippines – Extensión de visado turístico", "url": "https://philippines.incorp.asia/guides/tourist-visa-extension/" },
+        { "label": "Emerhub – Visado de nómada digital filipino", "url": "https://emerhub.com/philippines/visas/digital-nomad-visa/" },
+        { "label": "Divina Law – Análisis del visado de nómada digital", "url": "https://www.divinalaw.com/dose-of-law/digital-nomad-visa/" }
+      ]
+    },
+    "sanidad": {
+      "content": "Filipinas tiene un sistema sanitario dual: PhilHealth, el seguro público obligatorio para trabajadores locales, cubre solo centros acreditados dentro del país mediante tarifas fijas por patología muy por debajo del coste real en hospitales privados de gama alta — la diferencia corre a cargo del paciente (el llamado 'balance billing'). Para nómadas digitales y expatriados, la vía habitual es la sanidad privada, de muy buena calidad en Metro Manila: hospitales como Makati Medical Center, St. Luke's Medical Center, The Medical City y Asian Hospital cuentan con acreditación internacional, equipamiento moderno y personal que habla inglés con fluidez. Estos centros suelen exigir prueba de seguro o un depósito por adelantado antes de admitir al paciente. Dado que PhilHealth no cubre a extranjeros no residentes ni evacuaciones médicas, es imprescindible contratar un seguro de salud/viaje internacional antes de instalarse en Manila — una evacuación médica sin cobertura puede costar entre 15.000 y 50.000 USD.",
+      "sources": [
+        { "label": "Feather Insurance – Guía del seguro de salud en Filipinas", "url": "https://feather-insurance.com/en-ph/blog/health-insurance-philippines-guide" }
+      ]
+    },
+    "barrios": {
+      "content": "Makati es el distrito financiero y el más popular entre nómadas: muy caminable, con numerosos coworkings, cafeterías y centros comerciales, y percibido como una de las zonas más seguras de Manila. Bonifacio Global City (BGC), en Taguig, es la zona más moderna e internacional: calles amplias, edificios nuevos, buena vida de restaurantes y ambiente limpio y ordenado — probablemente la opción más segura y cómoda, aunque también la más cara. Poblacion (dentro de Makati) es el barrio creativo y de vida nocturna, con cafés independientes y espacios de arte, aunque más ruidoso y menos tranquilo para trabajar. Ortigas Center (Pasig) es una alternativa de negocios más asequible que Makati/BGC; Quezon City ofrece un ambiente más local y universitario, con buena escena de cafés a precios más bajos.",
+      "sources": [
+        { "label": "My Nomad Space – Mejores zonas de Manila para nómadas", "url": "https://www.mynomadspace.com/articles/best-areas-in-manila-for-digital-nomads/" }
+      ]
+    }
+  },
 };
