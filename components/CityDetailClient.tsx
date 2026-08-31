@@ -4,6 +4,7 @@ import Link from "next/link";
 import Navbar from "./Navbar";
 import FavoriteButton from "./FavoriteButton";
 import CityGuideSection from "./CityGuideSection";
+import CityEsimSection from "./CityEsimSection";
 import { cities, type City } from "@/data/cities";
 import { visaDisclaimer, visaDisclaimerEn, type CityGuide } from "@/data/cityGuides";
 import { cityGuidesEn } from "@/data/cityGuidesEn";
@@ -148,6 +149,10 @@ export default function CityDetailClient({ city, guide }: { city: City; guide: C
                 <CityGuideSection title={d.barrios} section={activeGuide.barrios} sourcesLabel={d.sources} />
               </>
             )}
+
+            {/* eSIM y datos móviles */}
+            <CityEsimSection city={city} />
+
 
             {/* Sources */}
             <section>

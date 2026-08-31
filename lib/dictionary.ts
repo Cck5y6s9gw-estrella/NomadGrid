@@ -212,6 +212,8 @@ const dict = {
     feedbackSuccessTitle: "Mensaje enviado",
     feedbackSuccessSubtitle: "Gracias, lo leeré personalmente.",
     feedbackSendAnother: "Enviar otro mensaje",
+    esimTitle: "Internet y datos móviles",
+    esimIntro: (city: string) => `Activa una eSIM antes de llegar a ${city} y ten datos desde el minuto uno, sin depender del wifi del aeropuerto ni buscar una SIM física.`,
   },
   en: {
     navCities: "Browse cities",
@@ -346,6 +348,8 @@ const dict = {
     feedbackSuccessTitle: "Message sent",
     feedbackSuccessSubtitle: "Thanks, I'll read it personally.",
     feedbackSendAnother: "Send another message",
+    esimTitle: "Mobile data & eSIM",
+    esimIntro: (city: string) => `Activate an eSIM before you land in ${city} and have data from minute one, without relying on airport wifi or hunting for a local SIM card.`,
   },
 } as const;
 
