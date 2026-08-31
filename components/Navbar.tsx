@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Show, SignInButton, UserButton } from "@clerk/nextjs";
+import { Show, SignInButton, UserButton, useUser } from "@clerk/nextjs";
 import { useLanguage } from "@/lib/i18n";
 import { t } from "@/lib/dictionary";
 
@@ -13,11 +13,13 @@ export default function Navbar() {
   const menuRef = useRef<HTMLDivElement>(null);
   const { lang, setLang } = useLanguage();
   const d = t(lang);
+  const { isSignedIn } = useUser();
 
   const links = [
     { href: "/cities", label: d.navCities },
     { href: "/compare", label: d.navCompare },
     { href: "/articulos", label: d.navArticles },
+    ...(isSignedIn ? [{ href: "/favoritos", label: d.navFavorites }] : []),
     { href: "/feedback", label: d.navFeedback },
   ];
 
@@ -73,6 +75,12 @@ export default function Navbar() {
               </SignInButton>
             }
           >
+            <Link
+              href="/favoritos"
+              className="text-sm text-muted hover:text-accent transition-colors hidden sm:inline"
+            >
+              {d.navFavorites}
+            </Link>
             <UserButton />
           </Show>
 

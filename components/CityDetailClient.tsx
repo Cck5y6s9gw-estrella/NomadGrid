@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Navbar from "./Navbar";
+import FavoriteButton from "./FavoriteButton";
 import CityGuideSection from "./CityGuideSection";
 import { cities, type City } from "@/data/cities";
 import { visaDisclaimer, visaDisclaimerEn, type CityGuide } from "@/data/cityGuides";
@@ -66,7 +67,10 @@ export default function CityDetailClient({ city, guide }: { city: City; guide: C
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
         <div className="absolute bottom-0 left-0 right-0 max-w-7xl mx-auto px-6 pb-8">
           <p className="text-sm text-muted mb-1">{tCountry(city.country, lang)} · {tContinent(city.continent, lang)}</p>
-          <h1 className="text-4xl font-bold text-foreground">{city.name}</h1>
+          <div className="flex items-center gap-3">
+            <h1 className="text-4xl font-bold text-foreground">{city.name}</h1>
+            <FavoriteButton citySlug={city.slug} variant="hero" />
+          </div>
         </div>
       </div>
 

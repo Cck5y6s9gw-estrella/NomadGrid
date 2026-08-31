@@ -55,6 +55,14 @@ export default function FeedbackPage() {
           </p>
         </div>
 
+        <div className="bg-accent/10 border border-accent/30 rounded-2xl px-5 py-4 mb-8 flex items-start gap-3">
+          <span className="text-lg leading-none mt-0.5">💬</span>
+          <p className="text-sm text-foreground">
+            Cada mensaje lo lee <strong>Álvaro</strong> en persona, no un equipo de soporte. Roavio se está construyendo
+            ahora mismo con lo que nos contáis: si algo te falta o no te convence, es el momento de decirlo.
+          </p>
+        </div>
+
         {status === "success" ? (
           <div className="bg-card border border-border rounded-2xl p-8 text-center">
             <div className="w-10 h-10 rounded-full bg-accent/10 text-accent flex items-center justify-center mx-auto mb-4 text-lg">

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
+import FavoriteButton from "@/components/FavoriteButton";
 import { cities, City } from "@/data/cities";
 import { useLanguage } from "@/lib/i18n";
 import { t, formatMoney, tCountry, tContinent } from "@/lib/dictionary";
@@ -135,6 +136,7 @@ function CityCard({ city, lang, monthly }: { city: City; lang: "es" | "en"; mont
         className="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-500"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-background/95 via-background/20 to-transparent" />
+      <FavoriteButton citySlug={city.slug} className="absolute top-3 right-3" />
       <div className="absolute bottom-0 left-0 right-0 p-4">
         <div className="flex items-end justify-between mb-2">
           <div>
