@@ -17,7 +17,8 @@ export default function Navbar() {
 
   const links = [
     { href: "/cities", label: d.navCities },
-    { href: "/mapa", label: d.navMap },
+    // El mapa esta en construccion: fuera de la navegacion publica hasta que
+    // este completo (accesible solo para el admin via /mapa directamente).
     { href: "/compare", label: d.navCompare },
     { href: "/articulos", label: d.navArticles },
     ...(isSignedIn ? [{ href: "/favoritos", label: d.navFavorites }] : []),
