@@ -29,6 +29,9 @@ export const countryNames: Record<string, string> = {
   "Taiwán": "Taiwan",
   "Bulgaria": "Bulgaria",
   "Serbia": "Serbia",
+  "Países Bajos": "Netherlands",
+  "Dinamarca": "Denmark",
+  "Austria": "Austria",
 };
 
 export const continentNames: Record<string, string> = {
