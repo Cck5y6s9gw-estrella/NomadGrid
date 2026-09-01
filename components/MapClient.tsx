@@ -201,15 +201,36 @@ export default function MapClient() {
       // Nunca a la vez: de lejos solo se ven las ciudades (foto grande); al
       // ampliar por encima del umbral, las ciudades se retiran y aparecen los
       // pines de coworking de esa zona, para no saturar el mapa.
+      //
+      // Además, a nivel de mundo hay ~45 ciudades y muchas están muy cerca
+      // entre sí (Europa sobre todo), así que el pin de ciudad se ENCOGE de
+      // forma continua cuanto más alejado está el zoom: a zoom mundial es un
+      // punto pequeño y nítido; según te acercas a una región va creciendo
+      // hasta su tamaño completo justo antes de que aparezcan los coworkings.
+      // Esto evita que se amontonen/solapen decenas de fotos grandes a la vez.
+      const CITY_SCALE_MIN_ZOOM = 1.5;
+      const CITY_SCALE_MAX_ZOOM = POI_MIN_ZOOM;
+      const CITY_SCALE_FLOOR = 0.34;
+
       const updateLayerVisibility = () => {
-        const zoomedIn = map.getZoom() >= POI_MIN_ZOOM;
+        const zoom = map.getZoom();
+        const zoomedIn = zoom >= POI_MIN_ZOOM;
         poiElsRef.current.forEach((el) => el.classList.toggle("is-visible", zoomedIn));
-        cityElsRef.current.forEach((el) => el.classList.toggle("is-hidden-zoomed", zoomedIn));
+
+        const t = Math.min(
+          1,
+          Math.max(0, (zoom - CITY_SCALE_MIN_ZOOM) / (CITY_SCALE_MAX_ZOOM - CITY_SCALE_MIN_ZOOM))
+        );
+        const scale = CITY_SCALE_FLOOR + (1 - CITY_SCALE_FLOOR) * t;
+        cityElsRef.current.forEach((el) => {
+          el.classList.toggle("is-hidden-zoomed", zoomedIn);
+          el.style.setProperty("--city-scale", scale.toFixed(3));
+        });
       };
       map.on("zoom", updateLayerVisibility);
       // La primera pasada respeta el fundido de entrada escalonado de las
       // ciudades — solo forzamos los coworkings si ya se arranca ampliado.
-      if (map.getZoom() >= POI_MIN_ZOOM) updateLayerVisibility();
+      updateLayerVisibility();
 
       map.resize();
     });

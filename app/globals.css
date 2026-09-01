@@ -59,11 +59,16 @@ body {
   background: linear-gradient(145deg, #ff8a3d, var(--accent));
   box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.22), 0 4px 14px rgba(0, 0, 0, 0.55);
   display: flex;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  /* Escala continua según el zoom (--city-scale, fijado por JS) para que a
+     nivel de mundo los ~45 pines de ciudad no se amontonen/solapen. Este
+     transform vive en un hijo, nunca en el marker el, así que no interfiere
+     con el translate inline que posiciona el marker en MapLibre. */
+  transform: scale(var(--city-scale, 1));
+  transition: transform 0.18s ease, box-shadow 0.15s ease;
 }
 
 .roavio-city-marker:hover .roavio-city-marker__ring {
-  transform: scale(1.14);
+  transform: scale(calc(var(--city-scale, 1) * 1.14));
   box-shadow: 0 0 0 5px rgba(234, 88, 12, 0.32), 0 6px 18px rgba(0, 0, 0, 0.6);
 }
 
