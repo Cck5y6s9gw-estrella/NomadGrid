@@ -230,6 +230,8 @@ const dict = {
     mapSignedOutTitle: "Inicia sesión para usar el mapa",
     mapSignedOutSubtitle: "Crea una cuenta gratis para explorar el mapa interactivo de coworkings y próximamente hoteles y cafés.",
     mapSignUpCta: "Registrarse gratis",
+    mapExpandCta: "Ampliar hasta la ciudad",
+    mapChangeCity: "Buscar otra ciudad",
   },
   en: {
     navCities: "Browse cities",
@@ -379,6 +381,8 @@ const dict = {
     mapSignedOutTitle: "Sign in to use the map",
     mapSignedOutSubtitle: "Create a free account to explore the interactive coworking map, with hotels and cafés coming soon.",
     mapSignUpCta: "Sign up for free",
+    mapExpandCta: "Zoom into the city",
+    mapChangeCity: "Search another city",
   },
 } as const;
 
