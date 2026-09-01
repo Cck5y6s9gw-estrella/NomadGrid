@@ -46,6 +46,11 @@ body {
   opacity: 1;
 }
 
+.roavio-city-marker.is-hidden-zoomed {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .roavio-city-marker__ring {
   width: 40px;
   height: 40px;

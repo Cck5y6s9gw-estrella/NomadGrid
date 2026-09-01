@@ -92,6 +92,7 @@ export default function MapClient() {
   const poiMarkersRef = useRef<Marker[]>([]);
   const cityMarkersRef = useRef<Marker[]>([]);
   const poiElsRef = useRef<HTMLDivElement[]>([]);
+  const cityElsRef = useRef<HTMLDivElement[]>([]);
 
   const flyToCity = (city: City) => {
     mapRef.current?.flyTo({
@@ -154,6 +155,7 @@ export default function MapClient() {
           .setLngLat([city.coords.lng, city.coords.lat])
           .addTo(map);
         cityMarkersRef.current.push(marker);
+        cityElsRef.current.push(el);
 
         // Fundido de entrada por opacidad — nunca transform, para no pisar el
         // translate que MapLibre aplica al mismo elemento para posicionarlo.
@@ -196,14 +198,18 @@ export default function MapClient() {
         poiElsRef.current.push(el);
       });
 
-      // Los coworkings solo se muestran a partir de cierto zoom: de lejos solo se
-      // ven las ciudades, y al acercarse aparecen los pines con su información.
-      const updatePoiVisibility = () => {
-        const show = map.getZoom() >= POI_MIN_ZOOM;
-        poiElsRef.current.forEach((el) => el.classList.toggle("is-visible", show));
+      // Nunca a la vez: de lejos solo se ven las ciudades (foto grande); al
+      // ampliar por encima del umbral, las ciudades se retiran y aparecen los
+      // pines de coworking de esa zona, para no saturar el mapa.
+      const updateLayerVisibility = () => {
+        const zoomedIn = map.getZoom() >= POI_MIN_ZOOM;
+        poiElsRef.current.forEach((el) => el.classList.toggle("is-visible", zoomedIn));
+        cityElsRef.current.forEach((el) => el.classList.toggle("is-hidden-zoomed", zoomedIn));
       };
-      updatePoiVisibility();
-      map.on("zoom", updatePoiVisibility);
+      map.on("zoom", updateLayerVisibility);
+      // La primera pasada respeta el fundido de entrada escalonado de las
+      // ciudades — solo forzamos los coworkings si ya se arranca ampliado.
+      if (map.getZoom() >= POI_MIN_ZOOM) updateLayerVisibility();
 
       map.resize();
     });
@@ -215,6 +221,7 @@ export default function MapClient() {
       poiElsRef.current = [];
       cityMarkersRef.current.forEach((m) => m.remove());
       cityMarkersRef.current = [];
+      cityElsRef.current = [];
       map.remove();
       mapRef.current = null;
     };
