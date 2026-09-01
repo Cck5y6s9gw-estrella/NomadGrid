@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo, useRef, useEffect } from "react";
-import { Map as MaplibreMap, Marker, Popup, NavigationControl } from "maplibre-gl";
+import { Map as MaplibreMap, Marker, Popup, NavigationControl, config as maplibreConfig } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { cities, type City } from "@/data/cities";
 import { pois } from "@/data/coworkings";
@@ -27,6 +27,8 @@ export default function MapClient() {
 
   useEffect(() => {
     if (!containerRef.current || mapRef.current) return;
+
+    maplibreConfig.WORKER_URL = "/maplibre-gl-worker.js";
 
     const map = new MaplibreMap({
       container: containerRef.current,
