@@ -1,7 +1,6 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { useSearchParams } from "next/navigation";
 import { useUser, SignUpButton } from "@clerk/nextjs";
 import { useLanguage } from "@/lib/i18n";
 import { t } from "@/lib/dictionary";
@@ -19,14 +18,12 @@ export default function MapLoader() {
   const { lang } = useLanguage();
   const d = t(lang);
   const { isSignedIn, isLoaded } = useUser();
-  const searchParams = useSearchParams();
-  const debugBypass = searchParams.get("qa") === "roavio-debug";
 
   if (!isLoaded) {
     return <div className="w-full h-[calc(100vh-56px)] bg-background" />;
   }
 
-  if (!isSignedIn && !debugBypass) {
+  if (!isSignedIn) {
     return (
       <div className="w-full h-[calc(100vh-56px)] flex items-center justify-center bg-background px-6">
         <div className="bg-card border border-border rounded-2xl p-10 text-center max-w-lg">
