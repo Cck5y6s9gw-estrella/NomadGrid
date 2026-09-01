@@ -1,14 +1,8 @@
 "use client";
 
-import { useState, useMemo, useRef } from "react";
-import {
-  MapContainer,
-  TileLayer,
-  CircleMarker,
-  Popup,
-  useMap,
-} from "react-leaflet";
-import "leaflet/dist/leaflet.css";
+import { useState, useMemo, useRef, useEffect } from "react";
+import { Map as MaplibreMap, Marker, Popup, NavigationControl } from "maplibre-gl";
+import "maplibre-gl/dist/maplibre-gl.css";
 import { cities, type City } from "@/data/cities";
 import { pois } from "@/data/coworkings";
 import { useLanguage } from "@/lib/i18n";
@@ -20,23 +14,67 @@ const CATEGORY_COLORS: Record<string, string> = {
   cafe: "#ea580c",
 };
 
-function FlyToCity({ target }: { target: City | null }) {
-  const map = useMap();
-  const lastSlug = useRef<string | null>(null);
-
-  if (target && target.slug !== lastSlug.current) {
-    lastSlug.current = target.slug;
-    map.flyTo([target.coords.lat, target.coords.lng], 12, { duration: 1.4 });
-  }
-
-  return null;
-}
+const STYLE_URL = "https://tiles.openfreemap.org/styles/dark";
 
 export default function MapClient() {
   const { lang } = useLanguage();
   const d = t(lang);
   const [query, setQuery] = useState("");
-  const [selected, setSelected] = useState<City | null>(null);
+
+  const containerRef = useRef<HTMLDivElement>(null);
+  const mapRef = useRef<MaplibreMap | null>(null);
+  const markersRef = useRef<Marker[]>([]);
+
+  useEffect(() => {
+    if (!containerRef.current || mapRef.current) return;
+
+    const map = new MaplibreMap({
+      container: containerRef.current,
+      style: STYLE_URL,
+      center: [10, 20],
+      zoom: 1.4,
+      attributionControl: { compact: true },
+    });
+    map.addControl(new NavigationControl({ showCompass: false }), "bottom-right");
+    mapRef.current = map;
+
+    map.on("load", () => {
+      pois.forEach((poi) => {
+        const el = document.createElement("div");
+        el.style.width = "16px";
+        el.style.height = "16px";
+        el.style.borderRadius = "50%";
+        el.style.background = CATEGORY_COLORS[poi.category];
+        el.style.border = "2px solid rgba(11,15,26,0.9)";
+        el.style.boxShadow = "0 0 0 2px rgba(255,255,255,0.15)";
+        el.style.cursor = "pointer";
+
+        const neighborhood = lang === "es" ? poi.neighborhood.es : poi.neighborhood.en;
+        const price = poi.priceInfo ? (lang === "es" ? poi.priceInfo.es : poi.priceInfo.en) : "";
+        const popupHtml = `
+          <div style="font-family: inherit; min-width: 160px;">
+            <div style="font-weight: 600; font-size: 13px; color:#0b0f1a;">${poi.name}</div>
+            <div style="font-size: 11px; color:#666; margin-bottom:4px;">${neighborhood}</div>
+            ${price ? `<div style="font-size: 11px; color:#333;">${price}</div>` : ""}
+          </div>
+        `;
+
+        const marker = new Marker({ element: el })
+          .setLngLat([poi.lng, poi.lat])
+          .setPopup(new Popup({ offset: 14 }).setHTML(popupHtml))
+          .addTo(map);
+        markersRef.current.push(marker);
+      });
+    });
+
+    return () => {
+      markersRef.current.forEach((m) => m.remove());
+      markersRef.current = [];
+      map.remove();
+      mapRef.current = null;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const filtered = useMemo(() => {
     if (!query.trim()) return [];
@@ -44,52 +82,17 @@ export default function MapClient() {
     return cities.filter((c) => c.name.toLowerCase().includes(q)).slice(0, 8);
   }, [query]);
 
+  function flyToCity(city: City) {
+    mapRef.current?.flyTo({
+      center: [city.coords.lng, city.coords.lat],
+      zoom: 12,
+      duration: 1400,
+    });
+  }
+
   return (
     <div className="relative w-full h-[calc(100vh-56px)]">
-      <MapContainer
-        center={[20, 10]}
-        zoom={2}
-        minZoom={2}
-        worldCopyJump
-        zoomControl={false}
-        className="w-full h-full bg-background"
-      >
-        <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}{r}.png"
-          className="map-tiles-dark"
-          detectRetina
-        />
-        <FlyToCity target={selected} />
-
-        {pois.map((poi) => (
-          <CircleMarker
-            key={poi.id}
-            center={[poi.lat, poi.lng]}
-            radius={7}
-            pathOptions={{
-              color: CATEGORY_COLORS[poi.category],
-              fillColor: CATEGORY_COLORS[poi.category],
-              fillOpacity: 0.95,
-              weight: 1.5,
-            }}
-          >
-            <Popup>
-              <div className="text-sm">
-                <div className="font-semibold">{poi.name}</div>
-                <div className="text-xs text-neutral-500 mb-1">
-                  {lang === "es" ? poi.neighborhood.es : poi.neighborhood.en}
-                </div>
-                {poi.priceInfo && (
-                  <div className="text-xs text-neutral-700">
-                    {lang === "es" ? poi.priceInfo.es : poi.priceInfo.en}
-                  </div>
-                )}
-              </div>
-            </Popup>
-          </CircleMarker>
-        ))}
-      </MapContainer>
+      <div ref={containerRef} className="w-full h-full bg-background" />
 
       {/* Search panel — right side, only for navigating the map, not a data layer */}
       <div className="absolute top-4 right-4 z-[1000] w-72 max-w-[calc(100%-2rem)]">
@@ -106,7 +109,7 @@ export default function MapClient() {
                 <button
                   key={city.slug}
                   onClick={() => {
-                    setSelected(city);
+                    flyToCity(city);
                     setQuery("");
                   }}
                   className="w-full flex items-center gap-3 p-2 rounded-xl hover:bg-background/70 transition-colors text-left"
