@@ -14,12 +14,6 @@ const CATEGORY_COLORS: Record<string, string> = {
   cafe: "#f59e0b",
 };
 
-const CATEGORY_ICONS: Record<string, string> = {
-  coworking: "💼",
-  hotel: "🏨",
-  cafe: "☕",
-};
-
 const STYLE_URL = "https://tiles.openfreemap.org/styles/dark";
 const CITY_ZOOM = 13.2;
 
@@ -92,7 +86,17 @@ export default function MapClient() {
 
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MaplibreMap | null>(null);
-  const markersRef = useRef<Marker[]>([]);
+  const poiMarkersRef = useRef<Marker[]>([]);
+  const cityMarkersRef = useRef<Marker[]>([]);
+
+  const flyToCity = (city: City) => {
+    mapRef.current?.flyTo({
+      center: [city.coords.lng, city.coords.lat],
+      zoom: CITY_ZOOM,
+      duration: 1600,
+      curve: 1.4,
+    });
+  };
 
   useEffect(() => {
     if (!containerRef.current || mapRef.current) return;
@@ -104,6 +108,10 @@ export default function MapClient() {
       style: STYLE_URL,
       center: [10, 20],
       zoom: 1.4,
+      // Con el mundo completo visible a este zoom, dejar que se repita crea copias
+      // fantasma de los marcadores en los bordes. Con una sola copia, todo queda
+      // anclado a su sitio real.
+      renderWorldCopies: false,
       attributionControl: { compact: true },
     });
     map.addControl(new NavigationControl({ showCompass: false }), "bottom-right");
@@ -112,12 +120,33 @@ export default function MapClient() {
     map.on("style.load", () => applyBrandTheme(map));
 
     map.on("load", () => {
+      // Ciudades — un punto discreto por cada una de las 45, para ubicarlas de un
+      // vistazo. Al hacer clic, la cámara se acerca hasta el nivel de calle.
+      cities.forEach((city, index) => {
+        const el = document.createElement("div");
+        el.className = "roavio-city-marker";
+        el.style.setProperty("--poi-delay", `${(index % 12) * 35}ms`);
+        el.title = city.name;
+        el.addEventListener("click", (e) => {
+          e.stopPropagation();
+          setSelectedCity(city);
+          flyToCity(city);
+        });
+
+        const marker = new Marker({ element: el })
+          .setLngLat([city.coords.lng, city.coords.lat])
+          .addTo(map);
+        cityMarkersRef.current.push(marker);
+      });
+
+      // Coworkings (y, más adelante, hoteles y cafés) — el detalle que aparece al
+      // acercarse a una ciudad.
       pois.forEach((poi, index) => {
         const el = document.createElement("div");
         el.className = "roavio-poi-marker";
         el.style.setProperty("--poi-color", CATEGORY_COLORS[poi.category]);
         el.style.setProperty("--poi-delay", `${(index % 8) * 60}ms`);
-        el.innerHTML = `<span class="roavio-poi-marker__pulse"></span><span class="roavio-poi-marker__dot">${CATEGORY_ICONS[poi.category]}</span>`;
+        el.innerHTML = `<span class="roavio-poi-marker__pulse"></span><span class="roavio-poi-marker__dot"></span>`;
 
         const neighborhood = lang === "es" ? poi.neighborhood.es : poi.neighborhood.en;
         const price = poi.priceInfo ? (lang === "es" ? poi.priceInfo.es : poi.priceInfo.en) : "";
@@ -133,13 +162,15 @@ export default function MapClient() {
           .setLngLat([poi.lng, poi.lat])
           .setPopup(new Popup({ offset: 18 }).setHTML(popupHtml))
           .addTo(map);
-        markersRef.current.push(marker);
+        poiMarkersRef.current.push(marker);
       });
     });
 
     return () => {
-      markersRef.current.forEach((m) => m.remove());
-      markersRef.current = [];
+      poiMarkersRef.current.forEach((m) => m.remove());
+      poiMarkersRef.current = [];
+      cityMarkersRef.current.forEach((m) => m.remove());
+      cityMarkersRef.current = [];
       map.remove();
       mapRef.current = null;
     };
@@ -159,12 +190,7 @@ export default function MapClient() {
 
   function expandToCity() {
     if (!selectedCity) return;
-    mapRef.current?.flyTo({
-      center: [selectedCity.coords.lng, selectedCity.coords.lat],
-      zoom: CITY_ZOOM,
-      duration: 1600,
-      curve: 1.4,
-    });
+    flyToCity(selectedCity);
   }
 
   return (
@@ -237,7 +263,6 @@ export default function MapClient() {
                 onClick={expandToCity}
                 className="w-full flex items-center justify-center gap-2 bg-accent text-white px-4 py-3 rounded-xl font-semibold text-sm shadow-lg shadow-accent/30 hover:opacity-90 hover:shadow-accent/50 active:scale-[0.98] transition-all"
               >
-                <span className="text-base">🔍✨</span>
                 {d.mapExpandCta}
               </button>
             </div>
@@ -248,31 +273,29 @@ export default function MapClient() {
       {/* Leyenda — abajo a la izquierda */}
       <div className="absolute bottom-4 left-4 z-[1000]">
         <div className="bg-card/95 backdrop-blur border border-border rounded-2xl px-4 py-3 shadow-xl shadow-black/30 space-y-2 text-xs">
+          <div className="flex items-center gap-2 text-muted">
+            <span className="w-2.5 h-2.5 rounded-full inline-block border-2 border-accent/70" />
+            {d.mapLegendCity}
+          </div>
           <div className="flex items-center gap-2 text-foreground font-medium">
             <span
-              className="w-4 h-4 rounded-full inline-flex items-center justify-center text-[9px]"
-              style={{ background: CATEGORY_COLORS.coworking, boxShadow: `0 0 10px ${CATEGORY_COLORS.coworking}80` }}
-            >
-              💼
-            </span>
+              className="w-2.5 h-2.5 rounded-full inline-block"
+              style={{ background: CATEGORY_COLORS.coworking, boxShadow: `0 0 8px ${CATEGORY_COLORS.coworking}80` }}
+            />
             {d.mapLegendCoworking}
           </div>
           <div className="flex items-center gap-2 text-muted">
             <span
-              className="w-4 h-4 rounded-full inline-flex items-center justify-center text-[9px] opacity-70"
+              className="w-2.5 h-2.5 rounded-full inline-block opacity-70"
               style={{ background: CATEGORY_COLORS.hotel }}
-            >
-              🏨
-            </span>
+            />
             {d.mapLegendHotel}
           </div>
           <div className="flex items-center gap-2 text-muted">
             <span
-              className="w-4 h-4 rounded-full inline-flex items-center justify-center text-[9px] opacity-70"
+              className="w-2.5 h-2.5 rounded-full inline-block opacity-70"
               style={{ background: CATEGORY_COLORS.cafe }}
-            >
-              ☕
-            </span>
+            />
             {d.mapLegendCafe}
           </div>
         </div>
