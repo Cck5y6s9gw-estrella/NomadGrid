@@ -117,6 +117,15 @@ export default function MapClient() {
     map.addControl(new NavigationControl({ showCompass: false }), "bottom-right");
     mapRef.current = map;
 
+    // El contenedor puede no tener aun su tamano final en el primer frame (layout
+    // de flex/Tailwind sin asentar todavia), lo que descuadra la proyeccion de
+    // lng/lat a pixeles y hace que los marcadores aparezcan mal colocados aunque
+    // las teselas del mapa se vean bien (el canvas se estira por CSS). Un
+    // ResizeObserver mantiene el mapa recalculando su tamano real siempre.
+    const resizeObserver = new ResizeObserver(() => map.resize());
+    resizeObserver.observe(containerRef.current);
+    map.resize();
+
     map.on("style.load", () => applyBrandTheme(map));
 
     map.on("load", () => {
@@ -164,9 +173,12 @@ export default function MapClient() {
           .addTo(map);
         poiMarkersRef.current.push(marker);
       });
+
+      map.resize();
     });
 
     return () => {
+      resizeObserver.disconnect();
       poiMarkersRef.current.forEach((m) => m.remove());
       poiMarkersRef.current = [];
       cityMarkersRef.current.forEach((m) => m.remove());

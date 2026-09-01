@@ -29,7 +29,6 @@ body {
 /* Marcadores del mapa interactivo — con vidilla: entrada con rebote y anillo
    de pulso para la categoría activa (coworkings). */
 .roavio-poi-marker {
-  position: relative;
   width: 30px;
   height: 30px;
   display: flex;
