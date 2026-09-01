@@ -17,6 +17,7 @@ export default function Navbar() {
 
   const links = [
     { href: "/cities", label: d.navCities },
+    { href: "/mapa", label: d.navMap },
     { href: "/compare", label: d.navCompare },
     { href: "/articulos", label: d.navArticles },
     ...(isSignedIn ? [{ href: "/favoritos", label: d.navFavorites }] : []),

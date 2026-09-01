@@ -13,6 +13,7 @@ export type City = {
   name: string;
   country: string;
   continent: string;
+  coords: { lat: number; lng: number };
   description: { es: string; en: string };
   imageUrl: string;
   costPerMonth: number;
@@ -38,6 +39,7 @@ const internetSource = "https://worldpopulationreview.com/country-rankings/inter
 export const cities: City[] = [
   {
     slug: "valencia",
+    coords: { lat: 39.4699, lng: -0.3763 },
     name: "Valencia",
     country: "España",
     continent: "Europa",
@@ -62,6 +64,7 @@ export const cities: City[] = [
   },
   {
     slug: "lisboa",
+    coords: { lat: 38.7223, lng: -9.1393 },
     name: "Lisboa",
     country: "Portugal",
     continent: "Europa",
@@ -86,6 +89,7 @@ export const cities: City[] = [
   },
   {
     slug: "bali",
+    coords: { lat: -8.6705, lng: 115.2126 },
     name: "Bali",
     country: "Indonesia",
     continent: "Asia",
@@ -110,6 +114,7 @@ export const cities: City[] = [
   },
   {
     slug: "bangkok",
+    coords: { lat: 13.7563, lng: 100.5018 },
     name: "Bangkok",
     country: "Tailandia",
     continent: "Asia",
@@ -134,6 +139,7 @@ export const cities: City[] = [
   },
   {
     slug: "chiang-mai",
+    coords: { lat: 18.7883, lng: 98.9853 },
     name: "Chiang Mai",
     country: "Tailandia",
     continent: "Asia",
@@ -158,6 +164,7 @@ export const cities: City[] = [
   },
   {
     slug: "medellin",
+    coords: { lat: 6.2442, lng: -75.5812 },
     name: "Medellín",
     country: "Colombia",
     continent: "América",
@@ -182,6 +189,7 @@ export const cities: City[] = [
   },
   {
     slug: "ciudad-de-mexico",
+    coords: { lat: 19.4326, lng: -99.1332 },
     name: "Ciudad de México",
     country: "México",
     continent: "América",
@@ -206,6 +214,7 @@ export const cities: City[] = [
   },
   {
     slug: "dubai",
+    coords: { lat: 25.2048, lng: 55.2708 },
     name: "Dubái",
     country: "Emiratos Árabes Unidos",
     continent: "Oriente Medio",
@@ -230,6 +239,7 @@ export const cities: City[] = [
   },
   {
     slug: "budapest",
+    coords: { lat: 47.4979, lng: 19.0402 },
     name: "Budapest",
     country: "Hungría",
     continent: "Europa",
@@ -254,6 +264,7 @@ export const cities: City[] = [
   },
   {
     slug: "praga",
+    coords: { lat: 50.0755, lng: 14.4378 },
     name: "Praga",
     country: "República Checa",
     continent: "Europa",
@@ -278,6 +289,7 @@ export const cities: City[] = [
   },
   {
     slug: "buenos-aires",
+    coords: { lat: -34.6037, lng: -58.3816 },
     name: "Buenos Aires",
     country: "Argentina",
     continent: "América",
@@ -302,6 +314,7 @@ export const cities: City[] = [
   },
   {
     slug: "ho-chi-minh",
+    coords: { lat: 10.8231, lng: 106.6297 },
     name: "Ho Chi Minh",
     country: "Vietnam",
     continent: "Asia",
@@ -326,6 +339,7 @@ export const cities: City[] = [
   },
   {
     slug: "kuala-lumpur",
+    coords: { lat: 3.139, lng: 101.6869 },
     name: "Kuala Lumpur",
     country: "Malasia",
     continent: "Asia",
@@ -350,6 +364,7 @@ export const cities: City[] = [
   },
   {
     slug: "tiflis",
+    coords: { lat: 41.7151, lng: 44.8271 },
     name: "Tiflis",
     country: "Georgia",
     continent: "Europa",
@@ -374,6 +389,7 @@ export const cities: City[] = [
   },
   {
     slug: "tokio",
+    coords: { lat: 35.6762, lng: 139.6503 },
     name: "Tokio",
     country: "Japón",
     continent: "Asia",
@@ -398,6 +414,7 @@ export const cities: City[] = [
   },
   {
     slug: "seul",
+    coords: { lat: 37.5665, lng: 126.978 },
     name: "Seúl",
     country: "Corea del Sur",
     continent: "Asia",
@@ -422,6 +439,7 @@ export const cities: City[] = [
   },
   {
     slug: "estambul",
+    coords: { lat: 41.0082, lng: 28.9784 },
     name: "Estambul",
     country: "Turquía",
     continent: "Europa",
@@ -446,6 +464,7 @@ export const cities: City[] = [
   },
   {
     slug: "varsovia",
+    coords: { lat: 52.2297, lng: 21.0122 },
     name: "Varsovia",
     country: "Polonia",
     continent: "Europa",
@@ -470,6 +489,7 @@ export const cities: City[] = [
   },
   {
     slug: "split",
+    coords: { lat: 43.5081, lng: 16.4402 },
     name: "Split",
     country: "Croacia",
     continent: "Europa",
@@ -494,6 +514,7 @@ export const cities: City[] = [
   },
   {
     slug: "tallin",
+    coords: { lat: 59.437, lng: 24.7536 },
     name: "Tallin",
     country: "Estonia",
     continent: "Europa",
@@ -518,6 +539,7 @@ export const cities: City[] = [
   },
   {
     slug: "oporto",
+    coords: { lat: 41.1579, lng: -8.6291 },
     name: "Oporto",
     country: "Portugal",
     continent: "Europa",
@@ -542,6 +564,7 @@ export const cities: City[] = [
   },
   {
     slug: "madrid",
+    coords: { lat: 40.4168, lng: -3.7038 },
     name: "Madrid",
     country: "España",
     continent: "Europa",
@@ -566,6 +589,7 @@ export const cities: City[] = [
   },
   {
     slug: "barcelona",
+    coords: { lat: 41.3874, lng: 2.1686 },
     name: "Barcelona",
     country: "España",
     continent: "Europa",
@@ -590,6 +614,7 @@ export const cities: City[] = [
   },
   {
     slug: "berlin",
+    coords: { lat: 52.52, lng: 13.405 },
     name: "Berlín",
     country: "Alemania",
     continent: "Europa",
@@ -614,6 +639,7 @@ export const cities: City[] = [
   },
   {
     slug: "florencia",
+    coords: { lat: 43.7696, lng: 11.2558 },
     name: "Florencia",
     country: "Italia",
     continent: "Europa",
@@ -638,6 +664,7 @@ export const cities: City[] = [
   },
   {
     slug: "colombo",
+    coords: { lat: 6.9271, lng: 79.8612 },
     name: "Colombo",
     country: "Sri Lanka",
     continent: "Asia",
@@ -662,6 +689,7 @@ export const cities: City[] = [
   },
   {
     slug: "londres",
+    coords: { lat: 51.5072, lng: -0.1276 },
     name: "Londres",
     country: "Reino Unido",
     continent: "Europa",
@@ -686,6 +714,7 @@ export const cities: City[] = [
   },
   {
     slug: "seattle",
+    coords: { lat: 47.6062, lng: -122.3321 },
     name: "Seattle",
     country: "Estados Unidos",
     continent: "Norteamérica",
@@ -710,6 +739,7 @@ export const cities: City[] = [
   },
   {
     slug: "toronto",
+    coords: { lat: 43.6532, lng: -79.3832 },
     name: "Toronto",
     country: "Canadá",
     continent: "Norteamérica",
@@ -734,6 +764,7 @@ export const cities: City[] = [
   },
   {
     slug: "shanghai",
+    coords: { lat: 31.2304, lng: 121.4737 },
     name: "Shanghái",
     country: "China",
     continent: "Asia",
@@ -758,6 +789,7 @@ export const cities: City[] = [
   },
   {
     slug: "ciudad-del-cabo",
+    coords: { lat: -33.9249, lng: 18.4241 },
     name: "Ciudad del Cabo",
     country: "Sudáfrica",
     continent: "África",
@@ -782,6 +814,7 @@ export const cities: City[] = [
   },
   {
     slug: "taipei",
+    coords: { lat: 25.033, lng: 121.5654 },
     name: "Taipéi",
     country: "Taiwán",
     continent: "Asia",
@@ -806,6 +839,7 @@ export const cities: City[] = [
   },
   {
     slug: "sofia",
+    coords: { lat: 42.6977, lng: 23.3219 },
     name: "Sofía",
     country: "Bulgaria",
     continent: "Europa",
@@ -830,6 +864,7 @@ export const cities: City[] = [
   },
   {
     slug: "belgrado",
+    coords: { lat: 44.7866, lng: 20.4489 },
     name: "Belgrado",
     country: "Serbia",
     continent: "Europa",
@@ -854,6 +889,7 @@ export const cities: City[] = [
   },
   {
     slug: "braga",
+    coords: { lat: 41.5454, lng: -8.4265 },
     name: "Braga",
     country: "Portugal",
     continent: "Europa",
@@ -878,6 +914,7 @@ export const cities: City[] = [
   },
   {
     slug: "munich",
+    coords: { lat: 48.1351, lng: 11.582 },
     name: "Múnich",
     country: "Alemania",
     continent: "Europa",
@@ -902,6 +939,7 @@ export const cities: City[] = [
   },
   {
     slug: "sevilla",
+    coords: { lat: 37.3891, lng: -5.9845 },
     name: "Sevilla",
     country: "España",
     continent: "Europa",
@@ -926,6 +964,7 @@ export const cities: City[] = [
   },
   {
     slug: "paris",
+    coords: { lat: 48.8566, lng: 2.3522 },
     name: "París",
     country: "Francia",
     continent: "Europa",
@@ -950,6 +989,7 @@ export const cities: City[] = [
   },
   {
     slug: "milan",
+    coords: { lat: 45.4642, lng: 9.19 },
     name: "Milán",
     country: "Italia",
     continent: "Europa",
@@ -974,6 +1014,7 @@ export const cities: City[] = [
   },
   {
     slug: "manila",
+    coords: { lat: 14.5995, lng: 120.9842 },
     name: "Manila",
     country: "Filipinas",
     continent: "Asia",
@@ -998,6 +1039,7 @@ export const cities: City[] = [
   },
   {
     slug: "amsterdam",
+    coords: { lat: 52.3676, lng: 4.9041 },
     name: "Ámsterdam",
     country: "Países Bajos",
     continent: "Europa",
@@ -1022,6 +1064,7 @@ export const cities: City[] = [
   },
   {
     slug: "copenhague",
+    coords: { lat: 55.6761, lng: 12.5683 },
     name: "Copenhague",
     country: "Dinamarca",
     continent: "Europa",
@@ -1046,6 +1089,7 @@ export const cities: City[] = [
   },
   {
     slug: "pekin",
+    coords: { lat: 39.9042, lng: 116.4074 },
     name: "Pekín",
     country: "China",
     continent: "Asia",
@@ -1070,6 +1114,7 @@ export const cities: City[] = [
   },
   {
     slug: "san-francisco",
+    coords: { lat: 37.7749, lng: -122.4194 },
     name: "San Francisco",
     country: "Estados Unidos",
     continent: "Norteamérica",
@@ -1094,6 +1139,7 @@ export const cities: City[] = [
   },
   {
     slug: "viena",
+    coords: { lat: 48.2082, lng: 16.3738 },
     name: "Viena",
     country: "Austria",
     continent: "Europa",

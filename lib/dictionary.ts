@@ -88,6 +88,7 @@ const dict = {
     navArticles: "Artículos",
     navFeedback: "Feedback",
     navFavorites: "Favoritos",
+    navMap: "Mapa",
     navMenu: "Menú",
     navOpenMenu: "Abrir menú",
     signIn: "Registro/Inicio de sesión",
@@ -219,6 +220,13 @@ const dict = {
     esimIntro: (city: string) => `Activa una eSIM antes de llegar a ${city} y ten datos desde el minuto uno, sin depender del wifi del aeropuerto ni buscar una SIM física.`,
     esimBody: "Es la opción más práctica para la mayoría de nómadas: se activa desde el móvil antes incluso de salir de casa, sin colas ni papeleo al llegar. Antes de comprar, comprueba que tu teléfono sea compatible con eSIM y compara cobertura y precio por GB entre proveedores.",
     esimComingSoon: "Muy pronto añadiremos aquí nuestras recomendaciones de proveedores.",
+
+    mapSearchPlaceholder: "Busca una ciudad...",
+    mapViewCity: "Ver ciudad",
+    mapLegendCity: "Ciudades",
+    mapLegendCoworking: "Coworkings",
+    mapLegendHotel: "Hoteles (próximamente)",
+    mapLegendCafe: "Cafés · Premium (próximamente)",
   },
   en: {
     navCities: "Browse cities",
@@ -226,6 +234,7 @@ const dict = {
     navArticles: "Articles",
     navFeedback: "Feedback",
     navFavorites: "Favorites",
+    navMap: "Map",
     navMenu: "Menu",
     navOpenMenu: "Open menu",
     signIn: "Sign up / Log in",
@@ -357,6 +366,13 @@ const dict = {
     esimIntro: (city: string) => `Activate an eSIM before you land in ${city} and have data from minute one, without relying on airport wifi or hunting for a local SIM card.`,
     esimBody: "It's the most practical option for most nomads: you activate it from your phone before you even leave home, no queues or paperwork on arrival. Before buying, check that your phone supports eSIM and compare coverage and price per GB between providers.",
     esimComingSoon: "We'll soon add our own provider recommendations here.",
+
+    mapSearchPlaceholder: "Search a city...",
+    mapViewCity: "View city",
+    mapLegendCity: "Cities",
+    mapLegendCoworking: "Coworking spaces",
+    mapLegendHotel: "Hotels (coming soon)",
+    mapLegendCafe: "Cafés · Premium (coming soon)",
   },
 } as const;
 
