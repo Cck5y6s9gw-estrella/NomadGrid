@@ -232,6 +232,8 @@ const dict = {
     mapSignUpCta: "Registrarse gratis",
     mapExpandCta: "Ampliar hasta la ciudad",
     mapChangeCity: "Buscar otra ciudad",
+    mapPoiVisitWebsite: "Visitar web",
+    mapPoiCoworkingLabel: "Coworking",
   },
   en: {
     navCities: "Browse cities",
@@ -383,6 +385,8 @@ const dict = {
     mapSignUpCta: "Sign up for free",
     mapExpandCta: "Zoom into the city",
     mapChangeCity: "Search another city",
+    mapPoiVisitWebsite: "Visit website",
+    mapPoiCoworkingLabel: "Coworking",
   },
 } as const;
 

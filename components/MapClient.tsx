@@ -170,11 +170,21 @@ export default function MapClient() {
 
         const neighborhood = lang === "es" ? poi.neighborhood.es : poi.neighborhood.en;
         const price = poi.priceInfo ? (lang === "es" ? poi.priceInfo.es : poi.priceInfo.en) : "";
+        const websiteHost = poi.website ? poi.website.replace(/^https?:\/\//, "").replace(/\/$/, "") : "";
         const popupHtml = `
-          <div style="font-family: inherit; min-width: 170px;">
-            <div style="font-weight: 700; font-size: 13px; color:#0b0f1a;">${poi.name}</div>
-            <div style="font-size: 11px; color:#78716c; margin-bottom:4px;">${neighborhood}</div>
-            ${price ? `<div style="font-size: 11px; color:#44403c;">${price}</div>` : ""}
+          <div style="font-family: inherit; min-width: 200px; max-width: 240px;">
+            <div style="display:flex; align-items:center; gap:6px; margin-bottom:6px;">
+              <span style="display:inline-block; width:7px; height:7px; border-radius:50%; background:${CATEGORY_COLORS[poi.category]};"></span>
+              <span style="font-size:10px; font-weight:700; letter-spacing:0.05em; text-transform:uppercase; color:#a8a29e;">${d.mapPoiCoworkingLabel}</span>
+            </div>
+            <div style="font-weight: 700; font-size: 14px; color:#0b0f1a; line-height:1.25; margin-bottom:4px;">${poi.name}</div>
+            <div style="font-size: 12px; color:#57534e; margin-bottom:${price ? "3px" : "0"};">📍 ${neighborhood}</div>
+            ${price ? `<div style="font-size: 12px; color:#57534e; margin-bottom:2px;">💶 ${price}</div>` : ""}
+            ${
+              poi.website
+                ? `<a href="${poi.website}" target="_blank" rel="noopener noreferrer" style="display:flex; align-items:center; gap:4px; margin-top:8px; padding-top:8px; border-top:1px solid #e7e5e4; font-size:12px; font-weight:600; color:#ea580c; text-decoration:none;">${d.mapPoiVisitWebsite} (${websiteHost}) ↗</a>`
+                : ""
+            }
           </div>
         `;
 
