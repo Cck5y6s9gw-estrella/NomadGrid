@@ -134,8 +134,8 @@ export default function MapClient() {
       cities.forEach((city, index) => {
         const el = document.createElement("div");
         el.className = "roavio-city-marker";
-        el.style.setProperty("--poi-delay", `${(index % 12) * 35}ms`);
         el.title = city.name;
+        el.innerHTML = `<span class="roavio-city-marker__dot"></span>`;
         el.addEventListener("click", (e) => {
           e.stopPropagation();
           setSelectedCity(city);
@@ -146,6 +146,10 @@ export default function MapClient() {
           .setLngLat([city.coords.lng, city.coords.lat])
           .addTo(map);
         cityMarkersRef.current.push(marker);
+
+        // Fundido de entrada por opacidad — nunca transform, para no pisar el
+        // translate que MapLibre aplica al mismo elemento para posicionarlo.
+        window.setTimeout(() => el.classList.add("is-visible"), 15 + (index % 12) * 20);
       });
 
       // Coworkings (y, más adelante, hoteles y cafés) — el detalle que aparece al
@@ -154,8 +158,7 @@ export default function MapClient() {
         const el = document.createElement("div");
         el.className = "roavio-poi-marker";
         el.style.setProperty("--poi-color", CATEGORY_COLORS[poi.category]);
-        el.style.setProperty("--poi-delay", `${(index % 8) * 60}ms`);
-        el.innerHTML = `<span class="roavio-poi-marker__pulse"></span><span class="roavio-poi-marker__dot"></span>`;
+        el.innerHTML = `<span class="roavio-poi-marker__pin"></span>`;
 
         const neighborhood = lang === "es" ? poi.neighborhood.es : poi.neighborhood.en;
         const price = poi.priceInfo ? (lang === "es" ? poi.priceInfo.es : poi.priceInfo.en) : "";
@@ -167,11 +170,13 @@ export default function MapClient() {
           </div>
         `;
 
-        const marker = new Marker({ element: el })
+        const marker = new Marker({ element: el, anchor: "bottom" })
           .setLngLat([poi.lng, poi.lat])
           .setPopup(new Popup({ offset: 18 }).setHTML(popupHtml))
           .addTo(map);
         poiMarkersRef.current.push(marker);
+
+        window.setTimeout(() => el.classList.add("is-visible"), 15 + (index % 8) * 35);
       });
 
       map.resize();
@@ -214,7 +219,7 @@ export default function MapClient() {
         className="pointer-events-none absolute inset-0 z-[900]"
         style={{
           background:
-            "radial-gradient(760px 480px at 85% -10%, rgba(234,88,12,0.16) 0%, rgba(234,88,12,0) 62%), radial-gradient(620px 420px at -5% 110%, rgba(234,88,12,0.10) 0%, rgba(234,88,12,0) 60%)",
+            "radial-gradient(760px 480px at 85% -10%, rgba(234,88,12,0.09) 0%, rgba(234,88,12,0) 62%), radial-gradient(620px 420px at -5% 110%, rgba(234,88,12,0.05) 0%, rgba(234,88,12,0) 60%)",
         }}
       />
 
@@ -286,7 +291,7 @@ export default function MapClient() {
       <div className="absolute bottom-4 left-4 z-[1000]">
         <div className="bg-card/95 backdrop-blur border border-border rounded-2xl px-4 py-3 shadow-xl shadow-black/30 space-y-2 text-xs">
           <div className="flex items-center gap-2 text-muted">
-            <span className="w-2.5 h-2.5 rounded-full inline-block border-2 border-accent/70" />
+            <span className="w-2 h-2 rounded-full inline-block bg-foreground/40 border border-background" />
             {d.mapLegendCity}
           </div>
           <div className="flex items-center gap-2 text-foreground font-medium">
