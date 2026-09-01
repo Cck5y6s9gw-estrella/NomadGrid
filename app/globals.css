@@ -32,8 +32,8 @@ body {
    sus hijos, para no pisar el posicionamiento del marcador. */
 
 .roavio-city-marker {
-  width: 20px;
-  height: 20px;
+  width: 44px;
+  height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,50 +46,70 @@ body {
   opacity: 1;
 }
 
-.roavio-city-marker__dot {
-  width: 7px;
-  height: 7px;
+.roavio-city-marker__ring {
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  background: rgba(245, 245, 244, 0.55);
-  border: 1px solid rgba(11, 15, 26, 0.5);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
-  transition: transform 0.15s ease, background 0.15s ease;
+  padding: 2.5px;
+  background: linear-gradient(145deg, #ff8a3d, var(--accent));
+  box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.22), 0 4px 14px rgba(0, 0, 0, 0.55);
+  display: flex;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.roavio-city-marker:hover .roavio-city-marker__dot {
-  transform: scale(1.7);
-  background: #f5f5f4;
+.roavio-city-marker:hover .roavio-city-marker__ring {
+  transform: scale(1.14);
+  box-shadow: 0 0 0 5px rgba(234, 88, 12, 0.32), 0 6px 18px rgba(0, 0, 0, 0.6);
+}
+
+.roavio-city-marker__photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  border: 1.5px solid rgba(11, 15, 26, 0.85);
 }
 
 .roavio-poi-marker {
+  /* OJO: este elemento es el que MapLibre reposiciona con transform:translate
+     por JavaScript — nunca le pongas transform ni animation aqui (una
+     transition/animation de transform gana por cascada al estilo inline y
+     descoloca el pin). Solo opacidad y pointer-events, que son inofensivos. */
   width: 26px;
   height: 34px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  cursor: pointer;
   opacity: 0;
-  transition: opacity 0.4s ease;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
 }
 
 .roavio-poi-marker.is-visible {
   opacity: 1;
+  pointer-events: auto;
+  cursor: pointer;
 }
 
 .roavio-poi-marker__pin {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   margin-top: 4px;
   border-radius: 50% 50% 50% 0;
-  transform: rotate(-45deg);
-  background: var(--poi-color);
-  border: 1.5px solid rgba(245, 245, 244, 0.92);
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
-  transition: transform 0.15s ease;
+  transform: rotate(-45deg) scale(0.85);
+  background: linear-gradient(145deg, #ff8a3d, var(--poi-color));
+  border: 2px solid rgba(245, 245, 244, 0.95);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5), 0 0 0 2px rgba(234, 88, 12, 0.18);
+  transition: transform 0.2s ease;
+}
+
+.roavio-poi-marker.is-visible .roavio-poi-marker__pin {
+  transform: rotate(-45deg) scale(1);
 }
 
 .roavio-poi-marker:hover .roavio-poi-marker__pin {
-  transform: rotate(-45deg) scale(1.15);
+  transform: rotate(-45deg) scale(1.18);
 }
 
 .maplibregl-popup-content {

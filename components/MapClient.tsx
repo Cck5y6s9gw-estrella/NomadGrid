@@ -16,6 +16,9 @@ const CATEGORY_COLORS: Record<string, string> = {
 
 const STYLE_URL = "https://tiles.openfreemap.org/styles/dark";
 const CITY_ZOOM = 13.2;
+// Por debajo de este zoom solo se ven las ciudades (la vista de conjunto); a
+// partir de aqui aparecen los coworkings de la zona, con su ficha al pulsar.
+const POI_MIN_ZOOM = 10;
 
 // Repinta la paleta oscura genérica del basemap con los colores de marca de Roavio
 // (fondo #0b0f1a, tarjetas #121723, acento naranja #ea580c) para que el mapa se
@@ -88,6 +91,7 @@ export default function MapClient() {
   const mapRef = useRef<MaplibreMap | null>(null);
   const poiMarkersRef = useRef<Marker[]>([]);
   const cityMarkersRef = useRef<Marker[]>([]);
+  const poiElsRef = useRef<HTMLDivElement[]>([]);
 
   const flyToCity = (city: City) => {
     mapRef.current?.flyTo({
@@ -135,7 +139,11 @@ export default function MapClient() {
         const el = document.createElement("div");
         el.className = "roavio-city-marker";
         el.title = city.name;
-        el.innerHTML = `<span class="roavio-city-marker__dot"></span>`;
+        el.innerHTML = `
+          <span class="roavio-city-marker__ring">
+            <span class="roavio-city-marker__photo" style="background-image:url('${city.imageUrl}')"></span>
+          </span>
+        `;
         el.addEventListener("click", (e) => {
           e.stopPropagation();
           setSelectedCity(city);
@@ -154,7 +162,7 @@ export default function MapClient() {
 
       // Coworkings (y, más adelante, hoteles y cafés) — el detalle que aparece al
       // acercarse a una ciudad.
-      pois.forEach((poi, index) => {
+      pois.forEach((poi) => {
         const el = document.createElement("div");
         el.className = "roavio-poi-marker";
         el.style.setProperty("--poi-color", CATEGORY_COLORS[poi.category]);
@@ -175,9 +183,17 @@ export default function MapClient() {
           .setPopup(new Popup({ offset: 18 }).setHTML(popupHtml))
           .addTo(map);
         poiMarkersRef.current.push(marker);
-
-        window.setTimeout(() => el.classList.add("is-visible"), 15 + (index % 8) * 35);
+        poiElsRef.current.push(el);
       });
+
+      // Los coworkings solo se muestran a partir de cierto zoom: de lejos solo se
+      // ven las ciudades, y al acercarse aparecen los pines con su información.
+      const updatePoiVisibility = () => {
+        const show = map.getZoom() >= POI_MIN_ZOOM;
+        poiElsRef.current.forEach((el) => el.classList.toggle("is-visible", show));
+      };
+      updatePoiVisibility();
+      map.on("zoom", updatePoiVisibility);
 
       map.resize();
     });
@@ -186,6 +202,7 @@ export default function MapClient() {
       resizeObserver.disconnect();
       poiMarkersRef.current.forEach((m) => m.remove());
       poiMarkersRef.current = [];
+      poiElsRef.current = [];
       cityMarkersRef.current.forEach((m) => m.remove());
       cityMarkersRef.current = [];
       map.remove();
@@ -219,7 +236,7 @@ export default function MapClient() {
         className="pointer-events-none absolute inset-0 z-[900]"
         style={{
           background:
-            "radial-gradient(760px 480px at 85% -10%, rgba(234,88,12,0.09) 0%, rgba(234,88,12,0) 62%), radial-gradient(620px 420px at -5% 110%, rgba(234,88,12,0.05) 0%, rgba(234,88,12,0) 60%)",
+            "radial-gradient(900px 560px at 88% -12%, rgba(234,88,12,0.22) 0%, rgba(234,88,12,0) 60%), radial-gradient(700px 480px at -8% 112%, rgba(234,88,12,0.14) 0%, rgba(234,88,12,0) 60%)",
         }}
       />
 
@@ -290,8 +307,8 @@ export default function MapClient() {
       {/* Leyenda — abajo a la izquierda */}
       <div className="absolute bottom-4 left-4 z-[1000]">
         <div className="bg-card/95 backdrop-blur border border-border rounded-2xl px-4 py-3 shadow-xl shadow-black/30 space-y-2 text-xs">
-          <div className="flex items-center gap-2 text-muted">
-            <span className="w-2 h-2 rounded-full inline-block bg-foreground/40 border border-background" />
+          <div className="flex items-center gap-2 text-foreground font-medium">
+            <span className="w-3 h-3 rounded-full inline-block bg-accent ring-2 ring-white/70" />
             {d.mapLegendCity}
           </div>
           <div className="flex items-center gap-2 text-foreground font-medium">
