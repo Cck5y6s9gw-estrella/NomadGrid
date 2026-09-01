@@ -39,10 +39,6 @@ export default function MapClient() {
     });
     map.addControl(new NavigationControl({ showCompass: false }), "bottom-right");
     mapRef.current = map;
-    (window as any).__roavioMap = map;
-    map.on("error", (e: any) => {
-      console.error("MAPLIBRE_ERROR", e?.error?.message || e);
-    });
 
     map.on("load", () => {
       pois.forEach((poi) => {

@@ -227,6 +227,9 @@ const dict = {
     mapLegendCoworking: "Coworkings",
     mapLegendHotel: "Hoteles (próximamente)",
     mapLegendCafe: "Cafés · Premium (próximamente)",
+    mapSignedOutTitle: "Inicia sesión para usar el mapa",
+    mapSignedOutSubtitle: "Crea una cuenta gratis para explorar el mapa interactivo de coworkings y próximamente hoteles y cafés.",
+    mapSignUpCta: "Registrarse gratis",
   },
   en: {
     navCities: "Browse cities",
@@ -373,6 +376,9 @@ const dict = {
     mapLegendCoworking: "Coworking spaces",
     mapLegendHotel: "Hotels (coming soon)",
     mapLegendCafe: "Cafés · Premium (coming soon)",
+    mapSignedOutTitle: "Sign in to use the map",
+    mapSignedOutSubtitle: "Create a free account to explore the interactive coworking map, with hotels and cafés coming soon.",
+    mapSignUpCta: "Sign up for free",
   },
 } as const;
 
