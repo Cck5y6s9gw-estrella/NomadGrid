@@ -204,7 +204,7 @@ const dict = {
     feedbackSubtitle: "Roavio está en beta. Si algo no funciona, echas en falta una ciudad, o tienes una idea, este es el sitio.",
     feedbackIncentive: "Dedicamos tiempo y atención a cada mensaje que recibimos. Roavio se está construyendo ahora mismo con lo que nos contáis: si algo te falta o no te convence, es el momento de decirlo.",
     feedbackTypeLabel: "Tipo",
-    feedbackTypes: ["Feedback general", "Incidencia o error", "Sugerencia de ciudad", "Otra cosa"] as string[],
+    feedbackTypes: ["Feedback general", "Incidencia o error", "Sugerencia de ciudad", "Coworking o local que falta", "Otra cosa"] as string[],
     feedbackMessageLabel: "Mensaje",
     feedbackMessagePlaceholder: "Cuéntanos con el máximo detalle posible...",
     feedbackNameLabel: "Nombre (opcional)",
@@ -234,6 +234,8 @@ const dict = {
     mapChangeCity: "Buscar otra ciudad",
     mapPoiVisitWebsite: "Visitar web",
     mapPoiCoworkingLabel: "Coworking",
+    mapFeedbackCta: "¿Falta un coworking o ves algo mal? Cuéntanoslo",
+    mapFeedbackCtaShort: "¿Falta algo?",
   },
   en: {
     navCities: "Browse cities",
@@ -357,7 +359,7 @@ const dict = {
     feedbackSubtitle: "Roavio is in beta. If something's broken, a city is missing, or you have an idea, this is the place.",
     feedbackIncentive: "We give real time and attention to every message we get. Roavio is being built right now with what you tell us: if something's missing or doesn't convince you, now's the time to say so.",
     feedbackTypeLabel: "Type",
-    feedbackTypes: ["General feedback", "Bug or issue", "City suggestion", "Something else"] as string[],
+    feedbackTypes: ["General feedback", "Bug or issue", "City suggestion", "Missing coworking or spot", "Something else"] as string[],
     feedbackMessageLabel: "Message",
     feedbackMessagePlaceholder: "Tell us with as much detail as possible...",
     feedbackNameLabel: "Name (optional)",
@@ -387,6 +389,8 @@ const dict = {
     mapChangeCity: "Search another city",
     mapPoiVisitWebsite: "Visit website",
     mapPoiCoworkingLabel: "Coworking",
+    mapFeedbackCta: "Missing a coworking or something looks wrong? Let us know",
+    mapFeedbackCtaShort: "Missing something?",
   },
 } as const;
 

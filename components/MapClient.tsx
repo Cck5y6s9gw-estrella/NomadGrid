@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo, useRef, useEffect } from "react";
+import Link from "next/link";
 import { Map as MaplibreMap, Marker, Popup, NavigationControl, config as maplibreConfig } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { cities, type City } from "@/data/cities";
@@ -371,6 +372,19 @@ export default function MapClient() {
             {d.mapLegendCafe}
           </div>
         </div>
+      </div>
+
+      {/* CTA de feedback — abajo a la derecha. El mapa aun esta incompleto
+          (solo cuentas admin durante la construccion), asi que dejamos claro
+          que se puede reportar un coworking que falte o algo que este mal. */}
+      <div className="absolute bottom-4 right-4 z-[1000]">
+        <Link
+          href="/feedback?type=coworking"
+          className="flex items-center gap-2 bg-card/95 backdrop-blur border border-border hover:border-accent/60 rounded-full pl-3 pr-4 py-2.5 shadow-xl shadow-black/30 text-xs font-medium text-foreground hover:text-accent transition-colors"
+        >
+          <span className="text-accent text-sm leading-none">💬</span>
+          {d.mapFeedbackCtaShort}
+        </Link>
       </div>
     </div>
   );

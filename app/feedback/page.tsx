@@ -1,22 +1,37 @@
 "use client";
 
-import { useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import { trackEvent } from "@/lib/gtag";
 import { useLanguage } from "@/lib/i18n";
 import { t } from "@/lib/dictionary";
 
-export default function FeedbackPage() {
+// Los enlaces con ?type=coworking (p. ej. desde el mapa) preseleccionan este
+// tipo de feedback. Si el índice del array cambia, actualizar aquí también.
+const QUERY_TYPE_INDEX: Record<string, number> = {
+  coworking: 3, // "Coworking o local que falta" / "Missing coworking or spot"
+};
+
+function FeedbackForm() {
   const { lang } = useLanguage();
   const d = t(lang);
   const types = d.feedbackTypes;
+  const searchParams = useSearchParams();
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [typeIndex, setTypeIndex] = useState(0);
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+
+  useEffect(() => {
+    const queryType = searchParams.get("type");
+    if (queryType && queryType in QUERY_TYPE_INDEX) {
+      setTypeIndex(QUERY_TYPE_INDEX[queryType]);
+    }
+  }, [searchParams]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -147,5 +162,13 @@ export default function FeedbackPage() {
         </Link>
       </footer>
     </main>
+  );
+}
+
+export default function FeedbackPage() {
+  return (
+    <Suspense fallback={null}>
+      <FeedbackForm />
+    </Suspense>
   );
 }
