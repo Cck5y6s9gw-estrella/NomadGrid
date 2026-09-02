@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useUser } from "@clerk/nextjs";
 import Navbar from "@/components/Navbar";
 import { cities } from "@/data/cities";
 import { useLanguage } from "@/lib/i18n";
@@ -8,6 +9,7 @@ import { t, formatMoney, tCountry } from "@/lib/dictionary";
 
 export default function Home() {
   const { lang } = useLanguage();
+  const { isSignedIn } = useUser();
   const d = t(lang);
   const featured = cities.slice(0, 6);
 
@@ -104,25 +106,28 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Favorites promo */}
-      <section className="border-t border-border py-16 px-6">
-        <div className="max-w-4xl mx-auto bg-card border border-border rounded-3xl p-8 sm:p-10 flex flex-col sm:flex-row items-center gap-6 sm:gap-10">
-          <div className="text-4xl shrink-0">❤️</div>
-          <div className="flex-1 text-center sm:text-left">
-            <div className="inline-block text-[10px] font-semibold tracking-widest text-accent uppercase mb-2 border border-accent/40 px-2 py-0.5 rounded-full">
-              {d.homeFavoritesBadge}
+      {/* Favorites promo — solo tiene sentido para quien no tiene cuenta
+          todavia; si ya ha iniciado sesion, se oculta. */}
+      {!isSignedIn && (
+        <section className="border-t border-border py-16 px-6">
+          <div className="max-w-4xl mx-auto bg-card border border-border rounded-3xl p-8 sm:p-10 flex flex-col sm:flex-row items-center gap-6 sm:gap-10">
+            <div className="text-4xl shrink-0">❤️</div>
+            <div className="flex-1 text-center sm:text-left">
+              <div className="inline-block text-[10px] font-semibold tracking-widest text-accent uppercase mb-2 border border-accent/40 px-2 py-0.5 rounded-full">
+                {d.homeFavoritesBadge}
+              </div>
+              <h2 className="text-xl font-semibold mb-1.5">{d.homeFavoritesTitle}</h2>
+              <p className="text-muted text-sm">{d.homeFavoritesSubtitle}</p>
             </div>
-            <h2 className="text-xl font-semibold mb-1.5">{d.homeFavoritesTitle}</h2>
-            <p className="text-muted text-sm">{d.homeFavoritesSubtitle}</p>
+            <Link
+              href="/favoritos"
+              className="shrink-0 bg-accent text-white px-6 py-2.5 rounded-full font-medium text-sm hover:opacity-90 transition-opacity whitespace-nowrap"
+            >
+              {d.homeFavoritesCta}
+            </Link>
           </div>
-          <Link
-            href="/favoritos"
-            className="shrink-0 bg-accent text-white px-6 py-2.5 rounded-full font-medium text-sm hover:opacity-90 transition-opacity whitespace-nowrap"
-          >
-            {d.homeFavoritesCta}
-          </Link>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* CTA */}
       <section className="border-t border-border py-20 text-center px-6">
