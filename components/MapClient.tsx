@@ -374,9 +374,8 @@ export default function MapClient() {
         </div>
       </div>
 
-      {/* CTA de feedback — abajo a la derecha. El mapa aun esta incompleto
-          (solo cuentas admin durante la construccion), asi que dejamos claro
-          que se puede reportar un coworking que falte o algo que este mal. */}
+      {/* CTA de feedback — abajo a la derecha, para reportar un coworking
+          que falte o algo que este mal. */}
       <div className="absolute bottom-4 right-4 z-[1000]">
         <Link
           href="/feedback?type=coworking"
