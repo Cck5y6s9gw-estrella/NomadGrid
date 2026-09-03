@@ -176,6 +176,11 @@ export default function MapClient() {
         const websiteHost = poi.website ? poi.website.replace(/^https?:\/\//, "").replace(/\/$/, "") : "";
         const popupHtml = `
           <div style="font-family: inherit; min-width: 200px; max-width: 240px;">
+            ${
+              poi.imageUrl
+                ? `<div style="margin:-10px -10px 8px; border-radius:8px 8px 0 0; overflow:hidden; height:110px;"><img src="${poi.imageUrl}" alt="${poi.name}" style="width:100%; height:100%; object-fit:cover; display:block;" /></div>`
+                : ""
+            }
             <div style="display:flex; align-items:center; gap:6px; margin-bottom:6px;">
               <span style="display:inline-block; width:7px; height:7px; border-radius:50%; background:${CATEGORY_COLORS[poi.category]};"></span>
               <span style="font-size:10px; font-weight:700; letter-spacing:0.05em; text-transform:uppercase; color:#a8a29e;">${d.mapPoiCoworkingLabel}</span>

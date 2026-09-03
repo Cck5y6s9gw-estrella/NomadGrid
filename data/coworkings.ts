@@ -16,6 +16,7 @@ export type Poi = {
   lng: number;
   priceInfo?: { es: string; en: string };
   website?: string;
+  imageUrl?: string;
 };
 
 export const pois: Poi[] = [
