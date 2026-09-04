@@ -8,7 +8,7 @@ import { cities, City } from "@/data/cities";
 import { useLanguage } from "@/lib/i18n";
 import { t, formatMoney, tCountry, tContinent } from "@/lib/dictionary";
 
-const continentValues = ["Todos", "Europa", "Asia", "América", "Norteamérica", "Oriente Medio"];
+const continentValues = ["Todos", "Europa", "Asia", "América", "Norteamérica", "Oriente Medio", "África", "Oceanía"];
 
 export default function CitiesPage() {
   const { lang } = useLanguage();

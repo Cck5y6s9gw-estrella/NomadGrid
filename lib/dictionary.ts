@@ -41,6 +41,7 @@ export const continentNames: Record<string, string> = {
   "Norteamérica": "North America",
   "Oriente Medio": "Middle East",
   "África": "Africa",
+  "Oceanía": "Oceania",
 };
 
 export const climateNames: Record<string, string> = {
