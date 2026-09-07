@@ -59,7 +59,7 @@ export default function ArticleView({ article }: { article: Article }) {
           <p className="text-xs text-muted uppercase tracking-wide mb-3">
             {article.date}
           </p>
-          <h1 className="text-4xl font-extrabold tracking-tight leading-tight mb-3">
+          <h1 className="font-serif text-4xl font-medium tracking-tight leading-tight mb-3">
             {article.title[lang]}
           </h1>
           <p className="text-lg text-muted mb-10">{article.dek[lang]}</p>

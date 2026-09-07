@@ -130,7 +130,7 @@ export default function CitiesPage() {
 
 function CityCard({ city, lang, monthly }: { city: City; lang: "es" | "en"; monthly: string }) {
   return (
-    <Link href={`/cities/${city.slug}`} className="group relative overflow-hidden rounded-2xl border border-border hover:border-accent transition-all duration-300">
+    <Link href={`/cities/${city.slug}`} className="group relative overflow-hidden rounded-3xl border border-white/10 shadow-lg shadow-black/30 hover:border-accent/70 hover:shadow-accent/10 transition-all duration-300">
       <img
         src={city.imageUrl}
         alt={city.name}
@@ -141,7 +141,7 @@ function CityCard({ city, lang, monthly }: { city: City; lang: "es" | "en"; mont
       <div className="absolute bottom-0 left-0 right-0 p-4">
         <div className="flex items-end justify-between mb-2">
           <div>
-            <h3 className="text-sm font-semibold leading-tight text-foreground">{city.name}</h3>
+            <h3 className="font-serif text-base font-medium leading-tight text-foreground">{city.name}</h3>
             <p className="text-xs text-muted">{tCountry(city.country, lang)}</p>
           </div>
           <div className="text-right">
