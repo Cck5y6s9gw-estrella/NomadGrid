@@ -126,3 +126,54 @@ export function IconSearch(props: IconProps) {
     </svg>
   );
 }
+
+export function IconCloud(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M7.5 18.5a4.3 4.3 0 0 1-.6-8.6 5.3 5.3 0 0 1 10.2-1.8A4 4 0 0 1 17 18.5H7.5Z" />
+    </svg>
+  );
+}
+
+export function IconSnowflake(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <line x1="12" y1="2.5" x2="12" y2="21.5" />
+      <line x1="4.5" y1="7.2" x2="19.5" y2="16.8" />
+      <line x1="19.5" y1="7.2" x2="4.5" y2="16.8" />
+      <path d="M12 2.5 10 4.7M12 2.5l2 2.2M12 21.5l-2-2.2M12 21.5l2-2.2" />
+    </svg>
+  );
+}
+
+export function IconCompass(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M15 9l-2 5-4.5 1.5L10.5 10 15 9Z" />
+    </svg>
+  );
+}
+
+export function IconTarget(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <circle cx="12" cy="12" r="8.5" />
+      <circle cx="12" cy="12" r="4.5" />
+      <circle cx="12" cy="12" r="1" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
+
+export function IconTrophy(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M7 4h10v5a5 5 0 0 1-10 0V4Z" />
+      <path d="M7 5H4.5a1 1 0 0 0-1 1.2c.4 1.9 1.6 3.3 3.5 3.6" />
+      <path d="M17 5h2.5a1 1 0 0 1 1 1.2c-.4 1.9-1.6 3.3-3.5 3.6" />
+      <line x1="12" y1="14" x2="12" y2="18" />
+      <path d="M8.5 20.5h7" />
+      <path d="M9.5 20.5c0-1.5.7-2.3 2.5-2.3s2.5.8 2.5 2.3" />
+    </svg>
+  );
+}
