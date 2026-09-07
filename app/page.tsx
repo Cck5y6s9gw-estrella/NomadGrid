@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import { cities } from "@/data/cities";
 import { useLanguage } from "@/lib/i18n";
 import { t, formatMoney, tCountry } from "@/lib/dictionary";
+import { IconWifi, IconUmbrella } from "@/components/Icon";
 
 export default function Home() {
   const { lang } = useLanguage();
@@ -98,10 +99,10 @@ export default function Home() {
                 </div>
                 <div className="flex gap-2 mt-3">
                   {city.hasBeach && (
-                    <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full">🏖 {d.beach}</span>
+                    <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full inline-flex items-center gap-1"><IconUmbrella className="w-3 h-3" />{d.beach}</span>
                   )}
                   <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full">⭐ {city.qualityOfLife}</span>
-                  <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full">🛜 {city.internetSpeed} Mbps</span>
+                  <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full inline-flex items-center gap-1"><IconWifi className="w-3 h-3" />{city.internetSpeed} Mbps</span>
                 </div>
               </div>
             </Link>

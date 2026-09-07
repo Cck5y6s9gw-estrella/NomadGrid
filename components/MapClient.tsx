@@ -186,8 +186,8 @@ export default function MapClient() {
               <span style="font-size:10px; font-weight:700; letter-spacing:0.05em; text-transform:uppercase; color:#a8a29e;">${d.mapPoiCoworkingLabel}</span>
             </div>
             <div style="font-weight: 700; font-size: 14px; color:#0b0f1a; line-height:1.25; margin-bottom:4px;">${poi.name}</div>
-            <div style="font-size: 12px; color:#57534e; margin-bottom:${price ? "3px" : "0"};">📍 ${neighborhood}</div>
-            ${price ? `<div style="font-size: 12px; color:#57534e; margin-bottom:2px;">💶 ${price}</div>` : ""}
+            <div style="font-size: 12px; color:#57534e; margin-bottom:${price ? "3px" : "0"};"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#78716c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:-1px;margin-right:3px;"><path d="M12 21.5s6.7-7 6.7-12.2a6.7 6.7 0 1 0-13.4 0c0 5.2 6.7 12.2 6.7 12.2Z"/><circle cx="12" cy="9.3" r="2.3"/></svg>${neighborhood}</div>
+            ${price ? `<div style="font-size: 12px; color:#57534e; margin-bottom:2px;"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#78716c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:-1px;margin-right:3px;"><circle cx="12" cy="12" r="8.5"/><path d="M9.5 9.3c0-1 .9-1.6 2.2-1.6 1.4 0 2.3.6 2.3 1.5 0 1.9-4.5 1.3-4.5 3.3 0 1 1 1.6 2.3 1.6 1.3 0 2.2-.6 2.2-1.6"/></svg>${price}</div>` : ""}
             ${
               poi.website
                 ? `<a href="${poi.website}" target="_blank" rel="noopener noreferrer" style="display:flex; align-items:center; gap:4px; margin-top:8px; padding-top:8px; border-top:1px solid #e7e5e4; font-size:12px; font-weight:600; color:#ea580c; text-decoration:none;">${d.mapPoiVisitWebsite} (${websiteHost}) ↗</a>`

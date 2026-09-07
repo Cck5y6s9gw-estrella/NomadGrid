@@ -7,6 +7,7 @@ import Navbar from "@/components/Navbar";
 import { trackEvent } from "@/lib/gtag";
 import { useLanguage } from "@/lib/i18n";
 import { t } from "@/lib/dictionary";
+import { IconMessage } from "@/components/Icon";
 
 // Los enlaces con ?type=coworking (p. ej. desde el mapa) preseleccionan este
 // tipo de feedback. Si el índice del array cambia, actualizar aquí también.
@@ -72,7 +73,7 @@ function FeedbackForm() {
         </div>
 
         <div className="bg-accent/10 border border-accent/30 rounded-2xl px-5 py-4 mb-8 flex items-start gap-3">
-          <span className="text-lg leading-none mt-0.5">💬</span>
+          <IconMessage className="w-5 h-5 mt-0.5 text-accent shrink-0" />
           <p className="text-sm text-foreground">{d.feedbackIncentive}</p>
         </div>
 

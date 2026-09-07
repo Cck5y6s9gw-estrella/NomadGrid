@@ -11,6 +11,7 @@ import { cityGuidesEn } from "@/data/cityGuidesEn";
 import { useLanguage } from "@/lib/i18n";
 import { t, formatMoney, tCountry, tContinent, tClimate } from "@/lib/dictionary";
 import { getCityInsights } from "@/lib/cityInsights";
+import { IconCoin, IconWifi, IconShield, IconSun, IconStar, IconUmbrella } from "./Icon";
 
 export default function CityDetailClient({ city, guide }: { city: City; guide: CityGuide }) {
   const { lang } = useLanguage();
@@ -23,12 +24,12 @@ export default function CityDetailClient({ city, guide }: { city: City; guide: C
   const activeGuide = lang === "en" && guideEn ? guideEn : guide;
 
   const stats = [
-    { label: d.statCostMonth, value: `${city.currency} ${formatMoney(city.costPerMonth, lang)}`, icon: "💰" },
-    { label: d.statInternetLabel, value: `${city.internetSpeed} Mbps`, icon: "🛜" },
-    { label: d.statSafetyLabel, value: `${city.safetyScore} / 10`, icon: "🔒" },
-    { label: d.statClimateLabel, value: tClimate(city.climateType, lang), icon: "🌤" },
-    { label: d.statQualityLabel, value: `${city.qualityOfLife} / 10`, icon: "⭐" },
-    { label: d.statBeachLabel, value: city.hasBeach ? d.yes : d.no, icon: "🏖" },
+    { label: d.statCostMonth, value: `${city.currency} ${formatMoney(city.costPerMonth, lang)}`, Icon: IconCoin },
+    { label: d.statInternetLabel, value: `${city.internetSpeed} Mbps`, Icon: IconWifi },
+    { label: d.statSafetyLabel, value: `${city.safetyScore} / 10`, Icon: IconShield },
+    { label: d.statClimateLabel, value: tClimate(city.climateType, lang), Icon: IconSun },
+    { label: d.statQualityLabel, value: `${city.qualityOfLife} / 10`, Icon: IconStar },
+    { label: d.statBeachLabel, value: city.hasBeach ? d.yes : d.no, Icon: IconUmbrella },
   ];
 
   const sourceRows = [
@@ -80,7 +81,7 @@ export default function CityDetailClient({ city, guide }: { city: City; guide: C
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-12">
           {stats.map((s) => (
             <div key={s.label} className="bg-card border border-border rounded-2xl p-4 text-center">
-              <div className="text-2xl mb-2">{s.icon}</div>
+              <s.Icon className="w-6 h-6 mx-auto mb-2 text-accent" />
               <div className="text-sm font-semibold text-foreground">{s.value}</div>
               <div className="text-xs text-muted mt-0.5">{s.label}</div>
             </div>

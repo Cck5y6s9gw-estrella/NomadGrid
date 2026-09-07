@@ -7,6 +7,7 @@ import FavoriteButton from "@/components/FavoriteButton";
 import { cities, City } from "@/data/cities";
 import { useLanguage } from "@/lib/i18n";
 import { t, formatMoney, tCountry, tContinent } from "@/lib/dictionary";
+import { IconShield, IconWifi } from "@/components/Icon";
 
 const continentValues = ["Todos", "Europa", "Asia", "América", "Norteamérica", "África", "Oceanía"];
 
@@ -151,8 +152,8 @@ function CityCard({ city, lang, monthly }: { city: City; lang: "es" | "en"; mont
         <div className="flex gap-1.5 flex-wrap">
           {city.hasBeach && <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full">🏖</span>}
           <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full">⭐ {city.qualityOfLife}</span>
-          <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full">🔒 {city.safetyScore}</span>
-          <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full">🛜 {city.internetSpeed}M</span>
+          <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full inline-flex items-center gap-1"><IconShield className="w-3 h-3" />{city.safetyScore}</span>
+          <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full inline-flex items-center gap-1"><IconWifi className="w-3 h-3" />{city.internetSpeed}M</span>
         </div>
       </div>
     </Link>

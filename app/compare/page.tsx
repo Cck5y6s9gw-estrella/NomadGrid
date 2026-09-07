@@ -7,6 +7,7 @@ import { cities, City } from "@/data/cities";
 import { useLanguage, type Lang } from "@/lib/i18n";
 import { t, formatMoney, tCountry, tContinent, tClimate } from "@/lib/dictionary";
 import { trackEvent } from "@/lib/gtag";
+import { IconScale } from "@/components/Icon";
 
 function buildMetrics(lang: Lang) {
   const d = t(lang);
@@ -223,8 +224,8 @@ export default function ComparePage() {
           </>
         ) : (
           <div className="text-center py-24 border border-dashed border-accent/30 rounded-2xl">
-            <div className="w-10 h-10 rounded-full bg-accent/10 text-accent flex items-center justify-center mx-auto mb-4 text-lg">
-              ⚖
+            <div className="w-10 h-10 rounded-full bg-accent/10 text-accent flex items-center justify-center mx-auto mb-4">
+              <IconScale className="w-5 h-5" />
             </div>
             <p className="text-muted">{d.selectTwoToCompare}</p>
           </div>
