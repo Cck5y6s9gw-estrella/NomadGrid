@@ -150,10 +150,10 @@ function CityCard({ city, lang, monthly }: { city: City; lang: "es" | "en"; mont
           </div>
         </div>
         <div className="flex gap-1.5 flex-wrap">
-          {city.hasBeach && <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full"><IconUmbrella className="w-3 h-3" /></span>}
-          <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full inline-flex items-center gap-1"><IconStar className="w-3 h-3" />{city.qualityOfLife}</span>
-          <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full inline-flex items-center gap-1"><IconShield className="w-3 h-3" />{city.safetyScore}</span>
-          <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full inline-flex items-center gap-1"><IconWifi className="w-3 h-3" />{city.internetSpeed}M</span>
+          {city.hasBeach && <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full"><IconUmbrella className="w-3 h-3 text-accent" /></span>}
+          <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full inline-flex items-center gap-1"><IconStar className="w-3 h-3 text-accent" />{city.qualityOfLife}</span>
+          <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full inline-flex items-center gap-1"><IconShield className="w-3 h-3 text-accent" />{city.safetyScore}</span>
+          <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full inline-flex items-center gap-1"><IconWifi className="w-3 h-3 text-accent" />{city.internetSpeed}M</span>
         </div>
       </div>
     </Link>

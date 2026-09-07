@@ -99,10 +99,10 @@ export default function Home() {
                 </div>
                 <div className="flex gap-2 mt-3">
                   {city.hasBeach && (
-                    <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full inline-flex items-center gap-1"><IconUmbrella className="w-3 h-3" />{d.beach}</span>
+                    <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full inline-flex items-center gap-1"><IconUmbrella className="w-3 h-3 text-accent" />{d.beach}</span>
                   )}
-                  <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full inline-flex items-center gap-1"><IconStar className="w-3 h-3" />{city.qualityOfLife}</span>
-                  <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full inline-flex items-center gap-1"><IconWifi className="w-3 h-3" />{city.internetSpeed} Mbps</span>
+                  <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full inline-flex items-center gap-1"><IconStar className="w-3 h-3 text-accent" />{city.qualityOfLife}</span>
+                  <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full inline-flex items-center gap-1"><IconWifi className="w-3 h-3 text-accent" />{city.internetSpeed} Mbps</span>
                 </div>
               </div>
             </Link>
