@@ -130,7 +130,7 @@ function StepHeader({ Icon, title }: { Icon: IconType; title: string }) {
       <span className="w-14 h-14 rounded-2xl bg-accent/10 text-accent flex items-center justify-center mb-4">
         <Icon className="w-7 h-7" />
       </span>
-      <h2 className="font-serif text-2xl sm:text-3xl font-medium text-foreground">{title}</h2>
+      <h2 className="font-serif text-2xl sm:text-3xl text-foreground">{title}</h2>
     </div>
   );
 }
@@ -187,9 +187,6 @@ export default function MatchPage() {
 
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
-      {/* Glow decorativo */}
-      <div className="pointer-events-none absolute -top-40 left-1/2 -translate-x-1/2 w-[640px] h-[640px] rounded-full bg-accent/20 blur-[120px]" />
-
       <Navbar />
       <main className="relative max-w-3xl mx-auto px-6 pt-28 pb-24">
         {!started && (
@@ -198,7 +195,7 @@ export default function MatchPage() {
               <IconCompass className="w-3.5 h-3.5" />
               {d.matchNavBadge}
             </span>
-            <h1 className="font-serif text-4xl sm:text-5xl font-medium text-foreground tracking-tight mb-4">{d.matchTitle}</h1>
+            <h1 className="font-serif text-4xl sm:text-5xl text-foreground tracking-tight mb-4">{d.matchTitle}</h1>
             <p className="text-muted text-lg max-w-xl mx-auto mb-8">{d.matchSubtitle}</p>
 
             <div className="flex justify-center -space-x-3 mb-9">
@@ -302,7 +299,7 @@ export default function MatchPage() {
               <span className="inline-flex w-14 h-14 rounded-2xl bg-accent/10 text-accent items-center justify-center mb-4">
                 <IconTrophy className="w-7 h-7" />
               </span>
-              <h1 className="font-serif text-3xl sm:text-4xl font-medium text-foreground tracking-tight mb-2">{d.matchResultsTitle}</h1>
+              <h1 className="font-serif text-3xl sm:text-4xl text-foreground tracking-tight mb-2">{d.matchResultsTitle}</h1>
               <p className="text-muted">{d.matchResultsSubtitle}</p>
             </div>
 
@@ -326,7 +323,7 @@ export default function MatchPage() {
                     <img src={city.imageUrl} alt={city.name} className="h-16 w-16 rounded-2xl object-cover shrink-0" />
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 flex-wrap">
-                        <span className="font-serif font-medium text-foreground">{city.name}</span>
+                        <span className="font-serif text-foreground">{city.name}</span>
                         <span className="text-xs text-muted">{tCountry(city.country, lang)}</span>
                       </div>
                       <div className="h-1.5 w-full max-w-[160px] rounded-full bg-white/10 overflow-hidden mt-1.5 mb-1">

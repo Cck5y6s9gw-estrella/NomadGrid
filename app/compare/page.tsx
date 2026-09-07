@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
-import Glow from "@/components/Glow";
 import { cities, City } from "@/data/cities";
 import { useLanguage, type Lang } from "@/lib/i18n";
 import { t, formatMoney, tCountry, tContinent, tClimate } from "@/lib/dictionary";
@@ -62,7 +61,6 @@ export default function ComparePage() {
 
   return (
     <main className="min-h-screen bg-background text-foreground relative overflow-hidden">
-      <Glow />
       <Navbar />
 
       <div className="max-w-6xl mx-auto px-6 pt-28 pb-20">

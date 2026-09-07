@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
-import Glow from "@/components/Glow";
 import FavoriteButton from "@/components/FavoriteButton";
 import { cities, City } from "@/data/cities";
 import { useLanguage } from "@/lib/i18n";
@@ -42,7 +41,6 @@ export default function CitiesPage() {
 
   return (
     <main className="min-h-screen bg-background text-foreground relative overflow-hidden">
-      <Glow />
       <Navbar />
 
       <div className="max-w-7xl mx-auto px-6 pt-24 pb-16">
@@ -147,7 +145,7 @@ function CityCard({ city, lang, monthly, index }: { city: City; lang: "es" | "en
       <div className="absolute bottom-0 left-0 right-0 p-4">
         <div className="flex items-end justify-between mb-2">
           <div>
-            <h3 className="font-serif text-base font-medium leading-tight text-foreground">{city.name}</h3>
+            <h3 className="font-serif text-base leading-tight text-foreground">{city.name}</h3>
             <p className="text-xs text-muted">{tCountry(city.country, lang)}</p>
           </div>
           <div className="text-right">

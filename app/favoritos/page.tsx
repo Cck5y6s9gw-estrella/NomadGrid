@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useUser, SignUpButton } from "@clerk/nextjs";
 import Navbar from "@/components/Navbar";
-import Glow from "@/components/Glow";
 import FavoriteButton from "@/components/FavoriteButton";
 import { cities } from "@/data/cities";
 import { useLanguage } from "@/lib/i18n";
@@ -20,7 +19,6 @@ export default function FavoritesPage() {
 
   return (
     <main className="min-h-screen bg-background text-foreground relative overflow-hidden">
-      <Glow />
       <Navbar />
 
       <div className="max-w-7xl mx-auto px-6 pt-28 pb-20">

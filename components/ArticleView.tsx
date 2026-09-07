@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import Navbar from "./Navbar";
-import Glow from "./Glow";
 import type { Article } from "../lib/articles";
 
 type Lang = "es" | "en";
@@ -15,7 +14,6 @@ export default function ArticleView({ article }: { article: Article }) {
     <>
       <Navbar />
       <main className="relative overflow-hidden min-h-screen bg-background text-foreground px-6 pt-28 pb-20">
-        <Glow />
         <div className="relative mx-auto max-w-2xl animate-fade-up">
           <div className="flex items-center justify-between mb-8">
             <Link
@@ -61,7 +59,7 @@ export default function ArticleView({ article }: { article: Article }) {
           <p className="text-xs text-muted uppercase tracking-wide mb-3">
             {article.date}
           </p>
-          <h1 className="font-serif text-4xl font-medium tracking-tight leading-tight mb-3">
+          <h1 className="font-serif text-4xl tracking-tight leading-tight mb-3">
             {article.title[lang]}
           </h1>
           <p className="text-lg text-muted mb-10">{article.dek[lang]}</p>

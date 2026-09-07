@@ -70,7 +70,7 @@ export default function CityDetailClient({ city, guide }: { city: City; guide: C
         <div className="absolute bottom-0 left-0 right-0 max-w-7xl mx-auto px-6 pb-8">
           <p className="text-sm text-muted mb-1">{tCountry(city.country, lang)} · {tContinent(city.continent, lang)}</p>
           <div className="flex items-center gap-3">
-            <h1 className="font-serif text-4xl font-medium text-foreground">{city.name}</h1>
+            <h1 className="font-serif text-4xl text-foreground">{city.name}</h1>
             <FavoriteButton citySlug={city.slug} variant="hero" />
           </div>
         </div>

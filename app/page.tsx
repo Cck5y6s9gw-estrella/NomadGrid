@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useUser } from "@clerk/nextjs";
 import Navbar from "@/components/Navbar";
-import Glow from "@/components/Glow";
 import { cities } from "@/data/cities";
 import { useLanguage } from "@/lib/i18n";
 import { t, formatMoney, tCountry } from "@/lib/dictionary";
@@ -31,7 +30,6 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-background text-foreground relative overflow-hidden">
-      <Glow />
       <Navbar />
 
       {/* Hero */}
@@ -39,7 +37,7 @@ export default function Home() {
         <div className="inline-block text-xs font-medium tracking-widest text-muted uppercase mb-6 border border-border px-3 py-1 rounded-full">
           {d.heroBadge(cities.length)}
         </div>
-        <h1 className="font-serif text-5xl md:text-7xl font-medium tracking-tight leading-tight mb-6">
+        <h1 className="font-serif text-5xl md:text-7xl tracking-tight leading-tight mb-6">
           {d.heroTitle1}<br />
           <span className="text-accent">{d.heroTitle2}</span>
         </h1>
@@ -74,7 +72,7 @@ export default function Home() {
       {/* Featured cities */}
       <section className="max-w-7xl mx-auto px-6 py-20">
         <div className="flex items-center justify-between mb-10">
-          <h2 className="font-serif text-2xl font-medium">{d.featuredCities}</h2>
+          <h2 className="font-serif text-2xl">{d.featuredCities}</h2>
           <Link href="/cities" className="text-sm text-muted hover:text-accent transition-colors">
             {d.seeAll}
           </Link>
@@ -91,7 +89,7 @@ export default function Home() {
               <div className="absolute bottom-0 left-0 right-0 p-5">
                 <div className="flex items-end justify-between">
                   <div>
-                    <h3 className="font-serif text-lg font-medium text-foreground">{city.name}</h3>
+                    <h3 className="font-serif text-lg text-foreground">{city.name}</h3>
                     <p className="text-sm text-muted">{tCountry(city.country, lang)}</p>
                   </div>
                   <div className="text-right">
@@ -137,7 +135,7 @@ export default function Home() {
 
       {/* CTA */}
       <section className="border-t border-border py-20 text-center px-6">
-        <h2 className="font-serif text-3xl font-medium mb-4">{d.ctaTitle}</h2>
+        <h2 className="font-serif text-3xl mb-4">{d.ctaTitle}</h2>
         <p className="text-muted mb-8">{d.ctaSubtitle}</p>
         <Link href="/cities" className="bg-accent text-white px-8 py-3 rounded-full font-medium text-sm hover:opacity-90 transition-opacity">
           {d.ctaButton(cities.length)}
