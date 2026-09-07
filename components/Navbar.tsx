@@ -43,10 +43,10 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-3 sm:px-6 h-14 flex items-center justify-between gap-2">
         <Link
           href="/"
-          className="flex items-center gap-2 text-foreground font-semibold text-lg tracking-tight shrink-0 min-w-0"
+          className="flex items-center gap-1.5 sm:gap-2 text-foreground font-semibold tracking-tight shrink-0 min-w-0"
         >
           <img src="/logo-icon.png" alt="Roavio" className="h-6 w-auto shrink-0" />
-          <span className="hidden sm:inline">Roavio</span>
+          <span className="text-base sm:text-lg">Roavio</span>
         </Link>
 
         <div className="flex items-center gap-1.5 sm:gap-3 shrink-0">
