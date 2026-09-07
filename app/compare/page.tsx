@@ -141,8 +141,8 @@ export default function ComparePage() {
                 className="grid border-b border-border"
                 style={{ gridTemplateColumns: `10rem repeat(${selectedCities.length}, 1fr)` }}
               >
-                <div className="py-5 px-5 flex items-center">
-                  <img src="/logo-icon.png" alt="Roavio" className="h-6 w-auto" />
+                <div className="py-5 px-5 flex items-center justify-center">
+                  <img src="/logo-icon.png" alt="Roavio" className="h-9 w-auto" />
                 </div>
                 {selectedCities.map((city) => (
                   <div key={city.slug} className="border-l border-border">
