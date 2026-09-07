@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Instrument_Serif } from "next/font/google";
+import { Geist, Geist_Mono, Anton } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Analytics } from "@vercel/analytics/next";
 import { GoogleAnalytics } from "@next/third-parties/google";
@@ -16,11 +16,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const instrumentSerif = Instrument_Serif({
-  variable: "--font-instrument-serif",
+const anton = Anton({
+  variable: "--font-anton",
   subsets: ["latin"],
   weight: ["400"],
-  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
@@ -82,7 +81,7 @@ export default function RootLayout({
     >
       <html
         lang="es"
-        className={`${geistSans.variable} ${geistMono.variable} ${instrumentSerif.variable} h-full antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${anton.variable} h-full antialiased`}
       >
         <body className="min-h-full flex flex-col">
           <LanguageProvider>{children}</LanguageProvider>
