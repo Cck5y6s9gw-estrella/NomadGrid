@@ -109,3 +109,20 @@ export function IconScale(props: IconProps) {
     </svg>
   );
 }
+
+export function IconHeart(props: IconProps) {
+  return (
+    <svg {...base} fill="currentColor" stroke="none" {...props}>
+      <path d="M12 20.3c-.3 0-.6-.1-.8-.3-3.8-3.1-6.3-5.3-7.9-7.4C1.7 10.7 1 9.1 1 7.5 1 4.9 3.1 3 5.6 3c1.5 0 2.9.7 3.9 1.9.2.3.6.3.9 0C11.4 3.7 12.8 3 14.4 3 16.9 3 19 4.9 19 7.5c0 1.6-.7 3.2-2.3 5.1-1.6 2.1-4.1 4.3-7.9 7.4-.2.2-.5.3-.8.3z" />
+    </svg>
+  );
+}
+
+export function IconSearch(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <circle cx="11" cy="11" r="7" />
+      <line x1="16.3" y1="16.3" x2="21" y2="21" />
+    </svg>
+  );
+}

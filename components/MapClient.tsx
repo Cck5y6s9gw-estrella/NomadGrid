@@ -8,6 +8,7 @@ import { cities, type City } from "@/data/cities";
 import { pois } from "@/data/coworkings";
 import { useLanguage } from "@/lib/i18n";
 import { t } from "@/lib/dictionary";
+import { IconSearch, IconMessage } from "@/components/Icon";
 
 const CATEGORY_COLORS: Record<string, string> = {
   coworking: "#ea580c",
@@ -288,7 +289,7 @@ export default function MapClient() {
       <div className="absolute top-4 right-4 z-[1000] w-80 max-w-[calc(100%-2rem)]">
         <div className="bg-card/95 backdrop-blur border border-border rounded-2xl p-3 shadow-xl shadow-black/30">
           <div className="relative">
-            <span className="absolute left-3.5 top-1/2 -translate-y-1/2 text-accent text-sm">✦</span>
+            <IconSearch className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-accent" />
             <input
               value={query}
               onChange={(e) => {
@@ -386,7 +387,7 @@ export default function MapClient() {
           href="/feedback?type=coworking"
           className="flex items-center gap-2 bg-card/95 backdrop-blur border border-border hover:border-accent/60 rounded-full pl-3 pr-4 py-2.5 shadow-xl shadow-black/30 text-xs font-medium text-foreground hover:text-accent transition-colors"
         >
-          <span className="text-accent text-sm leading-none">💬</span>
+          <IconMessage className="w-4 h-4 text-accent" />
           {d.mapFeedbackCtaShort}
         </Link>
       </div>

@@ -7,6 +7,7 @@ import FavoriteButton from "@/components/FavoriteButton";
 import { cities } from "@/data/cities";
 import { useLanguage } from "@/lib/i18n";
 import { t, formatMoney, tCountry } from "@/lib/dictionary";
+import { IconHeart } from "@/components/Icon";
 
 export default function FavoritesPage() {
   const { lang } = useLanguage();
@@ -31,8 +32,8 @@ export default function FavoritesPage() {
 
         {!isLoaded ? null : !isSignedIn ? (
           <div className="bg-card border border-border rounded-2xl p-10 text-center max-w-lg mx-auto">
-            <div className="w-10 h-10 rounded-full bg-accent/10 text-accent flex items-center justify-center mx-auto mb-4 text-lg">
-              ♥
+            <div className="w-10 h-10 rounded-full bg-accent/10 text-accent flex items-center justify-center mx-auto mb-4">
+              <IconHeart className="w-5 h-5" />
             </div>
             <p className="text-foreground font-medium mb-1">{d.favoritesSignedOutTitle}</p>
             <p className="text-muted text-sm mb-6">{d.favoritesSignedOutSubtitle}</p>
@@ -44,8 +45,8 @@ export default function FavoritesPage() {
           </div>
         ) : favoriteCities.length === 0 ? (
           <div className="bg-card border border-border rounded-2xl p-10 text-center max-w-lg mx-auto">
-            <div className="w-10 h-10 rounded-full bg-accent/10 text-accent flex items-center justify-center mx-auto mb-4 text-lg">
-              ♥
+            <div className="w-10 h-10 rounded-full bg-accent/10 text-accent flex items-center justify-center mx-auto mb-4">
+              <IconHeart className="w-5 h-5" />
             </div>
             <p className="text-foreground font-medium mb-1">{d.favoritesEmptyTitle}</p>
             <p className="text-muted text-sm mb-6">{d.favoritesEmptySubtitle}</p>

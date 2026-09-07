@@ -6,7 +6,7 @@ import Navbar from "@/components/Navbar";
 import { cities } from "@/data/cities";
 import { useLanguage } from "@/lib/i18n";
 import { t, formatMoney, tCountry } from "@/lib/dictionary";
-import { IconWifi, IconUmbrella } from "@/components/Icon";
+import { IconWifi, IconUmbrella, IconStar, IconHeart } from "@/components/Icon";
 
 export default function Home() {
   const { lang } = useLanguage();
@@ -101,7 +101,7 @@ export default function Home() {
                   {city.hasBeach && (
                     <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full inline-flex items-center gap-1"><IconUmbrella className="w-3 h-3" />{d.beach}</span>
                   )}
-                  <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full">⭐ {city.qualityOfLife}</span>
+                  <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full inline-flex items-center gap-1"><IconStar className="w-3 h-3" />{city.qualityOfLife}</span>
                   <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full inline-flex items-center gap-1"><IconWifi className="w-3 h-3" />{city.internetSpeed} Mbps</span>
                 </div>
               </div>
@@ -115,7 +115,7 @@ export default function Home() {
       {!isSignedIn && (
         <section className="border-t border-border py-16 px-6">
           <div className="max-w-4xl mx-auto bg-card border border-border rounded-3xl p-8 sm:p-10 flex flex-col sm:flex-row items-center gap-6 sm:gap-10">
-            <div className="text-4xl shrink-0">❤️</div>
+            <IconHeart className="w-9 h-9 shrink-0 text-accent" />
             <div className="flex-1 text-center sm:text-left">
               <div className="inline-block text-[10px] font-semibold tracking-widest text-accent uppercase mb-2 border border-accent/40 px-2 py-0.5 rounded-full">
                 {d.homeFavoritesBadge}

@@ -7,7 +7,7 @@ import FavoriteButton from "@/components/FavoriteButton";
 import { cities, City } from "@/data/cities";
 import { useLanguage } from "@/lib/i18n";
 import { t, formatMoney, tCountry, tContinent } from "@/lib/dictionary";
-import { IconShield, IconWifi } from "@/components/Icon";
+import { IconShield, IconWifi, IconUmbrella, IconStar } from "@/components/Icon";
 
 const continentValues = ["Todos", "Europa", "Asia", "América", "Norteamérica", "África", "Oceanía"];
 
@@ -87,7 +87,7 @@ export default function CitiesPage() {
             onClick={() => setBeachOnly(!beachOnly)}
             className={`text-xs px-3 py-1.5 rounded-full border transition-colors ${beachOnly ? "bg-accent text-white border-accent" : "border-border text-muted hover:border-accent"}`}
           >
-            🏖 {d.filterBeachOnly}
+            <IconUmbrella className="w-3.5 h-3.5 inline -mt-0.5 mr-1" />{d.filterBeachOnly}
           </button>
           <div className="flex items-center gap-2 ml-2">
             <span className="text-xs text-muted">{d.maxBudget}</span>
@@ -150,8 +150,8 @@ function CityCard({ city, lang, monthly }: { city: City; lang: "es" | "en"; mont
           </div>
         </div>
         <div className="flex gap-1.5 flex-wrap">
-          {city.hasBeach && <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full">🏖</span>}
-          <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full">⭐ {city.qualityOfLife}</span>
+          {city.hasBeach && <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full"><IconUmbrella className="w-3 h-3" /></span>}
+          <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full inline-flex items-center gap-1"><IconStar className="w-3 h-3" />{city.qualityOfLife}</span>
           <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full inline-flex items-center gap-1"><IconShield className="w-3 h-3" />{city.safetyScore}</span>
           <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full inline-flex items-center gap-1"><IconWifi className="w-3 h-3" />{city.internetSpeed}M</span>
         </div>
