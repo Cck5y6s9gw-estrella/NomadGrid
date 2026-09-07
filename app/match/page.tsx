@@ -18,7 +18,7 @@ interface Answers {
   climate: ClimatePref;
 }
 
-const CONTINENTS = ["Europa", "Asia", "América", "Norteamérica", "Oriente Medio", "África", "Oceanía"];
+const CONTINENTS = ["Europa", "Asia", "América", "Norteamérica", "África", "Oceanía"];
 
 const TOTAL_STEPS = 4;
 
