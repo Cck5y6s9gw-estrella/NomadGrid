@@ -51,6 +51,9 @@ export default function Home() {
             {d.compareCities}
           </Link>
         </div>
+        <Link href="/match" className="inline-block mt-5 text-sm text-accent hover:underline">
+          {d.matchTitle} →
+        </Link>
       </section>
 
       {/* Stats bar */}
