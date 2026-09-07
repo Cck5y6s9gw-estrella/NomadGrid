@@ -21,7 +21,7 @@ export default function Home() {
   const stats = [
     { label: d.statCities, value: String(cities.length) },
     { label: d.statContinents, value: String(continentCount) },
-    { label: d.statIndicators, value: "4" },
+    { label: d.statIndicators, value: "7" },
     { label: d.statCheapest, value: `${cheapest.currency} ${cheapest.costPerMonth}${d.perMonth}` },
     { label: d.statFastestInternet, value: `${fastestInternet} Mbps` },
     { label: d.statSafest, value: `${safest.toFixed(1)}/10` },
