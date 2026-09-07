@@ -4,6 +4,7 @@ import { Suspense, useEffect, useState } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import Navbar from "@/components/Navbar";
+import Glow from "@/components/Glow";
 import { trackEvent } from "@/lib/gtag";
 import { useLanguage } from "@/lib/i18n";
 import { t } from "@/lib/dictionary";
@@ -57,7 +58,8 @@ function FeedbackForm() {
   };
 
   return (
-    <main className="min-h-screen bg-background text-foreground">
+    <main className="min-h-screen bg-background text-foreground relative overflow-hidden">
+      <Glow />
       <Navbar />
 
       <div className="max-w-xl mx-auto px-6 pt-28 pb-20">

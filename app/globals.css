@@ -144,7 +144,8 @@ body {
     transform: translateY(0);
   }
 }
-.match-fade-in {
+.match-fade-in,
+.animate-fade-up {
   animation: matchFadeInUp 0.4s ease-out;
 }
 
@@ -158,6 +159,7 @@ body {
     transform: scale(1);
   }
 }
-.match-pop-in {
+.match-pop-in,
+.animate-pop-in {
   animation: matchPopIn 0.45s cubic-bezier(0.34, 1.56, 0.64, 1) backwards;
 }

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useUser } from "@clerk/nextjs";
 import Navbar from "@/components/Navbar";
+import Glow from "@/components/Glow";
 import { cities } from "@/data/cities";
 import { useLanguage } from "@/lib/i18n";
 import { t, formatMoney, tCountry } from "@/lib/dictionary";
@@ -29,7 +30,8 @@ export default function Home() {
   ];
 
   return (
-    <main className="min-h-screen bg-background text-foreground">
+    <main className="min-h-screen bg-background text-foreground relative overflow-hidden">
+      <Glow />
       <Navbar />
 
       {/* Hero */}
@@ -78,8 +80,8 @@ export default function Home() {
           </Link>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {featured.map((city) => (
-            <Link key={city.slug} href={`/cities/${city.slug}`} className="group relative overflow-hidden rounded-3xl border border-white/10 shadow-lg shadow-black/30 hover:border-accent/70 hover:shadow-accent/10 transition-all duration-300">
+          {featured.map((city, i) => (
+            <Link key={city.slug} href={`/cities/${city.slug}`} style={{ animationDelay: `${i * 60}ms` }} className="animate-pop-in group relative overflow-hidden rounded-3xl border border-white/10 shadow-lg shadow-black/30 hover:border-accent/70 hover:shadow-accent/10 transition-all duration-300">
               <img
                 src={city.imageUrl}
                 alt={city.name}

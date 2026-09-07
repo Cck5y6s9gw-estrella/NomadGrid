@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
+import Glow from "@/components/Glow";
 import FavoriteButton from "@/components/FavoriteButton";
 import { cities, City } from "@/data/cities";
 import { useLanguage } from "@/lib/i18n";
@@ -40,7 +41,8 @@ export default function CitiesPage() {
     });
 
   return (
-    <main className="min-h-screen bg-background text-foreground">
+    <main className="min-h-screen bg-background text-foreground relative overflow-hidden">
+      <Glow />
       <Navbar />
 
       <div className="max-w-7xl mx-auto px-6 pt-24 pb-16">
@@ -112,8 +114,8 @@ export default function CitiesPage() {
           </div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-            {filtered.map((city) => (
-              <CityCard key={city.slug} city={city} lang={lang} monthly={d.monthly} />
+            {filtered.map((city, i) => (
+              <CityCard key={city.slug} city={city} lang={lang} monthly={d.monthly} index={i} />
             ))}
           </div>
         )}
@@ -128,9 +130,13 @@ export default function CitiesPage() {
   );
 }
 
-function CityCard({ city, lang, monthly }: { city: City; lang: "es" | "en"; monthly: string }) {
+function CityCard({ city, lang, monthly, index }: { city: City; lang: "es" | "en"; monthly: string; index: number }) {
   return (
-    <Link href={`/cities/${city.slug}`} className="group relative overflow-hidden rounded-3xl border border-white/10 shadow-lg shadow-black/30 hover:border-accent/70 hover:shadow-accent/10 transition-all duration-300">
+    <Link
+      href={`/cities/${city.slug}`}
+      style={{ animationDelay: `${Math.min(index, 8) * 45}ms` }}
+      className="animate-pop-in group relative overflow-hidden rounded-3xl border border-white/10 shadow-lg shadow-black/30 hover:border-accent/70 hover:shadow-accent/10 transition-all duration-300"
+    >
       <img
         src={city.imageUrl}
         alt={city.name}

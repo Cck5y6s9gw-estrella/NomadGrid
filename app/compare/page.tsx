@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
+import Glow from "@/components/Glow";
 import { cities, City } from "@/data/cities";
 import { useLanguage, type Lang } from "@/lib/i18n";
 import { t, formatMoney, tCountry, tContinent, tClimate } from "@/lib/dictionary";
@@ -60,7 +61,8 @@ export default function ComparePage() {
   };
 
   return (
-    <main className="min-h-screen bg-background text-foreground">
+    <main className="min-h-screen bg-background text-foreground relative overflow-hidden">
+      <Glow />
       <Navbar />
 
       <div className="max-w-6xl mx-auto px-6 pt-28 pb-20">
@@ -104,11 +106,12 @@ export default function ComparePage() {
                 className="w-full bg-transparent text-sm text-foreground placeholder-muted focus:outline-none px-3.5 py-2.5 border-b border-border"
               />
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 max-h-72 overflow-y-auto p-1.5">
-                {filtered.map((city) => (
+                {filtered.map((city, i) => (
                   <button
                     key={city.slug}
                     onClick={() => addCity(city.slug)}
-                    className="group relative overflow-hidden rounded-xl border border-transparent hover:border-accent/50 transition-colors touch-manipulation"
+                    style={{ animationDelay: `${Math.min(i, 8) * 40}ms` }}
+                    className="animate-pop-in group relative overflow-hidden rounded-xl border border-transparent hover:border-accent/50 transition-colors touch-manipulation"
                   >
                     <img
                       src={city.imageUrl}
@@ -134,7 +137,7 @@ export default function ComparePage() {
         {selectedCities.length >= 2 ? (
           <>
             {/* Desktop / tablet: side-by-side grid */}
-            <div className="hidden sm:block bg-card border border-border rounded-2xl overflow-hidden">
+            <div className="animate-fade-up hidden sm:block bg-card border border-white/10 rounded-3xl overflow-hidden shadow-lg shadow-black/20">
               {/* City header row */}
               <div
                 className="grid border-b border-border"
@@ -189,8 +192,12 @@ export default function ComparePage() {
 
             {/* Mobile: stacked cards, one per city */}
             <div className="sm:hidden space-y-6">
-              {selectedCities.map((city) => (
-                <div key={city.slug} className="bg-card border border-border rounded-2xl overflow-hidden">
+              {selectedCities.map((city, i) => (
+                <div
+                  key={city.slug}
+                  style={{ animationDelay: `${Math.min(i, 8) * 60}ms` }}
+                  className="animate-pop-in bg-card border border-white/10 rounded-3xl overflow-hidden shadow-lg shadow-black/20"
+                >
                   <div className="relative h-36 overflow-hidden">
                     <img src={city.imageUrl} alt={city.name} className="w-full h-full object-cover" />
                     <div className="absolute inset-0 bg-gradient-to-t from-background via-background/10 to-transparent" />
@@ -225,7 +232,7 @@ export default function ComparePage() {
         ) : (
           <div className="text-center py-24 border border-dashed border-accent/30 rounded-2xl">
             <div className="w-10 h-10 rounded-full bg-accent/10 text-accent flex items-center justify-center mx-auto mb-4">
-              <IconScale className="w-5 h-5" />
+              <IconScale className="w-5 h-5 animate-pop-in" />
             </div>
             <p className="text-muted">{d.selectTwoToCompare}</p>
           </div>

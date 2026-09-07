@@ -79,8 +79,12 @@ export default function CityDetailClient({ city, guide }: { city: City; guide: C
       <div className="max-w-7xl mx-auto px-6 py-12">
         {/* Stats grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-12">
-          {stats.map((s) => (
-            <div key={s.label} className="bg-card border border-border rounded-2xl p-4 text-center">
+          {stats.map((s, i) => (
+            <div
+              key={s.label}
+              style={{ animationDelay: `${Math.min(i, 8) * 60}ms` }}
+              className="animate-pop-in bg-card border border-white/10 rounded-2xl p-4 text-center shadow-lg shadow-black/20 hover:border-accent/70 transition-colors duration-300"
+            >
               <s.Icon className="w-6 h-6 mx-auto mb-2 text-accent" />
               <div className="text-sm font-semibold text-foreground">{s.value}</div>
               <div className="text-xs text-muted mt-0.5">{s.label}</div>

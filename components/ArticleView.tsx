@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Navbar from "./Navbar";
+import Glow from "./Glow";
 import type { Article } from "../lib/articles";
 
 type Lang = "es" | "en";
@@ -13,8 +14,9 @@ export default function ArticleView({ article }: { article: Article }) {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen bg-background text-foreground px-6 pt-28 pb-20">
-        <div className="mx-auto max-w-2xl">
+      <main className="relative overflow-hidden min-h-screen bg-background text-foreground px-6 pt-28 pb-20">
+        <Glow />
+        <div className="relative mx-auto max-w-2xl animate-fade-up">
           <div className="flex items-center justify-between mb-8">
             <Link
               href="/articulos"
@@ -52,7 +54,7 @@ export default function ArticleView({ article }: { article: Article }) {
             <img
               src={article.cover}
               alt=""
-              className="w-full h-72 object-cover rounded-2xl border border-border mb-8"
+              className="w-full h-72 object-cover rounded-3xl border border-white/10 shadow-lg shadow-black/30 mb-8"
             />
           )}
 

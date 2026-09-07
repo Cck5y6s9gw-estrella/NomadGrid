@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useUser, SignUpButton } from "@clerk/nextjs";
 import Navbar from "@/components/Navbar";
+import Glow from "@/components/Glow";
 import FavoriteButton from "@/components/FavoriteButton";
 import { cities } from "@/data/cities";
 import { useLanguage } from "@/lib/i18n";
@@ -18,7 +19,8 @@ export default function FavoritesPage() {
   const favoriteCities = cities.filter((c) => favoriteSlugs.includes(c.slug));
 
   return (
-    <main className="min-h-screen bg-background text-foreground">
+    <main className="min-h-screen bg-background text-foreground relative overflow-hidden">
+      <Glow />
       <Navbar />
 
       <div className="max-w-7xl mx-auto px-6 pt-28 pb-20">
@@ -33,7 +35,7 @@ export default function FavoritesPage() {
         {!isLoaded ? null : !isSignedIn ? (
           <div className="bg-card border border-border rounded-2xl p-10 text-center max-w-lg mx-auto">
             <div className="w-10 h-10 rounded-full bg-accent/10 text-accent flex items-center justify-center mx-auto mb-4">
-              <IconHeart className="w-5 h-5" />
+              <IconHeart className="w-5 h-5 animate-pop-in" />
             </div>
             <p className="text-foreground font-medium mb-1">{d.favoritesSignedOutTitle}</p>
             <p className="text-muted text-sm mb-6">{d.favoritesSignedOutSubtitle}</p>
@@ -46,7 +48,7 @@ export default function FavoritesPage() {
         ) : favoriteCities.length === 0 ? (
           <div className="bg-card border border-border rounded-2xl p-10 text-center max-w-lg mx-auto">
             <div className="w-10 h-10 rounded-full bg-accent/10 text-accent flex items-center justify-center mx-auto mb-4">
-              <IconHeart className="w-5 h-5" />
+              <IconHeart className="w-5 h-5 animate-pop-in" />
             </div>
             <p className="text-foreground font-medium mb-1">{d.favoritesEmptyTitle}</p>
             <p className="text-muted text-sm mb-6">{d.favoritesEmptySubtitle}</p>
@@ -59,10 +61,11 @@ export default function FavoritesPage() {
           </div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-            {favoriteCities.map((city) => (
+            {favoriteCities.map((city, i) => (
               <div
                 key={city.slug}
-                className="group relative overflow-hidden rounded-2xl border border-border hover:border-accent transition-all duration-300"
+                style={{ animationDelay: `${Math.min(i, 8) * 60}ms` }}
+                className="animate-pop-in group relative overflow-hidden rounded-3xl border border-white/10 shadow-lg shadow-black/30 hover:border-accent/70 hover:shadow-accent/10 transition-all duration-300"
               >
                 <Link href={`/cities/${city.slug}`}>
                   <img

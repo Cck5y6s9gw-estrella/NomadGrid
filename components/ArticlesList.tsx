@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Navbar from "./Navbar";
+import Glow from "./Glow";
 import type { Article } from "../lib/articles";
 
 type Lang = "es" | "en";
@@ -13,11 +14,12 @@ export default function ArticlesList({ articles }: { articles: Article[] }) {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen bg-background text-foreground px-6 pt-28 pb-20">
-        <div className="mx-auto max-w-5xl">
+      <main className="min-h-screen bg-background text-foreground px-6 pt-28 pb-20 relative overflow-hidden">
+        <Glow />
+        <div className="relative mx-auto max-w-5xl">
           <div className="flex items-start justify-between flex-wrap gap-4 mb-10">
             <div>
-              <h1 className="text-4xl font-extrabold tracking-tight mb-2">
+              <h1 className="font-serif text-4xl font-medium tracking-tight mb-2">
                 {lang === "es" ? "Artículos" : "Articles"}
               </h1>
               <p className="text-sm text-muted">
@@ -63,11 +65,12 @@ export default function ArticlesList({ articles }: { articles: Article[] }) {
             </div>
           ) : (
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {articles.map((article) => (
+              {articles.map((article, i) => (
                 <Link
                   key={article.slug}
                   href={`/articulos/${article.slug}`}
-                  className="group block rounded-2xl border border-border bg-card overflow-hidden hover:border-accent/60 hover:-translate-y-0.5 transition-all duration-200"
+                  style={{ animationDelay: `${Math.min(i, 8) * 60}ms` }}
+                  className="animate-pop-in group block rounded-3xl border border-white/10 bg-card overflow-hidden shadow-lg shadow-black/30 hover:border-accent/70 hover:shadow-accent/10 hover:-translate-y-0.5 transition-all duration-200"
                 >
                   {article.cover ? (
                     // eslint-disable-next-line @next/next/no-img-element
@@ -83,7 +86,7 @@ export default function ArticlesList({ articles }: { articles: Article[] }) {
                     <p className="text-xs text-muted uppercase tracking-wide mb-2">
                       {article.date}
                     </p>
-                    <h2 className="text-lg font-bold mb-1.5 tracking-tight">
+                    <h2 className="font-serif text-lg font-medium mb-1.5 tracking-tight">
                       {article.title[lang]}
                     </h2>
                     <p className="text-sm text-muted mb-4 line-clamp-2">
