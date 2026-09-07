@@ -40,17 +40,20 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
-      <div className="max-w-7xl mx-auto px-6 h-14 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 text-foreground font-semibold text-lg tracking-tight">
-          <img src="/logo-icon.png" alt="Roavio" className="h-6 w-auto" />
-          Roavio
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 h-14 flex items-center justify-between gap-2">
+        <Link
+          href="/"
+          className="flex items-center gap-2 text-foreground font-semibold text-lg tracking-tight shrink-0 min-w-0"
+        >
+          <img src="/logo-icon.png" alt="Roavio" className="h-6 w-auto shrink-0" />
+          <span className="hidden sm:inline">Roavio</span>
         </Link>
 
-        <div className="flex items-center gap-3">
-          <div className="flex items-center border border-border rounded-full p-0.5 text-xs font-medium">
+        <div className="flex items-center gap-1.5 sm:gap-3 shrink-0">
+          <div className="flex items-center border border-border rounded-full p-0.5 text-xs font-medium shrink-0">
             <button
               onClick={() => setLang("es")}
-              className={`px-2.5 py-1 rounded-full transition-colors ${
+              className={`px-2 sm:px-2.5 py-1 rounded-full transition-colors ${
                 lang === "es" ? "bg-accent text-white" : "text-muted hover:text-foreground"
               }`}
             >
@@ -58,7 +61,7 @@ export default function Navbar() {
             </button>
             <button
               onClick={() => setLang("en")}
-              className={`px-2.5 py-1 rounded-full transition-colors ${
+              className={`px-2 sm:px-2.5 py-1 rounded-full transition-colors ${
                 lang === "en" ? "bg-accent text-white" : "text-muted hover:text-foreground"
               }`}
             >
@@ -70,8 +73,9 @@ export default function Navbar() {
             when="signed-in"
             fallback={
               <SignInButton mode="modal">
-                <button className="text-xs font-medium tracking-wide text-accent border border-accent/50 rounded-full px-4 py-1.5 hover:bg-accent hover:text-white hover:border-accent transition-all duration-200 shadow-[0_0_0_1px_rgba(234,88,12,0.08)]">
-                  {d.signIn}
+                <button className="text-xs font-medium tracking-wide text-accent border border-accent/50 rounded-full px-2.5 sm:px-4 py-1.5 hover:bg-accent hover:text-white hover:border-accent transition-all duration-200 shadow-[0_0_0_1px_rgba(234,88,12,0.08)] whitespace-nowrap shrink-0">
+                  <span className="hidden sm:inline">{d.signIn}</span>
+                  <span className="sm:hidden">{d.signIn.split("/")[0]}</span>
                 </button>
               </SignInButton>
             }
@@ -79,18 +83,18 @@ export default function Navbar() {
             <UserButton />
           </Show>
 
-          <div className="relative" ref={menuRef}>
+          <div className="relative shrink-0" ref={menuRef}>
             <button
               onClick={() => setOpen((o) => !o)}
               aria-label={d.navOpenMenu}
-              className="flex items-center gap-2 text-sm text-foreground border border-border rounded-full px-3.5 py-1.5 hover:border-accent/60 transition-colors"
+              className="flex items-center gap-2 text-sm text-foreground border border-border rounded-full px-2.5 sm:px-3.5 py-1.5 hover:border-accent/60 transition-colors whitespace-nowrap"
             >
-              <span className="flex flex-col gap-[3px] w-4">
+              <span className="flex flex-col gap-[3px] w-4 shrink-0">
                 <span className="h-[2px] w-full bg-foreground rounded-full" />
                 <span className="h-[2px] w-full bg-foreground rounded-full" />
                 <span className="h-[2px] w-full bg-foreground rounded-full" />
               </span>
-              {d.navMenu}
+              <span className="hidden sm:inline">{d.navMenu}</span>
             </button>
 
             {open && (

@@ -15,23 +15,42 @@ const LanguageContext = createContext<LanguageContextValue>({
 });
 
 const STORAGE_KEY = "roavio_lang";
+const GEO_COOKIE_KEY = "roavio_geo_lang";
+
+function readCookie(name: string): string | null {
+  const match = document.cookie
+    .split("; ")
+    .find((row) => row.startsWith(`${name}=`));
+  return match ? decodeURIComponent(match.split("=")[1]) : null;
+}
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
   const [lang, setLangState] = useState<Lang>("es");
 
   useEffect(() => {
     try {
+      // 1. Explicit choice the user already made on this device wins.
       const stored = window.localStorage.getItem(STORAGE_KEY);
       if (stored === "es" || stored === "en") {
         setLangState(stored);
         return;
       }
+
+      // 2. Otherwise, fall back to the IP-based geolocation cookie set by
+      // the server (English by default outside Spain).
+      const geoLang = readCookie(GEO_COOKIE_KEY);
+      if (geoLang === "es" || geoLang === "en") {
+        setLangState(geoLang);
+        return;
+      }
+
+      // 3. Last resort: the browser's own language setting.
       const browserLang = window.navigator.language || "";
       if (browserLang.toLowerCase().startsWith("en")) {
         setLangState("en");
       }
     } catch {
-      // localStorage unavailable — keep default "es"
+      // localStorage/cookies unavailable — keep default "es"
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
