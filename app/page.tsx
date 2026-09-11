@@ -53,7 +53,7 @@ export default function Home() {
           </Link>
         </div>
         <Link href="/match" className="inline-block mt-5 text-sm text-accent hover:underline">
-          {d.matchTitle} →
+          {d.matchHomeCta} →
         </Link>
       </section>
 
