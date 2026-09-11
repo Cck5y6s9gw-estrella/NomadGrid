@@ -90,6 +90,33 @@ export function IconMapPin(props: IconProps) {
   );
 }
 
+export function IconCalendar(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <rect x="3.5" y="5" width="17" height="15.5" rx="2.3" />
+      <line x1="3.5" y1="9.8" x2="20.5" y2="9.8" />
+      <line x1="8" y1="3" x2="8" y2="6.6" />
+      <line x1="16" y1="3" x2="16" y2="6.6" />
+    </svg>
+  );
+}
+
+export function IconBolt(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M12.8 2.8 5 13.4h5.4L11 21.2l7.8-10.6h-5.4Z" />
+    </svg>
+  );
+}
+
+export function IconMoon(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M19.5 14.3A8.2 8.2 0 1 1 9.7 4.5a6.6 6.6 0 0 0 9.8 9.8Z" />
+    </svg>
+  );
+}
+
 export function IconMessage(props: IconProps) {
   return (
     <svg {...base} {...props}>

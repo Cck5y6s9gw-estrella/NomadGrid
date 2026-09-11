@@ -20,10 +20,16 @@ import {
   IconTarget,
   IconTrophy,
   IconMapPin,
+  IconCalendar,
+  IconBolt,
+  IconMoon,
 } from "@/components/Icon";
 
 type Priority = "cost" | "internet" | "safety" | "quality" | "beach";
 type ClimatePref = "warm" | "temperate" | "cold" | "any";
+type StayDuration = "short" | "medium" | "long" | "extended" | null;
+type Pace = "fast" | "relaxed" | "any";
+type Nightlife = "high" | "low" | "any";
 type IconType = typeof IconCoin;
 
 interface Answers {
@@ -31,11 +37,14 @@ interface Answers {
   priority: Priority | null;
   continent: string;
   climate: ClimatePref;
+  stay: StayDuration;
+  pace: Pace;
+  nightlife: Nightlife;
 }
 
 const CONTINENTS = ["Europa", "Asia", "América", "Norteamérica", "África", "Oceanía"];
 
-const TOTAL_STEPS = 4;
+const TOTAL_STEPS = 7;
 
 const PREVIEW_SLUGS = ["bangkok", "lisboa", "ciudad-de-mexico", "bali", "medellin", "dubai"];
 
@@ -80,6 +89,30 @@ function computeMatches(pool: City[], answers: Answers) {
     safety: answers.priority === "safety" ? boosted : answers.priority === "beach" ? balanced : rest,
     quality: answers.priority === "quality" ? boosted : answers.priority === "beach" ? balanced : rest,
   };
+
+  // Stay duration, pace of life and nightlife don't have their own scored
+  // data field yet (no per-city index for these), so for now they nudge the
+  // weights of the existing cost/internet/safety/quality dimensions instead
+  // of filtering directly. Planned: replace with real curated per-city data.
+  if (answers.stay === "short") {
+    weights.cost *= 1.15;
+    weights.internet *= 0.85;
+  } else if (answers.stay === "long" || answers.stay === "extended") {
+    weights.safety *= 1.15;
+    weights.quality *= 1.15;
+  }
+  if (answers.pace === "fast") {
+    weights.internet *= 1.15;
+  } else if (answers.pace === "relaxed") {
+    weights.quality *= 1.15;
+    weights.safety *= 1.05;
+  }
+  if (answers.nightlife === "high") {
+    weights.quality *= 1.1;
+    weights.cost *= 0.9;
+  } else if (answers.nightlife === "low") {
+    weights.safety *= 1.1;
+  }
 
   const scored = filtered.map((c) => {
     const costNorm = maxCost === minCost ? 1 : 1 - (c.costPerMonth - minCost) / (maxCost - minCost);
@@ -140,7 +173,15 @@ export default function MatchPage() {
   const d = t(lang);
   const [started, setStarted] = useState(false);
   const [step, setStep] = useState(0);
-  const [answers, setAnswers] = useState<Answers>({ budget: null, priority: null, continent: "any", climate: "any" });
+  const [answers, setAnswers] = useState<Answers>({
+    budget: null,
+    priority: null,
+    continent: "any",
+    climate: "any",
+    stay: null,
+    pace: "any",
+    nightlife: "any",
+  });
   const [copied, setCopied] = useState(false);
 
   const previewCities = PREVIEW_SLUGS.map((slug) => cities.find((c) => c.slug === slug)).filter(Boolean) as City[];
@@ -156,7 +197,15 @@ export default function MatchPage() {
   }
 
   function retake() {
-    setAnswers({ budget: null, priority: null, continent: "any", climate: "any" });
+    setAnswers({
+      budget: null,
+      priority: null,
+      continent: "any",
+      climate: "any",
+      stay: null,
+      pace: "any",
+      nightlife: "any",
+    });
     setStep(0);
     setStarted(true);
     setCopied(false);
@@ -278,6 +327,40 @@ export default function MatchPage() {
                   <OptionCard label={d.matchClimateWarm} Icon={IconSun} onClick={() => answerAndAdvance({ climate: "warm" })} delay={60} />
                   <OptionCard label={d.matchClimateTemperate} Icon={IconCloud} onClick={() => answerAndAdvance({ climate: "temperate" })} delay={120} />
                   <OptionCard label={d.matchClimateCold} Icon={IconSnowflake} onClick={() => answerAndAdvance({ climate: "cold" })} delay={180} />
+                </div>
+              </div>
+            )}
+
+            {step === 4 && (
+              <div key="q5" className="match-fade-in">
+                <StepHeader Icon={IconCalendar} title={d.matchQ5} />
+                <div className="flex flex-col gap-3">
+                  <OptionCard label={d.matchQ5Opt1} onClick={() => answerAndAdvance({ stay: "short" })} delay={0} />
+                  <OptionCard label={d.matchQ5Opt2} onClick={() => answerAndAdvance({ stay: "medium" })} delay={60} />
+                  <OptionCard label={d.matchQ5Opt3} onClick={() => answerAndAdvance({ stay: "long" })} delay={120} />
+                  <OptionCard label={d.matchQ5Opt4} onClick={() => answerAndAdvance({ stay: "extended" })} delay={180} />
+                </div>
+              </div>
+            )}
+
+            {step === 5 && (
+              <div key="q6" className="match-fade-in">
+                <StepHeader Icon={IconBolt} title={d.matchQ6} />
+                <div className="flex flex-col gap-3">
+                  <OptionCard label={d.matchAny} Icon={IconCompass} onClick={() => answerAndAdvance({ pace: "any" })} delay={0} />
+                  <OptionCard label={d.matchQ6Opt1} Icon={IconBolt} onClick={() => answerAndAdvance({ pace: "fast" })} delay={60} />
+                  <OptionCard label={d.matchQ6Opt2} Icon={IconCloud} onClick={() => answerAndAdvance({ pace: "relaxed" })} delay={120} />
+                </div>
+              </div>
+            )}
+
+            {step === 6 && (
+              <div key="q7" className="match-fade-in">
+                <StepHeader Icon={IconMoon} title={d.matchQ7} />
+                <div className="flex flex-col gap-3">
+                  <OptionCard label={d.matchAny} Icon={IconCompass} onClick={() => answerAndAdvance({ nightlife: "any" })} delay={0} />
+                  <OptionCard label={d.matchQ7Opt1} Icon={IconMoon} onClick={() => answerAndAdvance({ nightlife: "high" })} delay={60} />
+                  <OptionCard label={d.matchQ7Opt2} Icon={IconShield} onClick={() => answerAndAdvance({ nightlife: "low" })} delay={120} />
                 </div>
               </div>
             )}
