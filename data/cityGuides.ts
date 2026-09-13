@@ -1698,4 +1698,116 @@ export const cityGuides: Record<string, CityGuide> = {
       ]
     }
   },
+  "a-coruna": {
+    visaFiscal: {
+      content: "Los ciudadanos de la Unión Europea y del Espacio Económico Europeo no necesitan visado para instalarse en A Coruña: basta con empadronarse y solicitar el certificado de registro de ciudadano de la UE. Para nómadas digitales de fuera de la UE, España ofrece el visado para teletrabajadores de carácter internacional, con un requisito de ingresos mensuales en torno a 2.849 €/mes en 2026 y una validez inicial de hasta tres años, prorrogable por periodos de dos.\n\nQuienes obtienen este visado pueden acogerse al régimen especial para trabajadores desplazados o Ley Beckham, que fija un tipo fijo del 24% en el IRPF sobre los primeros 600.000 € de renta durante seis ejercicios fiscales. Para el resto de contribuyentes rige la regla general de residencia fiscal: más de 183 días al año en España.",
+      sources: [
+        { label: "Visado para nómadas digitales — Legalitas", url: "https://www.legalitas.com/actualidad/visado-nomada-digital" },
+        { label: "La ley Beckham en España 2026 — Raisin", url: "https://www.raisin.com/es-es/tributacion/ley-beckham/" },
+      ],
+    },
+    sanidad: {
+      content: "Los residentes legales en A Coruña tienen acceso al Sistema Nacional de Salud una vez formalizada el alta en la Seguridad Social o el empadronamiento, con el Complejo Hospitalario Universitario de A Coruña (CHUAC) como principal centro de referencia público de Galicia. Para tramitar el visado de teletrabajador es obligatorio un seguro médico privado sin copagos ni carencias, contratado con una aseguradora autorizada por la Dirección General de Seguros.\n\nEl coste de una póliza de este tipo para un adulto joven sin patologías previas ronda entre 45 € y 85 € al mes, algo por debajo de la media de las grandes ciudades españolas, con Sanitas, Adeslas y Asisa entre las aseguradoras con más presencia en la ciudad.",
+      sources: [
+        { label: "Seguro médico para el visado de nómada digital — Cohen y Aguirre", url: "https://cohenyaguirre.es/seguro-medico-para-visa-nomada-digital" },
+        { label: "Servizo Galego de Saúde (Sergas)", url: "https://www.sergas.es" },
+      ],
+    },
+    barrios: {
+      content: "El Ensanche y Cuatro Caminos son las zonas más habituales para vivir, céntricas y bien comunicadas; María Pita y la Ciudad Vieja ofrecen encanto histórico junto al puerto. Riazor y Orzán, con sus playas urbanas a pie de paseo marítimo, son la zona preferida por quienes buscan surf y aire libre sin salir de la ciudad, con alquileres algo por encima de la media local.\n\nEn coworking, Cooworking opera dos espacios: uno céntrico en Avenida del Ejército, a cinco minutos del centro, y otro en el polígono de A Grela orientado a equipos más grandes. Es una oferta todavía reducida comparada con Madrid o Barcelona, pero suficiente para quien trabaja en remoto de forma habitual.",
+      sources: [
+        { label: "Cooworking A Coruña", url: "https://cooworking.net/" },
+        { label: "Cost of Living in A Coruña — Numbeo", url: "https://www.numbeo.com/cost-of-living/in/A-Coruna-Corunna-Spain" },
+      ],
+    },
+  },
+  bilbao: {
+    visaFiscal: {
+      content: "Los ciudadanos de la Unión Europea y del Espacio Económico Europeo no necesitan visado para instalarse en Bilbao: la libre circulación les permite residir y trabajar sin más trámite que empadronarse y solicitar el certificado de registro de ciudadano de la UE. Para los nómadas digitales de fuera de la UE, España ofrece el mismo visado para teletrabajadores de carácter internacional que en el resto del país, con un requisito de ingresos mensuales en torno a 2.849 €/mes en 2026 y una validez inicial de hasta tres años.\n\nQuienes obtienen este visado pueden acogerse a la Ley Beckham, con un tipo fijo del 24% en el IRPF sobre los primeros 600.000 € de renta durante seis ejercicios fiscales. Para el resto de contribuyentes rige la regla general de residencia fiscal: más de 183 días al año en el país.",
+      sources: [
+        { label: "Visado para nómadas digitales — Legalitas", url: "https://www.legalitas.com/actualidad/visado-nomada-digital" },
+        { label: "La ley Beckham en España 2026 — Raisin", url: "https://www.raisin.com/es-es/tributacion/ley-beckham/" },
+      ],
+    },
+    sanidad: {
+      content: "Los residentes legales en Bilbao tienen acceso a la sanidad pública vasca (Osakidetza) una vez formalizada el alta en la Seguridad Social, con el Hospital Universitario de Cruces como principal centro de referencia del área metropolitana. Para el visado de teletrabajador es obligatorio un seguro médico privado sin copagos ni carencias.\n\nEl coste de una póliza de este tipo para un adulto joven sin patologías previas ronda entre 55 € y 95 € al mes, en línea con la media de las grandes ciudades españolas, con Sanitas, Adeslas y DKV entre las aseguradoras más presentes en el País Vasco.",
+      sources: [
+        { label: "Seguro médico para el visado de nómada digital — Cohen y Aguirre", url: "https://cohenyaguirre.es/seguro-medico-para-visa-nomada-digital" },
+        { label: "Osakidetza — Servicio Vasco de Salud", url: "https://www.osakidetza.euskadi.eus" },
+      ],
+    },
+    barrios: {
+      content: "El Ensanche y Abando, en torno al Guggenheim y la ría, son las zonas más buscadas por nómadas digitales por su cercanía a cafeterías, restaurantes y coworkings; Indautxu ofrece un ambiente similar a precios algo más asequibles. Deusto, al otro lado de la ría, combina ambiente universitario con alquileres más bajos.\n\nEntre los coworkings, Spaces Abando (Calle Buenos Aires 12) es la opción internacional más consolidada en pleno centro; Bilbo Lab Coworking y Alzola Coworking, ambos cerca del Ensanche, ofrecen puestos flexibles desde unos 200-250 €/mes; BC Coworking, junto al río en dirección a Deusto, es otra alternativa activa con oficinas privadas desde 230 €/mes.",
+      sources: [
+        { label: "Los 5 principales espacios coworking en Bilbao — Holafly", url: "https://esim.holafly.com/es/blog/nomada-digital/coworking-bilbao/" },
+        { label: "Cost of Living in Bilbao — Numbeo", url: "https://www.numbeo.com/cost-of-living/in/Bilbao" },
+      ],
+    },
+  },
+  toulouse: {
+    visaFiscal: {
+      content: "Francia no tiene un visado de nómada digital específico. La vía habitual para una estancia larga trabajando en remoto para un empleador extranjero es el visado de larga estancia de visitante (VLS-TS visiteur): tras una aclaración del Ministerio del Interior francés en 2026, se tolera el teletrabajo desde Francia siempre que el empleo, el contrato y el pago sigan vinculados por completo a una empresa fuera de Francia, sin clientes ni actividad económica francesa. Cada solicitud se evalúa de forma individual en el consulado, y exige acreditar solvencia económica, alojamiento y un seguro médico con cobertura mínima de 30.000 €.\n\nQuienes prefieren una vía más sólida pueden optar al Pasaporte Talento (Passeport Talent), pensado para autónomos o trabajadores cualificados con ingresos anuales de entre 22.000 € y 35.000 € aproximadamente según la modalidad. En materia fiscal, trabajar físicamente desde suelo francés puede considerarse actividad realizada en Francia a efectos tributarios, independientemente de dónde esté el empleador, así que conviene planificar el convenio de doble imposición aplicable antes de instalarse.",
+      sources: [
+        { label: "France Clarifies Remote Working Rules for Visitor Visa Holders — IAS", url: "https://iasservices.org.uk/france-clarifies-remote-working-rules-for-visitor-visa-holders/" },
+        { label: "Visa de larga estancia (más de 3 meses) — Service-Public.fr", url: "https://www.service-public.gouv.fr/particuliers/vosdroits/F16162?lang=en" },
+      ],
+    },
+    sanidad: {
+      content: "Tras tres meses de residencia estable y regular en Francia, es posible solicitar la Protection Universelle Maladie (PUMa), que da acceso al sistema público de salud. Mientras se tramita esa cobertura, o para el propio visado de visitante, es obligatorio un seguro médico privado internacional con una cobertura mínima de 30.000 €. El Centre Hospitalier Universitaire (CHU) de Toulouse es el principal hospital público de referencia de la región.\n\nLa sanidad privada en Toulouse es de buena calidad, con clínicas y especialistas concentrados en el centro y en el barrio de Rangueil, cerca del propio CHU.",
+      sources: [
+        { label: "France Clarifies Remote Working Rules for Visitor Visa Holders — IAS", url: "https://iasservices.org.uk/france-clarifies-remote-working-rules-for-visitor-visa-holders/" },
+        { label: "CHU de Toulouse", url: "https://www.chu-toulouse.fr" },
+      ],
+    },
+    barrios: {
+      content: "El centro histórico en torno al Capitole concentra cafeterías con wifi y buena parte de la vida social; Saint-Cyprien, al otro lado del Garona, es más tranquilo y algo más económico. Compans-Caffarelli, cerca del canal, es la zona de negocios con más oficinas y coworkings.\n\nEntre los coworkings, HarryCow (Rue Sainte-Ursule, junto al Capitole) ofrece acceso desde 4 €/hora hasta 220 €/mes; Ô Local, cerca del Château du Canal, tiene una membresía base de unos 239 €/mes; Lab'Oïkos, en el barrio de Saint-Aubin, ofrece acceso flexible desde 99 €/mes.",
+      sources: [
+        { label: "Top 5 coworking spaces in Toulouse — Colivys", url: "https://colivys.com/en/blog/coworking-toulouse/" },
+      ],
+    },
+  },
+  estrasburgo: {
+    visaFiscal: {
+      content: "Al igual que en el resto de Francia, no existe un visado de nómada digital específico para Estrasburgo. La opción más usada para trabajar en remoto de forma prolongada es el visado de larga estancia de visitante (VLS-TS visiteur), tolerado desde la aclaración del Ministerio del Interior de 2026 siempre que el empleo, el contrato y el pago permanezcan íntegramente fuera de Francia, sin clientes ni vínculo económico con el país. La aprobación no es automática: cada solicitud se valora caso por caso en el consulado correspondiente.\n\nComo capital europea con sede del Parlamento Europeo, Estrasburgo tiene además una comunidad relativamente amplia de trabajadores internacionales con Pasaporte Talento, la vía más sólida para quien busca autorización de trabajo remoto a medio plazo. La residencia fiscal en Francia se fija a partir de 183 días de estancia en el país durante el año.",
+      sources: [
+        { label: "France Clarifies Remote Working Rules for Visitor Visa Holders — IAS", url: "https://iasservices.org.uk/france-clarifies-remote-working-rules-for-visitor-visa-holders/" },
+        { label: "Visa de larga estancia (más de 3 meses) — Service-Public.fr", url: "https://www.service-public.gouv.fr/particuliers/vosdroits/F16162?lang=en" },
+      ],
+    },
+    sanidad: {
+      content: "Tras tres meses de residencia estable es posible acceder a la Protection Universelle Maladie (PUMa) del sistema público francés; hasta entonces, o para el propio visado de visitante, se exige un seguro médico privado internacional con cobertura mínima de 30.000 €. Los Hôpitaux Universitaires de Strasbourg (HUS) son el principal centro público de referencia de la región de Alsacia.\n\nLa cercanía con Alemania y Suiza hace que también sea habitual comparar precios de sanidad privada transfronteriza, aunque para un residente en Francia lo más práctico es contratar la cobertura localmente.",
+      sources: [
+        { label: "France Clarifies Remote Working Rules for Visitor Visa Holders — IAS", url: "https://iasservices.org.uk/france-clarifies-remote-working-rules-for-visitor-visa-holders/" },
+        { label: "Hôpitaux Universitaires de Strasbourg", url: "https://www.chru-strasbourg.fr" },
+      ],
+    },
+    barrios: {
+      content: "Petite France, el barrio histórico de canales y casas de entramado de madera, es el más turístico y también el más caro; Krutenau, junto al centro, tiene ambiente estudiantil y buena vida nocturna a precios más moderados. Neudorf, al sur, es una zona residencial tranquila y más económica, bien conectada en tranvía.\n\nEntre los coworkings, La Place Digitale, en pleno centro, ofrece puestos fijos desde 210-300 €/mes; Anticafé, cerca de Petite France, cobra por tiempo de uso desde 6 €/hora hasta 260 €/mes; Les Compotes, en Neudorf, es la opción más económica del grupo, entre 90 € y 300 € según los días de uso.",
+      sources: [
+        { label: "Top 5 coworking spaces in Strasbourg — Colivys", url: "https://colivys.com/en/blog/coworking-space-strasbourg/" },
+      ],
+    },
+  },
+  "nueva-york": {
+    visaFiscal: {
+      content: "Estados Unidos no ofrece ningún visado de nómada digital. Entrar como turista, ya sea con ESTA (Programa de Exención de Visado) o con un visado B-1/B-2, no permite legalmente trabajar en remoto de forma continuada para un empleador o clientes extranjeros: la normativa migratoria estadounidense considera esa actividad como trabajo aunque se cobre desde fuera del país, y hacerlo puede acarrear la cancelación del visado, la denegación de entrada en un futuro viaje o problemas de inadmisibilidad.\n\nPara quien quiere quedarse más tiempo trabajando de forma legal, las únicas vías reales pasan por visados de trabajo tradicionales: O-1 (para personas con habilidades extraordinarias), L-1 (traslados dentro de la misma empresa), E-2 (inversores) o H-1B (con patrocinio de un empleador estadounidense). No existe ninguna categoría pensada específicamente para nómadas digitales.",
+      sources: [
+        { label: "Can Digital Nomads Legally Work in the U.S.? — RJ Immigration Law", url: "https://rjimmigrationlaw.com/resources/can-digital-nomads-legally-work-in-the-u-s/" },
+        { label: "Visa Waiver Program — U.S. Department of State", url: "https://travel.state.gov/content/travel/en/us-visas/tourism-visit/visa-waiver-program.html" },
+      ],
+    },
+    sanidad: {
+      content: "Estados Unidos no tiene un sistema de salud público universal, y la atención médica privada está entre las más caras del mundo: una visita a urgencias sin seguro puede costar varios miles de dólares. Para cualquier estancia, ya sea de turismo o de trabajo, es imprescindible contratar un seguro médico internacional con cobertura amplia (Cigna Global, IMG o similares) antes de viajar, ya que ni ESTA ni ningún visado de estancia corta la incluyen de forma obligatoria ni automática.\n\nLos hospitales privados de Nueva York (Mount Sinai, NYU Langone, NewYork-Presbyterian, entre otros) son de primer nivel mundial, pero los precios sin seguro son proporcionalmente altos incluso para consultas rutinarias.",
+      sources: [
+        { label: "Can Digital Nomads Legally Work in the U.S.? — RJ Immigration Law", url: "https://rjimmigrationlaw.com/resources/can-digital-nomads-legally-work-in-the-u-s/" },
+        { label: "Health Costs — KFF (Kaiser Family Foundation)", url: "https://www.kff.org/health-costs/" },
+      ],
+    },
+    barrios: {
+      content: "Williamsburg, en Brooklyn, es el barrio más asociado a la comunidad creativa y de nómadas digitales, con buena oferta de cafeterías y coworkings a precios algo más bajos que Manhattan. El Distrito Financiero (FiDi), en el sur de Manhattan, concentra la mayor densidad de coworkings orientados a negocios; Midtown, cerca de Bryant Park, es la opción más céntrica y mejor conectada en metro.\n\nEntre los coworkings, Cubico (433 Broadway, Tribeca/SoHo) ofrece un espacio de estilo industrial con terraza; The Yard, en Williamsburg, combina diseño y precios más accesibles que Manhattan; Jay Suites, en la Quinta Avenida cerca de Bryant Park, es una opción céntrica orientada a profesionales y pequeñas empresas.",
+      sources: [
+        { label: "The Best 13 Coworking Spaces in New York City — Hubble HQ", url: "https://hubblehq.com/blog/best-coworking-spaces-nyc" },
+      ],
+    },
+  },
 };

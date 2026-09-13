@@ -396,4 +396,116 @@ export const cityGuidesEn: Record<string, CityGuide> = {
       ]
     }
   },
+  "a-coruna": {
+    visaFiscal: {
+      content: "EU and European Economic Area citizens don't need a visa to settle in A Coruña: registering with the local council (empadronamiento) and requesting the EU citizen registration certificate is enough. For non-EU digital nomads, Spain offers its international remote worker visa, requiring monthly income of around €2,849/month in 2026 and granted for up to three years initially, renewable in two-year periods.\n\nThose who get this visa can also opt into the special regime for posted workers, known as the Beckham Law, which sets a flat 24% income tax rate on the first €600,000 of earnings for six tax years. Everyone else follows the general tax residency rule: more than 183 days a year in Spain.",
+      sources: [
+        { label: "Digital nomad visa — Legalitas", url: "https://www.legalitas.com/actualidad/visado-nomada-digital" },
+        { label: "The Beckham Law in Spain 2026 — Raisin", url: "https://www.raisin.com/es-es/tributacion/ley-beckham/" },
+      ],
+    },
+    sanidad: {
+      content: "Legal residents in A Coruña can access Spain's National Health System once registered with Social Security or the local council, with the Complejo Hospitalario Universitario de A Coruña (CHUAC) as the main public reference hospital in Galicia. Applying for the remote worker visa requires private health insurance with no copays or waiting periods, from an insurer authorized by Spain's insurance regulator.\n\nA policy like this for a young adult with no pre-existing conditions runs roughly €45–€85 a month, somewhat below the average for major Spanish cities, with Sanitas, Adeslas and Asisa among the insurers with the strongest local presence.",
+      sources: [
+        { label: "Health insurance for the digital nomad visa — Cohen y Aguirre", url: "https://cohenyaguirre.es/seguro-medico-para-visa-nomada-digital" },
+        { label: "Servizo Galego de Saúde (Sergas)", url: "https://www.sergas.es" },
+      ],
+    },
+    barrios: {
+      content: "Ensanche and Cuatro Caminos are the most common areas to live, central and well connected; María Pita and the Old Town offer historic charm right by the harbor. Riazor and Orzán, with their urban beaches along the seafront promenade, are the go-to area for anyone after surf and outdoor life without leaving the city, with rents somewhat above the local average.\n\nFor coworking, Cooworking runs two spaces: one central on Avenida del Ejército, five minutes from downtown, and another in the A Grela business park geared toward larger teams. It's still a small offering compared with Madrid or Barcelona, but enough for anyone working remotely on a regular basis.",
+      sources: [
+        { label: "Cooworking A Coruña", url: "https://cooworking.net/" },
+        { label: "Cost of Living in A Coruña — Numbeo", url: "https://www.numbeo.com/cost-of-living/in/A-Coruna-Corunna-Spain" },
+      ],
+    },
+  },
+  bilbao: {
+    visaFiscal: {
+      content: "EU and European Economic Area citizens don't need a visa to settle in Bilbao: free movement lets them live and work with no more paperwork than registering locally and requesting the EU citizen registration certificate. For non-EU digital nomads, Spain offers the same international remote worker visa available across the country, requiring monthly income of around €2,849/month in 2026 and granted for up to three years initially.\n\nThose who get this visa can also opt into the Beckham Law, setting a flat 24% income tax rate on the first €600,000 of earnings for six tax years. Everyone else follows the general tax residency rule: more than 183 days a year in the country.",
+      sources: [
+        { label: "Digital nomad visa — Legalitas", url: "https://www.legalitas.com/actualidad/visado-nomada-digital" },
+        { label: "The Beckham Law in Spain 2026 — Raisin", url: "https://www.raisin.com/es-es/tributacion/ley-beckham/" },
+      ],
+    },
+    sanidad: {
+      content: "Legal residents in Bilbao can access the Basque public health system (Osakidetza) once registered with Social Security, with Hospital Universitario de Cruces as the main reference hospital for the metro area. The remote worker visa requires private health insurance with no copays or waiting periods.\n\nA policy like this for a young adult with no pre-existing conditions runs roughly €55–€95 a month, in line with the average for major Spanish cities, with Sanitas, Adeslas and DKV among the insurers with the strongest presence in the Basque Country.",
+      sources: [
+        { label: "Health insurance for the digital nomad visa — Cohen y Aguirre", url: "https://cohenyaguirre.es/seguro-medico-para-visa-nomada-digital" },
+        { label: "Osakidetza — Basque Health Service", url: "https://www.osakidetza.euskadi.eus" },
+      ],
+    },
+    barrios: {
+      content: "Ensanche and Abando, around the Guggenheim and the river, are the areas most sought after by digital nomads for their proximity to cafés, restaurants and coworking spaces; Indautxu offers a similar feel at somewhat more affordable prices. Deusto, across the river, blends a university atmosphere with lower rents.\n\nFor coworking, Spaces Abando (Calle Buenos Aires 12) is the most established international option right in the center; Bilbo Lab Coworking and Alzola Coworking, both near the Ensanche, offer flexible desks from around €200–250/month; BC Coworking, along the riverfront toward Deusto, is another active option with private offices from €230/month.",
+      sources: [
+        { label: "Top 5 coworking spaces in Bilbao — Holafly", url: "https://esim.holafly.com/es/blog/nomada-digital/coworking-bilbao/" },
+        { label: "Cost of Living in Bilbao — Numbeo", url: "https://www.numbeo.com/cost-of-living/in/Bilbao" },
+      ],
+    },
+  },
+  toulouse: {
+    visaFiscal: {
+      content: "France has no dedicated digital nomad visa. The usual route for a longer stay working remotely for a foreign employer is the long-stay visitor visa (VLS-TS visiteur): following a 2026 clarification from the French Ministry of the Interior, remote work from France is tolerated as long as the job, contract and pay remain entirely tied to a company outside France, with no French clients or economic activity. Each application is assessed individually by the consulate, and requires proof of financial means, accommodation, and health insurance with at least €30,000 of coverage.\n\nThose wanting a more solid path can apply for the Talent Passport (Passeport Talent), aimed at self-employed professionals or skilled workers with annual income of roughly €22,000–€35,000 depending on the category. On the tax side, working physically from French soil can count as work carried out in France for tax purposes regardless of where the employer is based, so it's worth planning around the applicable double-taxation treaty before settling in.",
+      sources: [
+        { label: "France Clarifies Remote Working Rules for Visitor Visa Holders — IAS", url: "https://iasservices.org.uk/france-clarifies-remote-working-rules-for-visitor-visa-holders/" },
+        { label: "Long-stay visa (more than 3 months) — Service-Public.fr", url: "https://www.service-public.gouv.fr/particuliers/vosdroits/F16162?lang=en" },
+      ],
+    },
+    sanidad: {
+      content: "After three months of stable, regular residence in France, it's possible to apply for Protection Universelle Maladie (PUMa), giving access to the public healthcare system. While that's being processed, or for the visitor visa itself, private international health insurance with at least €30,000 of coverage is required. The Centre Hospitalier Universitaire (CHU) de Toulouse is the main public reference hospital for the region.\n\nPrivate healthcare in Toulouse is good quality, with clinics and specialists concentrated downtown and in the Rangueil district, near the CHU itself.",
+      sources: [
+        { label: "France Clarifies Remote Working Rules for Visitor Visa Holders — IAS", url: "https://iasservices.org.uk/france-clarifies-remote-working-rules-for-visitor-visa-holders/" },
+        { label: "CHU de Toulouse", url: "https://www.chu-toulouse.fr" },
+      ],
+    },
+    barrios: {
+      content: "The historic center around the Capitole holds most of the wifi-friendly cafés and social life; Saint-Cyprien, across the Garonne, is quieter and somewhat cheaper. Compans-Caffarelli, near the canal, is the business district with the most offices and coworking spaces.\n\nFor coworking, HarryCow (Rue Sainte-Ursule, next to the Capitole) offers access from €4/hour up to €220/month; Ô Local, near the Château du Canal, has a base membership around €239/month; Lab'Oïkos, in the Saint-Aubin district, offers flexible access from €99/month.",
+      sources: [
+        { label: "Top 5 coworking spaces in Toulouse — Colivys", url: "https://colivys.com/en/blog/coworking-toulouse/" },
+      ],
+    },
+  },
+  estrasburgo: {
+    visaFiscal: {
+      content: "As in the rest of France, there is no dedicated digital nomad visa for Strasbourg. The most commonly used option for extended remote work is the long-stay visitor visa (VLS-TS visiteur), tolerated since the French Interior Ministry's 2026 clarification as long as the job, contract and pay stay entirely outside France, with no French clients or economic ties to the country. Approval isn't automatic — each application is assessed case by case at the relevant consulate.\n\nAs a European capital hosting the European Parliament, Strasbourg also has a fairly large community of international workers on the Talent Passport, the more solid route for anyone seeking medium-term remote work authorization. French tax residency kicks in after 183 days of stay in the country during the year.",
+      sources: [
+        { label: "France Clarifies Remote Working Rules for Visitor Visa Holders — IAS", url: "https://iasservices.org.uk/france-clarifies-remote-working-rules-for-visitor-visa-holders/" },
+        { label: "Long-stay visa (more than 3 months) — Service-Public.fr", url: "https://www.service-public.gouv.fr/particuliers/vosdroits/F16162?lang=en" },
+      ],
+    },
+    sanidad: {
+      content: "After three months of stable residence, it's possible to access Protection Universelle Maladie (PUMa) under the French public system; until then, or for the visitor visa itself, private international health insurance with at least €30,000 of coverage is required. The Hôpitaux Universitaires de Strasbourg (HUS) are the main public reference center for the Alsace region.\n\nProximity to Germany and Switzerland means it's also common to compare cross-border private healthcare prices, though for a French resident it's usually more practical to arrange coverage locally.",
+      sources: [
+        { label: "France Clarifies Remote Working Rules for Visitor Visa Holders — IAS", url: "https://iasservices.org.uk/france-clarifies-remote-working-rules-for-visitor-visa-holders/" },
+        { label: "Hôpitaux Universitaires de Strasbourg", url: "https://www.chru-strasbourg.fr" },
+      ],
+    },
+    barrios: {
+      content: "Petite France, the historic canal district with half-timbered houses, is the most touristy and also the priciest; Krutenau, right by the center, has a student atmosphere and good nightlife at more moderate prices. Neudorf, to the south, is a quiet, more affordable residential area, well connected by tram.\n\nFor coworking, La Place Digitale, right in the center, offers fixed desks from €210–300/month; Anticafé, near Petite France, charges by time used, from €6/hour up to €260/month; Les Compotes, in Neudorf, is the most affordable of the group, between €90 and €300 depending on days used.",
+      sources: [
+        { label: "Top 5 coworking spaces in Strasbourg — Colivys", url: "https://colivys.com/en/blog/coworking-space-strasbourg/" },
+      ],
+    },
+  },
+  "nueva-york": {
+    visaFiscal: {
+      content: "The United States offers no digital nomad visa. Entering as a tourist, whether through ESTA (the Visa Waiver Program) or a B-1/B-2 visa, does not legally permit ongoing remote work for a foreign employer or clients: U.S. immigration rules treat that as work even if paid from abroad, and doing so can lead to visa cancellation, denial of entry on a future trip, or future inadmissibility issues.\n\nFor anyone wanting to stay longer while working legally, the only real paths are traditional work visas: O-1 (extraordinary ability), L-1 (intra-company transfers), E-2 (investors), or H-1B (requiring sponsorship from a U.S. employer). There is no category built specifically for digital nomads.",
+      sources: [
+        { label: "Can Digital Nomads Legally Work in the U.S.? — RJ Immigration Law", url: "https://rjimmigrationlaw.com/resources/can-digital-nomads-legally-work-in-the-u-s/" },
+        { label: "Visa Waiver Program — U.S. Department of State", url: "https://travel.state.gov/content/travel/en/us-visas/tourism-visit/visa-waiver-program.html" },
+      ],
+    },
+    sanidad: {
+      content: "The United States has no universal public healthcare system, and private medical care is among the most expensive in the world: an uninsured ER visit can run into the thousands of dollars. For any stay, whether tourism or work, taking out international health insurance with broad coverage (Cigna Global, IMG, or similar) before traveling is essential, since neither ESTA nor any short-stay visa includes it automatically or as a requirement.\n\nNew York's private hospitals (Mount Sinai, NYU Langone, NewYork-Presbyterian, among others) are world-class, but prices without insurance are proportionally high even for routine visits.",
+      sources: [
+        { label: "Can Digital Nomads Legally Work in the U.S.? — RJ Immigration Law", url: "https://rjimmigrationlaw.com/resources/can-digital-nomads-legally-work-in-the-u-s/" },
+        { label: "Health Costs — KFF (Kaiser Family Foundation)", url: "https://www.kff.org/health-costs/" },
+      ],
+    },
+    barrios: {
+      content: "Williamsburg, in Brooklyn, is the neighborhood most associated with the creative and digital nomad community, with a good café and coworking scene at somewhat lower prices than Manhattan. The Financial District (FiDi), in lower Manhattan, has the highest density of business-focused coworking spaces; Midtown, near Bryant Park, is the most central option with the best subway access.\n\nFor coworking, Cubico (433 Broadway, Tribeca/SoHo) offers an industrial-style space with rooftop access; The Yard, in Williamsburg, combines design with more accessible pricing than Manhattan; Jay Suites, on Fifth Avenue near Bryant Park, is a central option aimed at professionals and small businesses.",
+      sources: [
+        { label: "The Best 13 Coworking Spaces in New York City — Hubble HQ", url: "https://hubblehq.com/blog/best-coworking-spaces-nyc" },
+      ],
+    },
+  },
 };
