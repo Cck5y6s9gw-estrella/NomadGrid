@@ -2424,7 +2424,7 @@ export const cities: City[] = [
     internetSpeed: 263,
     safetyScore: 8.2,
     climateType: "Oceánico",
-    qualityOfLife: 10.6,
+    qualityOfLife: 10,
     hasBeach: true,
     bestTimeToVisit: "Junio – Septiembre",
     pros: ["Dos playas urbanas a pie del centro (Riazor, Orzán)", "Coste de vida entre los más bajos de España", "Seguridad percibida muy alta según Numbeo", "Clima oceánico suave, sin calores extremos", "Ciudad compacta, fácil de recorrer a pie o en bici"],
