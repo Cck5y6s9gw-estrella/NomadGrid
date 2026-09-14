@@ -55,7 +55,7 @@ export default function RankingView({
             <Link
               key={city.slug}
               href={`/cities/${city.slug}`}
-              className="group flex items-center gap-4 px-4 sm:px-5 py-3 hover:bg-background/60 transition-colors"
+              className="group flex items-center gap-4 px-4 sm:px-5 py-3 hover:bg-background/60 active:bg-background/80 active:scale-[0.99] transition-all duration-150 cursor-pointer"
             >
               <span
                 className={`w-7 text-right text-sm font-medium shrink-0 ${

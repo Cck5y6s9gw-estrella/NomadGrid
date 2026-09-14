@@ -58,7 +58,7 @@ export default function RankingsIndexView() {
                 key={r.slug}
                 href={`/rankings/${r.slug}`}
                 style={{ animationDelay: `${idx * 70}ms` }}
-                className="animate-pop-in group relative overflow-hidden rounded-3xl border border-white/10 bg-card shadow-lg shadow-black/30 hover:border-accent/70 hover:shadow-accent/10 hover:-translate-y-0.5 transition-all duration-300"
+                className="animate-pop-in group relative overflow-hidden rounded-3xl border border-white/10 bg-card shadow-lg shadow-black/30 hover:border-accent/70 hover:shadow-accent/10 hover:-translate-y-0.5 active:scale-[0.97] active:translate-y-0 active:shadow-none transition-all duration-200 ease-out cursor-pointer"
               >
                 <div className={`absolute inset-0 bg-gradient-to-br ${cardAccents[r.icon]} pointer-events-none`} />
                 <div className="relative p-6">
