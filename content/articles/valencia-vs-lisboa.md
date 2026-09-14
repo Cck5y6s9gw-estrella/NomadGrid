@@ -4,7 +4,7 @@ title_en: "Valencia vs Lisbon: Which Is Better for Digital Nomads in 2026?"
 dek_es: "Coste de vida, internet, seguridad, visados y barrios: comparamos las dos ciudades favoritas de Europa para trabajar en remoto, con datos reales."
 dek_en: "Cost of living, internet, safety, visas, and neighborhoods: we compare Europe's two favorite cities for remote work, with real data."
 date: "2026-09-14"
-cover: "https://images.unsplash.com/photo-1513735492246-483525079686?w=1600&q=80"
+cover: "https://images.unsplash.com/photo-1585208798174-6cedd86e019a?w=1600&q=80"
 ---
 Valencia y Lisboa aparecen constantemente en cualquier lista de las mejores ciudades europeas para nómadas digitales, y no es casualidad: ambas combinan clima mediterráneo, coste de vida razonable para los estándares de Europa occidental y una comunidad internacional consolidada. Pero son ciudades muy distintas en varios aspectos clave, y la que te conviene depende de qué priorices. Comparamos ambas con datos reales, sin florituras.
 
