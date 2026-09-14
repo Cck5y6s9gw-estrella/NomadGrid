@@ -59,10 +59,10 @@ export default function RankingView({
             >
               <span
                 className={`w-7 text-right text-sm font-medium shrink-0 ${
-                  i < 3 ? "text-accent" : "text-muted"
+                  i === 0 ? "text-accent" : "text-muted"
                 }`}
               >
-                {i < 3 ? <IconTrophy className="w-4 h-4 inline -mt-0.5" /> : i + 1}
+                {i === 0 ? <IconTrophy className="w-4 h-4 inline -mt-0.5" /> : i + 1}
               </span>
               <img
                 src={city.imageUrl}
