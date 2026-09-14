@@ -85,6 +85,7 @@ const dict = {
   es: {
     navCities: "Ver ciudades",
     navCompare: "Comparar",
+    navRankings: "Rankings",
     navArticles: "Artículos",
     navFeedback: "Feedback",
     navFavorites: "Favoritos",
@@ -285,6 +286,7 @@ const dict = {
   en: {
     navCities: "Browse cities",
     navCompare: "Compare",
+    navRankings: "Rankings",
     navArticles: "Articles",
     navFeedback: "Feedback",
     navFavorites: "Favorites",

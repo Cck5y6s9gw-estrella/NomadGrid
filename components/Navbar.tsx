@@ -20,6 +20,7 @@ export default function Navbar() {
     { href: "/match", label: d.navMatch },
     { href: "/mapa", label: d.navMap },
     { href: "/compare", label: d.navCompare },
+    { href: "/rankings", label: d.navRankings },
     { href: "/articulos", label: d.navArticles },
     ...(isSignedIn ? [{ href: "/favoritos", label: d.navFavorites }] : []),
     { href: "/feedback", label: d.navFeedback },
