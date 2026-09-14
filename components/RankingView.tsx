@@ -7,6 +7,7 @@ import { useLanguage } from "@/lib/i18n";
 import { tCountry } from "@/lib/dictionary";
 import type { City } from "@/data/cities";
 import type { RankingConfig } from "@/lib/rankings";
+import { formatRankingValue } from "@/lib/rankings";
 import { IconCoin, IconShield, IconStar, IconWifi, IconTrophy } from "./Icon";
 
 const icons = {
@@ -75,7 +76,7 @@ export default function RankingView({
                 <div className="text-xs text-muted truncate">{tCountry(city.country, lang)}</div>
               </div>
               <div className="text-sm font-medium text-foreground shrink-0">
-                {config.formatValue(city)}
+                {formatRankingValue(config, city)}
               </div>
               <FavoriteButton citySlug={city.slug} className="shrink-0" />
             </Link>

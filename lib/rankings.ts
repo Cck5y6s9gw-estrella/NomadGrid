@@ -15,7 +15,6 @@ export type RankingConfig = {
   cardTitleEn: string;
   unitEs: string;
   unitEn: string;
-  formatValue: (city: City) => string;
 };
 
 export const rankings: RankingConfig[] = [
@@ -34,7 +33,6 @@ export const rankings: RankingConfig[] = [
     cardTitleEn: "Cost of living",
     unitEs: "€/mes",
     unitEn: "€/mo",
-    formatValue: (city) => `${city.currency === "EUR" ? "€" : city.currency + " "}${city.costPerMonth}`,
   },
   {
     slug: "seguridad",
@@ -51,7 +49,6 @@ export const rankings: RankingConfig[] = [
     cardTitleEn: "Safety",
     unitEs: "/10",
     unitEn: "/10",
-    formatValue: (city) => `${city.safetyScore}/10`,
   },
   {
     slug: "calidad-de-vida",
@@ -68,7 +65,6 @@ export const rankings: RankingConfig[] = [
     cardTitleEn: "Quality of life",
     unitEs: "/10",
     unitEn: "/10",
-    formatValue: (city) => `${city.qualityOfLife}/10`,
   },
   {
     slug: "internet",
@@ -85,7 +81,6 @@ export const rankings: RankingConfig[] = [
     cardTitleEn: "Internet speed",
     unitEs: "Mbps",
     unitEn: "Mbps",
-    formatValue: (city) => `${city.internetSpeed} Mbps`,
   },
 ];
 
@@ -100,4 +95,19 @@ export function getSortedCities(config: RankingConfig): City[] {
     return config.direction === "asc" ? av - bv : bv - av;
   });
   return sorted;
+}
+
+export function formatRankingValue(config: RankingConfig, city: City): string {
+  switch (config.field) {
+    case "costPerMonth":
+      return `${city.currency === "EUR" ? "€" : city.currency + " "}${city.costPerMonth}`;
+    case "safetyScore":
+      return `${city.safetyScore}/10`;
+    case "qualityOfLife":
+      return `${city.qualityOfLife}/10`;
+    case "internetSpeed":
+      return `${city.internetSpeed} Mbps`;
+    default:
+      return String(city[config.field]);
+  }
 }
