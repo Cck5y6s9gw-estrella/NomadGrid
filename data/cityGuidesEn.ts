@@ -712,4 +712,107 @@ export const cityGuidesEn: Record<string, CityGuide> = {
       ],
     },
   },
+  "las-palmas": {
+    visaFiscal: {
+      content: "EU and EEA citizens don't need a visa to settle in Las Palmas de Gran Canaria: registering with the municipality and requesting the EU citizen registration certificate is enough. For non-EU digital nomads, Spain offers the international teleworker visa, requiring a monthly income of around €2,849/month in 2026, initially valid for up to three years and renewable in two-year periods.\n\nThose who get this visa can opt into the special regime for posted workers, known as the 'Beckham Law', which sets a flat 24% income tax rate on the first €600,000 of income for six tax years. The Canary Islands also apply IGIC instead of standard VAT, generally at lower rates, which makes everyday spending somewhat cheaper than on the mainland.",
+      sources: [
+        { label: "Digital Nomad Visa — Legalitas", url: "https://www.legalitas.com/actualidad/visado-nomada-digital" },
+        { label: "Spain's Beckham Law 2026 — Raisin", url: "https://www.raisin.com/es-es/tributacion/ley-beckham/" },
+      ],
+    },
+    sanidad: {
+      content: "Legal residents in Las Palmas have access to Spain's National Health System through the Canary Health Service, with the Complejo Hospitalario Universitario Insular-Materno Infantil as the island's main public reference hospital. To apply for the teleworker visa, private health insurance with no co-pays or waiting periods is mandatory, taken out with an insurer authorized by Spain's insurance regulator.\n\nA policy like this for a healthy young adult typically costs between €40 and €80/month, in line with the Spanish average, with Sanitas, Adeslas and Asisa among the insurers with the strongest presence on the island.",
+      sources: [
+        { label: "Canary Health Service", url: "https://www3.gobiernodecanarias.org/sanidad/scs/" },
+        { label: "Health insurance for the digital nomad visa — Cohen y Aguirre", url: "https://cohenyaguirre.es/seguro-medico-para-visa-nomada-digital" },
+      ],
+    },
+    barrios: {
+      content: "Guanarteme and the area around Las Canteras, the city's best-known urban beach, hold most of the digital nomad community, with a good café scene and rents somewhat above the local average. Vegueta and Triana, the old town, offer colonial charm and a good cultural scene at more moderate prices.\n\nFor coworking, White Forest, 200 meters from Las Canteras in Guanarteme, is one of the best known; Sky Coworking, also near the beach, stands out for its outdoor work terrace; Fico Coworking, in the La Isleta neighborhood, focuses on sustainability (solar power, recycled furniture). Day passes run €12-20 and monthly memberships between €100 and €250.",
+      sources: [
+        { label: "Best Coworking Spaces in Las Palmas — repeople", url: "https://www.repeople.co/blog/best-coworking-spaces-las-palmas-gran-canaria/" },
+      ],
+    },
+  },
+  "malaga": {
+    visaFiscal: {
+      content: "EU and EEA citizens don't need a visa to settle in Málaga: registering with the municipality and requesting the EU citizen registration certificate is enough. For non-EU digital nomads, Spain offers the international teleworker visa, requiring a monthly income of around €2,849/month in 2026, initially valid for up to three years and renewable in two-year periods.\n\nThose who get this visa can opt into the special regime for posted workers, the 'Beckham Law', which sets a flat 24% income tax rate on the first €600,000 of income for six tax years. Everyone else follows the general tax residency rule: more than 183 days a year in Spain.",
+      sources: [
+        { label: "Digital Nomad Visa — Legalitas", url: "https://www.legalitas.com/actualidad/visado-nomada-digital" },
+        { label: "Spain's Beckham Law 2026 — Raisin", url: "https://www.raisin.com/es-es/tributacion/ley-beckham/" },
+      ],
+    },
+    sanidad: {
+      content: "In Málaga, public healthcare is run by the Andalusian Health Service (SAS), the same regional system that covers Seville and the rest of Andalusia. To access it as a resident, you need to be registered with the municipality and request the Andalusian Health Card through the SAS portal or the 'Salud Andalucía' app, which assigns a health center and family doctor based on your address.\n\nAs a complement, there's a wide range of private health insurance in Málaga (Sanitas, Adeslas, DKV, Asisa), heavily used by the growing expat and digital nomad community to shorten wait times.",
+      sources: [
+        { label: "SAS – Andalusian Health Card", url: "https://www.sspa.juntadeandalucia.es/servicioandaluzdesalud/ciudadania/tarjeta-sanitaria-de-andalucia" },
+      ],
+    },
+    barrios: {
+      content: "Soho, the arts district by the port, is the favorite area for the creative and digital nomad community, packed with murals, galleries, and cafés; the Historic Center, next to the Cathedral, combines charm with a good social scene, though rents are rising under pressure from tourism and nomads. Pedregalejo and El Palo, by the sea, offer a more local, relaxed feel with beach bars and lower costs.\n\nFor coworking, Nido, considered one of the city's best, offers a polished space right in the center; Málaga's coworking scene includes over 60 spaces in total, with day passes from $6 at the more basic ones.",
+      sources: [
+        { label: "Top Coworking Spaces in Malaga — Nomads.com", url: "https://nomads.com/coworking/malaga" },
+      ],
+    },
+  },
+  "phuket": {
+    visaFiscal: {
+      content: "Thailand offers the Destination Thailand Visa (DTV), designed specifically for digital nomads and freelancers: it requires showing about THB500,000 (around $14,000) in your bank account, 'seasoned' for at least three months before applying, since a recent deposit is a common reason for rejection. It's a 5-year multiple-entry visa, allowing stays of up to 180 days per entry, extendable once to a continuous 360 days at a Thai immigration office.\n\nIt doesn't allow working for Thai companies, only for clients or employers abroad. Those who are paid exclusively from outside Thailand and stay under 180 days a year generally don't trigger Thai tax obligations, though it's worth checking with an adviser if that threshold is exceeded.",
+      sources: [
+        { label: "Destination Thailand Visa (DTV): 2026 Requirements Guide", url: "https://www.thailandstarterkit.com/visas/destination-thailand-visa-dtv/" },
+      ],
+    },
+    sanidad: {
+      content: "Thailand has no public healthcare system accessible to foreigners who aren't tax residents: the standard practice is taking out international private health insurance before traveling, since the DTV visa itself may require proof of health coverage depending on the consulate. Thai private healthcare has a good reputation for quality, with prices well below Europe or the US for most treatments.\n\nPhuket has internationally recognized private hospitals such as Bangkok Hospital Phuket and Phuket International Hospital, both used to treating foreign patients and offering 24-hour emergency services.",
+      sources: [
+        { label: "Destination Thailand Visa (DTV): 2026 Requirements Guide", url: "https://www.thailandstarterkit.com/visas/destination-thailand-visa-dtv/" },
+      ],
+    },
+    barrios: {
+      content: "Patong is the most touristy area with the liveliest nightlife, with a good coworking scene but also more noise and crowds; Rawai and Chalong, in the island's south, are quieter and popular with long-stay digital nomads; Phuket Town, the Sino-Portuguese old town, blends culture, cafés, and more moderate prices.\n\nFor coworking, Lub d Coworking, in Patong, is part of a hub with a restaurant, bar, and pool; BAYACO Coworking, in Phuket Town, is one of the island's largest for group work; Grind Time, with locations in Rawai and Chalong, offers quiet spaces with phone booths. Prices range from $3/day up to $300-600/month for a private office.",
+      sources: [
+        { label: "Top 15 Phuket Coworking Spaces — NowPhuket", url: "https://nowphuket.com/phuket-coworking-spaces/" },
+      ],
+    },
+  },
+  "cancun": {
+    visaFiscal: {
+      content: "Mexico offers the Temporary Resident Visa, the most common route for digital nomads who want to stay longer than 180 days: it requires proving a monthly income of $2,500-4,000 over the past 6-12 months, or savings of $40,000-70,000 maintained over the same period, from sources outside Mexico. It's applied for at a Mexican consulate in your country of residence (booking at least 2 months ahead) and is initially granted for one year, renewable up to a maximum of four.\n\nMany nationalities can enter visa-free as tourists for up to 180 days, which in practice covers a large share of short-stay nomads, though that status doesn't authorize working for Mexican companies or permanent residence.",
+      sources: [
+        { label: "Mexico Digital Nomad Visa (2026): Temporary Resident Visa Guide — Citizen Remote", url: "https://citizenremote.com/visas/mexico/" },
+      ],
+    },
+    sanidad: {
+      content: "Mexico doesn't grant access to its public healthcare system (IMSS) to those who aren't formally registered as workers or residents contributing to it, so the standard practice among digital nomads is to take out international private health insurance before traveling. Private healthcare in Cancún, largely geared toward international tourism, has a good reputation, though prices without insurance can be high in tourist areas like the Hotel Zone.\n\nCancún has reference private hospitals such as Hospital Galenia and Grupo Christus Muguerza, both offering 24-hour emergency services and staff used to treating foreign patients.",
+      sources: [
+        { label: "Mexico Digital Nomad Visa (2026): Temporary Resident Visa Guide — Citizen Remote", url: "https://citizenremote.com/visas/mexico/" },
+      ],
+    },
+    barrios: {
+      content: "The Hotel Zone, the coastal strip with the best-known beaches, is packed with hotels and resorts, with high prices and less neighborhood life; downtown Cancún (Supermanzanas 22-24), where most of the local population lives, offers lower rents, a good food scene, and better value for longer stays.\n\nFor coworking, beNuk Coworking, downtown, offers a day pass from $9 and a monthly membership from $133; Kolmena Lab, in Plaza Fontana, charges $17/day and $150 + VAT/month for unlimited access; La Casa del Árbol is the most affordable option, with daily access from $4-5 and memberships from $50-97/month.",
+      sources: [
+        { label: "How to find the best coworking in Cancún? — Holafly", url: "https://esim.holafly.com/digital-nomad/coworking-cancun/" },
+      ],
+    },
+  },
+  "antalya": {
+    visaFiscal: {
+      content: "Since 2023, Turkey has offered a Digital Nomad Identification Certificate, a preliminary document that streamlines access to a short-term residence permit: it requires income of at least $3,000/month ($36,000/year) from abroad, being between 21 and 55 years old, holding a university degree, and being a citizen of one of 36 eligible countries (including the EU, UK, US, and Canada). The application goes through the GoTürkiye platform and, once approved, allows applying for the residence permit at a visa center or Turkish consulate.\n\nThe certificate itself doesn't grant residence rights: it's a document that speeds up access to the standard residence permit within Turkey's immigration framework, whose duration is reviewed case by case.",
+      sources: [
+        { label: "Turkey Digital Nomad Visa 2026: Ages 21-55, USD 3,000/Month — Serka Law Firm", url: "https://serkalaw.com/digital-nomad-visa/" },
+      ],
+    },
+    sanidad: {
+      content: "Turkey has no reciprocal healthcare agreement with most Western countries, so anyone not contributing to the public system (SGK) needs international private health insurance, often also required for the residence permit application. Turkish private healthcare has a good reputation and prices notably lower than Western Europe for routine consultations and tests.\n\nAntalya has reference private hospitals such as Medical Park Antalya and Memorial Antalya, both used to international patients and offering 24-hour emergency services.",
+      sources: [
+        { label: "Guide Healthcare in Turkey — Allianz Care", url: "https://www.allianzcare.com/en/support/health-and-wellness/national-healthcare-systems/healthcare-in-turkey.html" },
+      ],
+    },
+    barrios: {
+      content: "Kaleiçi, the historic old town by the harbor, is the most charming and touristy area, with cobblestone streets and a good café scene, though also the most expensive; Lara and Konyaaltı, with their long beaches, are quieter residential areas popular with the expat and digital nomad community.\n\nFor coworking, Coworking Antalya, right in the center with sea views, has a 4.9 rating on Google Maps; Creawork, near shopping and cultural areas, offers high-speed internet and unlimited coffee; Coworking Mozaik combines work with wellness spaces (yoga, pilates, a climbing gym). Monthly memberships run between $50 and $300.",
+      sources: [
+        { label: "8 Best Coworking Spaces in Antalya, Türkiye", url: "https://www.xyzlab.com/post/coworking-spaces-in-antalya" },
+      ],
+    },
+  },
 };

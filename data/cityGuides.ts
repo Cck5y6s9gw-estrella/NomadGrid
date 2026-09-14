@@ -2014,4 +2014,107 @@ export const cityGuides: Record<string, CityGuide> = {
       ],
     },
   },
+  "las-palmas": {
+    visaFiscal: {
+      content: "Los ciudadanos de la Unión Europea y del Espacio Económico Europeo no necesitan visado para instalarse en Las Palmas de Gran Canaria: basta con empadronarse y solicitar el certificado de registro de ciudadano de la UE. Para nómadas digitales de fuera de la UE, España ofrece el visado para teletrabajadores de carácter internacional, con un requisito de ingresos mensuales en torno a 2.849 €/mes en 2026 y una validez inicial de hasta tres años, prorrogable por periodos de dos.\n\nQuienes obtienen este visado pueden acogerse al régimen especial para trabajadores desplazados o Ley Beckham, que fija un tipo fijo del 24% en el IRPF sobre los primeros 600.000 € de renta durante seis ejercicios fiscales. Canarias, además, aplica el IGIC en lugar del IVA general, con tipos generalmente más bajos, lo que abarata algo el consumo diario respecto a la Península.",
+      sources: [
+        { label: "Visado para nómadas digitales — Legalitas", url: "https://www.legalitas.com/actualidad/visado-nomada-digital" },
+        { label: "La ley Beckham en España 2026 — Raisin", url: "https://www.raisin.com/es-es/tributacion/ley-beckham/" },
+      ],
+    },
+    sanidad: {
+      content: "Los residentes legales en Las Palmas tienen acceso al Sistema Nacional de Salud a través del Servicio Canario de Salud, con el Complejo Hospitalario Universitario Insular-Materno Infantil como principal centro de referencia público de la isla. Para tramitar el visado de teletrabajador es obligatorio un seguro médico privado sin copagos ni carencias, contratado con una aseguradora autorizada por la Dirección General de Seguros.\n\nEl coste de una póliza de este tipo para un adulto joven sin patologías previas ronda entre 40 € y 80 € al mes, en línea con la media española, con Sanitas, Adeslas y Asisa entre las aseguradoras con más presencia en la isla.",
+      sources: [
+        { label: "Servicio Canario de Salud", url: "https://www3.gobiernodecanarias.org/sanidad/scs/" },
+        { label: "Seguro médico para el visado de nómada digital — Cohen y Aguirre", url: "https://cohenyaguirre.es/seguro-medico-para-visa-nomada-digital" },
+      ],
+    },
+    barrios: {
+      content: "Guanarteme y el entorno de Las Canteras, la playa urbana más conocida de la ciudad, concentran la mayor parte de la comunidad de nómadas digitales, con buen ambiente de cafeterías y alquileres algo por encima de la media local. Vegueta y Triana, el casco histórico, ofrecen encanto colonial y buena vida cultural a precios más moderados.\n\nEntre los coworkings, White Forest, a 200 metros de Las Canteras en Guanarteme, es uno de los más conocidos; Sky Coworking, también cerca de la playa, destaca por su terraza de trabajo al aire libre; Fico Coworking, en el barrio de La Isleta, apuesta por la sostenibilidad (energía solar, mobiliario reciclado). Los bonos de día rondan 12-20 € y las membresías mensuales entre 100 € y 250 €.",
+      sources: [
+        { label: "Best Coworking Spaces in Las Palmas — repeople", url: "https://www.repeople.co/blog/best-coworking-spaces-las-palmas-gran-canaria/" },
+      ],
+    },
+  },
+  "malaga": {
+    visaFiscal: {
+      content: "Los ciudadanos de la Unión Europea y del Espacio Económico Europeo no necesitan visado para instalarse en Málaga: basta con empadronarse y solicitar el certificado de registro de ciudadano de la UE. Para nómadas digitales de fuera de la UE, España ofrece el visado para teletrabajadores de carácter internacional, con un requisito de ingresos mensuales en torno a 2.849 €/mes en 2026 y una validez inicial de hasta tres años, prorrogable por periodos de dos.\n\nQuienes obtienen este visado pueden acogerse al régimen especial para trabajadores desplazados o Ley Beckham, que fija un tipo fijo del 24% en el IRPF sobre los primeros 600.000 € de renta durante seis ejercicios fiscales. Para el resto de contribuyentes rige la regla general de residencia fiscal: más de 183 días al año en España.",
+      sources: [
+        { label: "Visado para nómadas digitales — Legalitas", url: "https://www.legalitas.com/actualidad/visado-nomada-digital" },
+        { label: "La ley Beckham en España 2026 — Raisin", url: "https://www.raisin.com/es-es/tributacion/ley-beckham/" },
+      ],
+    },
+    sanidad: {
+      content: "En Málaga, la sanidad pública depende del Servicio Andaluz de Salud (SAS), el mismo sistema regional que gestiona Sevilla y el resto de Andalucía. Para acceder a él como residente hay que estar empadronado y solicitar la Tarjeta Sanitaria de Andalucía a través del portal del SAS o de la app 'Salud Andalucía', que asigna un centro de salud y médico de familia de referencia según el domicilio.\n\nComo complemento, hay una amplia oferta de seguros de salud privados en Málaga (Sanitas, Adeslas, DKV, Asisa), muy utilizados por la creciente comunidad de expatriados y nómadas digitales para acortar los tiempos de espera.",
+      sources: [
+        { label: "SAS – Tarjeta Sanitaria de Andalucía", url: "https://www.sspa.juntadeandalucia.es/servicioandaluzdesalud/ciudadania/tarjeta-sanitaria-de-andalucia" },
+      ],
+    },
+    barrios: {
+      content: "El Soho, el barrio de las artes junto al puerto, es la zona favorita de la comunidad creativa y de nómadas digitales, con gran densidad de murales, galerías y cafeterías; el Centro Histórico, junto a la Catedral, combina encanto y buena vida social, aunque con alquileres al alza por la presión turística y de nómadas. Pedregalejo y El Palo, junto al mar, ofrecen un ambiente más local y tranquilo, con chiringuitos y menor coste.\n\nEntre los coworkings, Nido, considerado uno de los mejores de la ciudad, ofrece un ambiente cuidado en pleno centro; la oferta de Málaga incluye más de 60 espacios de coworking en total, con bonos de día desde 6 $ en los espacios más básicos.",
+      sources: [
+        { label: "Top Coworking Spaces in Malaga — Nomads.com", url: "https://nomads.com/coworking/malaga" },
+      ],
+    },
+  },
+  "phuket": {
+    visaFiscal: {
+      content: "Tailandia ofrece la Destination Thailand Visa (DTV), pensada específicamente para nómadas digitales y freelancers: exige demostrar unos 500.000 baht (unos 14.000 $) en la cuenta bancaria, con al menos tres meses de antigüedad ('maduración') antes de solicitarla, ya que un ingreso reciente en la cuenta es motivo frecuente de denegación. Es un visado de entradas múltiples válido 5 años, con estancias de hasta 180 días por entrada, ampliables una vez a 360 días consecutivos en una oficina de inmigración tailandesa.\n\nNo permite trabajar para empresas tailandesas, solo para clientes o empleadores en el extranjero. Quienes cobran únicamente desde fuera de Tailandia y no superan los 180 días de estancia por año no suelen generar obligación fiscal tailandesa, aunque conviene revisar cada caso con un asesor si se supera ese umbral.",
+      sources: [
+        { label: "Destination Thailand Visa (DTV): 2026 Requirements Guide", url: "https://www.thailandstarterkit.com/visas/destination-thailand-visa-dtv/" },
+      ],
+    },
+    sanidad: {
+      content: "Tailandia no tiene un sistema de salud público accesible para extranjeros no residentes fiscales: la práctica habitual es contratar un seguro médico internacional privado antes de viajar, ya que el propio visado DTV puede exigir acreditar cobertura sanitaria según el consulado. La sanidad privada tailandesa tiene fama de buena calidad y precios más bajos que en Europa o Estados Unidos para la mayoría de tratamientos.\n\nPhuket cuenta con hospitales privados de referencia internacional como el Bangkok Hospital Phuket y el Phuket International Hospital, ambos acostumbrados a atender a pacientes extranjeros y con servicios de urgencias 24 horas.",
+      sources: [
+        { label: "Destination Thailand Visa (DTV): 2026 Requirements Guide", url: "https://www.thailandstarterkit.com/visas/destination-thailand-visa-dtv/" },
+      ],
+    },
+    barrios: {
+      content: "Patong es la zona más turística y con más vida nocturna, con buena oferta de coworkings pero también más ruido y masificación; Rawai y Chalong, al sur de la isla, son más tranquilos y populares entre la comunidad de nómadas digitales de larga estancia; Phuket Town, el casco histórico sino-portugués, combina cultura, cafeterías y precios más moderados.\n\nEntre los coworkings, Lub d Coworking, en Patong, forma parte de un hub con restaurante, bar y piscina; BAYACO Coworking, en Phuket Town, es de los más grandes de la isla para trabajo en grupo; Grind Time, con sedes en Rawai y Chalong, ofrece espacios tranquilos con cabinas telefónicas. Los precios van desde 3 $/día hasta 300-600 $/mes por una oficina privada.",
+      sources: [
+        { label: "Top 15 Phuket Coworking Spaces — NowPhuket", url: "https://nowphuket.com/phuket-coworking-spaces/" },
+      ],
+    },
+  },
+  "cancun": {
+    visaFiscal: {
+      content: "México ofrece la Visa de Residente Temporal, la vía más habitual para nómadas digitales que quieren quedarse más de 180 días: exige acreditar unos ingresos mensuales de 2.500-4.000 $ durante los últimos 6-12 meses, o unos ahorros de 40.000-70.000 $ mantenidos en el mismo periodo, procedentes de fuera de México. Se solicita en un consulado mexicano en el país de residencia (con cita con al menos 2 meses de antelación) y se concede inicialmente por un año, renovable hasta un máximo de cuatro.\n\nMuchas nacionalidades pueden entrar como turistas hasta 180 días sin visado, lo que en la práctica cubre a buena parte de los nómadas de estancia corta, aunque esa condición no autoriza a trabajar para empresas mexicanas ni a residir de forma permanente.",
+      sources: [
+        { label: "Mexico Digital Nomad Visa (2026): Temporary Resident Visa Guide — Citizen Remote", url: "https://citizenremote.com/visas/mexico/" },
+      ],
+    },
+    sanidad: {
+      content: "México no ofrece acceso al sistema público de salud (IMSS) a quienes no cotizan como trabajadores o residentes formalmente dados de alta, por lo que la práctica habitual entre nómadas digitales es contratar un seguro médico internacional privado antes de viajar. La sanidad privada en Cancún, orientada en gran parte al turismo internacional, tiene buena reputación, aunque los precios sin seguro pueden ser elevados en zonas turísticas como la Zona Hotelera.\n\nCancún cuenta con hospitales privados de referencia como Hospital Galenia y Grupo Christus Muguerza, ambos con servicios de urgencias 24 horas y personal acostumbrado a pacientes extranjeros.",
+      sources: [
+        { label: "Mexico Digital Nomad Visa (2026): Temporary Resident Visa Guide — Citizen Remote", url: "https://citizenremote.com/visas/mexico/" },
+      ],
+    },
+    barrios: {
+      content: "La Zona Hotelera, la franja costera con las playas más conocidas, concentra hoteles y resorts, con precios altos y menos vida de barrio; el centro de Cancún (Supermanzanas 22-24), donde vive la mayoría de la población local, ofrece alquileres más bajos, buena oferta gastronómica y mejor relación calidad-precio para estancias largas.\n\nEntre los coworkings, beNuk Coworking, en el centro, ofrece bono de día desde 9 $ y membresía mensual desde 133 $; Kolmena Lab, en Plaza Fontana, cobra 17 $ el día y 150 $ + IVA el mes con acceso ilimitado; La Casa del Árbol es la opción más económica, con acceso diario desde 4-5 $ y membresías desde 50-97 $ al mes.",
+      sources: [
+        { label: "How to find the best coworking in Cancún? — Holafly", url: "https://esim.holafly.com/digital-nomad/coworking-cancun/" },
+      ],
+    },
+  },
+  "antalya": {
+    visaFiscal: {
+      content: "Turquía ofrece desde 2023 un Certificado de Identificación de Nómada Digital, un documento previo que facilita el acceso a un permiso de residencia de corta duración: exige ingresos de al menos 3.000 $/mes (36.000 $/año) procedentes del extranjero, tener entre 21 y 55 años, contar con titulación universitaria y ser ciudadano de uno de los 36 países elegibles (incluida la UE, Reino Unido, Estados Unidos y Canadá). El trámite se solicita a través de la plataforma GoTürkiye y, una vez aprobado, permite pedir el permiso de residencia en un centro de visados o consulado turco.\n\nEl certificado en sí no concede derechos de residencia: es un documento que agiliza el acceso al permiso de residencia estándar dentro del marco migratorio turco, cuya duración se revisa caso por caso.",
+      sources: [
+        { label: "Turkey Digital Nomad Visa 2026: Ages 21-55, USD 3,000/Month — Serka Law Firm", url: "https://serkalaw.com/digital-nomad-visa/" },
+      ],
+    },
+    sanidad: {
+      content: "Turquía no tiene un acuerdo de sanidad recíproca con la mayoría de países occidentales, por lo que quien no cotiza al sistema público turco (SGK) necesita un seguro médico privado internacional, a menudo exigido también para tramitar el permiso de residencia. La sanidad privada turca tiene buena reputación y precios notablemente más bajos que en Europa occidental para consultas y pruebas habituales.\n\nAntalya cuenta con hospitales privados de referencia como Medical Park Antalya y Memorial Antalya, ambos acostumbrados a pacientes internacionales y con servicios de urgencias 24 horas.",
+      sources: [
+        { label: "Guide Healthcare in Turkey — Allianz Care", url: "https://www.allianzcare.com/en/support/health-and-wellness/national-healthcare-systems/healthcare-in-turkey.html" },
+      ],
+    },
+    barrios: {
+      content: "Kaleiçi, el casco histórico junto al puerto, es la zona con más encanto y vida turística, con calles empedradas y buena oferta de cafeterías, aunque también la más cara; Lara y Konyaaltı, con sus largas playas, son zonas residenciales más tranquilas y populares entre la comunidad de expatriados y nómadas digitales.\n\nEntre los coworkings, Coworking Antalya, en pleno centro con vistas al mar, tiene una valoración de 4,9 en Google Maps; Creawork, cerca de zonas comerciales y culturales, ofrece internet de alta velocidad y café ilimitado; Coworking Mozaik combina trabajo con zonas de bienestar (yoga, pilates, rocódromo). Las membresías mensuales rondan entre 50 $ y 300 $.",
+      sources: [
+        { label: "8 Best Coworking Spaces in Antalya, Türkiye", url: "https://www.xyzlab.com/post/coworking-spaces-in-antalya" },
+      ],
+    },
+  },
 };
