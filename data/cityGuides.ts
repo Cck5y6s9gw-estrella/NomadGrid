@@ -1810,4 +1810,208 @@ export const cityGuides: Record<string, CityGuide> = {
       ],
     },
   },
+  "amsterdam": {
+    visaFiscal: {
+      content: "Países Bajos no ofrece ningún visado de nómada digital: el gobierno ha optado deliberadamente por no crear esa figura, citando la escasez de vivienda y el encarecimiento del coste de vida. Los ciudadanos de la UE/EEE pueden vivir y trabajar sin visado, solo empadronándose en el municipio; el resto de nacionalidades depende de vías indirectas, como el tratado DAFT para estadounidenses (inversión de 4.500 € en un negocio propio) o el permiso de autónomo, que exige demostrar valor económico para el país neerlandés.\n\nCualquier persona empadronada más de 4 meses se convierte en residente fiscal neerlandés y debe declarar su renta mundial, sin excepciones por cobrar de un empleador extranjero: es un error común pensar que basta con estar por debajo del umbral fiscal del país de origen.",
+      sources: [
+        { label: "Remote work in the Netherlands: no nomad visa, tax reality — NL Compass", url: "https://www.nlcompass.com/guides/remote-work-digital-nomads-netherlands" },
+        { label: "Immigration and Naturalisation Service (IND)", url: "https://ind.nl/en" },
+      ],
+    },
+    sanidad: {
+      content: "Los Países Bajos exigen un seguro médico obligatorio (basisverzekering) a cualquier persona que resida y trabaje en el país, incluidos autónomos y trabajadores con DAFT; los visitantes de la UE pueden usar la Tarjeta Sanitaria Europea (TSE) solo para estancias temporales. El sistema está gestionado por aseguradoras privadas bajo regulación pública, con copagos moderados y buena calidad asistencial.\n\nÁmsterdam cuenta con centros de referencia como el Amsterdam UMC, con dos sedes (AMC y VUmc) que ofrecen atención de urgencias las 24 horas.",
+      sources: [
+        { label: "Expat health insurance in the Netherlands — Zorgwijzer", url: "https://www.zorgwijzer.nl/faq/expats" },
+        { label: "The Netherlands Healthcare System & Insurance Options for Expats", url: "https://expatfinancial.com/healthcare-information-by-region/european-healthcare-system/the-netherlands-healthcare-system/" },
+      ],
+    },
+    barrios: {
+      content: "De Pijp y Jordaan son los barrios más buscados por nómadas digitales por su ambiente de cafeterías y proximidad al centro, aunque también los más caros; Amsterdam Oost, algo más económico, ofrece buena conexión en bici y tranvía. La red de bicicletas y transporte público hace que la ubicación exacta importe menos que en otras ciudades.\n\nEntre los coworkings, Fosbury & Sons (Prinsengracht), en pleno canal belt, ocupa un antiguo hospital del siglo XIX reconvertido; Spaces Vijzelstraat, en una antigua sede bancaria cerca del Rijksmuseum, tiene puestos desde 295 €/mes; StartDock, repartido en varias casas de canal históricas, ofrece un puesto flexible desde 80 €/mes.",
+      sources: [
+        { label: "How to find the best coworking in Amsterdam? — Holafly", url: "https://esim.holafly.com/digital-nomad/coworking-amsterdam/" },
+      ],
+    },
+  },
+  "atenas": {
+    visaFiscal: {
+      content: "Grecia ofrece un visado de nómada digital real, con un ingreso mínimo de 3.500 €/mes (un 20% más con pareja y un 15% adicional por cada hijo a cargo). El proceso tiene dos fases: primero un visado tipo D válido 12 meses, tramitado en un consulado griego antes de viajar, y después un permiso de residencia de 2 años renovable una vez ya en el país.\n\nGrecia también ofrece un régimen fiscal atractivo para quien se convierte en residente fiscal: una exención del 50% sobre el IRPF durante hasta 7 años, siempre que no se haya sido residente fiscal griego en 5 de los últimos 6 años. Es un beneficio complejo que conviene revisar con un asesor fiscal transfronterizo antes de dar por hecho que aplica.",
+      sources: [
+        { label: "Greece Digital Nomad Visa 2026 — Remote Work Europe", url: "https://remoteworkeurope.eu/insights/greece-digital-nomad-visa/" },
+        { label: "Greece Digital Nomad Visa: Income Requirements and How to Apply — Global Citizen Solutions", url: "https://www.globalcitizensolutions.com/greece-digital-nomad-visa/" },
+      ],
+    },
+    sanidad: {
+      content: "Grecia tiene un sistema público de salud (ΕΣΥ) al que los residentes fiscales pueden acceder cotizando a la seguridad social griega (ΕΦΚΑ); los visitantes de la UE pueden usar la Tarjeta Sanitaria Europea para atención de urgencia. En la práctica, la mayoría de nómadas digitales combina el sistema público con un seguro privado internacional, ya que la sanidad pública griega tiene largas listas de espera fuera de las urgencias.\n\nAtenas cuenta con hospitales públicos de referencia como el Evangelismos, el mayor hospital general del país, además de una amplia red de clínicas privadas de calidad.",
+      sources: [
+        { label: "Guide to Healthcare in Greece — Allianz Care", url: "https://www.allianzcare.com/en/support/health-and-wellness/national-healthcare-systems/healthcare-in-greece.html" },
+        { label: "Accessing health services in Greece for EU citizens", url: "https://eu-healthcare.eopyy.gov.gr/en/healthcare-in-greece/accessing-health-services-in-greece-for-eu-citizens/" },
+      ],
+    },
+    barrios: {
+      content: "Koukaki, junto a la Acrópolis, es el barrio favorito de la comunidad de nómadas digitales por su ambiente tranquilo y buena oferta de cafeterías; Exarchia, más bohemio y económico, concentra gran parte de la vida cultural alternativa. Kolonaki, en cambio, es la zona más cara y elegante, cerca del centro de negocios.\n\nEntre los coworkings, WHEN Hub, en el centro (Sokratous 29), tiene muy buena valoración de sus usuarios; Ubuntu, en la zona de Petralona, es otra opción muy bien valorada; Regus Athens City Centre ofrece oficinas flexibles en un rascacielos cerca del distrito financiero de Mesogeion.",
+      sources: [
+        { label: "Best Coworking Spaces in Athens — Nomax", url: "https://nomax.app/athens/coworking/" },
+      ],
+    },
+  },
+  "copenhague": {
+    visaFiscal: {
+      content: "Dinamarca no ofrece ningún visado de nómada digital. Los ciudadanos de fuera de la UE dependen de alternativas indirectas: el visado de turista Schengen permite estar hasta 90 días en un periodo de 180, pero trabajar en remoto durante esa estancia es ilegal aunque el cliente sea extranjero; el visado de vacaciones-trabajo (Working Holiday), disponible para nacionalidades como Australia, Canadá o Japón entre 18 y 36 años (18-31 en algunos casos), sí permite trabajar hasta un año; y el visado de startup, pensado para quien monta una empresa propia con potencial de crecimiento, tiene una duración de 2 años renovable.\n\nQuien trabaja localmente en Dinamarca paga entre un 12,09% y un 15% de impuesto estatal más un impuesto municipal de alrededor del 25%; el país tiene acuerdos de doble imposición con más de 70 países que pueden evitar pagar dos veces por la misma renta.",
+      sources: [
+        { label: "Denmark Digital Nomad Visa — Citizen Remote", url: "https://citizenremote.com/visas/denmark-digital-nomad-visa/" },
+      ],
+    },
+    sanidad: {
+      content: "Dinamarca tiene un sistema de salud público universal financiado con impuestos, al que se accede con la llamada 'tarjeta amarilla' (sundhedskort) tras registrarse como residente; los visitantes de la UE de corta estancia pueden usar la Tarjeta Sanitaria Europea. Quien no llega a residir oficialmente (por ejemplo, con un visado de turista) no tiene acceso al sistema público y necesita un seguro privado internacional.\n\nCopenhague cuenta con el Rigshospitalet, el mayor hospital universitario del país y uno de los centros de referencia médica del norte de Europa.",
+      sources: [
+        { label: "Healthcare and health insurance for expats in Denmark — Expat Arrivals", url: "https://www.expatarrivals.com/europe/denmark/healthcare-denmark" },
+      ],
+    },
+    barrios: {
+      content: "Vesterbro y Nørrebro son los barrios más populares entre nómadas digitales por su ambiente joven, buena oferta de cafeterías y precios algo más moderados que el centro; Østerbro, más residencial y familiar, es una alternativa tranquila bien conectada en bici.\n\nEntre los coworkings, Talent Garden, en el antiguo barrio naval de Holmen, ha sido premiado como uno de los mejores espacios de coworking de Europa; Matrikel 1, en pleno centro histórico junto a Højbro Plads, ofrece un ambiente moderno; Symbion, en Copenhague Ø, es un hub más establecido con salas de reuniones y oficinas compartidas.",
+      sources: [
+        { label: "Top 10 Best Coworking Spaces in Copenhagen — The Hub", url: "https://insights.thehub.io/insight/top-10-best-coworking-spaces-in-copenhagen/" },
+      ],
+    },
+  },
+  "cracovia": {
+    visaFiscal: {
+      content: "Polonia no ofrece ningún visado de nómada digital. La opción más cercana es el visado nacional tipo D para autónomos (Freelance Type D), que se concede inicialmente por dos años pero exige registrarse como autónomo en Polonia y pagar impuestos allí, con un umbral de ingresos mínimo muy bajo (unos 190 $/mes). El visado de turista Schengen, de hasta 90 días, no permite establecer residencia ni trabajar en remoto de forma continuada, aunque en la práctica es la vía que usa la mayoría de nómadas de corta estancia.\n\nQuien supera los 183 días de estancia o se registra como autónomo pasa a tributar en Polonia, con un tipo del 20% sobre los ingresos para no residentes.",
+      sources: [
+        { label: "Poland Digital Nomad Visa — Citizen Remote", url: "https://citizenremote.com/visas/poland-digital-nomad-visa/" },
+      ],
+    },
+    sanidad: {
+      content: "Polonia tiene un sistema público de salud (NFZ) financiado mediante cotizaciones sociales, al que solo se accede si se cotiza en el país (por ejemplo, registrado como autónomo); los visitantes de la UE pueden usar la Tarjeta Sanitaria Europea para urgencias. La mayoría de nómadas digitales opta por un seguro privado internacional, ya que da acceso a clínicas privadas con tiempos de espera mucho más cortos que el sistema público.\n\nCracovia cuenta con varios hospitales universitarios públicos, además de una red creciente de clínicas privadas orientadas a pacientes internacionales en el centro de la ciudad.",
+      sources: [
+        { label: "Healthcare and health insurance for expats in Krakow — Expat Arrivals", url: "https://www.expatarrivals.com/europe/poland/krakow/healthcare-krakow" },
+      ],
+    },
+    barrios: {
+      content: "Kazimierz, el antiguo barrio judío, es la zona favorita de la comunidad de nómadas digitales por su ambiente bohemio, buena oferta de cafeterías y coste de vida bajo; el Casco Antiguo (Stare Miasto) concentra la mayor densidad de coworkings, aunque a precios algo más altos.\n\nEntre los coworkings, Yolk Workspace, en el Casco Antiguo, ofrece internet de fibra de alta velocidad desde 175 $/mes; Kalafiornia, también en el centro histórico, tiene una terraza panorámica y cuesta desde 148 $/mes; iTechcloud, en Kazimierz, es la opción más económica del grupo, desde 118 $/mes.",
+      sources: [
+        { label: "Best Coworking Spaces in Kraków for Digital Nomads — Geronimo", url: "https://geronimo-ai.com/best-coworking/krakow" },
+      ],
+    },
+  },
+  "dublin": {
+    visaFiscal: {
+      content: "Irlanda no tiene ningún visado de nómada digital ni un permiso específico para trabajadores remotos. La opción más cercana para no comunitarios es el Stamp 0, pensado para personas con medios económicos propios (en torno a 50.000 €/año de ingresos extranjeros y 100.000 € en ahorros, más seguro médico privado), pero que en general prohíbe trabajar para empleadores irlandeses y no autoriza de forma explícita el trabajo remoto, lo que genera cierta ambigüedad legal. El visado de turista de 90 días, disponible para muchas nacionalidades sin necesidad de visado previo, prohíbe cualquier tipo de trabajo, incluido el remoto.\n\nLos ciudadanos de la UE/EEE tienen libertad de movimiento y trabajo, y los británicos se benefician del Área de Viaje Común (Common Travel Area), que les permite vivir y trabajar sin visado.",
+      sources: [
+        { label: "Why Ireland Has No Digital Nomad Visa — Remote Work Europe", url: "https://remoteworkeurope.eu/insights/ireland-no-digital-nomad-visa/" },
+      ],
+    },
+    sanidad: {
+      content: "Irlanda tiene un sistema público de salud (HSE) al que se accede con la tarjeta médica (medical card) para residentes con bajos ingresos o pagando tasas reducidas el resto; en la práctica, la mayoría de residentes complementa el sistema público con un seguro privado (VHI, Laya Healthcare, Irish Life Health) para evitar las largas listas de espera en consultas no urgentes. Los visitantes de la UE pueden usar la Tarjeta Sanitaria Europea para urgencias.\n\nDublín cuenta con hospitales públicos de referencia como el St. James's Hospital, uno de los mayores del país, junto con una amplia oferta de clínicas privadas.",
+      sources: [
+        { label: "Healthcare and health insurance for expats in Dublin — Expat Arrivals", url: "https://www.expatarrivals.com/europe/ireland/dublin/healthcare-dublin" },
+      ],
+    },
+    barrios: {
+      content: "El área de Silicon Docks (Dublín 2, junto al Grand Canal Dock) es el centro tecnológico de la ciudad, con sedes de Google y Meta y buena oferta de coworkings; Portobello y Ranelagh, más residenciales, ofrecen un ambiente tranquilo con buenas cafeterías a precios algo más moderados.\n\nEntre los coworkings, Dogpatch Labs, en Custom House Quay, es el mayor hub de startups de Irlanda con más de 3.000 m²; Huckletree D2, en Pearse Street, ofrece bonos de día desde 35 € y membresías desde 260 €/mes; CoCreate, con sedes en O'Connell Street y Camden Street, tiene puestos privados desde 299 €/mes.",
+      sources: [
+        { label: "How to find the best coworking in Dublin? — Holafly", url: "https://esim.holafly.com/digital-nomad/coworking-dublin/" },
+      ],
+    },
+  },
+  "ljubljana": {
+    visaFiscal: {
+      content: "Eslovenia ofrece un visado de nómada digital real, con un ingreso mínimo equivalente al doble del salario medio neto esloveno (unos 3.098 €/mes a mediados de 2026, cifra que se recalcula periódicamente). El visado tiene una validez de un año, no renovable, aunque se puede volver a solicitar uno nuevo seis meses después de que caduque el anterior. La solicitud se puede tramitar en un consulado esloveno en el extranjero o, si ya se está en el país de forma legal, en una oficina administrativa local, con un proceso de 30-60 días y una tasa de unos 167,50 €.\n\nTodos los ingresos deben proceder de fuera de Eslovenia, y se exige seguro médico internacional, alojamiento acreditado y certificado de antecedentes penales.",
+      sources: [
+        { label: "Slovenia digital nomad visa 2026 — Remote Work Europe", url: "https://remoteworkeurope.eu/insights/slovenia-digital-nomad-visa/" },
+      ],
+    },
+    sanidad: {
+      content: "Eslovenia tiene un sistema de salud público gestionado por el Instituto de Seguros de Salud (ZZZS), al que solo acceden quienes cotizan en el país; los nómadas digitales con el visado esloveno deben contratar un seguro médico privado internacional, ya que el visado no da acceso automático al sistema público. Los visitantes de la UE pueden usar la Tarjeta Sanitaria Europea para atención de urgencia.\n\nLiubliana cuenta con el Centro Clínico Universitario (UKC Ljubljana), el mayor hospital del país y centro de referencia para toda Eslovenia.",
+      sources: [
+        { label: "Accessing Healthcare in Slovenia — ZZZS", url: "https://www.zzzs.si/en/accessing-healthcare-in-slovenia/" },
+      ],
+    },
+    barrios: {
+      content: "El centro histórico, junto al río Ljubljanica, es compacto, peatonal y muy seguro, ideal para nómadas digitales aunque algo más caro; Trnovo y Tabor, algo más alejados del centro, ofrecen un ambiente más local y tranquilo a precios más moderados.\n\nEntre los coworkings, Impact Hub Ljubljana, en Eslovenska cesta, en pleno centro, es el más conocido y con más comunidad; ABC Hub, en Letališka cesta, tiene buena zona de descanso y cocina compartida; Aurora Coworking, en Dunajska cesta, ofrece un ambiente más corporativo cerca del centro de negocios.",
+      sources: [
+        { label: "Best Coworking Spaces in Ljubljana — Freaking Nomads", url: "https://freakingnomads.com/workspaces/coworking/ljubljana" },
+      ],
+    },
+  },
+  "oslo": {
+    visaFiscal: {
+      content: "Noruega no ofrece un visado de nómada digital como tal, pero sí un Visado de Contratista Independiente (Independent Contractor Visa) pensado para autónomos y freelancers que trabajan para clientes en el extranjero, siempre que tengan al menos un cliente noruego. Exige un ingreso anual mínimo de unos 36.000 € y seguro médico que cubra toda la estancia; tiene una validez de hasta 2 años renovable. Los ciudadanos de la UE/EEE no lo necesitan, ya que pueden vivir y trabajar libremente en Noruega.\n\nNoruega tiene uno de los niveles de vida y de fiscalidad más altos de Europa, con tipos de IRPF que pueden superar el 45% para rentas medias-altas una vez se es residente fiscal.",
+      sources: [
+        { label: "Norway Digital Nomad Visa: How to Apply and Costs — Freaking Nomads", url: "https://freakingnomads.com/norway-digital-nomad-visa/" },
+      ],
+    },
+    sanidad: {
+      content: "Noruega tiene un sistema de salud público universal (financiado por el Folketrygden, la seguridad social noruega), al que se accede tras registrarse como residente y obtener un número de identidad nacional; hasta entonces, es imprescindible un seguro privado internacional. Los visitantes de la UE pueden usar la Tarjeta Sanitaria Europea para urgencias de corta estancia.\n\nOslo cuenta con el Oslo University Hospital (que incluye el Rikshospitalet), el mayor centro hospitalario del país y uno de los hospitales universitarios de referencia del norte de Europa.",
+      sources: [
+        { label: "Healthcare and health insurance for expats in Norway — Expat Arrivals", url: "https://www.expatarrivals.com/europe/norway/healthcare-norway" },
+      ],
+    },
+    barrios: {
+      content: "Grünerløkka es el barrio favorito de la comunidad creativa y de nómadas digitales, con ambiente bohemio y buena oferta de cafeterías; Frogner, más elegante y caro, es una zona residencial tranquila cerca del centro. Oslo es una de las ciudades más caras de Europa en cualquier barrio.\n\nEntre los coworkings, Mesh Youngstorget, en el centro, es la mayor comunidad de startups de Noruega en un edificio histórico restaurado; Rebel, en St. Olavs plass, combina coworking con estudios de pódcast y microcervecería propia; Factory Tøyen, en el barrio de Tøyen, ocupa una antigua fábrica textil de 6.000 m².",
+      sources: [
+        { label: "Oslo Digital Nomad Guide: Cost of Living, WiFi & Visa — The Nomad HQ", url: "https://thenomadhq.com/cities/oslo" },
+      ],
+    },
+  },
+  "riga": {
+    visaFiscal: {
+      content: "Letonia ofrece un visado de nómada digital real, con un ingreso mínimo de unos 3.400 €/mes (aproximadamente 2,5 veces el salario medio bruto letón), acreditado con los últimos seis meses de ingresos. Tiene una validez inicial de un año, ampliable a un segundo año (máximo 2 años seguidos), tras los cuales hay que estar fuera del país al menos 6 meses antes de volver a solicitarlo. El trámite se hace a través del portal PMLP o en un consulado letón, con una tasa de 60 € y un plazo de resolución de 10-15 días.\n\nLetonia forma parte de la UE y del espacio Schengen, lo que facilita bastante la movilidad dentro de Europa una vez concedido el visado.",
+      sources: [
+        { label: "Latvia Digital Nomad Visa — Citizen Remote", url: "https://citizenremote.com/visas/latvia-digital-nomad-visa/" },
+      ],
+    },
+    sanidad: {
+      content: "Letonia tiene un sistema de salud público financiado por impuestos, pero con una cobertura limitada y listas de espera largas fuera de las urgencias; la mayoría de expatriados y nómadas digitales contrata un seguro privado internacional, que además es obligatorio para obtener el visado de nómada digital. Los visitantes de la UE pueden usar la Tarjeta Sanitaria Europea para atención de urgencia.\n\nRiga cuenta con el Hospital Clínico Universitario Pauls Stradiņš, el mayor centro hospitalario multidisciplinar del país.",
+      sources: [
+        { label: "Latvia Healthcare System & Insurance Options for Expats", url: "https://expatfinancial.com/healthcare-information-by-region/european-healthcare-system/latvia-healthcare-system/" },
+      ],
+    },
+    barrios: {
+      content: "El Casco Antiguo (Vecrīga) es la zona más turística y con más ambiente, aunque también la más cara; Āgenskalns, al otro lado del río, es un barrio residencial más tranquilo y económico con buena oferta de coworking; el centro Art Nouveau, famoso por su arquitectura, combina oficinas y vida cultural.\n\nEntre los coworkings, Magnēts Coworking, en Āgenskalns, ofrece acceso 24/7 desde 171 $/mes; Double9 Coworking, en una antigua fábrica de cerveza del siglo XIX en el distrito Art Nouveau, cuesta desde 181 $/mes; en el Casco Antiguo, justo en la Plaza de la Catedral, hay opciones de bono de día desde 19 $.",
+      sources: [
+        { label: "Best Coworking Spaces in Riga — Geronimo", url: "https://geronimo-ai.com/best-coworking/riga" },
+      ],
+    },
+  },
+  "roma": {
+    visaFiscal: {
+      content: "Italia ofrece uno de los visados de nómada digital con el umbral de ingresos más bajo de Europa: 28.000 €/año (unos 2.333 €/mes) procedentes de fuera del país, con un incremento de unos 9.900 €/año por cónyuge y 4.950 €/año por hijo a cargo. El permiso de residencia se concede por un año y es renovable anualmente hasta un máximo de cinco.\n\nItalia también ofrece el régimen fiscal de 'impatriados', que exime del IRPF el 50% de los ingresos cualificados durante 5 años (60% con un hijo menor a cargo), siempre que se resida fiscalmente en Italia al menos 183 días al año y se cumpla un compromiso de permanencia fiscal de al menos 4 años, con un tope de renta de 600.000 €/año.",
+      sources: [
+        { label: "Italy digital nomad visa 2026: the complete guide — Remote Work Europe", url: "https://remoteworkeurope.eu/insights/italy-digital-nomad-visa-complete-guide/" },
+      ],
+    },
+    sanidad: {
+      content: "Italia tiene un sistema de salud público universal (Servizio Sanitario Nazionale, SSN), al que los residentes fiscales pueden inscribirse y obtener la tessera sanitaria, la tarjeta sanitaria que da acceso a médico de cabecera y atención hospitalaria. Los visitantes de la UE pueden usar la Tarjeta Sanitaria Europea para urgencias; quien todavía no es residente fiscal necesita un seguro privado internacional.\n\nRoma cuenta con el Policlinico Umberto I, uno de los mayores hospitales públicos universitarios de Europa.",
+      sources: [
+        { label: "How the Italian public healthcare system (SSN) works — Feather", url: "https://feather-insurance.com/en-it/blog/public-health-insurance-ssn-guide" },
+      ],
+    },
+    barrios: {
+      content: "Trastevere es el barrio favorito de la comunidad de nómadas digitales por su ambiente bohemio y sus calles peatonales, aunque también uno de los más turísticos y caros; Ostiense, más industrial y en plena transformación, concentra buena parte de la oferta de coworking a precios más moderados; Monti, junto al Coliseo, combina encanto histórico con buena vida de cafeterías.\n\nEntre los coworkings, Impact Hub Roma, en Ostiense, ofrece planes desde 120 €/mes; Talent Garden Ostiense, cerca de la estación de Piramide, tiene puestos flexibles desde 100 €/mes; Coaster, junto a San Giovanni in Laterano, cobra bonos de día desde 20 € y membresías desde 180 €/mes.",
+      sources: [
+        { label: "How to find the best coworking in Rome? — Holafly", url: "https://esim.holafly.com/digital-nomad/coworking-rome/" },
+      ],
+    },
+  },
+  "viena": {
+    visaFiscal: {
+      content: "Austria no ofrece ningún visado de nómada digital. El marco principal para trabajadores cualificados de fuera de la UE es la Tarjeta Roja-Blanca-Roja (Rot-Weiß-Rot-Karte), un permiso combinado de residencia y trabajo de 24 meses (ampliable a la versión Plus de 3 años), pero pensado para empleos con patrocinio de empresa o inversión de capital, no para autónomos con clientes extranjeros: la categoría de 'trabajador clave autónomo' exige 100.000 € de inversión o demostrar un beneficio macroeconómico para el país, algo poco realista para un diseñador o consultor freelance.\n\nLos ciudadanos de la UE/EEE pueden residir y trabajar libremente solo con el registro administrativo (Meldezettel), lo que hace de Austria una opción mucho más sencilla para comunitarios que para el resto de nacionalidades.",
+      sources: [
+        { label: "Working remotely from Austria in 2026 — Remote Work Europe", url: "https://remoteworkeurope.eu/insights/austria-red-white-red-card-remote-work/" },
+      ],
+    },
+    sanidad: {
+      content: "Austria tiene un sistema de salud público de alta calidad, gestionado por la Caja de Seguridad Social Austríaca (ÖGK), al que se accede cotizando como empleado o autónomo registrado en el país; quien no cotiza en Austria necesita un seguro privado internacional. Los visitantes de la UE pueden usar la Tarjeta Sanitaria Europea para atención de urgencia.\n\nViena cuenta con el Hospital General de Viena (AKH Wien), uno de los mayores hospitales universitarios de Europa y centro de referencia médica del país.",
+      sources: [
+        { label: "Healthcare and health insurance for expats in Austria — Expat Arrivals", url: "https://www.expatarrivals.com/europe/austria/healthcare-austria" },
+      ],
+    },
+    barrios: {
+      content: "Neubau, con su mezcla de tiendas de diseño y cafeterías, es uno de los barrios favoritos de la comunidad creativa; Mariahilf, contiguo, combina buena vida de calle con coworkings orientados a bienestar; Rudolfsheim-Fünfhaus, más al oeste, es una opción más económica y en plena renovación urbana.\n\nEntre los coworkings, The Collaboratory, en Neubau, ofrece puestos desde 125 €/mes; Brains and Bodies, en Mariahilf, cuesta desde 399 €/mes e incluye zonas de bienestar; STOCKWERK, en Rudolfsheim-Fünfhaus, es la opción más económica, desde 80 €/mes + IVA, orientada a startups tecnológicas.",
+      sources: [
+        { label: "Coworking Spaces Vienna: 30 Best Places to Work — Faraway Lucy", url: "https://www.farawaylucy.com/coworking-spaces-vienna/" },
+      ],
+    },
+  },
 };
