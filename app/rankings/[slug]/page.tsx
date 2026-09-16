@@ -21,7 +21,7 @@ export async function generateMetadata({
     openGraph: {
       title: config.titleEs,
       description: config.descriptionEs,
-      url: `https://roavio.es/rankings/${config.slug}`,
+      url: `https://www.roavio.es/rankings/${config.slug}`,
     },
   };
 }

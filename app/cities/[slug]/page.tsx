@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     openGraph: {
       title,
       description,
-      url: `https://roavio.es/cities/${city.slug}`,
+      url: `https://www.roavio.es/cities/${city.slug}`,
       images: [{ url: city.imageUrl }],
     },
     twitter: {

@@ -23,13 +23,13 @@ const anton = Anton({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://roavio.es"),
+  metadataBase: new URL("https://www.roavio.es"),
   title: "Roavio · Rankings · Ciudades · Libertad",
   description: "Compara coste de vida, internet, seguridad y calidad de vida en las mejores ciudades del mundo para trabajar en remoto.",
   openGraph: {
     title: "Roavio — Encuentra tu próxima ciudad nómada",
     description: "Compara coste de vida, internet, seguridad y clima en las mejores ciudades del mundo para trabajar en remoto.",
-    url: "https://roavio.es",
+    url: "https://www.roavio.es",
     siteName: "Roavio",
     images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     locale: "es_ES",

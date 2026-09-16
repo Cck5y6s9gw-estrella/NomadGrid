@@ -3,7 +3,7 @@ import { cities } from "@/data/cities";
 import { getAllArticles } from "@/lib/articles";
 import { rankings } from "@/lib/rankings";
 
-const BASE_URL = "https://roavio.es";
+const BASE_URL = "https://www.roavio.es";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [

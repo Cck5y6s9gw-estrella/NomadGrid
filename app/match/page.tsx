@@ -218,7 +218,7 @@ export default function MatchPage() {
     const top = results[0]?.city;
     if (!top) return;
     const text = d.matchShareText(top.name);
-    const url = `https://roavio.es/cities/${top.slug}`;
+    const url = `https://www.roavio.es/cities/${top.slug}`;
     const intent = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;
     trackEvent("match_quiz_share", { city: top.slug });
     window.open(intent, "_blank", "noopener,noreferrer");
@@ -226,7 +226,7 @@ export default function MatchPage() {
 
   async function copyLink() {
     try {
-      await navigator.clipboard.writeText("https://roavio.es/match");
+      await navigator.clipboard.writeText("https://www.roavio.es/match");
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     } catch {

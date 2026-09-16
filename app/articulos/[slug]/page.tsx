@@ -21,7 +21,7 @@ export async function generateMetadata({
     openGraph: {
       title: article.title.es,
       description: article.dek.es,
-      url: `https://roavio.es/articulos/${article.slug}`,
+      url: `https://www.roavio.es/articulos/${article.slug}`,
       images: [{ url: article.cover, width: 1600, height: 900 }],
     },
     twitter: {
