@@ -13,6 +13,7 @@
     "@next/third-parties": "^16.3.2",
     "@vercel/analytics": "^2.0.1",
     "gray-matter": "^4.0.3",
+    "html2canvas": "^1.4.1",
     "maplibre-gl": "^6.6.0",
     "marked": "^18.0.11",
     "next": "16.2.9",
