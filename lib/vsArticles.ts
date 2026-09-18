@@ -12,6 +12,7 @@ export const vsArticles: VsArticleEntry[] = [
   { slugs: ["lisboa", "oporto"], article: "lisboa-vs-oporto" },
   { slugs: ["valencia", "lisboa"], article: "valencia-vs-lisboa" },
   { slugs: ["valencia", "madrid"], article: "valencia-vs-madrid" },
+  { slugs: ["zurich", "berlin"], article: "zurich-vs-berlin" },
 ];
 
 export function findVsArticle(selectedSlugs: string[]): string | null {
