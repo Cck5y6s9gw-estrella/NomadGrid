@@ -204,3 +204,14 @@ export function IconTrophy(props: IconProps) {
     </svg>
   );
 }
+
+export function IconArrowUpDown(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M7 15V4" />
+      <path d="M4 12l3 3 3-3" />
+      <path d="M17 9V20" />
+      <path d="M20 12l-3-3-3 3" />
+    </svg>
+  );
+}
