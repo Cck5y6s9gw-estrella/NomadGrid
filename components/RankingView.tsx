@@ -85,7 +85,7 @@ export default function RankingView({
       </div>
 
       <footer className="border-t border-border py-8 px-6 text-center text-xs text-muted">
-        Roavio · Datos de coste, internet, seguridad y calidad de vida basados en Numbeo y Speedtest Global Index (Ookla) · Actualizado 2026
+        Roavio · Coste e internet: Numbeo y Speedtest Global Index (Ookla) · Seguridad y calidad de vida: media ponderada de Numbeo, Global Peace Index e Índice de Desarrollo Humano (ONU) · Actualizado 2026
       </footer>
     </main>
   );
