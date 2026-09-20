@@ -1095,7 +1095,7 @@ export const cities: City[] = [
     continent: "Asia",
     description: { es: "Pekín es el corazón político e histórico de China: la Ciudad Prohibida, la Gran Muralla a las puertas de la ciudad y un metro ultramoderno que conecta una metrópolis de más de 20 millones de personas. El coste de vida es notablemente bajo para el tamaño de la ciudad, pero el Gran Cortafuegos bloquea Google, WhatsApp, Instagram y Gmail, por lo que hace falta una VPN fiable instalada antes de llegar. China no ofrece visado de nómada digital, así que trabajar en remoto se hace habitualmente bajo visado de turista, en una zona legal ambigua.", en: "Beijing is China's political and historical heart: the Forbidden City, the Great Wall just outside the city, and an ultra-modern metro connecting a metropolis of more than 20 million people. The cost of living is remarkably low for the city's size, but the Great Firewall blocks Google, WhatsApp, Instagram, and Gmail, so a reliable VPN installed before arrival is essential. China offers no digital nomad visa, so remote work is usually done under a tourist visa, in an ambiguous legal gray area." },
     imageUrl: "https://images.unsplash.com/photo-1708395929220-178a86454ba4?w=800&q=80",
-    costPerMonth: 3940,
+    costPerMonth: 505,
     currency: "EUR",
     internetSpeed: 223,
     safetyScore: 7.4,
