@@ -24,6 +24,7 @@ const anton = Anton({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.roavio.es"),
+  alternates: { canonical: "https://www.roavio.es" },
   title: "Roavio · Rankings · Ciudades · Libertad",
   description: "Compara coste de vida, internet, seguridad y calidad de vida en las mejores ciudades del mundo para trabajar en remoto.",
   openGraph: {

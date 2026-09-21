@@ -3,6 +3,7 @@ import { getAllArticles } from "../../lib/articles";
 import ArticlesList from "../../components/ArticlesList";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://www.roavio.es/articulos" },
   title: "Artículos | Roavio",
   description:
     "Guías y artículos sobre nomadismo digital, ciudades, visados e impuestos.",

@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import MapLoader from "@/components/MapLoader";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://www.roavio.es/mapa" },
   title: "Mapa | Roavio",
   description: "Explora coworkings, hoteles y cafés para nómadas digitales en un mapa interactivo, ciudad a ciudad.",
 };

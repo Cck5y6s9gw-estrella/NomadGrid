@@ -18,6 +18,7 @@ export async function generateMetadata({
   return {
     title: `${config.titleEs} | Roavio`,
     description: config.descriptionEs,
+    alternates: { canonical: `https://www.roavio.es/rankings/${config.slug}` },
     openGraph: {
       title: config.titleEs,
       description: config.descriptionEs,
