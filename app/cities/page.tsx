@@ -140,17 +140,17 @@ function CityCard({ city, lang, monthly, index }: { city: City; lang: "es" | "en
         alt={city.name}
         className="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-500"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-background/95 via-background/20 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/25 to-transparent" />
       <FavoriteButton citySlug={city.slug} className="absolute top-3 right-3" />
       <div className="absolute bottom-0 left-0 right-0 p-4">
         <div className="flex items-end justify-between mb-2">
           <div>
-            <h3 className="font-serif text-base leading-tight text-foreground">{city.name}</h3>
-            <p className="text-xs text-muted">{tCountry(city.country, lang)}</p>
+            <h3 className="font-serif text-base leading-tight text-white">{city.name}</h3>
+            <p className="text-xs text-white/65">{tCountry(city.country, lang)}</p>
           </div>
           <div className="text-right">
-            <div className="text-sm font-medium text-foreground">{city.currency} {formatMoney(city.costPerMonth, lang)}</div>
-            <div className="text-xs text-muted">{monthly}</div>
+            <div className="text-sm font-medium text-white">{city.currency} {formatMoney(city.costPerMonth, lang)}</div>
+            <div className="text-xs text-white/65">{monthly}</div>
           </div>
         </div>
         <div className="flex gap-1.5 flex-wrap">

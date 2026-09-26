@@ -66,11 +66,11 @@ export default function CityDetailClient({ city, guide }: { city: City; guide: C
       {/* Hero image */}
       <div className="relative h-80 pt-14">
         <img src={city.imageUrl} alt={city.name} className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
         <div className="absolute bottom-0 left-0 right-0 max-w-7xl mx-auto px-6 pb-8">
-          <p className="text-sm text-muted mb-1">{tCountry(city.country, lang)} · {tContinent(city.continent, lang)}</p>
+          <p className="text-sm text-white/70 mb-1">{tCountry(city.country, lang)} · {tContinent(city.continent, lang)}</p>
           <div className="flex items-center gap-3">
-            <h1 className="font-serif text-4xl text-foreground">{city.name}</h1>
+            <h1 className="font-serif text-4xl text-white">{city.name}</h1>
             <FavoriteButton citySlug={city.slug} variant="hero" />
           </div>
         </div>
