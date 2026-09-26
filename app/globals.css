@@ -3,11 +3,25 @@
 :root {
   --background: #0b0f1a;
   --foreground: #f5f5f4;
+  --foreground-soft: #d4d4d4;
   --muted: #8b8f99;
   --border: #1f2430;
   --accent: #ea580c;
   --card: #121723;
   color-scheme: dark;
+}
+
+/* Modo claro — mismo sistema de color, fondo blanco en vez del azul oscuro
+   de marca. Se activa con data-theme="light" en <html> (ver ThemeProvider). */
+:root[data-theme="light"] {
+  --background: #ffffff;
+  --foreground: #14181f;
+  --foreground-soft: #374151;
+  --muted: #6b7280;
+  --border: #e4e7ec;
+  --accent: #ea580c;
+  --card: #f5f6f8;
+  color-scheme: light;
 }
 
 @theme inline {

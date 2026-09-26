@@ -52,7 +52,7 @@ export default function ArticleView({ article }: { article: Article }) {
             <img
               src={article.cover}
               alt=""
-              className="w-full h-72 object-cover rounded-3xl border border-white/10 shadow-lg shadow-black/30 mb-8"
+              className="w-full h-72 object-cover rounded-3xl border border-border shadow-lg shadow-black/20 mb-8"
             />
           )}
 
@@ -79,12 +79,12 @@ export default function ArticleView({ article }: { article: Article }) {
           </div>
 
           <style>{`
-            .article-body h2 { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.01em; margin: 32px 0 14px; color: #f5f5f4; }
-            .article-body p { margin: 0 0 18px; font-size: 1.05rem; line-height: 1.75; color: #d4d4d4; }
-            .article-body strong { color: #f5f5f4; }
-            .article-body a { color: #ea580c; text-decoration: underline; text-underline-offset: 2px; }
+            .article-body h2 { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.01em; margin: 32px 0 14px; color: var(--foreground); }
+            .article-body p { margin: 0 0 18px; font-size: 1.05rem; line-height: 1.75; color: var(--foreground-soft); }
+            .article-body strong { color: var(--foreground); }
+            .article-body a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
             .article-body img { border-radius: 14px; margin: 20px 0; max-width: 100%; }
-            .article-body ul, .article-body ol { margin: 0 0 18px; padding-left: 24px; color: #d4d4d4; line-height: 1.7; }
+            .article-body ul, .article-body ol { margin: 0 0 18px; padding-left: 24px; color: var(--foreground-soft); line-height: 1.7; }
           `}</style>
         </div>
       </main>

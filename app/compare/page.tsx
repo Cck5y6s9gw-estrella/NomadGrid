@@ -144,7 +144,8 @@ function ComparePageInner() {
     try {
       const html2canvas = (await import("html2canvas")).default;
       const canvas = await html2canvas(tableRef.current, {
-        backgroundColor: "#0b0f1a",
+        backgroundColor:
+          getComputedStyle(document.documentElement).getPropertyValue("--background").trim() || "#0b0f1a",
         scale: 2,
         useCORS: true,
       });

@@ -272,7 +272,7 @@ export default function MatchPage() {
           <div>
             <div className="mb-8 flex items-center gap-2">
               {Array.from({ length: TOTAL_STEPS }).map((_, i) => (
-                <div key={i} className="h-1.5 flex-1 rounded-full overflow-hidden bg-white/10">
+                <div key={i} className="h-1.5 flex-1 rounded-full overflow-hidden bg-foreground/10">
                   <div
                     className="h-full bg-accent transition-all duration-500 rounded-full"
                     style={{ width: i < step ? "100%" : i === step ? "100%" : "0%" }}
@@ -409,7 +409,7 @@ export default function MatchPage() {
                         <span className="font-serif text-foreground">{city.name}</span>
                         <span className="text-xs text-muted">{tCountry(city.country, lang)}</span>
                       </div>
-                      <div className="h-1.5 w-full max-w-[160px] rounded-full bg-white/10 overflow-hidden mt-1.5 mb-1">
+                      <div className="h-1.5 w-full max-w-[160px] rounded-full bg-foreground/10 overflow-hidden mt-1.5 mb-1">
                         <div className="h-full bg-accent rounded-full transition-all duration-700" style={{ width: `${pct}%` }} />
                       </div>
                       <div className="text-xs text-accent font-medium">{d.matchScore(pct)}</div>

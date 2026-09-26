@@ -9,6 +9,7 @@ import { pois } from "@/data/coworkings";
 import { useLanguage } from "@/lib/i18n";
 import { t } from "@/lib/dictionary";
 import { IconSearch, IconMessage } from "@/components/Icon";
+import { THEME_CHANGE_EVENT, type Theme } from "@/components/ThemeProvider";
 
 const CATEGORY_COLORS: Record<string, string> = {
   coworking: "#ea580c",
@@ -16,7 +17,8 @@ const CATEGORY_COLORS: Record<string, string> = {
   cafe: "#f59e0b",
 };
 
-const STYLE_URL = "https://tiles.openfreemap.org/styles/dark";
+const STYLE_DARK = "https://tiles.openfreemap.org/styles/dark";
+const STYLE_LIGHT = "https://tiles.openfreemap.org/styles/positron";
 const CITY_ZOOM = 13.2;
 // Por debajo de este zoom solo se ven las ciudades (la vista de conjunto); a
 // partir de aqui aparecen los coworkings de la zona, con su ficha al pulsar.
@@ -24,8 +26,10 @@ const POI_MIN_ZOOM = 10;
 
 // Repinta la paleta oscura genérica del basemap con los colores de marca de Roavio
 // (fondo #0b0f1a, tarjetas #121723, acento naranja #ea580c) para que el mapa se
-// sienta parte de la app y no un widget de terceros aparte.
-function applyBrandTheme(map: MaplibreMap) {
+// sienta parte de la app y no un widget de terceros aparte. Hay una variante
+// para cada tema (ver applyBrandThemeLight más abajo), elegida según
+// data-theme en <html> y reaplicada cuando el usuario cambia de tema.
+function applyBrandThemeDark(map: MaplibreMap) {
   const setColor = (layerId: string, prop: string, color: string) => {
     try {
       (map.setPaintProperty as (id: string, prop: string, value: unknown) => void)(layerId, prop, color);
@@ -83,6 +87,67 @@ function applyBrandTheme(map: MaplibreMap) {
   });
 }
 
+// Variante clara — mismo criterio de capas, tonos de cartografía convencional
+// (agua y parques con su tinte habitual) sobre una base blanca en vez de
+// azul marino, coherente con --background en modo claro.
+function applyBrandThemeLight(map: MaplibreMap) {
+  const setColor = (layerId: string, prop: string, color: string) => {
+    try {
+      (map.setPaintProperty as (id: string, prop: string, value: unknown) => void)(layerId, prop, color);
+    } catch {
+      // La capa puede no existir en todas las versiones del estilo; se ignora.
+    }
+  };
+
+  setColor("background", "background-color", "#ffffff");
+  setColor("water", "fill-color", "#cfe3f0");
+  setColor("waterway", "line-color", "#cfe3f0");
+  setColor("landcover_ice_shelf", "fill-color", "#ffffff");
+  setColor("landcover_glacier", "fill-color", "#ffffff");
+  setColor("landuse_residential", "fill-color", "#f3f1ec");
+  setColor("landcover_wood", "fill-color", "#e3ede1");
+  setColor("landuse_park", "fill-color", "#e6f0e1");
+  setColor("building", "fill-color", "#eceef2");
+
+  setColor("aeroway-taxiway", "line-color", "#ddd7c0");
+  setColor("aeroway-area", "fill-color", "#ffffff");
+  setColor("aeroway-runway", "line-color", "#ffffff");
+  setColor("road_area_pier", "fill-color", "#ffffff");
+  setColor("road_pier", "line-color", "#ffffff");
+
+  setColor("highway_path", "line-color", "#ddd7c0");
+  setColor("highway_minor", "line-color", "#dde1e6");
+  setColor("highway_major_casing", "line-color", "rgba(234,88,12,0.18)");
+  setColor("highway_major_inner", "line-color", "#ced2da");
+  setColor("highway_major_subtle", "line-color", "#ea580c");
+  setColor("highway_motorway_casing", "line-color", "rgba(234,88,12,0.35)");
+  setColor("highway_motorway_subtle", "line-color", "#ea580c");
+
+  setColor("railway_transit", "line-color", "#c7cbd4");
+  setColor("railway_minor", "line-color", "#c7cbd4");
+  setColor("railway", "line-color", "#c7cbd4");
+
+  setColor("boundary_state", "line-color", "rgba(234,88,12,0.25)");
+  setColor("boundary_country_z0-4", "line-color", "rgba(234,88,12,0.45)");
+  setColor("boundary_country_z5-", "line-color", "rgba(234,88,12,0.45)");
+
+  [
+    "place_other",
+    "place_suburb",
+    "place_village",
+    "place_town",
+    "place_city",
+    "place_city_large",
+    "place_state",
+    "place_country_other",
+    "place_country_minor",
+    "place_country_major",
+  ].forEach((id) => {
+    setColor(id, "text-color", "#14181f");
+    setColor(id, "text-halo-color", "#ffffff");
+  });
+}
+
 export default function MapClient() {
   const { lang } = useLanguage();
   const d = t(lang);
@@ -91,6 +156,7 @@ export default function MapClient() {
 
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MaplibreMap | null>(null);
+  const themeRef = useRef<Theme>("dark");
   const poiMarkersRef = useRef<Marker[]>([]);
   const cityMarkersRef = useRef<Marker[]>([]);
   const poiElsRef = useRef<HTMLDivElement[]>([]);
@@ -110,9 +176,13 @@ export default function MapClient() {
 
     maplibreConfig.WORKER_URL = "/maplibre-gl-worker.js";
 
+    const initialTheme: Theme =
+      document.documentElement.getAttribute("data-theme") === "light" ? "light" : "dark";
+    themeRef.current = initialTheme;
+
     const map = new MaplibreMap({
       container: containerRef.current,
-      style: STYLE_URL,
+      style: initialTheme === "light" ? STYLE_LIGHT : STYLE_DARK,
       center: [10, 20],
       zoom: 1.4,
       // Con el mundo completo visible a este zoom, dejar que se repita crea copias
@@ -133,7 +203,16 @@ export default function MapClient() {
     resizeObserver.observe(containerRef.current);
     map.resize();
 
-    map.on("style.load", () => applyBrandTheme(map));
+    map.on("style.load", () => {
+      (themeRef.current === "light" ? applyBrandThemeLight : applyBrandThemeDark)(map);
+    });
+
+    function handleThemeChange(e: Event) {
+      const next = (e as CustomEvent<Theme>).detail;
+      themeRef.current = next;
+      map.setStyle(next === "light" ? STYLE_LIGHT : STYLE_DARK);
+    }
+    window.addEventListener(THEME_CHANGE_EVENT, handleThemeChange);
 
     map.on("load", () => {
       // Ciudades — un punto discreto por cada una de las 45, para ubicarlas de un
@@ -243,6 +322,7 @@ export default function MapClient() {
     });
 
     return () => {
+      window.removeEventListener(THEME_CHANGE_EVENT, handleThemeChange);
       resizeObserver.disconnect();
       poiMarkersRef.current.forEach((m) => m.remove());
       poiMarkersRef.current = [];

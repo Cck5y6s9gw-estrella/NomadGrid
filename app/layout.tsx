@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import { LanguageProvider } from "@/lib/i18n";
+import { ThemeProvider } from "@/components/ThemeProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -53,39 +54,52 @@ export default function RootLayout({
     <ClerkProvider
       appearance={{
         variables: {
-          colorPrimary: "#ea580c",
-          colorBackground: "#121723",
-          colorInput: "#0b0f1a",
-          colorNeutral: "#f5f5f4",
+          colorPrimary: "var(--accent)",
+          colorBackground: "var(--card)",
+          colorInput: "var(--background)",
+          colorNeutral: "var(--foreground)",
           colorDanger: "#ef4444",
           colorSuccess: "#22c55e",
           borderRadius: "0.75rem",
           fontFamily: "var(--font-geist-sans), Arial, Helvetica, sans-serif",
         },
         elements: {
-          card: "border border-[#1f2430] shadow-none",
-          headerTitle: "text-[#f5f5f4]",
-          headerSubtitle: "text-[#8b8f99]",
-          socialButtonsBlockButton: "border border-[#1f2430] bg-[#0b0f1a] hover:bg-[#1f2430] text-[#f5f5f4]",
-          socialButtonsBlockButtonText: "text-[#f5f5f4]",
-          dividerLine: "bg-[#1f2430]",
-          dividerText: "text-[#8b8f99]",
-          formFieldLabel: "text-[#f5f5f4]",
-          formFieldInput: "bg-[#0b0f1a] border border-[#1f2430] text-[#f5f5f4]",
-          formButtonPrimary: "bg-[#ea580c] hover:bg-[#ea580c]/90 text-white",
-          footerActionText: "text-[#8b8f99]",
-          footerActionLink: "text-[#ea580c] hover:text-[#ea580c]/80",
-          identityPreviewText: "text-[#f5f5f4]",
-          identityPreviewEditButton: "text-[#ea580c]",
+          card: "border border-border shadow-none",
+          headerTitle: "text-foreground",
+          headerSubtitle: "text-muted",
+          socialButtonsBlockButton: "border border-border bg-background hover:bg-border text-foreground",
+          socialButtonsBlockButtonText: "text-foreground",
+          dividerLine: "bg-border",
+          dividerText: "text-muted",
+          formFieldLabel: "text-foreground",
+          formFieldInput: "bg-background border border-border text-foreground",
+          formButtonPrimary: "bg-accent hover:bg-accent/90 text-white",
+          footerActionText: "text-muted",
+          footerActionLink: "text-accent hover:text-accent/80",
+          identityPreviewText: "text-foreground",
+          identityPreviewEditButton: "text-accent",
         },
       }}
     >
       <html
         lang="es"
+        data-theme="dark"
         className={`${geistSans.variable} ${geistMono.variable} ${anton.variable} h-full antialiased`}
       >
+        <head>
+          {/* Evita el parpadeo de tema: fija data-theme antes del primer
+              pintado si el usuario ya había elegido "light" en este navegador. */}
+          <script
+            dangerouslySetInnerHTML={{
+              __html:
+                "(function(){try{var t=localStorage.getItem('roavio_theme');if(t==='light'){document.documentElement.setAttribute('data-theme','light');document.documentElement.style.colorScheme='light';}}catch(e){}})();",
+            }}
+          />
+        </head>
         <body className="min-h-full flex flex-col">
-          <LanguageProvider>{children}</LanguageProvider>
+          <ThemeProvider>
+            <LanguageProvider>{children}</LanguageProvider>
+          </ThemeProvider>
           <Analytics />
           <GoogleAnalytics gaId="G-L7XED99X63" />
         </body>

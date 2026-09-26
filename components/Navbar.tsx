@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { Show, SignInButton, UserButton, useUser } from "@clerk/nextjs";
 import { useLanguage } from "@/lib/i18n";
 import { t } from "@/lib/dictionary";
+import ThemeToggle from "@/components/ThemeToggle";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -70,6 +71,8 @@ export default function Navbar() {
               EN
             </button>
           </div>
+
+          <ThemeToggle />
 
           <Show
             when="signed-in"
