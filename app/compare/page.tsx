@@ -5,6 +5,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { useUser } from "@clerk/nextjs";
 import Navbar from "@/components/Navbar";
+import { useTheme } from "@/components/ThemeProvider";
 import { cities, City } from "@/data/cities";
 import { useLanguage, type Lang } from "@/lib/i18n";
 import { t, formatMoney, tCountry, tContinent, tClimate } from "@/lib/dictionary";
@@ -41,6 +42,7 @@ function slugsFromParam(param: string | null): string[] {
 
 function ComparePageInner() {
   const { lang } = useLanguage();
+  const { theme } = useTheme();
   const d = t(lang);
   const metrics = buildMetrics(lang);
   const router = useRouter();
@@ -284,7 +286,7 @@ function ComparePageInner() {
                   style={{ gridTemplateColumns: `10rem repeat(${selectedCities.length}, 1fr)` }}
                 >
                   <div className="py-5 px-5 flex items-center justify-center">
-                    <img src="/logo-icon.png" alt="Roavio" className="h-9 w-auto" />
+                    <img src={theme === "light" ? "/logo-icon-light.png" : "/logo-icon.png"} alt="Roavio" className="h-9 w-auto" />
                   </div>
                   {selectedCities.map((city) => (
                     <div key={city.slug} className="border-l border-border">

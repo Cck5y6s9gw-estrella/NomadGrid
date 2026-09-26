@@ -7,12 +7,14 @@ import { Show, SignInButton, UserButton, useUser } from "@clerk/nextjs";
 import { useLanguage } from "@/lib/i18n";
 import { t } from "@/lib/dictionary";
 import ThemeToggle from "@/components/ThemeToggle";
+import { useTheme } from "@/components/ThemeProvider";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
   const menuRef = useRef<HTMLDivElement>(null);
   const { lang, setLang } = useLanguage();
+  const { theme } = useTheme();
   const d = t(lang);
   const { isSignedIn } = useUser();
 
@@ -48,7 +50,7 @@ export default function Navbar() {
           href="/"
           className="flex items-center gap-1.5 sm:gap-2 text-foreground font-semibold tracking-tight shrink-0 min-w-0"
         >
-          <img src="/logo-icon.png" alt="Roavio" className="h-6 w-auto shrink-0" />
+          <img src={theme === "light" ? "/logo-icon-light.png" : "/logo-icon.png"} alt="Roavio" className="h-6 w-auto shrink-0" />
           <span className="text-base sm:text-lg">Roavio</span>
         </Link>
 
