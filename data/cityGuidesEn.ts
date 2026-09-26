@@ -1351,4 +1351,117 @@ export const cityGuidesEn: Record<string, CityGuide> = {
       ],
     },
   },
+  tauranga: {
+    visaFiscal: {
+      content: "New Zealand has no specific digital nomad visa. A Spanish citizen needs a New Zealand Electronic Travel Authority (NZeTA) before flying, and can enter as a visitor for stays of up to 90 days. Immigration New Zealand has clarified that a visitor can keep working remotely for a foreign employer during their stay, as long as they don't provide services to a New Zealand employer or client or get paid within the country.\n\nFor longer stays, the most accessible route for younger profiles is the Working Holiday Visa, available to Spanish citizens aged 18-30 under the bilateral agreement between Spain and New Zealand, lasting up to 12 months and which does allow working for New Zealand employers. Outside that age range, the usual residence and work routes go through an employer-sponsored work visa or the skills-based residence programs (Skilled Migrant Category).\n\nOn tax matters, New Zealand applies a progressive income tax with rates up to 39% for the highest earners, and has no general capital gains tax or wealth tax. Someone is considered a New Zealand tax resident if they spend more than 183 days within a 12-month period or have a permanent place of abode there.",
+      sources: [
+        { label: "New Zealand Electronic Travel Authority (NZeTA) – Immigration New Zealand", url: "https://www.immigration.govt.nz/new-zealand-visas/apply-for-a-visa/about-visa/nzeta" },
+        { label: "Working Holiday Visa – Spain / Immigration New Zealand", url: "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/working-holiday-visa-spain" },
+        { label: "Tax residency rules – Inland Revenue (IRD) New Zealand", url: "https://www.ird.govt.nz/international-tax/residency/nz-tax-residence-rules" },
+      ],
+    },
+    sanidad: {
+      content: "New Zealand has a public health system (funded mainly by Te Whatu Ora), but subsidized access is aimed mainly at residents and citizens; visitors and temporary stays need private travel health insurance, a common requirement for the visitor visa or the Working Holiday Visa.\n\nTauranga has Tauranga Hospital, the region's main public hospital for the Bay of Plenty, plus private clinics and after-hours urgent care for non-emergency needs. Private travel/health insurance premiums (insurers like Southern Cross or international providers such as SafetyWing) vary by coverage, indicatively from about €60-120/month for a young adult.\n\nIndicative out-of-pocket prices without insurance: GP visit, NZD 50-90 (about €27-49); emergency care, considerably higher, potentially several hundred NZD depending on severity.",
+      sources: [
+        { label: "Tauranga Hospital – Health New Zealand / Te Whatu Ora", url: "https://www.tewhatuora.govt.nz/" },
+        { label: "Insurance for Nomads, by Nomads – SafetyWing", url: "https://safetywing.com/nomad-insurance" },
+      ],
+    },
+    barrios: {
+      content: "Tauranga is a mid-sized city, so the choice comes down to a few key areas:\n1. **Mount Maunganui** — by the beach and the volcano of the same name, the most popular area with visitors and nomads for its relaxed vibe and cafés; indicative rent between NZD 1,700 and 2,600/month (about €930-1,420) for a one-bedroom apartment.\n2. **Tauranga CBD (downtown)** — the business district, with the highest concentration of offices and services; between NZD 1,500 and 2,300/month (€820-1,260).\n3. **Papamoa** — residential, family-oriented and with its own beach, a bit further from downtown; between NZD 1,400 and 2,100/month (€770-1,150).\n\nThe coworking offering is still modest: there are a few independent and shared spaces around the city (check directories like Sharedspace), but no large international chains like WeWork; many remote professionals rely on wifi cafés or spaces run by the local chamber of commerce instead.",
+      sources: [
+        { label: "Coworking spaces in Tauranga – Sharedspace", url: "https://www.sharedspace.co.nz/blog/595-coworking-spaces-in-tauranga.html" },
+      ],
+    },
+  },
+  gdansk: {
+    visaFiscal: {
+      content: "As a Spanish citizen, you don't need a visa to live in Gdańsk: Poland has been an EU member since 2004 and the right to free movement applies directly. It's enough to enter with your national ID or passport and, if the stay exceeds 90 days, register your residence with the relevant foreigners' office (Urząd Wojewódzki) and, if you'll be billing locally, apply for the Polish tax ID number (NIP).\n\nPoland has no specific digital nomad visa; for non-EU nationalities the usual route is a temporary residence permit for work or economic activity, processed at the relevant Polish consulate or, once in Poland, at the foreigners' office.\n\nOn tax matters, Poland applies a progressive income tax with two main brackets (12% and 32%), plus a simplified flat-rate regime for the self-employed (\"ryczałt\") with fixed rates depending on the type of activity, common among tech freelancers. Someone is considered a Polish tax resident if they spend more than 183 days in the country during the calendar year or have their center of vital interests there.",
+      sources: [
+        { label: "Foreigners' residence procedures – Urząd Wojewódzki Pomorski (Gdansk)", url: "https://www.gdansk.uw.gov.pl/" },
+        { label: "Poland personal income tax – KPMG Tax Rates Online", url: "https://kpmg.com/xx/en/home/insights/2011/12/poland-income-tax.html" },
+      ],
+    },
+    sanidad: {
+      content: "Gdańsk has reference public hospitals such as the Uniwersyteckie Centrum Kliniczne (university hospital) and nationwide private networks like Medicover and LUX MED, with their own clinics in the city and English-language care typically available at their expat-oriented centers.\n\nPrivate health insurance premiums in Poland tend to run lower than in Western Europe: indicatively €30-70/month for a young adult with Medicover or LUX MED, depending on coverage level. SafetyWing pricing is similar to other Eastern European destinations.\n\nIndicative out-of-pocket prices without insurance: GP visit, €20-40; specialist, €30-70; emergency care, €40-100.",
+      sources: [
+        { label: "Uniwersyteckie Centrum Kliniczne (University Clinical Centre, Gdansk)", url: "https://www.uck.gda.pl/" },
+        { label: "Medicover Poland", url: "https://www.medicover.pl/en/" },
+      ],
+    },
+    barrios: {
+      content: "Recommended areas for digital nomads include:\n1. **Śródmieście / Główne Miasto (Old Town)** — the historic Hanseatic center, very touristy and with the highest concentration of cafés and restaurants; indicative rent between PLN 2,200 and 3,800/month (about €520-900).\n2. **Wrzeszcz** — residential, well connected to downtown and the university, somewhat more affordable; between PLN 1,800 and 3,000/month (€425-710).\n3. **Oliwa** — quiet, next to a park and a historic cathedral, popular with students and families; between PLN 1,700 and 2,800/month (€400-660).\n4. **Brzeźno** — by the beach and the Baltic seafront promenade, more residential; between PLN 1,900 and 3,200/month (€450-755).\n\nFor coworking, Gdańsk is part of the Tri-City tech corridor: Nova Kołobrzeska and Business Link have a presence in the city, with plans from about PLN 400-600/month (€95-140); there are also smaller independent spaces around downtown and Wrzeszcz.",
+      sources: [
+        { label: "Business Link Gdansk", url: "https://businesslink.pl/en/locations/gdansk/" },
+      ],
+    },
+  },
+  "puerto-escondido": {
+    visaFiscal: {
+      content: "Mexico has no specific \"digital nomad\" visa, but the Temporary Resident Visa is the route Spanish or EU remote workers use in practice. The application must start at the Mexican consulate in the country of residence (it cannot be processed once already in Mexico), and it's worth booking an appointment two or more months in advance.\n\nApplicants must show economic solvency: monthly income of $2,500-4,000 sustained over 6-12 months, or savings of $40,000-70,000 held over that same period (exact amounts vary slightly by consulate). Consular fees run around $40-50, and once in Mexico, when exchanging for the resident card at the INM, the cost depends on the years requested: from about $200-300 for 1 year up to $600-750 for 4 years.\n\nThe visa is initially granted for 1 year and is renewable up to a cumulative maximum of 4 years of temporary residence. Income tax (ISR) for tax residents is progressive, with marginal rates between 1.92% and 35%, with the top bracket applying above roughly 5.1 million MXN of annual taxable income (2026 reference figure).",
+      sources: [
+        { label: "Citizen Remote — Mexico Digital Nomad Visa / Temporary Resident Visa 2026", url: "https://citizenremote.com/visas/mexico/" },
+        { label: "Taxes for Expats — Mexico Digital Nomad Visa: 2026 Tax Rules", url: "https://www.taxesforexpats.com/country-guides/mexico/mexico-digital-nomad-visa.html" },
+      ],
+    },
+    sanidad: {
+      content: "Puerto Escondido is a small-town destination with limited hospital infrastructure: it has private clinics and a basic general hospital for minor emergency care; for more complex or specialized procedures, patients typically travel to Oaxaca de Juárez or Mexico City. We were unable to verify, from reliable sources, the name and exact pricing of the town's leading private facility, so it's worth confirming the specific option with the local community before you need it.\n\nGiven the destination's surf profile, insurance with medical evacuation and water sports coverage is advisable; SafetyWing and World Nomads are common choices among the nomad community.\n\nAs a general reference for Mexico, a private GP visit typically runs 500-900 MXN ($28-50) and a specialist consultation 800-1,500 MXN ($45-85).",
+      sources: [
+        { label: "CDC — Travel Health Notices: Mexico", url: "https://wwwnc.cdc.gov/travel/destinations/traveler/none/mexico" },
+        { label: "World Nomads travel insurance", url: "https://www.worldnomads.com/" },
+      ],
+    },
+    barrios: {
+      content: "Digital nomad life in Puerto Escondido revolves mainly around the Zicatela and La Punta coastal strip.\n\n1. **Zicatela** — right by the town's most famous wave, with the highest concentration of restaurants, bars and surf schools; indicative rent between $400 and $900/month for a studio or one-bedroom.\n2. **La Punta** — south of Zicatela, quieter and with more of a nomad/yoga community feel, though prices have risen notably in recent years; between $450 and $950/month.\n3. **Centro / Rinconada** — the original town, cheaper and with more local life, a bit further from the main beach; between $300 and $600/month.\n4. **Bacocho** — residential and quiet, with its own less crowded beach; between $350 and $700/month.\n\nFormal coworking is scarce: we were unable to verify current pricing for a leading space, so most nomads work from wifi cafés in Zicatela and La Punta or from accommodations with common spaces geared toward long stays.",
+      sources: [
+        { label: "Puerto Escondido neighborhoods guide", url: "https://www.puerto-escondido.mx/en/destinations/zicatela/" },
+      ],
+    },
+  },
+  kotor: {
+    visaFiscal: {
+      content: "Montenegro is not an EU member, so a Spanish citizen has no right of free movement there, though they can enter visa-free as a tourist for stays of up to 90 days within a 180-day period, under the visa exemption agreement between Montenegro and the EU. Montenegro has no specific digital nomad visa.\n\nFor longer stays, the usual route is a temporary residence permit, which can be requested on grounds of self-employment, employment, or, increasingly, simply proof of sufficient financial means and accommodation in the country; it's processed at the local administration for internal affairs (Uprava za upravne unutrašnje poslove) office in Kotor.\n\nOn tax matters, Montenegro applies income tax at rates low by European standards, with a general 9% bracket and a higher 15% bracket for top earners (reference figures, subject to revision). Someone is considered a Montenegrin tax resident if they spend more than 183 days in the country during the calendar year.",
+      sources: [
+        { label: "Visa exemption for Montenegro – EU visa policy overview", url: "https://www.mfa.gov.me/en/" },
+        { label: "Montenegro personal income tax – KPMG Tax Rates Online", url: "https://kpmg.com/xx/en/home/insights/2011/12/montenegro-income-tax.html" },
+      ],
+    },
+    sanidad: {
+      content: "Kotor has the Kotor General Hospital (Opšta bolnica Kotor) for basic public and emergency care; for more complex procedures, patients typically travel to Podgorica, the capital, about an hour away by car.\n\nSince Montenegro is not an EU country, the European Health Insurance Card doesn't cover care there: private travel health insurance is essential before arriving. SafetyWing and World Nomads are common choices among the nomad community, with indicative premiums similar to other mid-priced Balkan destinations in the catalog.\n\nIndicative out-of-pocket prices without insurance: private doctor visit, €20-40; specialist, €30-60; emergency care, €40-100, noticeably lower than Western Europe.",
+      sources: [
+        { label: "Opšta bolnica Kotor (Kotor General Hospital)", url: "https://www.mzzs.gov.me/" },
+        { label: "Insurance for Nomads, by Nomads – SafetyWing", url: "https://safetywing.com/nomad-insurance" },
+      ],
+    },
+    barrios: {
+      content: "Kotor is a small town, so the choice comes down to distance from the old town more than distinct neighborhoods:\n1. **Stari Grad (Old Town)** — inside the Venetian walls, very touristy and with the highest concentration of restaurants and social life; indicative rent between €400 and €700/month for a one-bedroom apartment, though long-term supply is scarce due to short-term rental pressure.\n2. **Dobrota** — north of the old town, by the sea, more residential and quiet; between €350 and €600/month.\n3. **Muo / Prčanj** — coastal villages a bit further out, with a very local feel and lower prices; between €250 and €450/month, though a car is useful.\n\nKotor doesn't yet have a large formal coworking offering, but does have dedicated coliving and nomad-community projects, such as Kotor Nest Coliving and Playworking, which combine accommodation and shared workspace; it's worth confirming availability and pricing directly, since the offering shifts with the season.",
+      sources: [
+        { label: "Kotor Nest Coliving", url: "https://nestcoliving.me/" },
+        { label: "Playworking Montenegro", url: "https://www.playworking.me/" },
+      ],
+    },
+  },
+  fukuoka: {
+    visaFiscal: {
+      content: "A Spanish citizen can enter Japan visa-free for stays of up to 90 days for tourism or occasional business. Since March 2024, Japan has also offered a specific digital nomad visa, available to citizens of countries with a visa exemption agreement (including Spain), lasting up to 6 months, not consecutively renewable (a waiting period applies before reapplying).\n\nThe visa requires proof of annual income of at least JPY 10 million (roughly €60,000-65,000, an indicative figure subject to exchange rates), private health insurance with a specified minimum coverage, and working for an employer or clients outside Japan. It does not allow working for Japanese companies or billing locally.\n\nFor longer stays or an intention to reside permanently, the usual routes are a work visa sponsored by a Japanese employer, the business/investor visa, or the Highly Skilled Professional points-based program. On tax matters, Japan applies a progressive income tax of up to 45% (plus local inhabitant tax, around 10%) for tax residents, with residency triggered by living in the country for more than a year with intent to stay.",
+      sources: [
+        { label: "Japan Digital Nomad Visa – Ministry of Foreign Affairs of Japan", url: "https://www.mofa.go.jp/j_info/visit/visa/index.html" },
+        { label: "Japan Digital Nomad Visa 2026: requirements and eligible countries – Immigration lawyer guides", url: "https://www.vfsglobal.com/one-pager/japan/digital-nomad-visa/index.html" },
+      ],
+    },
+    sanidad: {
+      content: "Fukuoka has reference hospitals such as Kyushu University Hospital and Fukuoka University Hospital, with a very high standard of care in line with Japan's norm, though English-language service can be limited outside the more internationally oriented centers.\n\nJapan's digital nomad visa requires private health insurance with a specified minimum coverage (including repatriation); international insurers such as Cigna Global or SafetyWing are common choices, with indicative premiums from about €80-150/month depending on age and coverage, somewhat above other Asian destinations in the catalog.\n\nIndicative out-of-pocket prices without insurance (outside Japan's public system, which requires formal residency to access): private doctor visit, €40-80; specialist, €60-120; emergency care, considerably higher depending on treatment.",
+      sources: [
+        { label: "Kyushu University Hospital", url: "https://www.hosp.kyushu-u.ac.jp/en/" },
+        { label: "Cigna Global health insurance", url: "https://www.cignaglobal.com/" },
+      ],
+    },
+    barrios: {
+      content: "Recommended areas for digital nomads include:\n1. **Tenjin** — the most central business and shopping district, with the highest concentration of cafés, shops and offices; indicative rent between JPY 70,000 and 120,000/month (about €440-750) for a small one-bedroom apartment.\n2. **Hakata** — next to the main train and shinkansen station, very well connected; between JPY 65,000 and 110,000/month (€410-690).\n3. **Ohori** — residential and quiet, by the park of the same name; between JPY 60,000 and 100,000/month (€375-630).\n4. **Momochi** — by the urban beach and Fukuoka Tower, more modern and family-oriented; between JPY 65,000 and 115,000/month (€410-720).\n\nFor coworking, Fukuoka Growth Next, housed in a former school, is the flagship space of the city's \"Startup City\" strategy, with plans from about JPY 10,000-15,000/month (€65-95); Engineer Café and Startup Café offer free workspace for the community; and Colive Fukuoka organizes events and connects the international digital nomad community.",
+      sources: [
+        { label: "Fukuoka Growth Next", url: "https://growth-next.com/" },
+        { label: "Colive Fukuoka", url: "https://www.colivefukuoka.com/" },
+      ],
+    },
+  },
 };
