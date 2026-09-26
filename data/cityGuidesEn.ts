@@ -1240,4 +1240,115 @@ export const cityGuidesEn: Record<string, CityGuide> = {
       sanidad: { content: "Montevideo has a well-regarded private healthcare system built around \"mutualistas\" (membership-based health providers), and several private hospitals regularly treat the expat community. The British Hospital (Hospital Britanico) stands out in cardiology, orthopedics and neurology, with up-to-date technology. Hospital Italiano de Montevideo is another long-established reference point, particularly for orthopedic surgery and rehabilitation. Asociacion Espanola covers oncology, diabetes, nephrology and neurology, among other specialties.\n\nThe sources consulted don't publish specific consultation or membership fees for these institutions; in Uruguay, access is typically not through a one-off paid visit but through a monthly mutualista membership or international private insurance, so it's worth requesting a quote directly from each provider.\n\nFor residents coming from Spain/the EU, there are no specific vaccination requirements beyond the standard immunization schedule (MMR, Tdap, seasonal flu); Uruguay isn't classified as a risk area for yellow fever, high-endemic hepatitis A, or other tropical diseases relevant to European travelers.", sources: [{ label: "Expat Exchange — Top Hospitals in Uruguay by Specialty", url: "https://www.expatexchange.com/ctryguide/27937/115/Uruguay/Top-Hospitals-in-Uruguay-by-Specialty" }] },
       barrios: { content: "Montevideo's neighborhoods have quite distinct profiles for digital nomads.\n\n1. **Pocitos** — the most international and \"safe-feeling\" neighborhood, with a seafront promenade, plenty of services and a high density of coworking spaces; a furnished studio runs 600-850 USD/month and a 2-bedroom 800-1,200 USD/month.\n2. **Palermo** — a bohemian, artistic character with a strong cafe scene and lower costs than Pocitos; furnished studios run 400-600 USD/month.\n3. **Ciudad Vieja** — the historic colonial old town, undergoing steady renovation with a growing restaurant and cultural scene.\n4. **Cordon** — a central university district and one of the more affordable areas; an unfurnished studio runs around 300 USD/month.\n5. **Punta Carretas** — residential, quiet and secure, popular with professionals and families; 2-bedrooms run 1,000-1,500 USD/month.\n\nFor coworking, Sinergia (with locations in Palermo, Carrasco, the World Trade Center and elsewhere) has plans from about 80 USD/month + tax, Co-Work Latam from 125 USD/month + tax, and Nook Cowork from 152 USD/month + tax.", sources: [{ label: "NomadUY — Montevideo Neighborhoods", url: "https://www.nomad.com.uy/guias/barrios-montevideo" }, { label: "Digital Nomad World — Montevideo City Guide", url: "https://digitalnomads.world/city-guide/montevideo/" }] },
     },
+  funchal: {
+    visaFiscal: {
+      content: "As a Spanish citizen, you don't need a visa to live in Funchal: Madeira is an autonomous region of Portugal, an EU member state, and the right to free movement applies directly. It's enough to register with the local Junta de Freguesia if the stay exceeds 90 days and, to bill as self-employed, request the Portuguese tax ID number (Número de Identificação Fiscal, NIF) from as Finanças.\n\nFor non-EU digital nomads, the route is the same D8 visa that applies across Portugal, processed first at the Portuguese consulate in the country of origin and then before AIMA once in Portugal, with a monthly income requirement of roughly 4 times the national minimum wage (around €3,280-3,680/month in 2026).\n\nOn the tax side, Madeira also has the International Business Centre of Madeira (a free-trade zone), a special low-tax regime aimed mainly at companies registered there, distinct from the personal income tax regime; a digital nomad taxed as an individual is subject to the same IRS rules and, where applicable, the IFICI (\"NHR 2.0\") regime as in the rest of Portugal, again limited to activities considered highly qualified.",
+      sources: [
+        { label: "Visto de nómada digital (D8) Portugal: requisitos – Jobbatical", url: "https://www.jobbatical.com/blog/portugal-digital-nomad-visa-d8-guide" },
+        { label: "Portugal: new special tax regime (IFICI / NHR 2.0) – Vialto Partners", url: "https://vialtopartners.com/regional-alerts/portugal-global-mobility-tax-new-special-tax-regime-ifici-or-nhr-2-0" },
+        { label: "Centro Internacional de Negócios da Madeira – Sociedade de Desenvolvimento da Madeira", url: "https://www.ibc-madeira.com/" },
+      ],
+    },
+    sanidad: {
+      content: "Funchal has Hospital Dr. Nélio Mendonça, the island's main public hospital, and a smaller range of private options than Lisbon or Porto, since Madeira is an island region with less private hospital infrastructure. For complex cases, patients are often referred to hospitals in Lisbon.\n\nAs elsewhere in Portugal, insurers Médis, Multicare and Allianz Portugal offer private policies with indicative premiums of €30-130/month depending on age, though it's worth confirming coverage specifically on Madeira, since some mainland private clinic networks have limited presence on the island. SafetyWing pricing stays in line with the rest of the country.\n\nIndicative out-of-pocket prices without insurance: GP visit, €40-90; specialist, €60-150; emergency care, €80-200.",
+      sources: [
+        { label: "Serviço de Saúde da Região Autónoma da Madeira – Hospital Dr. Nélio Mendonça", url: "https://www.sesaram.pt/" },
+        { label: "Insurance for Nomads, by Nomads – SafetyWing", url: "https://safetywing.com/nomad-insurance" },
+      ],
+    },
+    barrios: {
+      content: "Recommended areas for digital nomads include:\n1. **Zona Velha (Old Town)** — historic, by the harbor and full of restaurants; indicative rent between €700 and €1,100/month.\n2. **Lido** — along the seafront promenade and natural pools, more residential and touristy; between €750 and €1,200/month.\n3. **São Martinho** — quiet, with sea views and a bit further from the center; between €600 and €950/month.\n4. **Santa Luzia** — central and well connected, with a more local feel; between €650 and €1,000/month.\n\nFor coworking, Funchal has more limited options than Lisbon or Porto: Digital Nomads Madeira (driven by the island's own nomad-attraction initiative, Europe's first \"digital nomad village,\" based in Ponta do Sol, about 25 minutes from Funchal) is the main reference point, with community access and regular events; Funchal itself has smaller, independent spaces worth checking case by case, since the offering changes often.",
+      sources: [
+        { label: "Digital Nomads Madeira", url: "https://digitalnomads.startupmadeira.eu/" },
+      ],
+    },
+  },
+  bansko: {
+    visaFiscal: {
+      content: "As a Spanish citizen, you don't need a visa to live in Bansko: Bulgaria has been an EU member since 2007 and the right to free movement applies directly. It's enough to enter with your national ID or passport and, if the stay exceeds 90 days, register your address at the local police station (through the accommodation's owner) and, if you'll be billing locally or exceed the tax residency thresholds, apply for a Bulgarian tax identification number.\n\nBulgaria has no specific digital nomad visa; for non-EU nationalities the usual route is the Type D residence permit for independent economic activity or employment, processed at the relevant Bulgarian consulate before traveling.\n\nOn tax matters, Bulgaria stands out for having one of the lowest rates in the EU: a flat 10% personal income tax, with no progressive brackets. Someone is considered a Bulgarian tax resident if they spend more than 183 days in the country within a 12-month period or have their center of vital interests there.",
+      sources: [
+        { label: "Long-term residence in Bulgaria – Ministry of Foreign Affairs of Bulgaria", url: "https://www.mfa.bg/en/consular-services/foreigners/long-term-residence" },
+        { label: "Bulgaria personal income tax – KPMG Tax Rates Online", url: "https://kpmg.com/xx/en/home/insights/2011/12/bulgaria-income-tax.html" },
+      ],
+    },
+    sanidad: {
+      content: "Bansko is a small mountain town, best known for its ski resort, so its own hospital offering is limited: it has a municipal hospital (MHAT Bansko) for basic care and minor emergencies, while more complex cases are usually referred to Sofia or Blagoevgrad (about 1-1.5 hours by car).\n\nAs elsewhere in Bulgaria, ZK Bulstrad, DZI or Allianz Bulgaria offer private health insurance with indicative premiums from about €30-60/month for a young adult, noticeably below the Western European average. SafetyWing pricing stays in line with the rest of Bulgaria.\n\nIndicative out-of-pocket prices without insurance: GP visit, €20-40; specialist, €30-60; emergency care, €40-100 — clearly lower than Sofia or Western European capitals.",
+      sources: [
+        { label: "MHAT Bansko (Multiprofile Hospital for Active Treatment)", url: "https://www.mbal-bansko.com/" },
+        { label: "Insurance for Nomads, by Nomads – SafetyWing", url: "https://safetywing.com/nomad-insurance" },
+      ],
+    },
+    barrios: {
+      content: "Bansko is a small town, so the choice matters more for proximity to the center and the nomad community than for distinct \"neighborhoods\":\n1. **Bansko town center** — by the main square and the church, with the highest concentration of restaurants, bars and the digital nomad community; indicative rent between €350 and €600/month for a one-bedroom apartment.\n2. **Ski resort area (Gondola area)** — geared more toward winter tourism, with seasonal apartments and somewhat higher winter prices; between €400 and €700/month.\n3. **Town outskirts** — cheaper, quieter options a short drive or bike ride from the center; from €250-450/month.\n\nBansko is known within the digital nomad community for Coworking Bansko (driven by the Nomad Cruise/Coworkers Bansko project), one of Eastern Europe's earliest digital nomad hubs, with plans from about €100-150/month; there are also several cafés with high-speed wifi that function as informal workspaces.",
+      sources: [
+        { label: "Coworkers Bansko", url: "https://www.coworkersbansko.com/" },
+      ],
+    },
+  },
+  "cluj-napoca": {
+    visaFiscal: {
+      content: "As a Spanish citizen, you don't need a visa to live in Cluj-Napoca: Romania has been an EU member since 2007 and the right to free movement applies directly. It's enough to enter with your national ID or passport and, if the stay exceeds 90 days, register your address with the local Inspectoratul General pentru Imigrări (IGI) and, where applicable, apply for the Cod Numeric Personal (CNP), Romania's personal ID number needed to bill locally or open bank accounts.\n\nRomania does have its own digital nomad visa, introduced in 2022, aimed at non-EU nationalities: it requires monthly income of at least 3 times the Romanian average gross salary (a figure updated yearly) over the 6 months prior to the application, health insurance and a clean criminal record, and is processed at the relevant Romanian consulate.\n\nOn tax matters, Romania applies a flat 10% personal income tax, one of the lowest in the EU. Cluj-Napoca is also the country's leading tech hub (home to companies like Bosch, Betfair, Endava and Bitdefender), making it a particularly active destination for IT nomads and freelancers.",
+      sources: [
+        { label: "Romania Digital Nomad Visa – Ministry of Foreign Affairs of Romania", url: "https://www.mae.ro/en/node/2016" },
+        { label: "Romania personal income tax – KPMG Tax Rates Online", url: "https://kpmg.com/xx/en/home/insights/2011/12/romania-income-tax.html" },
+      ],
+    },
+    sanidad: {
+      content: "Cluj-Napoca has some of the best hospital infrastructure in Romania outside Bucharest, thanks to its medical university tradition (Universitatea de Medicină și Farmacie \"Iuliu Hațieganu\"). Notable private options include Regina Maria and MedLife, two of the country's leading private networks, with their own clinics and hospitals in the city.\n\nPrivate health insurance premiums in Romania tend to run lower than in Western Europe: indicatively €25-60/month for a young adult with Regina Maria or MedLife, depending on coverage level. SafetyWing pricing is similar to other Eastern European destinations.\n\nIndicative out-of-pocket prices without insurance: GP visit, €15-35; specialist, €25-60; emergency care, €30-80.",
+      sources: [
+        { label: "Regina Maria – Cluj-Napoca", url: "https://www.reginamaria.ro/" },
+        { label: "MedLife", url: "https://www.medlife.ro/" },
+      ],
+    },
+    barrios: {
+      content: "Recommended neighborhoods for digital nomads include:\n1. **Centru (Historic Center)** — the most central and lively area, by Piața Unirii; indicative rent between €400 and €700/month.\n2. **Zorilor** — residential and quiet, popular with students and professionals for its proximity to university campuses; between €350 and €550/month.\n3. **Gheorgheni** — modern, with shopping centers and good transport links; between €380 and €600/month.\n4. **Mărăști** — residential and somewhat more affordable, with parks and good amenities; between €320 and €500/month.\n5. **Grigorescu** — near Cetățuia Hill, with views and a university atmosphere; between €350 and €550/month.\n\nFor coworking, Cluj-Napoca has an established scene thanks to its tech profile: Impact Hub Cluj offers plans from about €100-150/month; Spaces (IWG group) has a downtown location from €150-200/month; and several smaller independent spaces round out the offering, though it's worth confirming current pricing directly.",
+      sources: [
+        { label: "Impact Hub Cluj-Napoca", url: "https://cluj.impacthub.net/" },
+        { label: "Spaces Cluj-Napoca", url: "https://www.spacesworks.com/cluj-napoca/" },
+      ],
+    },
+  },
+  oaxaca: {
+    visaFiscal: {
+      content: "Mexico has no specific \"digital nomad\" visa, but the Temporary Resident Visa is the route Spanish or EU remote workers use in practice. The application must start at the Mexican consulate in the country of residence (it cannot be processed once already in Mexico), and it's worth booking an appointment two or more months in advance.\n\nApplicants must show economic solvency: monthly income of $2,500-4,000 sustained over 6-12 months, or savings of $40,000-70,000 held over that same period (exact amounts vary slightly by consulate). Consular fees run around $40-50, and once in Mexico, when exchanging for the resident card at the INM, the cost depends on the years requested: from about $200-300 for 1 year up to $600-750 for 4 years.\n\nThe visa is initially granted for 1 year and is renewable up to a cumulative maximum of 4 years of temporary residence. Income tax (ISR) for tax residents is progressive, with marginal rates between 1.92% and 35%, with the top bracket applying above roughly 5.1 million MXN of annual taxable income (2026 reference figure).",
+      sources: [
+        { label: "Citizen Remote — Mexico Digital Nomad Visa / Temporary Resident Visa 2026", url: "https://citizenremote.com/visas/mexico/" },
+        { label: "Taxes for Expats — Mexico Digital Nomad Visa: 2026 Tax Rules", url: "https://www.taxesforexpats.com/country-guides/mexico/mexico-digital-nomad-visa.html" },
+      ],
+    },
+    sanidad: {
+      content: "Oaxaca de Juárez has a more modest private hospital offering than Mexico City or Guadalajara, given its size. Private options include mid-tier local hospitals geared toward general and emergency care; for highly specialized or complex procedures, patients typically travel to Mexico City or Puebla. We were unable to verify, from reliable and current sources, the name and exact pricing of the city's leading private hospital, so it's worth confirming the specific option with the local community or the consulate before you need it.\n\nAs a general reference for Mexico, a private GP visit typically runs 500-900 MXN ($28-50) and a specialist consultation 800-1,500 MXN ($45-85), somewhat below Guadalajara or Mexico City prices.\n\nFor residents coming from Spain/the EU, routine vaccines (MMR, Tdap, seasonal flu) plus hepatitis A are recommended, following standard CDC guidance for Mexico.",
+      sources: [
+        { label: "CDC — Travel Health Notices: Mexico", url: "https://wwwnc.cdc.gov/travel/destinations/traveler/none/mexico" },
+      ],
+    },
+    barrios: {
+      content: "Digital nomad life in Oaxaca revolves mainly around the historic center and its immediate surroundings, since it's a compact and very walkable city.\n\n1. **Centro Histórico** — the city's cultural and touristic heart, with the Zócalo, markets and the highest density of cafés; indicative rent between $500 and $1,000/month for a furnished one-bedroom apartment, with notable variation by property quality.\n2. **Jalatlaco** — a traditional, colorful neighborhood, very popular with expats for its artistic, quiet atmosphere; between $450 and $850/month.\n3. **Xochimilco (Oaxaca)** — historic, with a flower market and cobblestone streets, somewhat cheaper than the center; between $350 and $650/month.\n4. **Reforma** — residential and modern, with more supermarkets and services; between $400 and $750/month.\n\nOaxaca has a more limited coworking offering than other Mexican cities in the catalog: there are small independent spaces and numerous wifi-equipped cafés that function as informal workspaces, but we were unable to verify current, specific pricing for a leading coworking space; it's worth checking the offering directly on arrival, since it changes fairly often.",
+      sources: [
+        { label: "Oaxaca neighborhoods guide – Oaxaca Cultura", url: "https://oaxacacultura.com/" },
+      ],
+    },
+  },
+  dahab: {
+    visaFiscal: {
+      content: "Egypt offers Spanish citizens an electronic visa (e-Visa) or a visa on arrival at major airports, at an indicative cost of about $25 and valid for 30 days, extendable once inside the country at the Passports, Immigration and Nationality Administration offices. There is no specific digital nomad visa.\n\nFor longer stays, the usual route among Dahab's nomad and expat community is chaining tourist visa extensions or periodically leaving and re-entering (a \"visa run\"), a widespread practice but one worth planning with margin, since rules and their practical application can vary. Egypt also offers a residency-by-real-estate-investment program (from around $100,000, an indicative figure subject to change), aimed at those seeking a more stable medium-term route, though it's not the usual option for a passing-through digital nomad.\n\nOn tax matters, Egypt applies a progressive income tax of up to 27.5% for tax residents (those exceeding 183 days in the country), though in practice most digital nomads in Dahab keep paying taxes in their home country, since they don't bill locally or exceed Egyptian tax residency thresholds.",
+      sources: [
+        { label: "Egypt e-Visa – Ministry of Foreign Affairs of Egypt", url: "https://www.visa2egypt.gov.eg/" },
+        { label: "Egypt Personal Income Tax – KPMG Tax Rates Online", url: "https://kpmg.com/xx/en/home/insights/2011/12/egypt-income-tax.html" },
+      ],
+    },
+    sanidad: {
+      content: "Dahab is a small town on the Sinai coast, so its hospital infrastructure is limited: it has local clinics and a modest public hospital for basic and minor emergency care (common among the diving community, for decompression incidents, for which there is a hyperbaric chamber in the area). For more serious cases, patients usually travel to Sharm El Sheikh (about 1-1.5 hours by car), which has higher-level private hospitals geared toward international tourism.\n\nGiven the town's profile (diving, adventure tourism), insurance with medical evacuation coverage and diving/water sports cover is especially advisable; SafetyWing and World Nomads are common choices among the nomad community, with indicative premiums similar to other mid-priced destinations in the catalog.\n\nFor residents coming from Spain/the EU, routine vaccines, hepatitis A and B, and considering the typhoid vaccine are recommended, following CDC guidance for Egypt; there is no relevant yellow fever risk.",
+      sources: [
+        { label: "CDC — Travel Health Notices: Egypt", url: "https://wwwnc.cdc.gov/travel/destinations/traveler/none/egypt" },
+        { label: "World Nomads travel insurance", url: "https://www.worldnomads.com/" },
+      ],
+    },
+    barrios: {
+      content: "Dahab is a small town organized along the coastline, so the choice comes down to stretch of beach more than strict neighborhoods:\n1. **Mashraba** — the town's nerve center, with the seafront promenade, restaurants, dive shops and the highest concentration of social life; indicative rent between $200 and $500/month for a one-bedroom apartment.\n2. **Asalah** — to the north, a neighborhood of Bedouin origin with a more local, quiet feel, somewhat cheaper; between $200 and $400/month.\n3. **Lighthouse (Al Manara)** — very popular with the nomad and backpacker community, with affordable \"beach camps,\" wifi cafés and an informal remote-work vibe; between $200 and $450/month.\n4. **Blue Hole / Ras Abu Galum area** — geared more toward diving and nature, with very little permanent residential housing.\n\nDahab has no formal coworking offering comparable to other destinations in the catalog: the nomad community works mainly from wifi cafés in the Mashraba and Lighthouse areas, or from accommodations with common spaces geared toward long stays; it's worth checking connection speed on the ground, since it can be inconsistent.",
+      sources: [
+        { label: "Dahab digital nomad guide – Nomad List community reports", url: "https://nomadlist.com/dahab" },
+      ],
+    },
+  },
 };
