@@ -10,11 +10,11 @@ Londres es, de largo, la primera ciudad que se le ocurre a cualquiera que piense
 
 Coste de vida: Londres, la más cara de las tres
 
-Londres ronda los 1.070 €/mes sin contar alquiler, frente a los 1.038 €/mes de Edimburgo y los 949 €/mes de Manchester. Manchester es un 11% más barata que la capital, y la diferencia en vivienda es todavía mayor.
+Londres ronda los 1.070 €/mes sin contar alquiler, frente a los 1.038 €/mes de Edimburgo y los 949 €/mes de Manchester. Manchester es un 11% más barata que la capital.
 
 Calidad de vida: Londres, la última
 
-Edimburgo puntúa 9,7 sobre 10 en calidad de vida general, Manchester 8,5 y Londres 8,2, según los índices cruzados de Numbeo que usa Roavio. La capital británica queda en último lugar de las tres, y Edimburgo le saca una ventaja de más de un punto y medio.
+Edimburgo puntúa 9,7 sobre 10 en calidad de vida general, Manchester 8,5 y Londres 8,2, según los índices cruzados de Numbeo que usa Roavio. La capital británica queda en último lugar de las tres, y Edimburgo le saca una ventaja de un punto y medio.
 
 Seguridad: Edimburgo gana, pero Londres supera a Manchester
 
@@ -34,11 +34,11 @@ London is, by far, the first city that comes to mind for anyone thinking of the 
 
 Cost of living: London, the most expensive of the three
 
-London runs around €1,070/month excluding rent, versus €1,038/month in Edinburgh and €949/month in Manchester. Manchester is 11% cheaper than the capital, and the gap in housing is even larger.
+London runs around €1,070/month excluding rent, versus €1,038/month in Edinburgh and €949/month in Manchester. Manchester is 11% cheaper than the capital.
 
 Quality of life: London, last
 
-Edinburgh scores 9.7 out of 10 on overall quality of life, Manchester 8.5, and London 8.2, per the cross-referenced Numbeo indices Roavio uses. The British capital comes in last of the three, and Edinburgh leads it by more than a point and a half.
+Edinburgh scores 9.7 out of 10 on overall quality of life, Manchester 8.5, and London 8.2, per the cross-referenced Numbeo indices Roavio uses. The British capital comes in last of the three, and Edinburgh leads it by a point and a half.
 
 Safety: Edinburgh wins, but London beats Manchester
 

@@ -5073,7 +5073,7 @@ export const cities: City[] = [
     hasBeach: true,
     bestTimeToVisit: "Abril – Junio / Septiembre – Octubre",
     pros: ["Playa de Waikiki y naturaleza volcánica a minutos del centro", "Clima tropical agradable durante todo el año", "Cultura polinesia única, con una gastronomía propia muy reconocida", "Internet entre los más rápidos de todo el catálogo"],
-    cons: ["Uno de los destinos más caros de todo el catálogo de Roavio", "Muy aislada, con vuelos largos y diferencia horaria de 12 horas con España", "Visado estadounidense limitado a 90 días sin trámite específico para trabajar en remoto"],
+    cons: ["Uno de los destinos más caros de todo el catálogo de Roavio", "Muy aislada, con vuelos largos y diferencia horaria de 11 a 12 horas con España", "Visado estadounidense limitado a 90 días sin trámite específico para trabajar en remoto"],
     sources: {
       costOfLiving: "https://www.numbeo.com/cost-of-living/in/Honolulu",
       internet: internetSource,
