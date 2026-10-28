@@ -18,7 +18,7 @@ Aquí no hay color: la velocidad media de banda ancha fija en Hungría ronda los
 
 Seguridad y calidad de vida: Praga por delante
 
-Praga puntúa notablemente mejor tanto en seguridad (7,5 sobre 10 frente a 6,6 en Budapest, según el índice de criminalidad de Numbeo) como en calidad de vida general (8,8 frente a 7,0), una de las diferencias más amplias de toda la comparativa de ciudades de Roavio. Praga combina sanidad, transporte y bajos niveles de contaminación con un entorno muy cuidado; Budapest compensa con un coste de vida algo más bajo y una escena cultural y gastronómica igualmente rica, aunque con inviernos igual de fríos y grises que los de Praga.
+Praga puntúa notablemente mejor tanto en seguridad (7,9 sobre 10 frente a 7,3 en Budapest, según el índice de seguridad de Roavio) como en calidad de vida general (8,9 frente a 7,7), con una ventaja clara en calidad de vida. Praga combina sanidad, transporte y bajos niveles de contaminación con un entorno muy cuidado; Budapest compensa con un coste de vida algo más bajo y una escena cultural y gastronómica igualmente rica, aunque con inviernos igual de fríos y grises que los de Praga.
 
 Visado y fiscalidad: sin trámite migratorio para un español
 
@@ -49,7 +49,7 @@ No contest here: average fixed broadband speed in Hungary runs around 237 Mbps, 
 
 Safety and quality of life: Prague ahead
 
-Prague scores notably higher on both safety (7.5 out of 10 versus 6.6 in Budapest, per Numbeo's crime index) and overall quality of life (8.8 versus 7.0), one of the widest gaps across Roavio's entire city comparison. Prague combines healthcare, transport, and low pollution with a very well-kept environment; Budapest compensates with a somewhat lower cost of living and an equally rich cultural and food scene, though with winters just as cold and grey as Prague's.
+Prague scores notably higher on both safety (7.9 out of 10 versus 7.3 in Budapest, per Roavio's safety index) and overall quality of life (8.9 versus 7.7), with a clear edge in quality of life. Prague combines healthcare, transport, and low pollution with a very well-kept environment; Budapest compensates with a somewhat lower cost of living and an equally rich cultural and food scene, though with winters just as cold and grey as Prague's.
 
 Visa and taxes: no immigration paperwork for an EU citizen
 

@@ -18,7 +18,7 @@ Ambas ciudades comparten la misma velocidad media de banda ancha fija en Portuga
 
 Seguridad y calidad de vida
 
-En seguridad, ambas ciudades están muy igualadas: 6,6 sobre 10 en Oporto frente a 6,7 en Lisboa, una diferencia mínima. En calidad de vida general, Oporto se sitúa claramente por delante: 8,9 sobre 10 frente a 7,8 en Lisboa, reflejando un ritmo de vida más tranquilo, menos masificación turística y una ciudad más manejable a pie. Lisboa compensa con una oferta cultural, gastronómica y de ocio bastante mayor, propia de una capital de más de medio millón de habitantes frente a los aproximadamente 230.000 de Oporto.
+En seguridad, las dos ciudades empatan: 7,5 sobre 10 tanto en Oporto como en Lisboa. En calidad de vida general, Oporto se sitúa por delante: 8,9 sobre 10 frente a 8,2 en Lisboa, reflejando un ritmo de vida más tranquilo, menos masificación turística y una ciudad más manejable a pie. Lisboa compensa con una oferta cultural, gastronómica y de ocio bastante mayor, propia de una capital de más de medio millón de habitantes frente a los aproximadamente 230.000 de Oporto.
 
 Visado y fiscalidad: exactamente lo mismo
 
@@ -45,7 +45,7 @@ Both cities share the same average fixed broadband speed in Portugal, around 237
 
 Safety and quality of life
 
-On safety, the two cities are very closely matched: 6.6 out of 10 in Porto versus 6.7 in Lisbon, a minimal difference. On overall quality of life, Porto clearly pulls ahead: 8.9 out of 10 versus 7.8 in Lisbon, reflecting a calmer pace of life, less tourist overcrowding, and a more walkable city. Lisbon compensates with considerably more culture, food, and nightlife, befitting a capital of over half a million people versus Porto's roughly 230,000.
+On safety, the two cities tie: 7.5 out of 10 in both Porto and Lisbon. On overall quality of life, Porto pulls ahead: 8.9 out of 10 versus 8.2 in Lisbon, reflecting a calmer pace of life, less tourist overcrowding, and a more walkable city. Lisbon compensates with considerably more culture, food, and nightlife, befitting a capital of over half a million people versus Porto's roughly 230,000.
 
 Visa and taxes: exactly the same
 

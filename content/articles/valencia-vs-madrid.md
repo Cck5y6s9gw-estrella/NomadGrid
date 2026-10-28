@@ -18,7 +18,7 @@ Ambas ciudades comparten la misma velocidad media de banda ancha fija en España
 
 Seguridad y calidad de vida
 
-Madrid puntúa mejor en seguridad (7,1 sobre 10 frente a 6,2 en Valencia, según el índice de criminalidad de Numbeo), un dato algo contraintuitivo si se piensa en el tamaño de cada ciudad, pero así lo reflejan los datos. En calidad de vida general ambas están prácticamente empatadas: 9,1 en Valencia frente a 9,0 en Madrid, dos de las puntuaciones más altas de toda la comparativa de ciudades de Roavio. La diferencia real está en el día a día: Madrid ofrece más oferta cultural, gastronómica y de ocio nocturno como capital de más de 3 millones de habitantes; Valencia compensa con playa en la propia ciudad, menos tráfico y una sensación general más relajada.
+Madrid puntúa mejor en seguridad (7,4 sobre 10 frente a 6,8 en Valencia, según el índice de seguridad de Roavio), un dato algo contraintuitivo si se piensa en el tamaño de cada ciudad, pero así lo reflejan los datos. En calidad de vida general ambas empatan con un 9,1, una de las puntuaciones más altas de toda la comparativa de ciudades de Roavio. La diferencia real está en el día a día: Madrid ofrece más oferta cultural, gastronómica y de ocio nocturno como capital de más de 3 millones de habitantes; Valencia compensa con playa en la propia ciudad, menos tráfico y una sensación general más relajada.
 
 Visado y fiscalidad: exactamente lo mismo
 
@@ -45,7 +45,7 @@ Both cities share the same average fixed broadband speed in Spain, around 263 Mb
 
 Safety and quality of life
 
-Madrid scores higher on safety (7.1 out of 10 versus 6.2 in Valencia, per Numbeo's crime index), a somewhat counterintuitive result given each city's size, but that's what the data shows. On overall quality of life the two are practically tied: 9.1 in Valencia versus 9.0 in Madrid, two of the highest scores across Roavio's entire city comparison. The real difference is in day-to-day life: Madrid offers more culture, food, and nightlife as a capital of over 3 million people; Valencia compensates with a beach right in the city, less traffic, and an overall more relaxed feel.
+Madrid scores higher on safety (7.4 out of 10 versus 6.8 in Valencia, per Roavio's safety index), a somewhat counterintuitive result given each city's size, but that's what the data shows. On overall quality of life the two tie at 9.1, one of the highest scores across Roavio's entire city comparison. The real difference is in day-to-day life: Madrid offers more culture, food, and nightlife as a capital of over 3 million people; Valencia compensates with a beach right in the city, less traffic, and an overall more relaxed feel.
 
 Visa and taxes: exactly the same
 

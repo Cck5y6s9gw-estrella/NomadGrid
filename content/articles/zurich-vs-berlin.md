@@ -1,8 +1,8 @@
 ---
 title_es: "Zúrich vs Berlín: ¿cuál es mejor para nómadas digitales en 2026?"
 title_en: "Zurich vs Berlin: Which Is Better for Digital Nomads in 2026?"
-dek_es: "La ciudad con mejor calidad de vida del catálogo de Roavio frente a la capital tecnológica más asequible de Europa Occidental: comparamos coste, internet, seguridad y trámites con datos reales."
-dek_en: "The city with the best quality of life in Roavio's catalog versus Western Europe's most affordable tech capital: we compare cost, internet, safety, and paperwork with real data."
+dek_es: "Una de las ciudades con mejor calidad de vida del catálogo de Roavio frente a la capital tecnológica más asequible de Europa Occidental: comparamos coste, internet, seguridad y trámites con datos reales."
+dek_en: "One of the cities with the best quality of life in Roavio's catalog versus Western Europe's most affordable tech capital: we compare cost, internet, safety, and paperwork with real data."
 date: "2026-09-18"
 cover: "https://images.unsplash.com/photo-1620563092215-0fbc6b55cfc5?w=1600&q=80"
 ---
@@ -10,7 +10,7 @@ Zúrich y Berlín representan dos maneras muy distintas de vivir en Europa Occid
 
 Coste de vida: Berlín es sensiblemente más barata
 
-El coste de vida sin alquiler en Zúrich ronda los 1.622 €/mes, frente a los 1.055 €/mes de Berlín, según el índice de Numbeo. Es una diferencia de más del 50%: Zúrich es, de hecho, la segunda ciudad más cara de todo el catálogo de Roavio, solo por detrás de Pekín, mientras que Berlín sigue siendo una de las capitales tecnológicas más asequibles de Europa Occidental, muy por debajo de Múnich, Londres o París.
+El coste de vida sin alquiler en Zúrich ronda los 1.622 €/mes, frente a los 1.055 €/mes de Berlín, según el índice de Numbeo. Es una diferencia de más del 50%: Zúrich es, de hecho, la ciudad más cara de todo el catálogo de Roavio, mientras que Berlín sigue siendo una de las capitales tecnológicas más asequibles de Europa Occidental, algo por debajo de Londres, Múnich o París y muy lejos de Zúrich, Basilea o Ginebra.
 
 Internet: ventaja clara para Zúrich
 
@@ -18,7 +18,7 @@ Suiza tiene uno de los internets más rápidos del mundo, con una velocidad medi
 
 Seguridad y calidad de vida: Zúrich, sin discusión
 
-Aquí la diferencia es la más amplia de toda la comparativa: Zúrich tiene una puntuación de seguridad de 7,6 sobre 10 frente al 5,5 de Berlín, y una calidad de vida de 9,9 frente a 8,5. Zúrich es, de hecho, la ciudad con mejor calidad de vida de las 125 del catálogo de Roavio, gracias a una combinación de sanidad, transporte, poca contaminación y estabilidad económica poco frecuente en cualquier otra ciudad. Berlín compensa con una vida cultural y nocturna mucho más intensa, y una comunidad internacional de freelancers de las más grandes de Europa.
+Aquí Zúrich saca ventaja en ambas métricas: tiene una puntuación de seguridad de 8,2 sobre 10 frente al 6,4 de Berlín, y una calidad de vida de 9,8 frente a 8,9. Zúrich está, de hecho, entre las ciudades con mejor calidad de vida de las 265 del catálogo de Roavio (9,8, junto a Ámsterdam, Múnich o Copenhague), gracias a una combinación de sanidad, transporte, poca contaminación y estabilidad económica poco frecuente en cualquier otra ciudad. Berlín compensa con una vida cultural y nocturna mucho más intensa, y una comunidad internacional de freelancers de las más grandes de Europa.
 
 Visado y fiscalidad: fácil para un español en ambos casos, pero no igual de simple
 
@@ -41,7 +41,7 @@ Zurich and Berlin represent two very different ways of living in Western Europe 
 
 Cost of living: Berlin is noticeably cheaper
 
-Cost of living excluding rent in Zurich runs around €1,622/month, versus €1,055/month in Berlin, per Numbeo's index. That's a gap of more than 50%: Zurich is in fact the second most expensive city in Roavio's entire catalog, behind only Beijing, while Berlin remains one of Western Europe's most affordable tech capitals, well below Munich, London, or Paris.
+Cost of living excluding rent in Zurich runs around €1,622/month, versus €1,055/month in Berlin, per Numbeo's index. That's a gap of more than 50%: Zurich is in fact the most expensive city in Roavio's entire catalog, while Berlin remains one of Western Europe's most affordable tech capitals, somewhat below London, Munich, or Paris and far from Zurich, Basel, or Geneva.
 
 Internet: a clear edge for Zurich
 
@@ -49,7 +49,7 @@ Switzerland has one of the fastest internet connections in the world, with an av
 
 Safety and quality of life: Zurich, no contest
 
-This is the widest gap in the whole comparison: Zurich scores 7.6 out of 10 on safety versus 5.5 in Berlin, and 9.9 on quality of life versus 8.5. Zurich is, in fact, the city with the best quality of life among Roavio's 125 cities, thanks to a combination of healthcare, transport, low pollution, and economic stability rarely found elsewhere. Berlin compensates with a much more intense cultural and nightlife scene, and one of Europe's largest international freelancer communities.
+Here Zurich comes out ahead on both metrics: it scores 8.2 out of 10 on safety versus 6.4 in Berlin, and 9.8 on quality of life versus 8.9. Zurich is, in fact, among the cities with the best quality of life of Roavio's 265 (9.8, alongside Amsterdam, Munich, or Copenhagen), thanks to a combination of healthcare, transport, low pollution, and economic stability rarely found elsewhere. Berlin compensates with a much more intense cultural and nightlife scene, and one of Europe's largest international freelancer communities.
 
 Visa and taxes: easy for a Spanish citizen in both, but not equally simple
 

@@ -1,12 +1,12 @@
 ---
 title_es: "San Juan vs Puerto Vallarta: ¿cuál es mejor para nómadas digitales en 2026?"
 title_en: "San Juan vs Puerto Vallarta: Which Is Better for Digital Nomads in 2026?"
-dek_es: "Dos capitales del nomadismo digital en playa americana, con la misma calidad de vida sobre el papel pero un coste y una seguridad muy distintos: comparamos ambas con datos reales."
-dek_en: "Two capitals of beach digital nomad life in the Americas, with the same quality of life on paper but very different cost and safety: we compare both with real data."
+dek_es: "Dos capitales del nomadismo digital en playa americana, con una calidad de vida parecida sobre el papel pero un coste y una seguridad muy distintos: comparamos ambas con datos reales."
+dek_en: "Two capitals of beach digital nomad life in the Americas, with a similar quality of life on paper but very different cost and safety: we compare both with real data."
 date: "2026-09-20"
 cover: "https://images.unsplash.com/photo-1645556655631-9764270324fa?w=1600&q=80"
 ---
-San Juan (Puerto Rico) y Puerto Vallarta (México) son, junto con Cancún y Playa del Carmen, dos de los destinos de playa más consolidados para nómadas digitales americanos, cada uno con su propia comunidad de expatriados y su propio incentivo particular: ventajas fiscales en un caso, comunidad y coste bajo en el otro. Ambas comparten idéntica puntuación de calidad de vida en el catálogo de Roavio, pero difieren mucho en todo lo demás. Comparamos ambas con datos reales.
+San Juan (Puerto Rico) y Puerto Vallarta (México) son, junto con Cancún y Playa del Carmen, dos de los destinos de playa más consolidados para nómadas digitales americanos, cada uno con su propia comunidad de expatriados y su propio incentivo particular: ventajas fiscales en un caso, comunidad y coste bajo en el otro. Sus puntuaciones de calidad de vida en el catálogo de Roavio son cercanas, pero difieren mucho en todo lo demás. Comparamos ambas con datos reales.
 
 Coste de vida: Puerto Vallarta, sensiblemente más barata
 
@@ -14,15 +14,15 @@ El coste de vida sin alquiler en San Juan ronda los 1.025 €/mes, frente a los 
 
 Seguridad: Puerto Vallarta, con ventaja clara
 
-Aquí la diferencia es notable: Puerto Vallarta puntúa 6,5 sobre 10 en seguridad, frente al 3,3 de San Juan, uno de los valores más bajos de todo el catálogo de Roavio. La criminalidad en Puerto Rico, especialmente ligada a delitos contra la propiedad, contrasta con un Puerto Vallarta que, pese a estar en México, se beneficia de ser un núcleo turístico y de expatriados con mayor vigilancia y menor incidencia delictiva que otras zonas del país.
+Aquí la diferencia es notable: Puerto Vallarta puntúa 5,2 sobre 10 en seguridad, frente al 3,5 de San Juan, uno de los valores más bajos del catálogo de Roavio para una ciudad de destino turístico. La criminalidad en Puerto Rico, especialmente ligada a delitos contra la propiedad, contrasta con un Puerto Vallarta que, pese a estar en México, se beneficia de ser un núcleo turístico y de expatriados con mayor vigilancia y menor incidencia delictiva que otras zonas del país.
 
 Internet: San Juan, algo por delante
 
 La velocidad media de internet fijo en Puerto Rico ronda los 119 Mbps, frente a unos 92 Mbps en México. Ambas cifras son suficientes para trabajo remoto exigente, pero San Juan tiene cierta ventaja gracias a su infraestructura, integrada con la red de Estados Unidos.
 
-Calidad de vida: empate técnico
+Calidad de vida: ventaja para San Juan
 
-Ambas ciudades comparten exactamente la misma puntuación de calidad de vida en el catálogo de Roavio: 7,0 sobre 10. Es un empate revelador, porque demuestra que llegan a ese resultado por caminos muy distintos: San Juan compensa su menor seguridad con mejor sanidad, infraestructura e integración con EE. UU.; Puerto Vallarta compensa su menor desarrollo económico con más seguridad percibida y un coste de vida mucho más bajo.
+San Juan puntúa 8,0 sobre 10 en calidad de vida en el catálogo de Roavio, frente a 7,4 de Puerto Vallarta. La diferencia es moderada y llega por caminos muy distintos: San Juan compensa su menor seguridad con mejor sanidad, infraestructura e integración con EE. UU.; Puerto Vallarta compensa su menor desarrollo económico con más seguridad percibida y un coste de vida mucho más bajo.
 
 Visado y fiscalidad: dos mundos distintos
 
@@ -42,7 +42,7 @@ Si el presupuesto y la seguridad percibida son tu prioridad, Puerto Vallarta tie
 
 ---EN---
 
-San Juan (Puerto Rico) and Puerto Vallarta (Mexico) are, along with Cancún and Playa del Carmen, two of the most established beach destinations for digital nomads in the Americas, each with its own expat community and its own particular draw: tax advantages on one side, community and low cost on the other. Both share an identical quality-of-life score in Roavio's catalog, but differ widely on everything else. We compare both with real data.
+San Juan (Puerto Rico) and Puerto Vallarta (Mexico) are, along with Cancún and Playa del Carmen, two of the most established beach destinations for digital nomads in the Americas, each with its own expat community and its own particular draw: tax advantages on one side, community and low cost on the other. Their quality-of-life scores in Roavio's catalog are close, but they differ widely on everything else. We compare both with real data.
 
 Cost of living: Puerto Vallarta, noticeably cheaper
 
@@ -50,15 +50,15 @@ Cost of living excluding rent in San Juan runs around €1,025/month, versus €
 
 Safety: Puerto Vallarta, with a clear edge
 
-The gap here is notable: Puerto Vallarta scores 6.5 out of 10 on safety, versus 3.3 in San Juan, one of the lowest figures in Roavio's entire catalog. Crime in Puerto Rico, especially property-related, contrasts with a Puerto Vallarta that, despite being in Mexico, benefits from being a tourist and expat hub with heavier oversight and lower crime incidence than other parts of the country.
+The gap here is notable: Puerto Vallarta scores 5.2 out of 10 on safety, versus 3.5 in San Juan, one of the lowest figures in Roavio's catalog for a tourist destination. Crime in Puerto Rico, especially property-related, contrasts with a Puerto Vallarta that, despite being in Mexico, benefits from being a tourist and expat hub with heavier oversight and lower crime incidence than other parts of the country.
 
 Internet: San Juan, slightly ahead
 
 Average fixed internet speed in Puerto Rico runs around 119 Mbps, versus about 92 Mbps in Mexico. Both figures are enough for demanding remote work, but San Juan has a bit of an edge thanks to its infrastructure, integrated with the US network.
 
-Quality of life: a technical tie
+Quality of life: San Juan ahead
 
-Both cities share the exact same quality-of-life score in Roavio's catalog: 7.0 out of 10. It's a revealing tie, because it shows they arrive at that result through very different paths: San Juan makes up for lower safety with better healthcare, infrastructure, and integration with the US; Puerto Vallarta makes up for less economic development with higher perceived safety and a much lower cost of living.
+San Juan scores 8.0 out of 10 on quality of life in Roavio's catalog, versus 7.4 for Puerto Vallarta. The gap is moderate and comes from very different paths: San Juan makes up for lower safety with better healthcare, infrastructure, and integration with the US; Puerto Vallarta makes up for less economic development with higher perceived safety and a much lower cost of living.
 
 Visa and taxes: two different worlds
 

@@ -18,7 +18,7 @@ Ambas ciudades comparten la misma velocidad media de banda ancha fija en España
 
 Seguridad y calidad de vida: Valencia por delante en ambas
 
-Valencia puntúa notablemente mejor tanto en seguridad (6,2 sobre 10 frente a 4,8 en Barcelona, según el índice de criminalidad de Numbeo) como en calidad de vida general (9,1 frente a 7,5), una de las diferencias más amplias de toda la comparativa de ciudades de Roavio. Barcelona compensa con una escala y una oferta cultural, gastronómica y de ocio muy superiores como segunda ciudad de España, además de una escena de startups más consolidada en torno al distrito 22@; Valencia ofrece una ciudad más manejable, con menos percepción de inseguridad por hurtos y un ritmo general más tranquilo.
+Valencia puntúa notablemente mejor tanto en seguridad (6,8 sobre 10 frente a 6,0 en Barcelona, según el índice de seguridad de Roavio) como en calidad de vida general (9,1 frente a 8,2), con ventaja para Valencia en las dos métricas. Barcelona compensa con una escala y una oferta cultural, gastronómica y de ocio muy superiores como segunda ciudad de España, además de una escena de startups más consolidada en torno al distrito 22@; Valencia ofrece una ciudad más manejable, con menos percepción de inseguridad por hurtos y un ritmo general más tranquilo.
 
 Visado y fiscalidad: exactamente lo mismo
 
@@ -45,7 +45,7 @@ Both cities share the same average fixed broadband speed in Spain, around 263 Mb
 
 Safety and quality of life: Valencia ahead on both
 
-Valencia scores notably higher on both safety (6.2 out of 10 versus 4.8 in Barcelona, per Numbeo's crime index) and overall quality of life (9.1 versus 7.5), one of the widest gaps across Roavio's entire city comparison. Barcelona compensates with a much larger scale and far richer culture, food, and nightlife scene as Spain's second city, plus a more established startup ecosystem around the 22@ district; Valencia offers a more manageable city, with less perceived insecurity from petty theft and an overall calmer pace.
+Valencia scores notably higher on both safety (6.8 out of 10 versus 6.0 in Barcelona, per Roavio's safety index) and overall quality of life (9.1 versus 8.2), with Valencia ahead on both metrics. Barcelona compensates with a much larger scale and far richer culture, food, and nightlife scene as Spain's second city, plus a more established startup ecosystem around the 22@ district; Valencia offers a more manageable city, with less perceived insecurity from petty theft and an overall calmer pace.
 
 Visa and taxes: exactly the same
 

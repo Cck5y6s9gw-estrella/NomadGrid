@@ -18,7 +18,7 @@ Ambas ciudades tienen infraestructura de fibra excelente para los estándares gl
 
 Seguridad y calidad de vida
 
-En seguridad, Lisboa se sitúa ligeramente por delante (6,7 sobre 10 frente a 6,2 en Valencia, según el índice de criminalidad de Numbeo), aunque ambas son ciudades seguras para los estándares europeos y muy por debajo del nivel de preocupación de otras grandes capitales. Donde Valencia se distancia claramente es en calidad de vida general: 9,1 sobre 10 frente a 7,8 en Lisboa, un índice que combina factores como sanidad, coste de vida, tráfico, contaminación y clima. La percepción habitual entre quienes han vivido en ambas es que Valencia se siente más "vivible" en el día a día, mientras que Lisboa compensa con más oferta cultural y una comunidad nómada aún más numerosa.
+En seguridad, Lisboa se sitúa ligeramente por delante (7,5 sobre 10 frente a 6,8 en Valencia, según el índice de seguridad de Roavio), aunque ambas son ciudades seguras para los estándares europeos y muy por debajo del nivel de preocupación de otras grandes capitales. Donde Valencia se distancia claramente es en calidad de vida general: 9,1 sobre 10 frente a 8,2 en Lisboa, un índice que combina factores como sanidad, coste de vida, tráfico, contaminación y clima. La percepción habitual entre quienes han vivido en ambas es que Valencia se siente más "vivible" en el día a día, mientras que Lisboa compensa con más oferta cultural y una comunidad nómada aún más numerosa.
 
 Visado y fiscalidad: la diferencia que más pesa en la decisión
 
@@ -45,7 +45,7 @@ Both cities have excellent fiber infrastructure by global standards: average fix
 
 Safety and quality of life
 
-On safety, Lisbon comes out slightly ahead (6.7 out of 10 versus 6.2 in Valencia, per Numbeo's crime index), though both are safe cities by European standards and well below the concern level of other major capitals. Where Valencia clearly pulls ahead is overall quality of life: 9.1 out of 10 versus 7.8 in Lisbon, an index combining factors like healthcare, cost of living, traffic, pollution, and climate. The common perception among people who've lived in both is that Valencia feels more "livable" day to day, while Lisbon compensates with more cultural offerings and an even larger nomad community.
+On safety, Lisbon comes out slightly ahead (7.5 out of 10 versus 6.8 in Valencia, per Roavio's safety index), though both are safe cities by European standards and well below the concern level of other major capitals. Where Valencia clearly pulls ahead is overall quality of life: 9.1 out of 10 versus 8.2 in Lisbon, an index combining factors like healthcare, cost of living, traffic, pollution, and climate. The common perception among people who've lived in both is that Valencia feels more "livable" day to day, while Lisbon compensates with more cultural offerings and an even larger nomad community.
 
 Visa and taxes: the difference that matters most
 
