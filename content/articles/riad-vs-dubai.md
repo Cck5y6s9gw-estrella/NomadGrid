@@ -14,7 +14,7 @@ Riad ronda los 791 €/mes sin contar alquiler, frente a los 900 €/mes de Dub�
 
 Internet: Dubái gana por goleada
 
-Aquí está la diferencia más determinante para quien trabaja en remoto: Dubái ofrece 356 Mbps de media, frente a los 122 Mbps de Riad, casi tres veces más rápido. Los Emiratos llevan años invirtiendo en infraestructura digital de primer nivel, mientras que Arabia Saudí todavía está poniéndose al día.
+Aquí está la diferencia más determinante para quien trabaja en remoto: Dubái ofrece 356 Mbps de media, frente a los 143 Mbps de Riad, casi dos veces y media más rápido. Los Emiratos llevan años invirtiendo en infraestructura digital de primer nivel, mientras que Arabia Saudí todavía está poniéndose al día.
 
 Seguridad: Riad, por delante
 
@@ -46,7 +46,7 @@ Riyadh runs around €791/month excluding rent, versus €900/month in Dubai, 12
 
 Internet: Dubai wins by a landslide
 
-Here's the most decisive difference for anyone working remotely: Dubai offers 356 Mbps on average, versus 122 Mbps in Riyadh — nearly three times faster. The UAE has spent years investing in top-tier digital infrastructure, while Saudi Arabia is still catching up.
+Here's the most decisive difference for anyone working remotely: Dubai offers 356 Mbps on average, versus 143 Mbps in Riyadh — about two and a half times faster. The UAE has spent years investing in top-tier digital infrastructure, while Saudi Arabia is still catching up.
 
 Safety: Riyadh ahead
 
