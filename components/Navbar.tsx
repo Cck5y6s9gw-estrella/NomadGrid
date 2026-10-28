@@ -21,7 +21,7 @@ export default function Navbar() {
   const links = [
     { href: "/cities", label: d.navCities },
     { href: "/match", label: d.navMatch },
-    { href: "/presupuesto", label: d.navBudget },
+    { href: "/calculadora", label: d.navBudget },
     { href: "/mapa", label: d.navMap },
     { href: "/compare", label: d.navCompare },
     { href: "/rankings", label: d.navRankings },

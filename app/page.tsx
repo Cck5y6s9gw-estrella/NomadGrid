@@ -55,8 +55,8 @@ export default function Home() {
         <Link href="/match" className="inline-block mt-5 text-sm text-accent hover:underline">
           {d.matchHomeCta} →
         </Link>
-        <Link href="/presupuesto" className="block mt-2 text-sm text-accent hover:underline">
-          {lang === "es" ? "Calculadora: ¿dónde rinde más tu presupuesto?" : "Calculator: where does your budget go furthest?"} →
+        <Link href="/calculadora" className="block mt-2 text-sm text-accent hover:underline">
+          {lang === "es" ? "Calculadora de ciudades: ¿dónde rinde más tu presupuesto?" : "City calculator: where does your budget go furthest?"} →
         </Link>
       </section>
 

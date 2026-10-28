@@ -153,7 +153,7 @@ async function buildImage(results: Result[], budget: number, rent: number, lang:
   ctx.fillText(lang === "es" ? "Calcula la tuya en" : "Calculate yours at", 70, H - 78);
   ctx.fillStyle = ORANGE;
   ctx.font = "bold 34px system-ui, sans-serif";
-  ctx.fillText("roavio.es/presupuesto", 70, H - 36);
+  ctx.fillText("roavio.es/calculadora", 70, H - 36);
 
   return new Promise((res) => canvas.toBlob((b) => res(b), "image/png"));
 }
@@ -223,7 +223,7 @@ export default function PresupuestoPage() {
     const text = es
       ? `Con ${fmt(budget, lang)} €/mes y ${fmt(rent, lang)} € de alquiler, mi mejor ciudad nómada es ${tCity(top.name, lang)}. Calcula la tuya:`
       : `With €${fmt(budget, lang)}/month and €${fmt(rent, lang)} rent, my best nomad city is ${tCity(top.name, lang)}. Calculate yours:`;
-    const intent = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent("https://www.roavio.es/presupuesto")}`;
+    const intent = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent("https://www.roavio.es/calculadora")}`;
     trackEvent("budget_share", { city: top.slug });
     window.open(intent, "_blank", "noopener,noreferrer");
   }
@@ -265,7 +265,7 @@ export default function PresupuestoPage() {
         <div className="text-center mb-10">
           <span className="inline-flex items-center gap-1.5 text-xs font-medium tracking-wide text-accent border border-accent/40 bg-accent/10 rounded-full px-3 py-1 mb-6">
             <IconCoin className="w-3.5 h-3.5" />
-            {es ? "Calculadora" : "Calculator"}
+            {es ? "Calculadora de ciudades" : "City calculator"}
           </span>
           <h1 className="font-serif text-4xl sm:text-5xl text-foreground tracking-tight mb-4">
             {es ? "¿Dónde rinde más tu dinero?" : "Where does your money go furthest?"}

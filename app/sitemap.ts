@@ -12,7 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/compare`, changeFrequency: "monthly", priority: 0.6 },
     { url: `${BASE_URL}/rankings`, changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE_URL}/match`, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${BASE_URL}/presupuesto`, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE_URL}/calculadora`, changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/mapa`, changeFrequency: "weekly", priority: 0.7 },
     { url: `${BASE_URL}/articulos`, changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE_URL}/feedback`, changeFrequency: "yearly", priority: 0.3 },
