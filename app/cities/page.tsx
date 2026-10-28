@@ -3,11 +3,11 @@
 import { useState } from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
-import FavoriteButton from "@/components/FavoriteButton";
-import { cities, City } from "@/data/cities";
+import CityCard from "@/components/CityCard";
+import { cities } from "@/data/cities";
 import { useLanguage } from "@/lib/i18n";
 import { t, formatMoney, tCountry, tContinent, tCity } from "@/lib/dictionary";
-import { IconShield, IconWifi, IconUmbrella, IconStar } from "@/components/Icon";
+import { IconUmbrella } from "@/components/Icon";
 
 const continentValues = ["Todos", "Europa", "Asia", "América", "Norteamérica", "África", "Oceanía"];
 
@@ -47,7 +47,7 @@ export default function CitiesPage() {
       <div className="max-w-7xl mx-auto px-6 pt-24 pb-16">
         {/* Header */}
         <div className="mb-8">
-          <h1 className="text-3xl font-semibold mb-1">{d.exploreTitle}</h1>
+          <h1 className="font-display text-5xl mb-2">{d.exploreTitle}</h1>
           <p className="text-muted text-sm">{d.citiesFound(filtered.length)}</p>
         </div>
 
@@ -114,7 +114,7 @@ export default function CitiesPage() {
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {filtered.map((city, i) => (
-              <CityCard key={city.slug} city={city} lang={lang} monthly={d.monthly} index={i} />
+              <CityCard key={city.slug} city={city} index={i} />
             ))}
           </div>
         )}
@@ -126,41 +126,5 @@ export default function CitiesPage() {
         <Link href="/feedback" className="hover:text-accent transition-colors">{d.footerFeedback}</Link>
       </footer>
     </main>
-  );
-}
-
-function CityCard({ city, lang, monthly, index }: { city: City; lang: "es" | "en"; monthly: string; index: number }) {
-  return (
-    <Link
-      href={`/cities/${city.slug}`}
-      style={{ animationDelay: `${Math.min(index, 8) * 45}ms` }}
-      className="animate-pop-in group relative overflow-hidden rounded-3xl border border-white/10 shadow-lg shadow-black/30 hover:border-accent/70 hover:shadow-accent/10 transition-all duration-300"
-    >
-      <img
-        src={city.imageUrl}
-        alt={tCity(city.name, lang)}
-        className="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-500"
-      />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/25 to-transparent" />
-      <FavoriteButton citySlug={city.slug} className="absolute top-3 right-3" />
-      <div className="absolute bottom-0 left-0 right-0 p-4">
-        <div className="flex items-end justify-between mb-2">
-          <div>
-            <h3 className="font-serif text-base leading-tight text-white">{tCity(city.name, lang)}</h3>
-            <p className="text-xs text-white/65">{tCountry(city.country, lang)}</p>
-          </div>
-          <div className="text-right">
-            <div className="text-sm font-medium text-white">{city.currency} {formatMoney(city.costPerMonth, lang)}</div>
-            <div className="text-xs text-white/65">{monthly}</div>
-          </div>
-        </div>
-        <div className="flex gap-1.5 flex-wrap">
-          {city.hasBeach && <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full"><IconUmbrella className="w-3 h-3 text-accent" /></span>}
-          <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full inline-flex items-center gap-1"><IconStar className="w-3 h-3 text-accent" />{city.qualityOfLife}</span>
-          <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full inline-flex items-center gap-1"><IconShield className="w-3 h-3 text-accent" />{city.safetyScore}</span>
-          <span className="text-xs bg-card border border-border px-2 py-0.5 rounded-full inline-flex items-center gap-1"><IconWifi className="w-3 h-3 text-accent" />{city.internetSpeed}M</span>
-        </div>
-      </div>
-    </Link>
   );
 }

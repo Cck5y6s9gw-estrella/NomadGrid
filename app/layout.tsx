@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Anton } from "next/font/google";
+import { Geist, Geist_Mono, Anton, Instrument_Serif } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Analytics } from "@vercel/analytics/next";
 import { GoogleAnalytics } from "@next/third-parties/google";
@@ -15,6 +15,13 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const instrument = Instrument_Serif({
+  variable: "--font-instrument",
+  subsets: ["latin"],
+  weight: ["400"],
+  style: ["normal", "italic"],
 });
 
 const anton = Anton({
@@ -84,7 +91,7 @@ export default function RootLayout({
       <html
         lang="es"
         data-theme="dark"
-        className={`${geistSans.variable} ${geistMono.variable} ${anton.variable} h-full antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${anton.variable} ${instrument.variable} h-full antialiased`}
       >
         <head>
           {/* Evita el parpadeo de tema: fija data-theme antes del primer

@@ -8,6 +8,8 @@
   --border: #1f2430;
   --accent: #ea580c;
   --card: #121723;
+  --glass: rgba(14, 20, 34, 0.68);
+  --line: rgba(255, 255, 255, 0.1);
   color-scheme: dark;
 }
 
@@ -21,6 +23,8 @@
   --border: #e4e7ec;
   --accent: #ea580c;
   --card: #f5f6f8;
+  --glass: rgba(255, 255, 255, 0.78);
+  --line: rgba(20, 24, 31, 0.1);
   color-scheme: light;
 }
 
@@ -34,6 +38,9 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-serif: var(--font-anton);
+  --font-display: var(--font-instrument), Georgia, serif;
+  --color-glass: var(--glass);
+  --color-line: var(--line);
 }
 
 body {
