@@ -171,7 +171,7 @@ function ComparePageInner() {
       <div className="max-w-6xl mx-auto px-6 pt-28 pb-20">
         <div className="mb-10">
           <div className="text-xs font-medium tracking-widest text-accent uppercase mb-3">{d.compareBadge}</div>
-          <h1 className="text-3xl font-semibold mb-2 tracking-tight">
+          <h1 className="text-5xl mb-2 tracking-tight">
             {d.compareTitle1} <span className="text-accent">{d.compareTitle2}</span>
           </h1>
           <p className="text-muted text-sm">{d.compareSubtitle}</p>

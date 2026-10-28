@@ -17,7 +17,7 @@ export default function ArticlesList({ articles }: { articles: Article[] }) {
         <div className="relative mx-auto max-w-5xl">
           <div className="flex items-start justify-between flex-wrap gap-4 mb-10">
             <div>
-              <h1 className="font-serif text-4xl tracking-tight mb-2">
+              <h1 className="font-serif text-5xl tracking-tight mb-2">
                 {lang === "es" ? "Artículos" : "Articles"}
               </h1>
               <p className="text-sm text-muted">

@@ -244,7 +244,7 @@ export default function MatchPage() {
               <IconCompass className="w-3.5 h-3.5" />
               {d.matchNavBadge}
             </span>
-            <h1 className="font-serif text-4xl sm:text-5xl text-foreground tracking-tight mb-4">{d.matchTitle}</h1>
+            <h1 className="font-serif text-5xl sm:text-5xl text-foreground tracking-tight mb-4">{d.matchTitle}</h1>
             <p className="text-muted text-lg max-w-xl mx-auto mb-8">{d.matchSubtitle}</p>
 
             <div className="flex justify-center -space-x-3 mb-9">
@@ -382,7 +382,7 @@ export default function MatchPage() {
               <span className="inline-flex w-14 h-14 rounded-2xl bg-accent/10 text-accent items-center justify-center mb-4">
                 <IconTrophy className="w-7 h-7" />
               </span>
-              <h1 className="font-serif text-3xl sm:text-4xl text-foreground tracking-tight mb-2">{d.matchResultsTitle}</h1>
+              <h1 className="font-serif text-5xl sm:text-5xl text-foreground tracking-tight mb-2">{d.matchResultsTitle}</h1>
               <p className="text-muted">{d.matchResultsSubtitle}</p>
             </div>
 

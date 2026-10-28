@@ -23,7 +23,7 @@ export default function MapLoader() {
       when="signed-in"
       fallback={
         <div className="w-full h-[calc(100vh-56px)] flex flex-col items-center justify-center gap-4 bg-background text-center px-6">
-          <h1 className="text-xl font-semibold text-foreground">{d.mapSignedOutTitle}</h1>
+          <h1 className="text-xl text-foreground">{d.mapSignedOutTitle}</h1>
           <p className="text-sm text-muted max-w-sm">{d.mapSignedOutSubtitle}</p>
           <SignUpButton mode="modal">
             <button className="bg-accent text-white px-6 py-2.5 rounded-full font-medium text-sm hover:opacity-90 transition-opacity">

@@ -26,7 +26,7 @@ export default function FavoritesPage() {
           <div className="text-xs font-medium tracking-widest text-accent uppercase mb-3">
             {d.navFavorites}
           </div>
-          <h1 className="text-3xl font-semibold mb-2 tracking-tight">{d.favoritesPageTitle}</h1>
+          <h1 className="text-5xl mb-2 tracking-tight">{d.favoritesPageTitle}</h1>
           <p className="text-muted text-sm max-w-xl">{d.favoritesPageSubtitle}</p>
         </div>
 

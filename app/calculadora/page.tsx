@@ -267,7 +267,7 @@ export default function PresupuestoPage() {
             <IconCoin className="w-3.5 h-3.5" />
             {es ? "Calculadora de ciudades" : "City calculator"}
           </span>
-          <h1 className="font-serif text-4xl sm:text-5xl text-foreground tracking-tight mb-4">
+          <h1 className="font-serif text-5xl sm:text-5xl text-foreground tracking-tight mb-4">
             {es ? "¿Dónde rinde más tu dinero?" : "Where does your money go furthest?"}
           </h1>
           <p className="text-muted text-lg max-w-xl mx-auto">
@@ -388,7 +388,7 @@ export default function PresupuestoPage() {
         </div>
 
         <section className="mt-14 rounded-3xl border border-white/10 bg-card p-6 sm:p-8">
-          <h2 className="font-serif text-2xl text-foreground mb-2">{es ? "Cómo se calcula" : "How it's calculated"}</h2>
+          <h2 className="font-serif text-3xl text-foreground mb-2">{es ? "Cómo se calcula" : "How it's calculated"}</h2>
           <p className="text-sm text-muted mb-6">
             {es
               ? "Sin cajas negras: estos son los datos, la fórmula y los límites de esta calculadora."

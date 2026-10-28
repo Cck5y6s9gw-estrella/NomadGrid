@@ -80,7 +80,7 @@ export default function RankingView({
           <span className="flex items-center justify-center w-10 h-10 rounded-xl bg-accent/10 border border-accent/30 shrink-0">
             <Icon className="w-5 h-5 text-accent" />
           </span>
-          <h1 className="text-2xl sm:text-3xl font-semibold leading-tight">{title}</h1>
+          <h1 className="text-2xl sm:text-5xl leading-tight">{title}</h1>
         </div>
         <p className="text-muted text-sm mb-6 max-w-2xl">{description}</p>
 

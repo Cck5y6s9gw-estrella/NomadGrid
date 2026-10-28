@@ -154,7 +154,7 @@ export default function Home() {
               <div className="inline-block text-[10px] font-semibold tracking-widest text-accent uppercase mb-2 border border-accent/40 px-2 py-0.5 rounded-full">
                 {d.homeFavoritesBadge}
               </div>
-              <h2 className="text-xl font-semibold mb-1.5">{d.homeFavoritesTitle}</h2>
+              <h2 className="text-2xl mb-1.5">{d.homeFavoritesTitle}</h2>
               <p className="text-muted text-sm">{d.homeFavoritesSubtitle}</p>
             </div>
             <Link

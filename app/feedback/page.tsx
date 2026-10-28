@@ -65,7 +65,7 @@ function FeedbackForm() {
           <div className="text-xs font-medium tracking-widest text-accent uppercase mb-3">
             {d.feedbackBadge}
           </div>
-          <h1 className="text-3xl font-semibold mb-2 tracking-tight">
+          <h1 className="text-5xl mb-2 tracking-tight">
             {d.feedbackTitlePre}
             <span className="text-accent">{d.feedbackTitleHighlight}</span>
           </h1>

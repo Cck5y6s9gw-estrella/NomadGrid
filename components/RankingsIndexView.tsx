@@ -36,7 +36,7 @@ export default function RankingsIndexView() {
             ? `${cities.length} ciudades · ${rankings.length} rankings`
             : `${cities.length} cities · ${rankings.length} rankings`}
         </div>
-        <h1 className="font-serif text-4xl md:text-5xl tracking-tight leading-tight mb-4">
+        <h1 className="font-serif text-5xl md:text-5xl tracking-tight leading-tight mb-4">
           {isEs ? "¿Quién gana en cada " : "Who wins on every "}
           <span className="text-accent">{isEs ? "indicador" : "indicator"}</span>
           {isEs ? "?" : "?"}
@@ -66,7 +66,7 @@ export default function RankingsIndexView() {
                     <span className="flex items-center justify-center w-12 h-12 rounded-2xl bg-background/60 border border-white/10 shrink-0">
                       <Icon className="w-6 h-6 text-accent" />
                     </span>
-                    <h2 className="font-serif text-xl text-foreground group-hover:text-accent transition-colors">
+                    <h2 className="font-serif text-2xl text-foreground group-hover:text-accent transition-colors">
                       {isEs ? r.cardTitleEs : r.cardTitleEn}
                     </h2>
                   </div>
