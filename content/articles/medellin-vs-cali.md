@@ -18,7 +18,7 @@ Ambas ciudades comparten la misma velocidad media de banda ancha fija de Colombi
 
 Seguridad: la diferencia más importante
 
-Aquí es donde las dos ciudades se separan de verdad. Medellín puntúa 3,9 sobre 10 en seguridad, ya de por sí baja para estándares del catálogo de Roavio, pero Cali baja hasta 2,9, la puntuación más baja de las 145 ciudades del catálogo. En calidad de vida el resultado es parecido: 6,6 para Medellín frente a 6,5 para Cali, una diferencia mínima. La seguridad desigual por zona es real en las dos ciudades, pero en Cali conviene extremar las precauciones y ser especialmente cuidadoso con el barrio elegido y los desplazamientos nocturnos.
+Aquí es donde las dos ciudades se separan de verdad. Medellín puntúa 3,9 sobre 10 en seguridad, ya de por sí baja para estándares del catálogo de Roavio, pero Cali baja hasta 2,9, una de las puntuaciones más bajas de las 265 ciudades del catálogo. En calidad de vida el resultado es parecido: 6,6 para Medellín frente a 6,5 para Cali, una diferencia mínima. La seguridad desigual por zona es real en las dos ciudades, pero en Cali conviene extremar las precauciones y ser especialmente cuidadoso con el barrio elegido y los desplazamientos nocturnos.
 
 Visado y fiscalidad: el mismo trámite para las dos
 
@@ -50,7 +50,7 @@ Both cities share Colombia's average fixed broadband speed, 207 Mbps, according 
 
 Safety: the most important difference
 
-This is where the two cities really diverge. Medellín scores 3.9 out of 10 on safety, already low by the standards of Roavio's catalog, but Cali drops to 2.9, the lowest score of all 145 cities in the catalog. Quality of life is similar for both: 6.6 for Medellín versus 6.5 for Cali, a minimal gap. Safety varies a lot by neighborhood in both cities, but in Cali it's worth being especially careful about which neighborhood you choose and about moving around at night.
+This is where the two cities really diverge. Medellín scores 3.9 out of 10 on safety, already low by the standards of Roavio's catalog, but Cali drops to 2.9, one of the lowest scores of all 265 cities in the catalog. Quality of life is similar for both: 6.6 for Medellín versus 6.5 for Cali, a minimal gap. Safety varies a lot by neighborhood in both cities, but in Cali it's worth being especially careful about which neighborhood you choose and about moving around at night.
 
 Visa and taxes: the exact same process for both
 

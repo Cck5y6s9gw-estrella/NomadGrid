@@ -34,7 +34,7 @@ Por más que hayas investigado, ninguna cifra sustituye a pisar la ciudad. Si pu
 
 Cómo usar Roavio para decidir
 
-En Roavio reunimos los datos de coste, internet, seguridad y calidad de vida de más de 20 ciudades, con la fuente original de cada cifra para que puedas comprobarla tú mismo, además de guías de visado y fiscalidad, sanidad y seguro médico, y barrios y coworkings recomendados para cada una. La idea no es decirte cuál es "la mejor ciudad" en abstracto, porque no existe: existe la mejor ciudad para tu presupuesto, tu forma de trabajar y lo que buscas en cada momento. Úsalo como punto de partida para comparar opciones con datos reales, y deja que la prueba sobre el terreno haga el resto.
+En Roavio reunimos los datos de coste, internet, seguridad y calidad de vida de más de 260 ciudades, con la fuente original de cada cifra para que puedas comprobarla tú mismo, además de guías de visado y fiscalidad, sanidad y seguro médico, y barrios y coworkings recomendados para cada una. La idea no es decirte cuál es "la mejor ciudad" en abstracto, porque no existe: existe la mejor ciudad para tu presupuesto, tu forma de trabajar y lo que buscas en cada momento. Úsalo como punto de partida para comparar opciones con datos reales, y deja que la prueba sobre el terreno haga el resto.
 
 ---EN---
 
@@ -66,4 +66,4 @@ However much research you've done, no number replaces actually setting foot in t
 
 How to use Roavio to decide
 
-At Roavio we bring together cost, internet, safety, and quality-of-life data for more than 20 cities, with the original source for every figure so you can verify it yourself, plus guides on visas and taxes, healthcare and insurance, and recommended neighborhoods and coworking spaces for each one. The goal isn't to tell you the "best city" in the abstract, because it doesn't exist: what exists is the best city for your budget, your way of working, and what you're looking for at that particular moment. Use it as a starting point to compare options with real data, and let time on the ground do the rest.
+At Roavio we bring together cost, internet, safety, and quality-of-life data for more than 260 cities, with the original source for every figure so you can verify it yourself, plus guides on visas and taxes, healthcare and insurance, and recommended neighborhoods and coworking spaces for each one. The goal isn't to tell you the "best city" in the abstract, because it doesn't exist: what exists is the best city for your budget, your way of working, and what you're looking for at that particular moment. Use it as a starting point to compare options with real data, and let time on the ground do the rest.

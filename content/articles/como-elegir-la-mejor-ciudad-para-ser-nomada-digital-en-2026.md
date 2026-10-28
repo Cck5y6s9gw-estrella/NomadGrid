@@ -4,7 +4,7 @@ title_en: "How to Choose the Best City for Digital Nomads in 2026"
 dek_es: "Coste de vida, internet, seguridad, visados y calidad de vida: la guía práctica para decidir tu próximo destino sin perder semanas investigando."
 dek_en: "Cost of living, internet speed, safety, visas and quality of life: a practical guide to picking your next destination without weeks of research."
 date: "2026-08-26"
-cover: 
+cover: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1600&q=80"
 ---
 Elegir dónde vivir y trabajar como nómada digital ya no es solo cuestión de buscar un lugar bonito con buen clima. En 2026, con decenas de países ofreciendo visados específicos para trabajadores remotos, la decisión depende de varios factores que conviene comparar con datos reales antes de hacer las maletas.
 
@@ -30,7 +30,7 @@ El clima influye más de lo que parece en la productividad y el bienestar a medi
 
 ## Cómo comparar destinos sin perder días investigando
 
-Reunir todos estos datos ciudad por ciudad, de fuentes fiables, puede llevarte fácilmente varios días de búsquedas dispersas. Por eso en Roavio hemos reunido coste de vida, internet, seguridad, visados y fiscalidad de más de 20 ciudades en un solo sitio, con un comparador que te permite ver dos o más destinos lado a lado. Si estás valorando tu próximo destino, puedes explorar el listado completo de ciudades o usar directamente el comparador para tomar una decisión con datos, no solo con intuición.
+Reunir todos estos datos ciudad por ciudad, de fuentes fiables, puede llevarte fácilmente varios días de búsquedas dispersas. Por eso en Roavio hemos reunido coste de vida, internet, seguridad, visados y fiscalidad de más de 260 ciudades en un solo sitio, con un comparador que te permite ver dos o más destinos lado a lado. Si estás valorando tu próximo destino, puedes explorar el listado completo de ciudades o usar directamente el comparador para tomar una decisión con datos, no solo con intuición.
 
 ---EN---
 
@@ -58,4 +58,4 @@ Climate affects productivity and medium-term wellbeing more than it might seem. 
 
 ## How to compare destinations without losing days researching
 
-Gathering all this data city by city, from reliable sources, can easily take you several days of scattered searching. That's why at Roavio we've brought together cost of living, internet, safety, visas and taxes for more than 20 cities in one place, with a comparator that lets you view two or more destinations side by side. If you're weighing up your next destination, you can browse the full list of cities or jump straight into the comparator to make a decision based on data, not just intuition.
+Gathering all this data city by city, from reliable sources, can easily take you several days of scattered searching. That's why at Roavio we've brought together cost of living, internet, safety, visas and taxes for more than 260 cities in one place, with a comparator that lets you view two or more destinations side by side. If you're weighing up your next destination, you can browse the full list of cities or jump straight into the comparator to make a decision based on data, not just intuition.
