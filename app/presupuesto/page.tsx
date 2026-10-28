@@ -387,11 +387,96 @@ export default function PresupuestoPage() {
           </button>
         </div>
 
-        <p className="text-xs text-muted leading-relaxed">
-          {es
-            ? "El catálogo recoge el gasto mensual de una persona sin alquiler (Numbeo), por eso el alquiler lo pones tú. El estilo de vida multiplica ese gasto (ajustado ×0,85, cómodo ×1,25) y es una estimación. El encaje combina cuánto te sobra, calidad de vida, seguridad e internet."
-            : "The catalog tracks one person's monthly spending excluding rent (Numbeo), so you enter the rent. Lifestyle scales that spending (tight ×0.85, comfortable ×1.25) and is an estimate. The match combines what's left over, quality of life, safety, and internet."}
-        </p>
+        <section className="mt-14 rounded-3xl border border-white/10 bg-card p-6 sm:p-8">
+          <h2 className="font-serif text-2xl text-foreground mb-2">{es ? "Cómo se calcula" : "How it's calculated"}</h2>
+          <p className="text-sm text-muted mb-6">
+            {es
+              ? "Sin cajas negras: estos son los datos, la fórmula y los límites de esta calculadora."
+              : "No black boxes: here are the data, the formula, and the limits of this calculator."}
+          </p>
+
+          <h3 className="text-sm font-semibold text-foreground mb-2">{es ? "1. De dónde salen los datos" : "1. Where the data comes from"}</h3>
+          <ul className="text-sm text-muted leading-relaxed list-disc pl-5 mb-6 space-y-1.5">
+            <li>
+              <span className="text-foreground">{es ? "Coste de vida:" : "Cost of living:"}</span>{" "}
+              {es
+                ? "gasto mensual de una persona sin alquiler según Numbeo (comida, transporte, ocio, suministros), convertido a euros."
+                : "one person's monthly spending excluding rent per Numbeo (food, transport, leisure, utilities), converted to euros."}
+            </li>
+            <li>
+              <span className="text-foreground">{es ? "Internet:" : "Internet:"}</span>{" "}
+              {es
+                ? "velocidad mediana de banda ancha fija del país (Speedtest Global Index de Ookla, vía World Population Review, 2025). Es un dato nacional, no de la ciudad."
+                : "national median fixed broadband speed (Ookla Speedtest Global Index via World Population Review, 2025). It is a country figure, not a city one."}
+            </li>
+            <li>
+              <span className="text-foreground">{es ? "Seguridad:" : "Safety:"}</span>{" "}
+              {es
+                ? "60% Índice de Seguridad de Numbeo (reescalado a 10) y 40% Global Peace Index del país."
+                : "60% Numbeo Safety Index (rescaled to 10) and 40% the country's Global Peace Index."}
+            </li>
+            <li>
+              <span className="text-foreground">{es ? "Calidad de vida:" : "Quality of life:"}</span>{" "}
+              {es
+                ? "60% índice de calidad de vida de Numbeo (reescalado a 10) y 40% Índice de Desarrollo Humano (IDH) del país."
+                : "60% Numbeo Quality of Life Index (rescaled to 10) and 40% the country's Human Development Index (HDI)."}
+            </li>
+          </ul>
+
+          <h3 className="text-sm font-semibold text-foreground mb-2">{es ? "2. La fórmula" : "2. The formula"}</h3>
+          <ol className="text-sm text-muted leading-relaxed list-decimal pl-5 mb-4 space-y-1.5">
+            <li>
+              {es
+                ? "Gasto de vida = coste de la ciudad × factor de estilo (ajustado ×0,85, normal ×1, cómodo ×1,25)."
+                : "Living spend = city cost × lifestyle factor (tight ×0.85, normal ×1, comfortable ×1.25)."}
+            </li>
+            <li>
+              {es
+                ? "Coste total = gasto de vida + el alquiler que has indicado. Si el total es mayor que tu presupuesto, la ciudad no cuadra."
+                : "Total cost = living spend + the rent you entered. If the total exceeds your budget, the city doesn't fit."}
+            </li>
+            <li>
+              {es
+                ? "Margen = presupuesto − coste total. Se puntúa de 0 a 1 según qué parte de la mitad de tu presupuesto disponible (sin alquiler) te sobra."
+                : "Margin = budget − total cost. It is scored from 0 to 1 by how much of half your available budget (after rent) is left."}
+            </li>
+            <li>
+              {es
+                ? "Encaje = margen, calidad de vida, seguridad e internet ponderados. En modo equilibrado pesan 30%, 25%, 25% y 20%. Si eliges una prioridad, esa pasa a pesar 40% y las demás se reparten el resto."
+                : "Match = weighted margin, quality of life, safety, and internet. In balanced mode they weigh 30%, 25%, 25%, and 20%. If you pick a priority, it weighs 40% and the others share the rest."}
+            </li>
+            <li>
+              {es
+                ? "Meses con ahorros = ahorros ÷ coste total mensual. Con 'Con playa' solo se consideran ciudades costeras."
+                : "Months of savings = savings ÷ total monthly cost. With 'Beach' only coastal cities are considered."}
+            </li>
+          </ol>
+          {results[0] && results[0].affordable && (
+            <p className="text-xs text-muted bg-background/60 rounded-xl p-3 mb-6">
+              {es
+                ? `Ejemplo con tus datos: ${tCity(results[0].city.name, lang)} cuesta ${fmt(results[0].city.costPerMonth, lang)} € de base × ${STYLE_FACTOR[style].toString().replace(".", ",")} = ${fmt(results[0].living, lang)} € de vida, más ${fmt(rent, lang)} € de alquiler = ${fmt(results[0].total, lang)} €. Con un presupuesto de ${fmt(budget, lang)} € te sobran ${fmt(results[0].margin, lang)} €.`
+                : `Example with your inputs: ${tCity(results[0].city.name, lang)} costs €${fmt(results[0].city.costPerMonth, lang)} base × ${STYLE_FACTOR[style]} = €${fmt(results[0].living, lang)} living, plus €${fmt(rent, lang)} rent = €${fmt(results[0].total, lang)}. With a €${fmt(budget, lang)} budget you have €${fmt(results[0].margin, lang)} left.`}
+            </p>
+          )}
+
+          <h3 className="text-sm font-semibold text-foreground mb-2">{es ? "3. Qué debes tener en cuenta" : "3. What to keep in mind"}</h3>
+          <ul className="text-sm text-muted leading-relaxed list-disc pl-5 mb-6 space-y-1.5">
+            <li>{es ? "Son medias y estimaciones, no una oferta de precio: tu gasto real depende de tus hábitos y del barrio." : "These are averages and estimates, not a price quote: your real spending depends on your habits and neighborhood."}</li>
+            <li>{es ? "El alquiler no está en nuestros datos: lo introduces tú, así que compáralo con anuncios reales." : "Rent isn't in our data: you enter it, so compare it with real listings."}</li>
+            <li>{es ? "No incluye visados, impuestos, seguro médico ni vuelos. Mira la guía de cada ciudad para esos trámites." : "It excludes visas, taxes, health insurance, and flights. See each city's guide for those."}</li>
+            <li>{es ? "La seguridad y la calidad de vida son percepciones y índices, no estadísticas oficiales de criminalidad." : "Safety and quality of life are perception-based indices, not official crime statistics."}</li>
+            <li>{es ? "Los datos de Numbeo vienen de contribuciones de usuarios; descartamos ciudades con pocos contribuyentes o datos antiguos." : "Numbeo data comes from user contributions; we discard cities with few contributors or stale data."}</li>
+          </ul>
+
+          <p className="text-xs text-muted">
+            {es ? "Fuentes: " : "Sources: "}
+            <a href="https://www.numbeo.com" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Numbeo</a>,{" "}
+            <a href="https://worldpopulationreview.com" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">World Population Review / Ookla</a>,{" "}
+            <a href="https://www.visionofhumanity.org/maps/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Global Peace Index</a>,{" "}
+            <a href="https://hdr.undp.org/data-center/human-development-index" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">UNDP HDI</a>.{" "}
+            {es ? "Más detalle en la ficha de cada ciudad." : "More detail on each city page."}
+          </p>
+        </section>
       </main>
     </div>
   );
