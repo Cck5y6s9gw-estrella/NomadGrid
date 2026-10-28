@@ -18,7 +18,7 @@ Hanói lidera el grupo con 274 Mbps de media, apoyada en una infraestructura de 
 
 Seguridad y calidad de vida: Oslo en otra liga
 
-Aquí es donde más se separan estas cinco ciudades. Oslo puntúa 9,4 sobre 10 en calidad de vida, un resultado que la sitúa entre las mejores de todo el catálogo de Roavio, aunque su seguridad (6,6) no es tan sobresaliente como cabría pensar. Shenzhen y Cracovia van de la mano con una seguridad notable (7,6 y 7,5 respectivamente) y una calidad de vida sólida (7,7 y 7,5). Hanói se mueve en un término medio en seguridad (6,6) pero es la que peor puntúa en calidad de vida del grupo (4,5), sobre todo por el tráfico y la contaminación del aire. Atenas comparte esa misma nota en calidad de vida (4,5) y es, además, la ciudad con la seguridad más baja de las cinco (4,5 también), aunque sin llegar a niveles que deban preocupar a quien viaja con las precauciones habituales.
+Aquí es donde más se separan estas cinco ciudades. Oslo puntúa 9,5 sobre 10 en calidad de vida, un resultado que la sitúa entre las mejores de todo el catálogo de Roavio, aunque su seguridad (7,0) no es tan sobresaliente como cabría pensar. Cracovia lidera la seguridad del grupo con un 7,7 y una calidad de vida sólida de 8,1, mientras que Shenzhen se queda en 6,6 de seguridad y 7,8 de calidad de vida. Hanói se mueve en un término medio en seguridad (6,9) pero es la que peor puntúa en calidad de vida del grupo (5,8), sobre todo por el tráfico y la contaminación del aire. Atenas es la ciudad con la seguridad más baja de las cinco (5,5), con una calidad de vida de 7,5, aunque sin llegar a niveles que deban preocupar a quien viaja con las precauciones habituales.
 
 Lo que cada una aporta que las demás no tienen
 
@@ -42,7 +42,7 @@ Hanoi leads the group with an average of 274 Mbps, backed by fiber infrastructur
 
 Safety and quality of life: Oslo in a league of its own
 
-This is where these five cities diverge the most. Oslo scores 9.4 out of 10 on quality of life, a result that puts it among the best in Roavio's entire catalog, even though its safety score (6.6) isn't as outstanding as you might assume. Shenzhen and Krakow go hand in hand with notable safety scores (7.6 and 7.5, respectively) and solid quality of life (7.7 and 7.5). Hanoi sits in the middle on safety (6.6) but scores lowest on quality of life in the group (4.5), largely due to traffic and air pollution. Athens shares that same quality-of-life score (4.5) and is also the lowest-scoring city on safety of the five (4.5 as well), though not at levels that should worry anyone traveling with the usual precautions.
+This is where these five cities diverge the most. Oslo scores 9.5 out of 10 on quality of life, a result that puts it among the best in Roavio's entire catalog, even though its safety score (7.0) isn't as outstanding as you might assume. Krakow leads the group on safety at 7.7 with a solid quality of life of 8.1, while Shenzhen sits at 6.6 on safety and 7.8 on quality of life. Hanoi sits in the middle on safety (6.9) but scores lowest on quality of life in the group (5.8), largely due to traffic and air pollution. Athens is the lowest-scoring city on safety of the five (5.5), with a quality of life of 7.5, though not at levels that should worry anyone traveling with the usual precautions.
 
 What each one brings that the others don't
 

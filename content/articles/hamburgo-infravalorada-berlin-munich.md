@@ -16,7 +16,7 @@ Internet: empate técnico
 
 Las tres comparten la misma cifra de referencia, 102 Mbps, según el Speedtest Global Index de Ookla, al tratarse de un dato de infraestructura nacional alemana. Elegir cualquiera de las tres no supone ninguna diferencia real en este apartado.
 
-Seguridad: Hamburgo y Múnich, claramente por delante de Berlín
+Seguridad: Múnich, claramente por delante; Hamburgo, algo mejor que Berlín
 
 Con un 6,8 sobre 10, Hamburgo queda por delante del 6,4 de Berlín, y Múnich se sitúa todavía más arriba, con un 7,8, según los índices cruzados de Numbeo que usa Roavio. Berlín es, de las tres, la que peor puntúa en este apartado, algo que rara vez aparece mencionado en el marketing nómada de la ciudad.
 
@@ -48,7 +48,7 @@ Internet: a technical tie
 
 All three share the same reference figure, 102 Mbps, per Ookla's Speedtest Global Index, since it's a German national infrastructure figure. Choosing any of the three makes no real difference here.
 
-Safety: Hamburg and Munich, clearly ahead of Berlin
+Safety: Munich clearly ahead; Hamburg somewhat better than Berlin
 
 At 6.8 out of 10, Hamburg comes in ahead of Berlin's 6.4, and Munich sits even higher, at 7.8, per the cross-referenced Numbeo indices Roavio uses. Berlin is the lowest-scoring of the three on this front, something rarely mentioned in the city's nomad marketing.
 

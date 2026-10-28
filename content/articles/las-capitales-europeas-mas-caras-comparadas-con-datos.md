@@ -1,57 +1,57 @@
 ---
 title_es: "Las capitales europeas más caras, comparadas con datos"
 title_en: "Europe's most expensive capitals, compared with real data"
-dek_es: "Ámsterdam, Copenhague, Múnich y París, cara a cara: si el precio extra se traduce en seguridad, calidad de vida e internet, o es solo percepción."
-dek_en: "Amsterdam, Copenhagen, Munich, and Paris, side by side: whether the extra cost actually buys more safety, quality of life, and internet, or is just perception."
+dek_es: "Berna, Reikiavik, Oslo, Copenhague y Estocolmo, cara a cara: si el precio extra se traduce en seguridad, calidad de vida e internet, o es solo percepción."
+dek_en: "Bern, Reykjavik, Oslo, Copenhagen, and Stockholm, side by side: whether the extra cost actually buys more safety, quality of life, and internet, or is just perception."
 date: "2026-09-01"
 cover: "https://images.unsplash.com/photo-1742054294226-86d430d25ae5?w=1600&q=80"
 ---
-Estas cuatro son, junto con Londres, las capitales más caras de las que tenemos datos en Roavio. Pero pagar más no siempre significa recibir más: hemos comparado coste de vida, internet, seguridad y calidad de vida de Ámsterdam, Copenhague, Múnich y París para ver dónde ese extra de presupuesto se nota de verdad.
+Londres, París o Ámsterdam tienen fama de caras, pero con los datos del catálogo de Roavio en la mano las capitales europeas que de verdad más cuestan son otras: Berna, Reikiavik, Oslo, Copenhague y Estocolmo. Pero pagar más no siempre significa recibir más: hemos comparado coste de vida, internet, seguridad y calidad de vida de estas cinco para ver dónde ese extra de presupuesto se nota de verdad.
 
-El coste de vida, de menor a mayor
+El coste de vida, de mayor a menor
 
-Múnich es, sorprendentemente, la más barata de las cuatro pese a su fama de ciudad cara: 1.111 euros al mes sin alquiler. París se sitúa muy cerca, en 1.126 euros, y Ámsterdam apenas por encima, en 1.131 euros. Copenhague se despega claramente del resto y cierra la lista como la más cara con 1.217 euros al mes, más de 100 euros por encima de Múnich. Para contextualizar: las cuatro superan holgadamente los 700-800 euros de una capital como Madrid o Lisboa.
+Berna es la más cara de las cinco: 1.458 euros al mes sin alquiler. Le sigue muy de cerca Reikiavik, con 1.409 euros, y Oslo con 1.371 euros. Copenhague baja bastante hasta los 1.217 euros, y Estocolmo cierra la lista con 1.167 euros, unos 290 euros menos que Berna. Para contextualizar: las cinco superan con holgura los 1.050-1.130 euros de Londres, París o Ámsterdam, y están muy por encima de los 800-820 euros de Madrid o Lisboa.
 
-Internet: la sorpresa es Múnich, pero al revés
+Internet: Reikiavik, a la cabeza
 
-Aquí el orden cambia por completo. París tiene, con diferencia, la conexión más rápida del grupo: 346 Mbps de media, una de las mejores de toda Europa. Copenhague le sigue con 266 Mbps y Ámsterdam con 224 Mbps, ambas sobradas para cualquier videollamada o subida de archivos pesados. Múnich, pese a ser sede de gigantes tech como BMW, Siemens y Google, se queda atrás con 102 Mbps de media: sigue siendo una conexión perfectamente utilizable, pero es un buen recordatorio de que la fama de "ciudad tech" no siempre se traduce en la velocidad media de internet del país.
+Aquí el orden cambia por completo. Reikiavik tiene la conexión más rápida del grupo, con 318 Mbps de media, seguida de Berna (279 Mbps) y Copenhague (266 Mbps). Estocolmo se queda en 190 Mbps y Oslo en 169 Mbps: siguen siendo conexiones sobradas para videollamadas y subidas de archivos pesados, pero es un buen recordatorio de que pagar más no garantiza más velocidad.
 
-Seguridad y calidad de vida: donde París se descuelga
+Seguridad y calidad de vida: Reikiavik y Berna lideran
 
-En seguridad, Múnich lidera claramente con un 7,8 sobre 10, seguida de Copenhague (7,4) y Ámsterdam (7,0), las tres en un nivel alto y comparable. París es la clara excepción del grupo, con un 4,2 sobre 10, bastante por debajo del resto: no es una ciudad insegura para los estándares europeos, pero sí requiere las precauciones habituales de cualquier gran capital, especialmente frente a hurtos en zonas turísticas y transporte público.
+En seguridad, Reikiavik lidera con un 8,5 sobre 10, seguida de Berna (8,0), Copenhague y Estocolmo (7,8 las dos) y Oslo (7,0). Todas están en un nivel alto o muy alto comparable al de las ciudades más seguras del catálogo.
 
-En calidad de vida el patrón se repite: Ámsterdam, Copenhague y Múnich comparten un sobresaliente 9,9 sobre 10, de los valores más altos de todo el catálogo de Roavio. París se queda en un 7,0, un valor todavía bueno pero claramente por detrás de sus tres vecinas, arrastrado en parte por esa misma percepción de seguridad más baja.
+En calidad de vida el patrón es parecido: Reikiavik y Copenhague comparten un sobresaliente 9,8 sobre 10, seguidas de Berna (9,7), Estocolmo (9,6) y Oslo (9,5), de los valores más altos de todo el catálogo de Roavio. Oslo es la gran excepción en relación calidad-precio: es la tercera más cara del grupo, con la seguridad y la calidad de vida más bajas de las cinco y el internet más lento.
 
-Lo que las cuatro tienen en común
+Lo que las cinco tienen en común
 
-Para un nómada digital español, hay un dato que iguala a las cuatro por encima de cualquier diferencia de precio: al formar parte de la Unión Europea, instalarse y trabajar en cualquiera de ellas no requiere visado ni trámite especial, algo que no ocurre en ciudades como San Francisco o Pekín. Es una ventaja legal que compensa parte del sobrecoste frente a otros destinos nómadas fuera de la UE.
+Para un nómada digital español, hay un dato que las acerca por encima de cualquier diferencia de precio: Dinamarca y Suecia son miembros de la Unión Europea, y Noruega, Islandia y Suiza forman parte del espacio Schengen y del Espacio Económico Europeo o tienen acuerdo de libre circulación con la UE, así que no requiere visado de turista para estancias cortas. Para estancias largas conviene confirmar los trámites de registro o permiso de residencia en cada país, que varían de uno a otro.
 
-Cómo elegir entre las cuatro
+Cómo elegir entre las cinco
 
-Si el criterio es maximizar seguridad y calidad de vida sin disparar el presupuesto, Múnich es difícil de superar: encabeza ambos indicadores y es, contra todo pronóstico, la más barata del grupo. Quien necesite la conexión más rápida posible para un trabajo muy exigente en ancho de banda tiene en París la mejor opción, aunque conviene asumir un nivel de seguridad percibida más bajo. Copenhague es la apuesta para quien prioriza diseño, seguridad y una de las mejores calidades de vida de Europa, siempre que el presupuesto lo permita. Y Ámsterdam ofrece el equilibrio más completo entre las cuatro: coste moderado para el grupo, buena seguridad, gran calidad de vida e inglés hablado en todas partes. En Roavio tienes el detalle completo de cada una, con su fuente original, para comparar antes de decidir.
+Si el criterio es maximizar seguridad, calidad de vida e internet, Reikiavik es difícil de superar, aunque a un precio cercano al de Berna. Copenhague ofrece casi lo mismo (9,8 de calidad de vida, 7,8 de seguridad, 266 Mbps) por unos 190 euros menos al mes, lo que la convierte en la mejor relación precio-prestaciones del grupo. Estocolmo es la opción más económica, con seguridad y calidad de vida casi idénticas a Copenhague, aunque con menos velocidad de internet. Berna es la apuesta para quien busca una capital segura y tranquila y no se preocupa por el presupuesto. Y Oslo es, de las cinco, la que menos devuelve por lo que cuesta. En Roavio tienes el detalle completo de cada una, con su fuente original, para comparar antes de decidir.
 
 ---EN---
 
-Along with London, these four are the most expensive capitals we track data on at Roavio. But paying more doesn't always mean getting more: we compared cost of living, internet, safety, and quality of life across Amsterdam, Copenhagen, Munich, and Paris to see where that extra budget actually shows up.
+London, Paris, and Amsterdam have a reputation for being expensive, but with Roavio's catalog data in hand, the European capitals that really cost the most are others: Bern, Reykjavik, Oslo, Copenhagen, and Stockholm. But paying more doesn't always mean getting more: we compared cost of living, internet, safety, and quality of life across these five to see where that extra budget actually shows up.
 
-Cost of living, from lowest to highest
+Cost of living, from highest to lowest
 
-Munich is, surprisingly, the cheapest of the four despite its reputation as an expensive city: 1,111 euros a month excluding rent. Paris comes in very close at 1,126 euros, and Amsterdam just slightly above at 1,131 euros. Copenhagen pulls clearly ahead of the rest and closes out the list as the most expensive at 1,217 euros a month, over 100 euros above Munich. For context, all four comfortably exceed the 700-800 euros of a capital like Madrid or Lisbon.
+Bern is the most expensive of the five: 1,458 euros a month excluding rent. Reykjavik follows very closely at 1,409 euros, and Oslo at 1,371 euros. Copenhagen drops quite a bit to 1,217 euros, and Stockholm closes the list at 1,167 euros, about 290 euros less than Bern. For context: all five comfortably exceed the 1,050–1,130 euros of London, Paris, or Amsterdam, and sit far above the 800–820 euros of Madrid or Lisbon.
 
-Internet: the surprise is Munich, but the other way around
+Internet: Reykjavik in the lead
 
-Here the order flips completely. Paris has, by far, the fastest connection of the group: an average of 346 Mbps, one of the best in all of Europe. Copenhagen follows with 266 Mbps and Amsterdam with 224 Mbps, both more than enough for any video call or heavy file upload. Munich, despite being home to tech giants like BMW, Siemens, and Google, lags behind at an average of 102 Mbps — still a perfectly usable connection, but a good reminder that a "tech city" reputation doesn't always translate into a country's average internet speed.
+Here the order changes completely. Reykjavik has the fastest connection in the group, at 318 Mbps on average, followed by Bern (279 Mbps) and Copenhagen (266 Mbps). Stockholm sits at 190 Mbps and Oslo at 169 Mbps: still more than enough for video calls and heavy uploads, but a good reminder that paying more doesn't guarantee more speed.
 
-Safety and quality of life: where Paris falls behind
+Safety and quality of life: Reykjavik and Bern lead
 
-In safety, Munich clearly leads with a 7.8 out of 10, followed by Copenhagen (7.4) and Amsterdam (7.0), all three at a high and comparable level. Paris is the clear outlier of the group at 4.2 out of 10, well below the rest: it's not an unsafe city by European standards, but it does call for the usual precautions of any major capital, especially around pickpocketing in tourist areas and on public transport.
+On safety, Reykjavik leads with 8.5 out of 10, followed by Bern (8.0), Copenhagen and Stockholm (7.8 each), and Oslo (7.0). All sit at a high or very high level comparable to the catalog's safest cities.
 
-The same pattern repeats in quality of life: Amsterdam, Copenhagen, and Munich all share an outstanding 9.9 out of 10, among the highest scores in Roavio's entire catalog. Paris comes in at 7.0, still a good score but clearly behind its three neighbors, partly dragged down by that same lower perceived safety.
+On quality of life the pattern is similar: Reykjavik and Copenhagen share an outstanding 9.8 out of 10, followed by Bern (9.7), Stockholm (9.6), and Oslo (9.5), among the highest values in the entire Roavio catalog. Oslo is the big exception on value for money: it is the third most expensive of the group, with the lowest safety and quality-of-life scores of the five and the slowest internet.
 
-What all four have in common
+What the five have in common
 
-For a European digital nomad, there's one thing that levels all four regardless of price differences: as EU member states, settling in and working in any of them requires no visa or special paperwork, unlike cities such as San Francisco or Beijing. It's a legal advantage that offsets part of the extra cost compared to other nomad destinations outside the EU.
+For a Spanish digital nomad, there's one fact that brings them together beyond any price difference: Denmark and Sweden are European Union members, and Norway, Iceland, and Switzerland are part of the Schengen area and the European Economic Area or have a free-movement agreement with the EU, so no tourist visa is required for short stays. For longer stays, it is worth confirming the registration or residence-permit steps in each country, which vary from one to another.
 
-How to choose between the four
+How to choose between the five
 
-If the goal is maximizing safety and quality of life without blowing the budget, Munich is hard to beat: it tops both indicators and is, against all odds, the cheapest of the group. Anyone who needs the fastest possible connection for very bandwidth-heavy work will find the best option in Paris, though it comes with a lower perceived safety level to factor in. Copenhagen is the pick for anyone prioritizing design, safety, and one of the best qualities of life in Europe, budget permitting. And Amsterdam offers the most well-rounded balance of the four: moderate cost for the group, good safety, great quality of life, and English spoken everywhere. At Roavio you'll find the full detail on each one, with its original source, so you can compare before deciding.
+If the goal is to maximize safety, quality of life, and internet, Reykjavik is hard to beat, though at a price close to Bern's. Copenhagen offers almost the same (9.8 quality of life, 7.8 safety, 266 Mbps) for about 190 euros less a month, which makes it the best value of the group. Stockholm is the most affordable option, with safety and quality of life almost identical to Copenhagen's, though with slower internet. Bern is the pick for those who want a safe, calm capital and aren't worried about budget. And Oslo is, of the five, the one that gives back the least for what it costs. At Roavio you have the full detail of each one, with its original source, to compare before deciding.

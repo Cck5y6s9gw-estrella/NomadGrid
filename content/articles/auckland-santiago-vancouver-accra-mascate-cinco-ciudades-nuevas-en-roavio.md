@@ -18,7 +18,7 @@ Santiago lidera el grupo con 357 Mbps de media, una cifra que sorprende viniendo
 
 Seguridad y calidad de vida: Vancouver y Mascate arriba, Santiago y Accra por detrás
 
-Aquí es donde más se separan estas cinco ciudades. Mascate puntúa 8,1 sobre 10 en seguridad, la más alta del grupo, y Vancouver lidera en calidad de vida con 9,3, seguida muy de cerca por Mascate (9,2) y Auckland (8,9) — las tres entre las mejores de todo el catálogo. Santiago baja a 3,6 en seguridad, la nota más baja de las cinco. Accra registra 5,5 en seguridad, una cifra intermedia, pero su calidad de vida (1,4) es la más baja del grupo con diferencia: Numbeo señala explícitamente que tiene pocos datos disponibles para esta ciudad, así que conviene tomar esa cifra concreta con cautela adicional.
+Aquí es donde más se separan estas cinco ciudades. Mascate puntúa 7,6 sobre 10 en seguridad, la más alta del grupo, y Vancouver lidera en calidad de vida con 9,3, seguida muy de cerca por Auckland (9,1) y Mascate (9,0) — las tres entre las mejores de todo el catálogo. Santiago baja a 5,0 en seguridad, la nota más baja de las cinco. Accra registra 5,9 en seguridad, una cifra intermedia, pero su calidad de vida (3,4) es la más baja del grupo con diferencia: Numbeo señala explícitamente que tiene pocos datos disponibles para esta ciudad, así que conviene tomar esa cifra concreta con cautela adicional.
 
 Lo que cada una aporta que las demás no tienen
 
@@ -42,7 +42,7 @@ Santiago leads the group with an average of 357 Mbps, a surprising figure coming
 
 Safety and quality of life: Vancouver and Muscat at the top, Santiago and Accra behind
 
-This is where these five cities diverge the most. Muscat scores 8.1 out of 10 on safety, the highest in the group, and Vancouver leads on quality of life with 9.3, closely followed by Muscat (9.2) and Auckland (8.9) — all three among the best in the entire catalog. Santiago drops to 3.6 on safety, the lowest score of the five. Accra records 5.5 on safety, a middling figure, but its quality-of-life score (1.4) is by far the lowest of the group: Numbeo explicitly flags limited data available for this city, so that specific figure is worth treating with extra caution.
+This is where these five cities diverge the most. Muscat scores 7.6 out of 10 on safety, the highest in the group, and Vancouver leads on quality of life with 9.3, closely followed by Auckland (9.1) and Muscat (9.0) — all three among the best in the entire catalog. Santiago drops to 5.0 on safety, the lowest score of the five. Accra records 5.9 on safety, a middling figure, but its quality-of-life score (3.4) is by far the lowest of the group: Numbeo explicitly flags limited data available for this city, so that specific figure is worth treating with extra caution.
 
 What each one brings that the others don't
 

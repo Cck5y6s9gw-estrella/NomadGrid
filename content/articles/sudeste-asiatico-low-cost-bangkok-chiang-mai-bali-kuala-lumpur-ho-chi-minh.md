@@ -16,9 +16,9 @@ Internet: la gran sorpresa está en Bali
 
 Aquí es donde el tópico se rompe del todo. Bangkok y Chiang Mai comparten el liderazgo con 275 Mbps de media, y Ho Chi Minh se queda a solo 1 Mbps de esa cifra con 274 Mbps — las tres ciudades vietnamita y tailandesas ofrecen una conexión de fibra excelente. Kuala Lumpur baja a 162 Mbps, todavía más que suficiente para cualquier videollamada exigente. Pero Bali, la meca histórica del nomadismo digital con Canggu y Ubud como epicentros mundiales de coworkings, se queda muy por detrás con solo 43 Mbps de media — una cifra que contrasta fuertemente con su fama de paraíso conectado y que conviene tener en cuenta antes de instalarse fuera de un coworking bien equipado.
 
-Seguridad y calidad de vida: Chiang Mai en cabeza, Kuala Lumpur y Ho Chi Minh más flojas
+Seguridad y calidad de vida: Chiang Mai en cabeza, Ho Chi Minh y Bangkok más flojas
 
-Chiang Mai vuelve a liderar en este apartado: 7,8 en seguridad y 6,8 en calidad de vida, las mejores puntuaciones del grupo en ambos indicadores. Bali le sigue de cerca con 7,3 en seguridad y 6,2 en calidad de vida. Bangkok se mueve en un terreno intermedio (6,2 en seguridad, 4,0 en calidad de vida). Kuala Lumpur y Ho Chi Minh son las que más flojean: la primera saca solo 4,1 en seguridad a pesar de su alta calidad de vida (6,7), y la segunda cierra la tabla con 5,0 en seguridad y 3,7 en calidad de vida, la nota más baja del grupo en este último indicador.
+Chiang Mai vuelve a liderar en este apartado: 7,0 en seguridad, empatada con Bali, y 7,3 en calidad de vida, empatada con Kuala Lumpur, las mejores puntuaciones del grupo. Bali se mantiene arriba con 7,0 en seguridad y 6,6 en calidad de vida. Kuala Lumpur tiene la seguridad más baja de las cinco (5,8) a pesar de su alta calidad de vida (7,3). Bangkok y Ho Chi Minh se mueven en un terreno intermedio en seguridad (6,0 las dos), pero flojean en calidad de vida: 5,6 y 5,3, la nota más baja del grupo.
 
 Lo que cada ciudad aporta que las demás no tienen
 
@@ -26,7 +26,7 @@ Chiang Mai ofrece la comunidad nómada más madura y consolidada de las cinco, c
 
 Cómo elegir entre las cinco
 
-Si el criterio es maximizar el ahorro, Bali y Ho Chi Minh son las opciones más claras, aunque cada una con su propio matiz: Bali sacrifica velocidad de internet fuera de los coworkings, Ho Chi Minh sacrifica algo de seguridad y calidad de vida. Si la prioridad es una comunidad nómada ya rodada y un equilibrio sólido entre coste, seguridad y calidad de vida, Chiang Mai sigue siendo difícil de superar. Kuala Lumpur es la opción para quien valora el inglés y la logística de moverse por el resto de Asia. Y Bangkok es la elección natural para quien no quiere renunciar a infraestructura de megaciudad ni a la mejor conexión a internet de la región. En Roavio tienes la ficha completa de cada una, con su fuente original, para comparar antes de hacer la maleta.
+Si el criterio es maximizar el ahorro, Bali y Ho Chi Minh son las opciones más claras, aunque cada una con su propio matiz: Bali sacrifica velocidad de internet fuera de los coworkings, Ho Chi Minh sacrifica algo de calidad de vida. Si la prioridad es una comunidad nómada ya rodada y un equilibrio sólido entre coste, seguridad y calidad de vida, Chiang Mai sigue siendo difícil de superar. Kuala Lumpur es la opción para quien valora el inglés y la logística de moverse por el resto de Asia. Y Bangkok es la elección natural para quien no quiere renunciar a infraestructura de megaciudad ni a la mejor conexión a internet de la región. En Roavio tienes la ficha completa de cada una, con su fuente original, para comparar antes de hacer la maleta.
 
 ---EN---
 
@@ -40,9 +40,9 @@ Internet: the big surprise is Bali
 
 This is where the stereotype breaks down completely. Bangkok and Chiang Mai share the lead at an average of 275 Mbps, and Ho Chi Minh City trails by just 1 Mbps at 274 Mbps — the Vietnamese and Thai cities all offer excellent fiber connections. Kuala Lumpur drops to 162 Mbps, still more than enough for any demanding video call. But Bali, the historic mecca of digital nomadism with Canggu and Ubud as world-famous coworking epicenters, falls far behind with an average of just 43 Mbps — a figure that sharply contrasts with its reputation as a connected paradise, and worth keeping in mind before settling somewhere outside a well-equipped coworking space.
 
-Safety and quality of life: Chiang Mai leads, Kuala Lumpur and Ho Chi Minh trail
+Safety and quality of life: Chiang Mai leads, Ho Chi Minh and Bangkok trail
 
-Chiang Mai leads once again in this category: 7.8 on safety and 6.8 on quality of life, the best scores in the group on both measures. Bali follows closely with 7.3 on safety and 6.2 on quality of life. Bangkok sits in the middle (6.2 on safety, 4.0 on quality of life). Kuala Lumpur and Ho Chi Minh City lag the most: the former scores just 4.1 on safety despite its high quality of life (6.7), and the latter closes out the table at 5.0 on safety and 3.7 on quality of life, the lowest score in the group on that measure.
+Chiang Mai leads once again in this category: 7.0 on safety, tied with Bali, and 7.3 on quality of life, tied with Kuala Lumpur, the best scores in the group. Bali stays near the top with 7.0 on safety and 6.6 on quality of life. Kuala Lumpur has the lowest safety score of the five (5.8) despite its high quality of life (7.3). Bangkok and Ho Chi Minh City sit in the middle on safety (6.0 each) but lag on quality of life: 5.6 and 5.3, the lowest score in the group.
 
 What each city brings that the others don't
 
@@ -50,4 +50,4 @@ Chiang Mai offers the most mature, established nomad community of the five, with
 
 How to choose between the five
 
-If the goal is maximizing savings, Bali and Ho Chi Minh City are the clearest options, though each with its own trade-off: Bali sacrifices internet speed outside coworking spaces, Ho Chi Minh City sacrifices some safety and quality of life. If the priority is an already well-oiled nomad community with a solid balance of cost, safety, and quality of life, Chiang Mai remains hard to beat. Kuala Lumpur is the pick for anyone who values English and easy logistics for exploring the rest of Asia. And Bangkok is the natural choice for anyone unwilling to give up megacity infrastructure or the region's best internet connection. At Roavio you'll find the full profile for each one, with its original source, so you can compare before packing your bags.
+If the goal is maximizing savings, Bali and Ho Chi Minh City are the clearest options, though each with its own trade-off: Bali sacrifices internet speed outside coworking spaces, Ho Chi Minh City sacrifices some quality of life. If the priority is an already well-oiled nomad community with a solid balance of cost, safety, and quality of life, Chiang Mai remains hard to beat. Kuala Lumpur is the pick for anyone who values English and easy logistics for exploring the rest of Asia. And Bangkok is the natural choice for anyone unwilling to give up megacity infrastructure or the region's best internet connection. At Roavio you'll find the full profile for each one, with its original source, so you can compare before packing your bags.

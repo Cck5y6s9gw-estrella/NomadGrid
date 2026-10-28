@@ -6,7 +6,7 @@ dek_en: "Four of the Mexican cities most chosen by digital nomads, side by side:
 date: "2026-09-25"
 cover: "https://images.unsplash.com/photo-1518105779142-d975f22f1b0a?w=1600&q=80"
 ---
-México lleva años entre los destinos favoritos de la comunidad nómada, gracias a su huso horario cómodo para trabajar con Estados Unidos, una entrada sin visado de hasta 180 días para un español y una escena gastronómica y cultural que no tiene rival en la región. Con Roavio ya cubriendo cuatro ciudades del país, toca comparar Ciudad de México, Guadalajara, Playa del Carmen y Oaxaca. Los datos, con su fuente original en cada ficha, dibujan un mapa con más matices de los que parece a simple vista.
+México lleva años entre los destinos favoritos de la comunidad nómada, gracias a su huso horario cómodo para trabajar con Estados Unidos, una entrada sin visado de hasta 180 días para un español y una escena gastronómica y cultural que no tiene rival en la región. Con Roavio cubriendo ya once ciudades del país, toca comparar cuatro de las más elegidas: Ciudad de México, Guadalajara, Playa del Carmen y Oaxaca. Los datos, con su fuente original en cada ficha, dibujan un mapa con más matices de los que parece a simple vista.
 
 El coste de vida, de menor a mayor
 
@@ -30,7 +30,7 @@ Si el presupuesto manda, Guadalajara es la opción más clara, además de venir 
 
 ---EN---
 
-Mexico has been among the nomad community's favorite destinations for years, thanks to a time zone that works well with the US, visa-free entry for up to 180 days for a Spaniard, and a food and culture scene that has no rival in the region. With Roavio now covering four cities in the country, it's time to compare Mexico City, Guadalajara, Playa del Carmen, and Oaxaca. The data, with its original source on each city page, paints a more nuanced picture than it might seem at first glance.
+Mexico has been among the nomad community's favorite destinations for years, thanks to a time zone that works well with the US, visa-free entry for up to 180 days for a Spaniard, and a food and culture scene that has no rival in the region. With Roavio now covering eleven cities in the country, it's time to compare four of the most popular: Mexico City, Guadalajara, Playa del Carmen, and Oaxaca. The data, with its original source on each city page, paints a more nuanced picture than it might seem at first glance.
 
 Cost of living, from lowest to highest
 

@@ -22,7 +22,7 @@ Canberra es la más segura, con un 7,9 sobre 10, y Sídney le sigue con un 7,2. 
 
 Internet: igual en todas
 
-Al estar en el mismo país, las siete comparten la misma velocidad media, 164 Mbps, por encima de la media del catálogo y más que suficiente para videollamadas y trabajo exigente. Ahí no hay nada que decidir entre ellas.
+Al estar en el mismo país, las siete comparten la misma velocidad media, 164 Mbps, algo por debajo de la media del catálogo (180 Mbps) pero más que suficiente para videollamadas y trabajo exigente. Ahí no hay nada que decidir entre ellas.
 
 Mar, clima y horarios
 
@@ -54,7 +54,7 @@ Canberra is the safest, at 7.9 out of 10, and Sydney follows at 7.2. Then come A
 
 Internet: the same everywhere
 
-Being in the same country, all seven share the same average speed, 164 Mbps, above the catalog average and more than enough for video calls and demanding work. Nothing to decide among them there.
+Being in the same country, all seven share the same average speed, 164 Mbps, slightly below the catalog average (180 Mbps) but more than enough for video calls and demanding work. Nothing to decide among them there.
 
 Sea, climate, and time zones
 

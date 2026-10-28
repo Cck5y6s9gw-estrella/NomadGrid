@@ -20,7 +20,7 @@ Calidad de vida: Florencia gana, pese a ser más barata
 
 Aquí está el dato que más debería sorprender: Florencia puntúa 8,2 sobre 10 en calidad de vida general, por delante del 8,0 de Roma y, sobre todo, del 7,8 de Venecia, según los índices cruzados de Numbeo que usa Roavio. Es decir, la ciudad italiana más cara de las tres no es la que mejor puntúa en el indicador que resume el día a día de quien vive allí, probablemente lastrada por la masificación turística extrema del centro histórico y la despoblación residencial que lleva décadas vaciando Venecia de vecinos reales en favor de alquileres turísticos.
 
-Seguridad: aquí Venecia sí gana, y con claridad
+Seguridad: aquí Venecia sí gana
 
 No todo juega en contra de Venecia. Con un 6,8 sobre 10, es la más segura de las tres, por delante del 6,5 de Florencia y el 6,2 de Roma. Ser una ciudad sin coches, de tamaño contenido y con un flujo turístico muy concentrado en zonas concretas probablemente ayuda a mantener el crimen callejero bajo control fuera de las áreas más masificadas.
 
@@ -52,7 +52,7 @@ Quality of life: Florence wins, despite being cheaper
 
 Here's the figure that should surprise most: Florence scores 8.2 out of 10 on overall quality of life, ahead of Rome's 8.0 and, especially, Venice's 7.8, per the cross-referenced Numbeo indices Roavio uses. In other words, the priciest of the three Italian cities isn't the one that scores best on the indicator that sums up daily life there, likely weighed down by extreme tourist crowding in the historic center and the decades-long residential exodus that keeps emptying Venice of actual neighbors in favor of short-term tourist rentals.
 
-Safety: Venice wins here, and clearly
+Safety: Venice does win here
 
 Not everything counts against Venice. At 6.8 out of 10, it's the safest of the three, ahead of Florence's 6.5 and Rome's 6.2. Being a car-free city of contained size with tourist flow concentrated in specific areas likely helps keep street crime in check outside the most crowded zones.
 

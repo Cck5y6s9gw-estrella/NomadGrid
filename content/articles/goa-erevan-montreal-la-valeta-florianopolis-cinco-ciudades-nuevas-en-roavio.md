@@ -18,7 +18,7 @@ Montreal lidera el grupo con 256 Mbps de media, de las velocidades más altas de
 
 Seguridad y calidad de vida: Montreal y Ereván arriba, Goa y Florianópolis en el otro extremo
 
-Aquí es donde más se separan estas cinco ciudades. Montreal registra la calidad de vida más alta del grupo, 8,7 sobre 10, con una seguridad notable de 6,7. Ereván va por delante en seguridad, con 7,8 sobre 10 —una de las puntuaciones más altas de todo el catálogo— y una calidad de vida de 6,2. La Valeta se mueve en un término medio, con seguridad de 6,4 y calidad de vida de 6,8. Florianópolis baja a 5,5 en seguridad y sube a 7,5 en calidad de vida, gracias a sus playas y su entorno natural. Goa es la que menor puntuación registra en seguridad, 5,4, con una calidad de vida de 6,2, algo a tener en cuenta a la hora de elegir zona dentro del estado.
+Aquí es donde más se separan estas cinco ciudades. Montreal registra la calidad de vida más alta del grupo, 9,0 sobre 10, con una seguridad notable de 7,4. Ereván va por delante en seguridad, con 7,5 sobre 10, y una calidad de vida de 7,0. La Valeta se mueve en un término medio, con seguridad de 6,8 y calidad de vida de 7,8. Florianópolis baja a 5,2 en seguridad y sube a 7,6 en calidad de vida, gracias a sus playas y su entorno natural. Goa es la que menor puntuación registra en seguridad, 5,0, con una calidad de vida de 6,5, algo a tener en cuenta a la hora de elegir zona dentro del estado.
 
 Lo que cada una aporta que las demás no tienen
 
@@ -42,7 +42,7 @@ Montreal leads the group with an average of 256 Mbps, one of the highest speeds 
 
 Safety and quality of life: Montreal and Yerevan at the top, Goa and Florianópolis at the other end
 
-This is where these five cities diverge the most. Montreal posts the highest quality of life in the group, 8.7 out of 10, with a solid safety score of 6.7. Yerevan leads on safety, at 7.8 out of 10 — one of the highest scores in the entire catalog — with a quality of life of 6.2. Valletta sits in the middle, with a safety score of 6.4 and quality of life at 6.8. Florianópolis drops to 5.5 on safety and rises to 7.5 on quality of life, thanks to its beaches and natural surroundings. Goa records the lowest safety score, 5.4, with a quality of life of 6.2 — something worth factoring in when choosing where to stay within the state.
+This is where these five cities diverge the most. Montreal posts the highest quality of life in the group, 9.0 out of 10, with a solid safety score of 7.4. Yerevan leads on safety, at 7.5 out of 10, with a quality of life of 7.0. Valletta sits in the middle, with a safety score of 6.8 and quality of life at 7.8. Florianópolis drops to 5.2 on safety and rises to 7.6 on quality of life, thanks to its beaches and natural surroundings. Goa records the lowest safety score, 5.0, with a quality of life of 6.5 — something worth factoring in when choosing where to stay within the state.
 
 What each one brings that the others don't
 

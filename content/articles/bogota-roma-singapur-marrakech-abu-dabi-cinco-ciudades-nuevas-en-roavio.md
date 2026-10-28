@@ -18,7 +18,7 @@ Singapur lidera el grupo por goleada con 407 Mbps de media, coherente con su fam
 
 Seguridad y calidad de vida: Abu Dabi arriba del todo, Bogotá en el otro extremo
 
-Aquí es donde más se separan estas cinco ciudades. Abu Dabi puntúa 8,9 sobre 10 en seguridad y 9,3 en calidad de vida, resultados que la sitúan entre las mejores de todo el catálogo de Roavio. Singapur va casi a la par en seguridad (7,8) con una calidad de vida también sólida (7,5). Roma y Marrakech se mueven en un término medio, con seguridad de 5,3 y 5,5 respectivamente, y calidad de vida de 7,3 y 5,6. Bogotá es la que menor puntuación registra en ambos apartados: 3,3 en seguridad y 5,2 en calidad de vida, la nota de seguridad más baja de las cinco y una de las más bajas de todo el catálogo, algo a tener muy en cuenta a la hora de elegir barrio y horarios.
+Aquí es donde más se separan estas cinco ciudades. Abu Dabi puntúa 8,0 sobre 10 en seguridad y 9,3 en calidad de vida, resultados que la sitúan entre las mejores de todo el catálogo de Roavio. Singapur va incluso ligeramente por delante en seguridad (8,2) con una calidad de vida también sólida (8,3). Roma y Marrakech se mueven en un término medio, con seguridad de 6,2 y 6,0 respectivamente, y calidad de vida de 8,0 y 6,2. Bogotá registra la nota de seguridad más baja de las cinco, un 3,1, y una de las más bajas de todo el catálogo, con una calidad de vida de 6,3, algo a tener muy en cuenta a la hora de elegir barrio y horarios.
 
 Lo que cada una aporta que las demás no tienen
 
@@ -42,7 +42,7 @@ Singapore leads the group by a wide margin with an average of 407 Mbps, consiste
 
 Safety and quality of life: Abu Dhabi at the top, Bogota at the other end
 
-This is where these five cities diverge the most. Abu Dhabi scores 8.9 out of 10 on safety and 9.3 on quality of life, results that put it among the best in Roavio's entire catalog. Singapore comes close on safety (7.8) with a solid quality of life score too (7.5). Rome and Marrakech sit in the middle, with safety scores of 5.3 and 5.5 respectively, and quality of life at 7.3 and 5.6. Bogota records the lowest scores in both categories: 3.3 on safety and 5.2 on quality of life — the lowest safety score of the five and one of the lowest in the whole catalog, something well worth factoring in when choosing a neighborhood and adjusting your routine.
+This is where these five cities diverge the most. Abu Dhabi scores 8.0 out of 10 on safety and 9.3 on quality of life, results that put it among the best in Roavio's entire catalog. Singapore is even slightly ahead on safety (8.2) with a solid quality of life score too (8.3). Rome and Marrakech sit in the middle, with safety scores of 6.2 and 6.0 respectively, and quality of life at 8.0 and 6.2. Bogota records the lowest safety score of the five, 3.1, and one of the lowest in the whole catalog, with a quality of life of 6.3, something well worth factoring in when choosing a neighborhood and adjusting your routine.
 
 What each one brings that the others don't
 

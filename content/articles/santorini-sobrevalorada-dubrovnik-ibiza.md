@@ -16,7 +16,7 @@ Internet: aquí Santorini pierde por goleada
 
 Este es el dato más determinante para quien trabaja en remoto: Santorini ofrece 87 Mbps de media, frente a los 113 Mbps de Dubrovnik y, sobre todo, los 263 Mbps de Ibiza, casi el triple. La infraestructura de telecomunicaciones de las islas griegas pequeñas sigue notablemente por detrás de sus rivales croata y española, algo que penaliza especialmente a quien depende de videollamadas o de subir archivos pesados a diario.
 
-Seguridad: las tres, muy cerca
+Seguridad: Santorini compite con Dubrovnik, Ibiza queda detrás
 
 Con un 7,5 sobre 10, Santorini queda muy cerca de Dubrovnik (7,6) y claramente por delante de Ibiza (6,8). En este apartado, propio de islas pequeñas con un flujo turístico concentrado, Santorini sí compite de igual a igual con Dubrovnik.
 
@@ -48,7 +48,7 @@ Internet: Santorini loses by a landslide here
 
 This is the most decisive figure for anyone working remotely: Santorini offers 87 Mbps on average, versus 113 Mbps in Dubrovnik and, especially, 263 Mbps in Ibiza — almost triple. Small Greek islands' telecom infrastructure remains notably behind its Croatian and Spanish rivals, which especially penalizes anyone relying on daily video calls or uploading heavy files.
 
-Safety: all three, very close
+Safety: Santorini matches Dubrovnik, Ibiza trails
 
 At 7.5 out of 10, Santorini is very close to Dubrovnik (7.6) and clearly ahead of Ibiza (6.8). On this front, typical of small islands with concentrated tourist flow, Santorini genuinely competes on equal footing with Dubrovnik.
 

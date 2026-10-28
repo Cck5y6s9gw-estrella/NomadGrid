@@ -18,7 +18,7 @@ Lima lidera el grupo con 252 Mbps de media, una cifra que sorprende viniendo de 
 
 Seguridad y calidad de vida: Osaka y Sídney arriba del todo, Lima en el otro extremo
 
-Aquí es donde más se separan estas cinco ciudades. Osaka puntúa 6,7 sobre 10 en seguridad y 9,0 en calidad de vida, y Sídney va casi a la par con 6,6 en seguridad y la calidad de vida más alta del grupo, 9,1. Amán se mueve en un término medio, con seguridad de 6,3 y calidad de vida de 6,1. Nairobi baja a 4,1 en seguridad y 5,0 en calidad de vida. Lima es la que menor puntuación registra en ambos apartados: 3,0 en seguridad y 4,5 en calidad de vida, algo a tener muy en cuenta a la hora de elegir barrio en la ciudad.
+Aquí es donde más se separan estas cinco ciudades. Osaka puntúa 7,4 sobre 10 en seguridad y 9,1 en calidad de vida, y Sídney va casi a la par con 7,2 en seguridad y la calidad de vida más alta del grupo, 9,3. Amán se mueve en un término medio, con seguridad de 6,4 y calidad de vida de 6,7. Nairobi y Lima comparten la nota de seguridad más baja del grupo, 4,1, con una calidad de vida de 5,5 en Nairobi y 5,9 en Lima, algo a tener muy en cuenta a la hora de elegir barrio en ambas ciudades.
 
 Lo que cada una aporta que las demás no tienen
 
@@ -42,7 +42,7 @@ Lima leads the group with an average of 252 Mbps, a surprising figure coming out
 
 Safety and quality of life: Osaka and Sydney at the top, Lima at the other end
 
-This is where these five cities diverge the most. Osaka scores 6.7 out of 10 on safety and 9.0 on quality of life, and Sydney comes close with 6.6 on safety and the highest quality of life in the group, 9.1. Amman sits in the middle, with a safety score of 6.3 and quality of life at 6.1. Nairobi drops to 4.1 on safety and 5.0 on quality of life. Lima records the lowest scores in both categories: 3.0 on safety and 4.5 on quality of life — something well worth factoring in when choosing a neighborhood in the city.
+This is where these five cities diverge the most. Osaka scores 7.4 out of 10 on safety and 9.1 on quality of life, and Sydney comes close with 7.2 on safety and the highest quality of life in the group, 9.3. Amman sits in the middle, with a safety score of 6.4 and quality of life at 6.7. Nairobi and Lima share the group's lowest safety score, 4.1, with a quality of life of 5.5 in Nairobi and 5.9 in Lima — something well worth factoring in when choosing a neighborhood in either city.
 
 What each one brings that the others don't
 
