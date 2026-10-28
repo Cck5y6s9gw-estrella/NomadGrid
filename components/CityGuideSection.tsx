@@ -12,7 +12,7 @@ export default function CityGuideSection({
 }) {
   return (
     <section>
-      <h2 className="text-lg mb-3">{title}</h2>
+      <h2 className="text-3xl mb-3">{title}</h2>
       <div className="space-y-4">{renderRichText(section.content)}</div>
       {section.sources.length > 0 && (
         <div className="mt-4 flex flex-wrap items-baseline gap-x-1 gap-y-1 text-xs text-muted">

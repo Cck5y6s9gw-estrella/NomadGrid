@@ -10,7 +10,7 @@ export default function CityEsimSection({ city }: { city: City }) {
 
   return (
     <section>
-      <h2 className="text-lg mb-3">{d.esimTitle}</h2>
+      <h2 className="text-3xl mb-3">{d.esimTitle}</h2>
       <div className="bg-card border border-border rounded-2xl p-5 space-y-3">
         <p className="text-sm text-muted leading-relaxed">{d.esimIntro(tCity(city.name, lang))}</p>
         <p className="text-sm text-muted leading-relaxed">{d.esimBody}</p>

@@ -97,13 +97,13 @@ export default function CityDetailClient({ city, guide }: { city: City; guide: C
           <div className="lg:col-span-2 space-y-8">
             {/* Description */}
             <section>
-              <h2 className="text-lg mb-3">{d.aboutCity(tCity(city.name, lang))}</h2>
+              <h2 className="text-3xl mb-3">{d.aboutCity(tCity(city.name, lang))}</h2>
               <p className="text-muted leading-relaxed">{city.description[lang]}</p>
             </section>
 
             {/* Strengths & Considerations */}
             <section>
-              <h2 className="text-lg mb-4">{d.highlightedData}</h2>
+              <h2 className="text-3xl mb-4">{d.highlightedData}</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="bg-card border border-accent/20 rounded-2xl p-5">
                   <h3 className="text-sm font-semibold text-accent mb-3">{d.strengths}</h3>
@@ -161,7 +161,7 @@ export default function CityDetailClient({ city, guide }: { city: City; guide: C
 
             {/* Sources */}
             <section>
-              <h2 className="text-lg mb-1">{d.dataSources}</h2>
+              <h2 className="text-3xl mb-1">{d.dataSources}</h2>
               <p className="text-sm text-muted mb-4">{d.dataSourcesSubtitle}</p>
               <div className="bg-card border border-border rounded-2xl divide-y divide-border">
                 {sourceRows.map((row) => (
