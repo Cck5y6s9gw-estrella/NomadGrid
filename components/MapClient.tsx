@@ -7,7 +7,7 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import { cities, type City } from "@/data/cities";
 import { pois } from "@/data/coworkings";
 import { useLanguage } from "@/lib/i18n";
-import { t } from "@/lib/dictionary";
+import { t, tCity } from "@/lib/dictionary";
 import { IconSearch, IconMessage } from "@/components/Icon";
 import { THEME_CHANGE_EVENT, type Theme } from "@/components/ThemeProvider";
 
@@ -220,7 +220,7 @@ export default function MapClient() {
       cities.forEach((city, index) => {
         const el = document.createElement("div");
         el.className = "roavio-city-marker";
-        el.title = city.name;
+        el.title = tCity(city.name, lang);
         el.innerHTML = `
           <span class="roavio-city-marker__ring">
             <span class="roavio-city-marker__photo" style="background-image:url('${city.imageUrl}')"></span>
@@ -339,7 +339,7 @@ export default function MapClient() {
   const filtered = useMemo(() => {
     if (!query.trim()) return [];
     const q = query.trim().toLowerCase();
-    return cities.filter((c) => c.name.toLowerCase().includes(q)).slice(0, 8);
+    return cities.filter((c) => c.name.toLowerCase().includes(q) || tCity(c.name, lang).toLowerCase().includes(q)).slice(0, 8);
   }, [query]);
 
   function selectCity(city: City) {
@@ -391,10 +391,10 @@ export default function MapClient() {
                 >
                   <img
                     src={city.imageUrl}
-                    alt={city.name}
+                    alt={tCity(city.name, lang)}
                     className="w-11 h-11 rounded-lg object-cover flex-shrink-0"
                   />
-                  <span className="text-sm font-medium text-foreground">{city.name}</span>
+                  <span className="text-sm font-medium text-foreground">{tCity(city.name, lang)}</span>
                 </button>
               ))}
             </div>
@@ -405,11 +405,11 @@ export default function MapClient() {
               <div className="flex items-center gap-3 mb-3">
                 <img
                   src={selectedCity.imageUrl}
-                  alt={selectedCity.name}
+                  alt={tCity(selectedCity.name, lang)}
                   className="w-12 h-12 rounded-xl object-cover flex-shrink-0 ring-2 ring-accent/40"
                 />
                 <div className="min-w-0">
-                  <div className="text-sm font-semibold text-foreground truncate">{selectedCity.name}</div>
+                  <div className="text-sm font-semibold text-foreground truncate">{tCity(selectedCity.name, lang)}</div>
                   <button
                     onClick={() => setSelectedCity(null)}
                     className="text-xs text-muted hover:text-accent transition-colors"

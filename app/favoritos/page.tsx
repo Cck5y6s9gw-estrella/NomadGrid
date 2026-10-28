@@ -6,7 +6,7 @@ import Navbar from "@/components/Navbar";
 import FavoriteButton from "@/components/FavoriteButton";
 import { cities } from "@/data/cities";
 import { useLanguage } from "@/lib/i18n";
-import { t, formatMoney, tCountry } from "@/lib/dictionary";
+import { t, formatMoney, tCountry, tCity } from "@/lib/dictionary";
 import { IconHeart } from "@/components/Icon";
 
 export default function FavoritesPage() {
@@ -68,14 +68,14 @@ export default function FavoritesPage() {
                 <Link href={`/cities/${city.slug}`}>
                   <img
                     src={city.imageUrl}
-                    alt={city.name}
+                    alt={tCity(city.name, lang)}
                     className="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/95 via-background/20 to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-4">
                     <div className="flex items-end justify-between mb-2">
                       <div>
-                        <h3 className="text-sm font-semibold leading-tight text-foreground">{city.name}</h3>
+                        <h3 className="text-sm font-semibold leading-tight text-foreground">{tCity(city.name, lang)}</h3>
                         <p className="text-xs text-muted">{tCountry(city.country, lang)}</p>
                       </div>
                       <div className="text-right">

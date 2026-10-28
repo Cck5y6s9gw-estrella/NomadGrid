@@ -5,7 +5,7 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import { cities, City } from "@/data/cities";
 import { useLanguage, type Lang } from "@/lib/i18n";
-import { t, formatMoney, tCountry, tContinent, tClimate } from "@/lib/dictionary";
+import { t, formatMoney, tCountry, tContinent, tClimate, tCity } from "@/lib/dictionary";
 import { trackEvent } from "@/lib/gtag";
 import {
   IconCoin,
@@ -217,7 +217,7 @@ export default function MatchPage() {
   function share() {
     const top = results[0]?.city;
     if (!top) return;
-    const text = d.matchShareText(top.name);
+    const text = d.matchShareText(tCity(top.name, lang));
     const url = `https://www.roavio.es/cities/${top.slug}`;
     const intent = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;
     trackEvent("match_quiz_share", { city: top.slug });
@@ -252,7 +252,7 @@ export default function MatchPage() {
                 <img
                   key={city.slug}
                   src={city.imageUrl}
-                  alt={city.name}
+                  alt={tCity(city.name, lang)}
                   style={{ zIndex: previewCities.length - i, animationDelay: `${i * 60}ms` }}
                   className="match-pop-in w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover border-2 border-background shadow-lg"
                 />
@@ -403,10 +403,10 @@ export default function MatchPage() {
                         #1
                       </span>
                     )}
-                    <img src={city.imageUrl} alt={city.name} className="h-16 w-16 rounded-2xl object-cover shrink-0" />
+                    <img src={city.imageUrl} alt={tCity(city.name, lang)} className="h-16 w-16 rounded-2xl object-cover shrink-0" />
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 flex-wrap">
-                        <span className="font-serif text-foreground">{city.name}</span>
+                        <span className="font-serif text-foreground">{tCity(city.name, lang)}</span>
                         <span className="text-xs text-muted">{tCountry(city.country, lang)}</span>
                       </div>
                       <div className="h-1.5 w-full max-w-[160px] rounded-full bg-foreground/10 overflow-hidden mt-1.5 mb-1">

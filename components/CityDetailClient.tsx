@@ -9,7 +9,7 @@ import { cities, type City } from "@/data/cities";
 import { visaDisclaimer, visaDisclaimerEn, type CityGuide } from "@/data/cityGuides";
 import { cityGuidesEn } from "@/data/cityGuidesEn";
 import { useLanguage } from "@/lib/i18n";
-import { t, formatMoney, tCountry, tContinent, tClimate } from "@/lib/dictionary";
+import { t, formatMoney, tCountry, tContinent, tClimate, tCity } from "@/lib/dictionary";
 import { getCityInsights } from "@/lib/cityInsights";
 import { IconCoin, IconWifi, IconShield, IconSun, IconStar, IconUmbrella } from "./Icon";
 
@@ -65,12 +65,12 @@ export default function CityDetailClient({ city, guide }: { city: City; guide: C
 
       {/* Hero image */}
       <div className="relative h-80 pt-14">
-        <img src={city.imageUrl} alt={city.name} className="w-full h-full object-cover" />
+        <img src={city.imageUrl} alt={tCity(city.name, lang)} className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
         <div className="absolute bottom-0 left-0 right-0 max-w-7xl mx-auto px-6 pb-8">
           <p className="text-sm text-white/70 mb-1">{tCountry(city.country, lang)} · {tContinent(city.continent, lang)}</p>
           <div className="flex items-center gap-3">
-            <h1 className="font-serif text-4xl text-white">{city.name}</h1>
+            <h1 className="font-serif text-4xl text-white">{tCity(city.name, lang)}</h1>
             <FavoriteButton citySlug={city.slug} variant="hero" />
           </div>
         </div>
@@ -97,7 +97,7 @@ export default function CityDetailClient({ city, guide }: { city: City; guide: C
           <div className="lg:col-span-2 space-y-8">
             {/* Description */}
             <section>
-              <h2 className="text-lg font-semibold mb-3">{d.aboutCity(city.name)}</h2>
+              <h2 className="text-lg font-semibold mb-3">{d.aboutCity(tCity(city.name, lang))}</h2>
               <p className="text-muted leading-relaxed">{city.description[lang]}</p>
             </section>
 

@@ -5,7 +5,7 @@ import { useUser } from "@clerk/nextjs";
 import Navbar from "@/components/Navbar";
 import { cities } from "@/data/cities";
 import { useLanguage } from "@/lib/i18n";
-import { t, formatMoney, tCountry } from "@/lib/dictionary";
+import { t, formatMoney, tCountry, tCity } from "@/lib/dictionary";
 import { IconWifi, IconUmbrella, IconStar, IconHeart } from "@/components/Icon";
 
 export default function Home() {
@@ -82,14 +82,14 @@ export default function Home() {
             <Link key={city.slug} href={`/cities/${city.slug}`} style={{ animationDelay: `${i * 60}ms` }} className="animate-pop-in group relative overflow-hidden rounded-3xl border border-white/10 shadow-lg shadow-black/30 hover:border-accent/70 hover:shadow-accent/10 transition-all duration-300">
               <img
                 src={city.imageUrl}
-                alt={city.name}
+                alt={tCity(city.name, lang)}
                 className="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/30 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-5">
                 <div className="flex items-end justify-between">
                   <div>
-                    <h3 className="font-serif text-lg text-white">{city.name}</h3>
+                    <h3 className="font-serif text-lg text-white">{tCity(city.name, lang)}</h3>
                     <p className="text-sm text-white/65">{tCountry(city.country, lang)}</p>
                   </div>
                   <div className="text-right">

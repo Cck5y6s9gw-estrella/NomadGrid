@@ -6,7 +6,7 @@ import Navbar from "@/components/Navbar";
 import FavoriteButton from "@/components/FavoriteButton";
 import { cities, City } from "@/data/cities";
 import { useLanguage } from "@/lib/i18n";
-import { t, formatMoney, tCountry, tContinent } from "@/lib/dictionary";
+import { t, formatMoney, tCountry, tContinent, tCity } from "@/lib/dictionary";
 import { IconShield, IconWifi, IconUmbrella, IconStar } from "@/components/Icon";
 
 const continentValues = ["Todos", "Europa", "Asia", "América", "Norteamérica", "África", "Oceanía"];
@@ -24,6 +24,7 @@ export default function CitiesPage() {
     .filter((c) => {
       const matchSearch =
         c.name.toLowerCase().includes(search.toLowerCase()) ||
+        tCity(c.name, lang).toLowerCase().includes(search.toLowerCase()) ||
         c.country.toLowerCase().includes(search.toLowerCase()) ||
         tCountry(c.country, lang).toLowerCase().includes(search.toLowerCase());
       const matchContinent = continent === "Todos" || c.continent === continent;
@@ -36,7 +37,7 @@ export default function CitiesPage() {
       if (sortBy === "quality") return b.qualityOfLife - a.qualityOfLife;
       if (sortBy === "safety") return b.safetyScore - a.safetyScore;
       if (sortBy === "internet") return b.internetSpeed - a.internetSpeed;
-      return a.name.localeCompare(b.name);
+      return tCity(a.name, lang).localeCompare(tCity(b.name, lang));
     });
 
   return (
@@ -137,7 +138,7 @@ function CityCard({ city, lang, monthly, index }: { city: City; lang: "es" | "en
     >
       <img
         src={city.imageUrl}
-        alt={city.name}
+        alt={tCity(city.name, lang)}
         className="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-500"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/25 to-transparent" />
@@ -145,7 +146,7 @@ function CityCard({ city, lang, monthly, index }: { city: City; lang: "es" | "en
       <div className="absolute bottom-0 left-0 right-0 p-4">
         <div className="flex items-end justify-between mb-2">
           <div>
-            <h3 className="font-serif text-base leading-tight text-white">{city.name}</h3>
+            <h3 className="font-serif text-base leading-tight text-white">{tCity(city.name, lang)}</h3>
             <p className="text-xs text-white/65">{tCountry(city.country, lang)}</p>
           </div>
           <div className="text-right">

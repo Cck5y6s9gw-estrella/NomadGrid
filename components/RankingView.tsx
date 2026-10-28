@@ -5,7 +5,7 @@ import Link from "next/link";
 import Navbar from "./Navbar";
 import FavoriteButton from "./FavoriteButton";
 import { useLanguage } from "@/lib/i18n";
-import { t, tCountry } from "@/lib/dictionary";
+import { t, tCountry, tCity } from "@/lib/dictionary";
 import type { City } from "@/data/cities";
 import type { RankingConfig } from "@/lib/rankings";
 import { formatRankingValue } from "@/lib/rankings";
@@ -58,6 +58,7 @@ export default function RankingView({
     return orderedCities.filter(
       (city) =>
         city.name.toLowerCase().includes(q) ||
+        tCity(city.name, lang).toLowerCase().includes(q) ||
         city.country.toLowerCase().includes(q) ||
         tCountry(city.country, lang).toLowerCase().includes(q)
     );
@@ -127,12 +128,12 @@ export default function RankingView({
                   </span>
                   <img
                     src={city.imageUrl}
-                    alt={city.name}
+                    alt={tCity(city.name, lang)}
                     className="w-10 h-10 rounded-lg object-cover shrink-0"
                   />
                   <div className="min-w-0 flex-1">
                     <div className="text-sm font-medium text-foreground group-hover:text-accent transition-colors truncate">
-                      {city.name}
+                      {tCity(city.name, lang)}
                     </div>
                     <div className="text-xs text-muted truncate">{tCountry(city.country, lang)}</div>
                   </div>

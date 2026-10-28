@@ -26,9 +26,9 @@ export const rankings: RankingConfig[] = [
     titleEs: "Ranking de ciudades más baratas para nómadas digitales (2026)",
     titleEn: "Ranking of the Cheapest Cities for Digital Nomads (2026)",
     descriptionEs:
-      "Las 130 ciudades de Roavio ordenadas de más barata a más cara por coste de vida mensual (sin alquiler), según datos de Numbeo.",
+      `Las ${cities.length} ciudades de Roavio ordenadas de más barata a más cara por coste de vida mensual (sin alquiler), según datos de Numbeo.`,
     descriptionEn:
-      "All 130 Roavio cities ranked from cheapest to most expensive by monthly cost of living (excluding rent), based on Numbeo data.",
+      `All ${cities.length} Roavio cities ranked from cheapest to most expensive by monthly cost of living (excluding rent), based on Numbeo data.`,
     cardTitleEs: "Coste de vida",
     cardTitleEn: "Cost of living",
     unitEs: "€/mes",
@@ -74,9 +74,9 @@ export const rankings: RankingConfig[] = [
     titleEs: "Ranking de ciudades con internet más rápido para nómadas digitales (2026)",
     titleEn: "Ranking of the Fastest Internet Cities for Digital Nomads (2026)",
     descriptionEs:
-      "Las 130 ciudades de Roavio ordenadas por velocidad media de banda ancha fija, según el Speedtest Global Index (Ookla).",
+      `Las ${cities.length} ciudades de Roavio ordenadas por velocidad media de banda ancha fija, según el Speedtest Global Index (Ookla).`,
     descriptionEn:
-      "All 130 Roavio cities ranked by average fixed broadband speed, based on the Speedtest Global Index (Ookla).",
+      `All ${cities.length} Roavio cities ranked by average fixed broadband speed, based on the Speedtest Global Index (Ookla).`,
     cardTitleEs: "Internet",
     cardTitleEn: "Internet speed",
     unitEs: "Mbps",

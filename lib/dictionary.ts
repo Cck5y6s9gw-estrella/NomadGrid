@@ -32,6 +32,80 @@ export const countryNames: Record<string, string> = {
   "Países Bajos": "Netherlands",
   "Dinamarca": "Denmark",
   "Austria": "Austria",
+  "Alemania": "Germany",
+  "Italia": "Italy",
+  "Francia": "France",
+  "Filipinas": "Philippines",
+  "Noruega": "Norway",
+  "Grecia": "Greece",
+  "Singapur": "Singapore",
+  "Marruecos": "Morocco",
+  "Australia": "Australia",
+  "Perú": "Peru",
+  "Kenia": "Kenya",
+  "Nueva Zelanda": "New Zealand",
+  "Chile": "Chile",
+  "Ghana": "Ghana",
+  "Omán": "Oman",
+  "Uruguay": "Uruguay",
+  "Egipto": "Egypt",
+  "Catar": "Qatar",
+  "Brasil": "Brazil",
+  "Nigeria": "Nigeria",
+  "Irlanda": "Ireland",
+  "Albania": "Albania",
+  "Tanzania": "Tanzania",
+  "Eslovenia": "Slovenia",
+  "Kazajistán": "Kazakhstan",
+  "Ruanda": "Rwanda",
+  "Letonia": "Latvia",
+  "Hong Kong": "Hong Kong",
+  "Panamá": "Panama",
+  "Etiopía": "Ethiopia",
+  "Fiyi": "Fiji",
+  "Camboya": "Cambodia",
+  "Namibia": "Namibia",
+  "India": "India",
+  "Armenia": "Armenia",
+  "Malta": "Malta",
+  "Costa Rica": "Costa Rica",
+  "Islandia": "Iceland",
+  "Nepal": "Nepal",
+  "Rumanía": "Romania",
+  "Jordania": "Jordan",
+  "Senegal": "Senegal",
+  "Ecuador": "Ecuador",
+  "Lituania": "Lithuania",
+  "Azerbaiyán": "Azerbaijan",
+  "Suiza": "Switzerland",
+  "Líbano": "Lebanon",
+  "Puerto Rico": "Puerto Rico",
+  "Israel": "Israel",
+  "Guatemala": "Guatemala",
+  "Kosovo": "Kosovo",
+  "Uganda": "Uganda",
+  "Bosnia y Herzegovina": "Bosnia and Herzegovina",
+  "Uzbekistán": "Uzbekistan",
+  "Montenegro": "Montenegro",
+  "Suecia": "Sweden",
+  "Bélgica": "Belgium",
+  "Finlandia": "Finland",
+  "Arabia Saudí": "Saudi Arabia",
+  "Jamaica": "Jamaica",
+  "Eslovaquia": "Slovakia",
+  "Luxemburgo": "Luxembourg",
+  "Chipre": "Cyprus",
+  "Túnez": "Tunisia",
+  "Pakistán": "Pakistan",
+  "República Dominicana": "Dominican Republic",
+  "Kuwait": "Kuwait",
+  "Paraguay": "Paraguay",
+  "Baréin": "Bahrain",
+  "El Salvador": "El Salvador",
+  "Bangladés": "Bangladesh",
+  "Kirguistán": "Kyrgyzstan",
+  "Costa de Marfil": "Côte d'Ivoire",
+  "Mongolia": "Mongolia",
 };
 
 export const continentNames: Record<string, string> = {
@@ -41,6 +115,9 @@ export const continentNames: Record<string, string> = {
   "Norteamérica": "North America",
   "África": "Africa",
   "Oceanía": "Oceania",
+  "Sudamérica": "Americas",
+  "América del Norte": "North America",
+  "América del Sur": "Americas",
 };
 
 export const climateNames: Record<string, string> = {
@@ -60,6 +137,26 @@ export const climateNames: Record<string, string> = {
   "Templado húmedo": "Humid temperate",
   "Tropical": "Tropical",
   "Tropical húmedo": "Humid tropical",
+  "Tropical de sabana": "Tropical savanna",
+  "Subtropical de montaña": "Subtropical highland",
+  "Semiárido cálido": "Hot semi-arid",
+  "Desértico cálido": "Hot desert",
+  "Desértico subtropical": "Subtropical desert",
+  "Subtropical de altitud": "High-altitude subtropical",
+  "Sabana": "Savanna",
+  "Semiárido": "Semi-arid",
+  "Tropical monzónico": "Tropical monsoon",
+  "Subpolar oceánico": "Subpolar oceanic",
+  "Mediterráneo semiárido": "Semi-arid Mediterranean",
+  "Semiárido frío": "Cold semi-arid",
+  "Continental semiárido": "Semi-arid continental",
+  "Ecuatorial de altitud": "High-altitude equatorial",
+  "Templado de montaña": "Mountain temperate",
+  "Subtropical de altura": "High-altitude subtropical",
+  "Oceánico degradado": "Degraded oceanic",
+  "Mediterráneo cálido": "Hot Mediterranean",
+  "Tropical con estación seca": "Tropical with dry season",
+  "Continental subártico": "Subarctic continental",
 };
 
 export function tCountry(value: string, lang: Lang): string {
@@ -75,6 +172,32 @@ export function tContinent(value: string, lang: Lang): string {
 export function tClimate(value: string, lang: Lang): string {
   if (lang === "es") return value;
   return climateNames[value] ?? value;
+}
+
+export const cityNames: Record<string, string> = {
+  "Medellín": "Medellín","Ciudad de México": "Mexico City","Dubái": "Dubai","Praga": "Prague","Tiflis": "Tbilisi","Tokio": "Tokyo","Seúl": "Seoul","Estambul": "Istanbul","Varsovia": "Warsaw","Tallin": "Tallinn","Oporto": "Porto","Berlín": "Berlin","Florencia": "Florence","Londres": "London","Shanghái": "Shanghai","Ciudad del Cabo": "Cape Town","Taipéi": "Taipei","Sofía": "Sofia","Belgrado": "Belgrade","Múnich": "Munich","Sevilla": "Seville","París": "Paris","Milán": "Milan","Ámsterdam": "Amsterdam","Copenhague": "Copenhagen","Pekín": "Beijing","Viena": "Vienna","Hanói": "Hanoi","Cracovia": "Krakow","Atenas": "Athens","Bogotá": "Bogotá","Singapur": "Singapore","Abu Dabi": "Abu Dhabi","Sídney": "Sydney","El Cairo": "Cairo","Mascate": "Muscat","Río de Janeiro": "Rio de Janeiro","Yakarta": "Jakarta","Dublín": "Dublin","Zanzíbar": "Zanzibar","Liubliana": "Ljubljana","Ciudad de Panamá": "Panama City","Adís Abeba": "Addis Ababa","Nueva York": "New York","Las Palmas de Gran Canaria": "Las Palmas de Gran Canaria","Málaga": "Málaga","Cancún": "Cancún","Ereván": "Yerevan","La Valeta": "Valletta","Los Ángeles": "Los Angeles","Reikiavik": "Reykjavik","Katmandú": "Kathmandu","Bucarest": "Bucharest","Amán": "Amman","Bakú": "Baku","Zúrich": "Zurich","Róterdam": "Rotterdam","Tánger": "Tangier","Edimburgo": "Edinburgh","Taskent": "Tashkent","Salvador de Bahía": "Salvador de Bahia","Niza": "Nice","Estocolmo": "Stockholm","Bruselas": "Brussels","Kioto": "Kyoto","Venecia": "Venice","Nueva Delhi": "New Delhi","Nápoles": "Naples","Marsella": "Marseille","Hamburgo": "Hamburg","Johannesburgo": "Johannesburg","Nueva Orleans": "New Orleans","Riad": "Riyadh","Jerusalén": "Jerusalem","Granada": "Granada","Ginebra": "Geneva","Washington D. C.": "Washington, D.C.","Bolonia": "Bologna","Gotemburgo": "Gothenburg","Adelaida": "Adelaide","Burdeos": "Bordeaux","Filadelfia": "Philadelphia","Turín": "Turin","Luxemburgo": "Luxembourg","Salónica": "Thessaloniki","Colonia": "Cologne","Limasol": "Limassol","Túnez": "Tunis","Génova": "Genoa","Basilea": "Basel","Amberes": "Antwerp","Asunción": "Asunción","Berna": "Bern","Abiyán": "Abidjan","Ulán Bator": "Ulaanbaatar","Dresde": "Dresden","Breslavia": "Wrocław","Mérida": "Mérida","Valparaíso": "Valparaíso","Florianópolis": "Florianópolis","San José": "San José","Santa Cruz de Tenerife": "Santa Cruz de Tenerife","Montreal": "Montreal","Estrasburgo": "Strasbourg","Gdansk": "Gdańsk"
+};
+
+export function tCity(value: string, lang: Lang): string {
+  if (lang === "es") return value;
+  return cityNames[value] ?? value;
+}
+
+const monthsEn: Record<string, string> = {
+  enero: "January", febrero: "February", marzo: "March", abril: "April", mayo: "May", junio: "June",
+  julio: "July", agosto: "August", septiembre: "September", octubre: "October", noviembre: "November", diciembre: "December",
+};
+
+export function tBestTime(value: string, lang: Lang): string {
+  if (lang === "es") return value;
+  let v = value
+    .replace("Todo el año (evitar monzón mayo-octubre)", "Year-round (avoid the May–October monsoon)")
+    .replace("Todo el año (clima estable)", "Year-round (stable climate)")
+    .replace("(evitar la temporada de tifones, noviembre-diciembre)", "(avoid typhoon season, November–December)")
+    .replace("Todo el año", "Year-round");
+  v = v.replace(/\b(enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre)\b/gi, (m) => monthsEn[m.toLowerCase()]);
+  v = v.replace(/ a /g, " to ").replace(/ y /g, " and ");
+  return v;
 }
 
 export function formatMoney(value: number, lang: Lang): string {

@@ -8,7 +8,7 @@ import Navbar from "@/components/Navbar";
 import { useTheme } from "@/components/ThemeProvider";
 import { cities, City } from "@/data/cities";
 import { useLanguage, type Lang } from "@/lib/i18n";
-import { t, formatMoney, tCountry, tContinent, tClimate } from "@/lib/dictionary";
+import { t, formatMoney, tCountry, tContinent, tClimate, tCity, tBestTime } from "@/lib/dictionary";
 import { trackEvent } from "@/lib/gtag";
 import { IconScale, IconHeart } from "@/components/Icon";
 import { findVsArticle, vsArticles } from "@/lib/vsArticles";
@@ -27,7 +27,7 @@ function buildMetrics(lang: Lang) {
     { key: "climateType", label: d.metricClimate, format: (c: City) => tClimate(c.climateType, lang), best: "none" },
     { key: "hasBeach", label: d.metricBeach, format: (c: City) => (c.hasBeach ? d.yes : d.no), best: "none" },
     { key: "continent", label: d.metricContinent, format: (c: City) => tContinent(c.continent, lang), best: "none" },
-    { key: "bestTimeToVisit", label: d.metricBestTime, format: (c: City) => c.bestTimeToVisit, best: "none" },
+    { key: "bestTimeToVisit", label: d.metricBestTime, format: (c: City) => tBestTime(c.bestTimeToVisit, lang), best: "none" },
   ] as const;
 }
 
@@ -94,6 +94,7 @@ function ComparePageInner() {
   const filtered = cities.filter(
     (c) =>
       (c.name.toLowerCase().includes(search.toLowerCase()) ||
+        tCity(c.name, lang).toLowerCase().includes(search.toLowerCase()) ||
         c.country.toLowerCase().includes(search.toLowerCase()) ||
         tCountry(c.country, lang).toLowerCase().includes(search.toLowerCase())) &&
       !selected.includes(c.slug)
@@ -181,7 +182,7 @@ function ComparePageInner() {
           <div className="flex flex-wrap items-center gap-2 mb-4">
             {selectedCities.map((city) => (
               <div key={city.slug} className="flex items-center gap-2.5 bg-accent/5 border border-accent/30 rounded-full pl-4 pr-2 py-2">
-                <span className="text-sm font-medium text-foreground">{city.name}</span>
+                <span className="text-sm font-medium text-foreground">{tCity(city.name, lang)}</span>
                 <button
                   onClick={() => removeCity(city.slug)}
                   className="w-5 h-5 flex items-center justify-center rounded-full text-muted hover:text-accent hover:bg-accent/10 transition-colors text-sm leading-none"
@@ -226,12 +227,12 @@ function ComparePageInner() {
                   >
                     <img
                       src={city.imageUrl}
-                      alt={city.name}
+                      alt={tCity(city.name, lang)}
                       className="w-full h-20 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-background/95 via-background/25 to-transparent" />
                     <div className="absolute bottom-0 left-0 right-0 p-2 text-left">
-                      <div className="text-xs font-medium text-foreground leading-tight">{city.name}</div>
+                      <div className="text-xs font-medium text-foreground leading-tight">{tCity(city.name, lang)}</div>
                       <div className="text-[10px] text-muted leading-tight">{tCountry(city.country, lang)}</div>
                     </div>
                   </button>
@@ -291,11 +292,11 @@ function ComparePageInner() {
                   {selectedCities.map((city) => (
                     <div key={city.slug} className="border-l border-border">
                       <div className="relative h-28 overflow-hidden">
-                        <img src={city.imageUrl} alt={city.name} className="w-full h-full object-cover" />
+                        <img src={city.imageUrl} alt={tCity(city.name, lang)} className="w-full h-full object-cover" />
                         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/10 to-transparent" />
                       </div>
                       <div className="py-4 px-5">
-                        <div className="font-semibold text-foreground">{city.name}</div>
+                        <div className="font-semibold text-foreground">{tCity(city.name, lang)}</div>
                         <div className="text-xs text-muted mt-0.5">{tCountry(city.country, lang)}</div>
                       </div>
                     </div>
@@ -420,10 +421,10 @@ function ComparePageInner() {
                     className="animate-pop-in bg-card border border-white/10 rounded-3xl overflow-hidden shadow-lg shadow-black/20"
                   >
                     <div className="relative h-36 overflow-hidden">
-                      <img src={city.imageUrl} alt={city.name} className="w-full h-full object-cover" />
+                      <img src={city.imageUrl} alt={tCity(city.name, lang)} className="w-full h-full object-cover" />
                       <div className="absolute inset-0 bg-gradient-to-t from-background via-background/10 to-transparent" />
                       <div className="absolute bottom-0 left-0 right-0 p-4">
-                        <div className="font-semibold text-foreground text-lg">{city.name}</div>
+                        <div className="font-semibold text-foreground text-lg">{tCity(city.name, lang)}</div>
                         <div className="text-xs text-muted">{tCountry(city.country, lang)}</div>
                       </div>
                     </div>
@@ -510,7 +511,7 @@ function ComparePageInner() {
                       onClick={() => setSelected([cityA.slug, cityB.slug])}
                       className="text-xs font-medium text-foreground bg-card border border-border hover:border-accent/50 hover:text-accent rounded-full px-4 py-2 transition-colors"
                     >
-                      {cityA.name} {d.compareVsLink} {cityB.name}
+                      {tCity(cityA.name, lang)} {d.compareVsLink} {tCity(cityB.name, lang)}
                     </button>
                   );
                 })}
