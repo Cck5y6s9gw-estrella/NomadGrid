@@ -6788,7 +6788,7 @@ export const cities: City[] = [
     country: "Italia",
     continent: "Europa",
     description: { es: "Palermo, la capital de Sicilia, es una ciudad intensa, caótica y fascinante, donde se mezclan siglos de influencias árabes, normandas, bizantinas y barrocas: el Palazzo dei Normanni con la Capilla Palatina, la catedral, el Teatro Massimo y los mercados de Ballarò y Capo. Es famosa por su comida callejera, con arancine, panelle y cannoli, y tiene la playa de Mondello a unos 20 minutos del centro. Es una de las grandes ciudades italianas más asequibles, aunque con tráfico denso y problemas de limpieza en algunas zonas.", en: "Palermo, the capital of Sicily, is an intense, chaotic, and fascinating city where centuries of Arab, Norman, Byzantine, and Baroque influences blend: the Palazzo dei Normanni with the Palatine Chapel, the cathedral, the Teatro Massimo, and the Ballarò and Capo markets. It is famous for its street food, with arancine, panelle, and cannoli, and has Mondello beach about 20 minutes from the center. It is one of the most affordable large Italian cities, although it has dense traffic and cleanliness problems in some areas." },
-    imageUrl: "https://images.unsplash.com/photo-1638341685295-f08d75cc7802?w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1749835059724-82154b0d8573?w=800&q=80",
     costPerMonth: 796,
     currency: "EUR",
     internetSpeed: 110,
