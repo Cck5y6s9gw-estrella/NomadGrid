@@ -51,9 +51,9 @@ export default function Home() {
             <i className="w-1.5 h-1.5 rounded-full bg-green-400 shadow-[0_0_0_3px_rgba(74,222,128,0.18)]" />
             {d.heroBadge(cities.length)}
           </div>
-          <h1 className="font-display font-normal text-[clamp(46px,7.4vw,88px)] leading-[0.98] tracking-tight mb-5 text-balance">
+          <h1 className="font-display text-[clamp(38px,6vw,72px)] leading-[1.03] mb-5 text-balance">
             {lang === "es" ? "Elige dónde vivir con " : "Choose where to live with "}
-            <em className="text-accent italic">{lang === "es" ? "datos" : "data"}</em>
+            <em className="text-accent not-italic">{lang === "es" ? "datos" : "data"}</em>
             {lang === "es" ? ", no con intuición." : ", not gut feeling."}
           </h1>
           <p className="text-[17px] text-foreground/75 mb-7 max-w-[34em] leading-relaxed">{d.heroSubtitle}</p>
@@ -99,7 +99,7 @@ export default function Home() {
       {/* Featured cities */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 pt-16">
         <div className="flex items-end justify-between flex-wrap gap-3 mb-7">
-          <h2 className="font-display text-[clamp(32px,4vw,46px)] leading-none">{d.featuredCities}</h2>
+          <h2 className="font-display text-[clamp(26px,3.2vw,38px)] leading-tight">{d.featuredCities}</h2>
           <Link href="/cities" className="text-[13.5px] text-muted hover:text-accent transition-colors">
             {d.seeAll}
           </Link>
@@ -113,14 +113,14 @@ export default function Home() {
 
       {/* Tools */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 pt-16 pb-16">
-        <h2 className="font-display text-[clamp(32px,4vw,46px)] leading-none mb-7">
+        <h2 className="font-display text-[clamp(26px,3.2vw,38px)] leading-tight mb-7">
           {lang === "es" ? "Decide más rápido" : "Decide faster"}
         </h2>
         <div className="grid lg:grid-cols-[1.2fr_1fr_1fr] gap-4">
           <Link href="/match" className="group flex flex-col justify-between gap-7 min-h-[220px] p-6 rounded-3xl border border-line bg-card hover:border-accent hover:-translate-y-0.5 transition-all">
             <div>
               <div className="font-mono text-[11px] tracking-[0.14em] uppercase text-muted mb-3">MoveMatch</div>
-              <h3 className="font-display text-[32px] leading-[1.02] mb-2">{lang === "es" ? "¿Cuál es tu ciudad ideal?" : "What's your ideal city?"}</h3>
+              <h3 className="font-display text-[26px] leading-tight mb-2">{lang === "es" ? "¿Cuál es tu ciudad ideal?" : "What's your ideal city?"}</h3>
               <p className="text-sm text-foreground/75 max-w-[30em]">{d.matchHomeCta}</p>
             </div>
             <div className="flex justify-between text-[13.5px] text-accent"><span>{lang === "es" ? "Hacer el test" : "Take the test"}</span><span>→</span></div>
@@ -128,7 +128,7 @@ export default function Home() {
           <Link href="/calculadora" className="group flex flex-col justify-between gap-7 min-h-[220px] p-6 rounded-3xl border border-line bg-card hover:border-accent hover:-translate-y-0.5 transition-all">
             <div>
               <div className="font-mono text-[11px] tracking-[0.14em] uppercase text-muted mb-3">{lang === "es" ? "Calculadora de ciudades" : "City calculator"}</div>
-              <h3 className="font-display text-[32px] leading-[1.02] mb-2">{lang === "es" ? "¿Dónde rinde más tu dinero?" : "Where does your money go furthest?"}</h3>
+              <h3 className="font-display text-[26px] leading-tight mb-2">{lang === "es" ? "¿Dónde rinde más tu dinero?" : "Where does your money go furthest?"}</h3>
               <p className="text-sm text-foreground/75">{lang === "es" ? "Presupuesto, alquiler y ahorros: tu top 5 de ciudades." : "Budget, rent and savings: your top 5 cities."}</p>
             </div>
             <div className="flex justify-between text-[13.5px] text-accent"><span>{lang === "es" ? "Calcular" : "Calculate"}</span><span>→</span></div>
@@ -136,7 +136,7 @@ export default function Home() {
           <Link href="/compare" className="group flex flex-col justify-between gap-7 min-h-[220px] p-6 rounded-3xl border border-line bg-card hover:border-accent hover:-translate-y-0.5 transition-all">
             <div>
               <div className="font-mono text-[11px] tracking-[0.14em] uppercase text-muted mb-3">{lang === "es" ? "Comparador" : "Comparison"}</div>
-              <h3 className="font-display text-[32px] leading-[1.02] mb-2">{lang === "es" ? "Cara a cara" : "Head to head"}</h3>
+              <h3 className="font-display text-[26px] leading-tight mb-2">{lang === "es" ? "Cara a cara" : "Head to head"}</h3>
               <p className="text-sm text-foreground/75">{lang === "es" ? "Ciudades, todos los indicadores, una decisión." : "Cities, every indicator, one decision."}</p>
             </div>
             <div className="flex justify-between text-[13.5px] text-accent"><span>{d.compareCities}</span><span>→</span></div>
@@ -169,7 +169,7 @@ export default function Home() {
 
       {/* CTA */}
       <section className="border-t border-border py-20 text-center px-6">
-        <h2 className="font-display text-5xl mb-4">{d.ctaTitle}</h2>
+        <h2 className="font-display text-4xl mb-4">{d.ctaTitle}</h2>
         <p className="text-muted mb-8">{d.ctaSubtitle}</p>
         <Link href="/cities" className="bg-accent text-white px-8 py-3 rounded-full font-medium text-sm hover:opacity-90 transition-opacity">
           {d.ctaButton(cities.length)}

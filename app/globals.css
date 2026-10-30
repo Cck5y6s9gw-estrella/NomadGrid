@@ -37,21 +37,27 @@
   --color-card: var(--card);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --font-serif: var(--font-instrument), Georgia, serif;
+  --font-serif: var(--font-geist-sans), Arial, Helvetica, sans-serif;
   --radius-xl: 1rem;
   --radius-2xl: 1.25rem;
   --radius-3xl: 1.6rem;
-  --font-display: var(--font-instrument), Georgia, serif;
+  --font-display: var(--font-geist-sans), Arial, Helvetica, sans-serif;
   --color-glass: var(--glass);
   --color-line: var(--line);
 }
 
 h1,
 h2 {
-  font-family: var(--font-instrument), Georgia, serif;
-  font-weight: 400;
-  letter-spacing: -0.015em;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.025em;
   text-wrap: balance;
+}
+
+.font-serif,
+.font-display {
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
 body {

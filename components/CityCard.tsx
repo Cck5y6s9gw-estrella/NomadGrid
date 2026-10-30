@@ -44,7 +44,7 @@ export default function CityCard({ city, index = 0 }: { city: City; index?: numb
       </div>
       <div className="flex flex-col gap-3.5 px-[18px] pt-4 pb-[18px]">
         <div className="flex items-baseline justify-between gap-2.5">
-          <h3 className="font-display text-[27px] leading-none text-foreground">{tCity(city.name, lang)}</h3>
+          <h3 className="font-display text-[22px] leading-tight text-foreground">{tCity(city.name, lang)}</h3>
           <small className="text-xs text-muted shrink-0">{tContinent(city.continent, lang)}</small>
         </div>
         <div className="flex items-baseline gap-1.5">

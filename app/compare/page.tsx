@@ -3,6 +3,7 @@
 import { Suspense, useEffect, useRef, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { useUser } from "@clerk/nextjs";
 import Navbar from "@/components/Navbar";
 import { useTheme } from "@/components/ThemeProvider";
@@ -12,10 +13,19 @@ import { t, formatMoney, tCountry, tContinent, tClimate, tCity, tBestTime } from
 import { trackEvent } from "@/lib/gtag";
 import { IconScale, IconHeart } from "@/components/Icon";
 import { findVsArticle, vsArticles } from "@/lib/vsArticles";
+import { cityAreas } from "@/data/cityAreas";
+
+const CompareMap = dynamic(() => import("@/components/CompareMap"), { ssr: false });
 
 const MAX_CITIES = 4;
 const STORAGE_KEY = "roavio_last_compare";
 const SOURCE_KEYS = ["costPerMonth", "internetSpeed", "safetyScore", "qualityOfLife"] as const;
+const BAR_KEYS = ["costPerMonth", "internetSpeed", "safetyScore", "qualityOfLife"];
+
+function formatAreaKm(n: number, lang: Lang) {
+  const v = n >= 100 ? Math.round(n) : Math.round(n * 10) / 10;
+  return v.toLocaleString(lang === "es" ? "es-ES" : "en-US");
+}
 
 function buildMetrics(lang: Lang) {
   const d = t(lang);
@@ -24,6 +34,7 @@ function buildMetrics(lang: Lang) {
     { key: "internetSpeed", label: d.metricInternet, format: (c: City) => `${c.internetSpeed} Mbps`, best: "max" },
     { key: "safetyScore", label: d.metricSafety, format: (c: City) => `${c.safetyScore} / 10`, best: "max" },
     { key: "qualityOfLife", label: d.metricQuality, format: (c: City) => `${c.qualityOfLife} / 10`, best: "max" },
+    { key: "areaKm2", label: lang === "es" ? "Superficie" : "Area", format: (c: City) => (cityAreas[c.slug] ? `${formatAreaKm(cityAreas[c.slug].area, lang)} km²` : "—"), best: "none" },
     { key: "climateType", label: d.metricClimate, format: (c: City) => tClimate(c.climateType, lang), best: "none" },
     { key: "hasBeach", label: d.metricBeach, format: (c: City) => (c.hasBeach ? d.yes : d.no), best: "none" },
     { key: "continent", label: d.metricContinent, format: (c: City) => tContinent(c.continent, lang), best: "none" },
@@ -170,7 +181,7 @@ function ComparePageInner() {
 
       <div className="max-w-6xl mx-auto px-6 pt-28 pb-20">
         <div className="mb-10">
-          <div className="text-xs font-medium tracking-widest text-accent uppercase mb-3">{d.compareBadge}</div>
+          <div className="font-mono text-[11.5px] tracking-[0.14em] text-accent uppercase mb-3">{d.compareBadge}</div>
           <h1 className="text-5xl mb-2 tracking-tight">
             {d.compareTitle1} <span className="text-accent">{d.compareTitle2}</span>
           </h1>
@@ -181,7 +192,7 @@ function ComparePageInner() {
         <div className="mb-10">
           <div className="flex flex-wrap items-center gap-2 mb-4">
             {selectedCities.map((city) => (
-              <div key={city.slug} className="flex items-center gap-2.5 bg-accent/5 border border-accent/30 rounded-full pl-4 pr-2 py-2">
+              <div key={city.slug} className="flex items-center gap-2.5 bg-card border border-line rounded-full pl-4 pr-2 py-2">
                 <span className="text-sm font-medium text-foreground">{tCity(city.name, lang)}</span>
                 <button
                   onClick={() => removeCity(city.slug)}
@@ -209,13 +220,13 @@ function ComparePageInner() {
           </div>
 
           {selected.length < MAX_CITIES && (
-            <div className="bg-card border border-border focus-within:border-accent/60 rounded-2xl p-1.5 transition-colors">
+            <div className="bg-card border border-line focus-within:border-accent/60 rounded-[22px] p-1.5 transition-colors">
               <input
                 type="text"
                 placeholder={d.searchCityOrCountry}
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                className="w-full bg-transparent text-sm text-foreground placeholder-muted focus:outline-none px-3.5 py-2.5 border-b border-border"
+                className="w-full bg-transparent text-sm text-foreground placeholder-muted focus:outline-none px-3.5 py-2.5 border-b border-line"
               />
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 max-h-72 overflow-y-auto p-1.5">
                 {filtered.map((city, i) => (
@@ -280,17 +291,17 @@ function ComparePageInner() {
 
             <div ref={tableRef}>
               {/* Desktop / tablet: side-by-side grid */}
-              <div className="hidden sm:block bg-card border border-white/10 rounded-3xl overflow-hidden shadow-lg shadow-black/20">
+              <div className="hidden sm:block bg-card border border-line rounded-[24px] overflow-hidden">
                 {/* City header row */}
                 <div
-                  className="grid border-b border-border"
+                  className="grid border-b border-line"
                   style={{ gridTemplateColumns: `10rem repeat(${selectedCities.length}, 1fr)` }}
                 >
                   <div className="py-5 px-5 flex items-center justify-center">
                     <img src={theme === "light" ? "/logo-icon-light.png" : "/logo-icon.png"} alt="Roavio" className="h-9 w-auto" />
                   </div>
                   {selectedCities.map((city) => (
-                    <div key={city.slug} className="border-l border-border">
+                    <div key={city.slug} className="border-l border-line">
                       <div className="relative h-28 overflow-hidden">
                         <img src={city.imageUrl} alt={tCity(city.name, lang)} className="w-full h-full object-cover" />
                         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/10 to-transparent" />
@@ -310,7 +321,7 @@ function ComparePageInner() {
                   return (
                     <div
                       key={metric.key}
-                      className="grid border-b border-border/60"
+                      className="grid border-b border-line"
                       style={{ gridTemplateColumns: `10rem repeat(${selectedCities.length}, 1fr)` }}
                     >
                       <div className="py-4 px-5 text-sm text-muted flex items-center">{metric.label}</div>
@@ -321,28 +332,41 @@ function ComparePageInner() {
                         const sourceUrl = hasSource
                           ? (city.sources as Record<string, string>)[metric.key === "costPerMonth" ? "costOfLiving" : metric.key === "internetSpeed" ? "internet" : metric.key === "safetyScore" ? "safety" : "qualityOfLife"]
                           : null;
+                        const nums = selectedCities.map((c) => c[metric.key as keyof City] as number);
+                        const maxVal = Math.max(...nums);
+                        const showBar = BAR_KEYS.includes(metric.key) && selectedCities.length > 1 && maxVal > 0;
                         return (
-                          <div key={city.slug} className="py-4 px-5 border-l border-border/60 flex items-center gap-2">
-                            <span className={`text-sm font-medium ${isBest ? "text-accent" : "text-foreground"}`}>
-                              {metric.format(city)}
-                            </span>
-                            {isBest && <span className="w-1.5 h-1.5 rounded-full bg-accent" />}
-                            {diff !== null && (
-                              <span className="text-[11px] text-muted">
-                                {diff > 0 ? "+" : ""}
-                                {diff}%
+                          <div key={city.slug} className="py-4 px-5 border-l border-line flex flex-col justify-center gap-2">
+                            <div className="flex items-center gap-2">
+                              <span className={`text-sm font-medium ${showBar ? "font-mono" : ""} ${isBest ? "text-accent" : "text-foreground"}`}>
+                                {metric.format(city)}
                               </span>
-                            )}
-                            {sourceUrl && (
-                              <a
-                                href={sourceUrl}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                title={d.compareSourceLabel}
-                                className="text-[10px] text-muted/60 hover:text-accent transition-colors"
-                              >
-                                ↗
-                              </a>
+                              {isBest && <span className="w-1.5 h-1.5 rounded-full bg-accent" />}
+                              {diff !== null && (
+                                <span className="text-[11px] text-muted">
+                                  {diff > 0 ? "+" : ""}
+                                  {diff}%
+                                </span>
+                              )}
+                              {sourceUrl && (
+                                <a
+                                  href={sourceUrl}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  title={d.compareSourceLabel}
+                                  className="text-[10px] text-muted/60 hover:text-accent transition-colors"
+                                >
+                                  ↗
+                                </a>
+                              )}
+                            </div>
+                            {showBar && (
+                              <span className="block h-1 rounded-full bg-foreground/10 overflow-hidden">
+                                <span
+                                  className={`block h-full rounded-full ${isBest ? "bg-gradient-to-r from-accent to-orange-400" : "bg-foreground/30"}`}
+                                  style={{ width: `${Math.max(4, (raw / maxVal) * 100)}%` }}
+                                />
+                              </span>
                             )}
                           </div>
                         );
@@ -354,14 +378,14 @@ function ComparePageInner() {
                 {/* Budget row */}
                 {budgetValue !== null && !Number.isNaN(budgetValue) && (
                   <div
-                    className="grid border-b border-border/60"
+                    className="grid border-b border-line"
                     style={{ gridTemplateColumns: `10rem repeat(${selectedCities.length}, 1fr)` }}
                   >
                     <div className="py-4 px-5 text-sm text-muted flex items-center">{d.compareBudgetLabel}</div>
                     {selectedCities.map((city) => {
                       const within = city.costPerMonth <= budgetValue;
                       return (
-                        <div key={city.slug} className="py-4 px-5 border-l border-border/60 flex items-center">
+                        <div key={city.slug} className="py-4 px-5 border-l border-line flex items-center">
                           <span className={`text-xs font-medium ${within ? "text-emerald-400" : "text-red-400"}`}>
                             {within ? `✓ ${d.compareWithinBudget}` : `✗ ${d.compareOverBudget}`}
                           </span>
@@ -373,12 +397,12 @@ function ComparePageInner() {
 
                 {/* Pros row */}
                 <div
-                  className="grid border-b border-border/60"
+                  className="grid border-b border-line"
                   style={{ gridTemplateColumns: `10rem repeat(${selectedCities.length}, 1fr)` }}
                 >
                   <div className="py-4 px-5 text-sm text-muted flex items-start pt-4">{d.compareProsLabel}</div>
                   {selectedCities.map((city) => (
-                    <div key={city.slug} className="py-4 px-5 border-l border-border/60">
+                    <div key={city.slug} className="py-4 px-5 border-l border-line">
                       <ul className="space-y-1.5">
                         {city.pros.slice(0, 3).map((pro, idx) => (
                           <li key={idx} className="text-xs text-foreground/90 flex gap-1.5">
@@ -398,7 +422,7 @@ function ComparePageInner() {
                 >
                   <div className="py-4 px-5 text-sm text-muted flex items-start pt-4">{d.compareConsLabel}</div>
                   {selectedCities.map((city) => (
-                    <div key={city.slug} className="py-4 px-5 border-l border-border/60">
+                    <div key={city.slug} className="py-4 px-5 border-l border-line">
                       <ul className="space-y-1.5">
                         {city.cons.slice(0, 3).map((con, idx) => (
                           <li key={idx} className="text-xs text-foreground/90 flex gap-1.5">
@@ -418,7 +442,7 @@ function ComparePageInner() {
                   <div
                     key={city.slug}
                     style={{ animationDelay: `${Math.min(i, 8) * 60}ms` }}
-                    className="animate-pop-in bg-card border border-white/10 rounded-3xl overflow-hidden shadow-lg shadow-black/20"
+                    className="animate-pop-in bg-card border border-line rounded-[24px] overflow-hidden"
                   >
                     <div className="relative h-36 overflow-hidden">
                       <img src={city.imageUrl} alt={tCity(city.name, lang)} className="w-full h-full object-cover" />
@@ -437,7 +461,7 @@ function ComparePageInner() {
                         return (
                           <div
                             key={metric.key}
-                            className={`flex items-center justify-between px-5 py-3.5 ${mi !== metrics.length - 1 ? "border-b border-border/60" : ""}`}
+                            className={`flex items-center justify-between px-5 py-3.5 ${mi !== metrics.length - 1 ? "border-b border-line" : ""}`}
                           >
                             <span className="text-sm text-muted">{metric.label}</span>
                             <span className={`text-sm font-medium flex items-center gap-2 ${isBest ? "text-accent" : "text-foreground"}`}>
@@ -454,14 +478,14 @@ function ComparePageInner() {
                         );
                       })}
                       {budgetValue !== null && !Number.isNaN(budgetValue) && (
-                        <div className="flex items-center justify-between px-5 py-3.5 border-b border-border/60">
+                        <div className="flex items-center justify-between px-5 py-3.5 border-b border-line">
                           <span className="text-sm text-muted">{d.compareBudgetLabel}</span>
                           <span className={`text-xs font-medium ${city.costPerMonth <= budgetValue ? "text-emerald-400" : "text-red-400"}`}>
                             {city.costPerMonth <= budgetValue ? `✓ ${d.compareWithinBudget}` : `✗ ${d.compareOverBudget}`}
                           </span>
                         </div>
                       )}
-                      <div className="px-5 py-3.5 border-b border-border/60">
+                      <div className="px-5 py-3.5 border-b border-line">
                         <div className="text-sm text-muted mb-2">{d.compareProsLabel}</div>
                         <ul className="space-y-1.5">
                           {city.pros.slice(0, 3).map((pro, idx) => (
@@ -488,6 +512,16 @@ function ComparePageInner() {
                 ))}
               </div>
             </div>
+
+            <section className="mt-12">
+              <h2 className="text-2xl sm:text-3xl mb-1.5">{lang === "es" ? "Tamaño sobre el mapa" : "Size on the map"}</h2>
+              <p className="text-sm text-muted mb-5">
+                {lang === "es"
+                  ? "Cada círculo tiene la superficie de su ciudad. Superpuestos en el mismo punto se ve de un vistazo cuál es más grande."
+                  : "Each circle has the area of its city. Overlaid on the same spot, you can see at a glance which one is bigger."}
+              </p>
+              <CompareMap cities={selectedCities} />
+            </section>
           </>
         ) : (
           <div className="text-center py-16 border border-dashed border-accent/30 rounded-2xl">

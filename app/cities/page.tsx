@@ -47,7 +47,7 @@ export default function CitiesPage() {
       <div className="max-w-7xl mx-auto px-6 pt-24 pb-16">
         {/* Header */}
         <div className="mb-8">
-          <h1 className="font-display text-5xl mb-2">{d.exploreTitle}</h1>
+          <h1 className="font-display text-4xl mb-2">{d.exploreTitle}</h1>
           <p className="text-muted text-sm">{d.citiesFound(filtered.length)}</p>
         </div>
 
