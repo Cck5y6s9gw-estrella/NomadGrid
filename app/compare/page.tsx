@@ -269,25 +269,6 @@ function ComparePageInner() {
               </Link>
             )}
 
-            <section className="animate-fade-up mb-10">
-              <h2 className="text-2xl sm:text-3xl mb-1.5">{lang === "es" ? "Las ciudades, a escala" : "The cities, to scale"}</h2>
-              <p className="text-sm text-muted mb-5">
-                {lang === "es"
-                  ? "Mismo zoom en todos los mapas: el círculo marca la superficie de cada ciudad."
-                  : "Same zoom on every map: the circle marks each city's area."}
-              </p>
-              <CityMapsRow cities={selectedCities} />
-              <div className="mt-10">
-                <h2 className="text-2xl sm:text-3xl mb-1.5">{lang === "es" ? "Comparar superficies" : "Compare areas"}</h2>
-                <p className="text-sm text-muted mb-5">
-                  {lang === "es"
-                    ? "Cada círculo tiene la superficie de su ciudad. Superpuestos en el mismo punto se ve de un vistazo cuál es más grande."
-                    : "Each circle has the area of its city. Overlaid on the same spot, you can see at a glance which one is bigger."}
-                </p>
-                <CompareMap cities={selectedCities} />
-              </div>
-            </section>
-
             <div className="animate-fade-up flex flex-wrap items-center gap-3 mb-6">
               <label className="flex items-center gap-2 bg-card border border-border rounded-full pl-4 pr-2 py-1.5">
                 <span className="text-xs text-muted whitespace-nowrap">{d.compareBudgetLabel}</span>
@@ -532,6 +513,25 @@ function ComparePageInner() {
                 ))}
               </div>
             </div>
+
+            <section className="mt-12">
+              <h2 className="text-2xl sm:text-3xl mb-1.5">{lang === "es" ? "Las ciudades, a escala" : "The cities, to scale"}</h2>
+              <p className="text-sm text-muted mb-5">
+                {lang === "es"
+                  ? "Mismo zoom en todos los mapas: el círculo marca la superficie de cada ciudad."
+                  : "Same zoom on every map: the circle marks each city's area."}
+              </p>
+              <CityMapsRow cities={selectedCities} />
+              <div className="mt-10">
+                <h2 className="text-2xl sm:text-3xl mb-1.5">{lang === "es" ? "Comparar superficies" : "Compare areas"}</h2>
+                <p className="text-sm text-muted mb-5">
+                  {lang === "es"
+                    ? "Cada círculo tiene la superficie de su ciudad. Superpuestos en el mismo punto se ve de un vistazo cuál es más grande."
+                    : "Each circle has the area of its city. Overlaid on the same spot, you can see at a glance which one is bigger."}
+                </p>
+                <CompareMap cities={selectedCities} />
+              </div>
+            </section>
           </>
         ) : (
           <div className="text-center py-16 border border-dashed border-accent/30 rounded-2xl">
