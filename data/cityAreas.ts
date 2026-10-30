@@ -270,4 +270,9 @@ export const cityAreas: Record<string, { area: number }> = {
   "palermo": { area: 160 },
   "zaragoza": { area: 974 },
   "nagoya": { area: 327 },
+  "oxford": { area: 46 },
+  "yokohama": { area: 437 },
+  "pattaya": { area: 53 },
+  "rabat": { area: 118 },
+  "san-antonio": { area: 1194 },
 };
