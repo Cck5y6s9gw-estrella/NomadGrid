@@ -518,8 +518,8 @@ function ComparePageInner() {
               <h2 className="text-2xl sm:text-3xl mb-1.5">{lang === "es" ? "Las ciudades, a escala" : "The cities, to scale"}</h2>
               <p className="text-sm text-muted mb-5">
                 {lang === "es"
-                  ? "Mismo zoom en todos los mapas: el círculo marca la superficie de cada ciudad."
-                  : "Same zoom on every map: the circle marks each city's area."}
+                  ? "Mismo zoom y misma escala en todos los mapas, para ver de un vistazo cuál es más grande. Abajo puedes superponerlas."
+                  : "Same zoom and scale on every map, so you can see at a glance which is bigger. Overlay them below."}
               </p>
               <CityMapsRow cities={selectedCities} />
               <div className="mt-10">
