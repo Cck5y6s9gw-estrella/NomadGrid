@@ -275,4 +275,9 @@ export const cityAreas: Record<string, { area: number }> = {
   "pattaya": { area: 53 },
   "rabat": { area: 118 },
   "san-antonio": { area: 1194 },
+  "graz": { area: 127 },
+  "hannover": { area: 204 },
+  "halifax": { area: 300 },
+  "edmonton": { area: 685 },
+  "charleston": { area: 361 },
 };
