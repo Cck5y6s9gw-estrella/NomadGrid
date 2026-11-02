@@ -280,4 +280,9 @@ export const cityAreas: Record<string, { area: number }> = {
   "halifax": { area: 300 },
   "edmonton": { area: 685 },
   "charleston": { area: 361 },
+  "cordoba-argentina": { area: 576 },
+  "montpellier": { area: 57 },
+  "belfast": { area: 132 },
+  "valladolid": { area: 198 },
+  "poznan": { area: 262 },
 };
