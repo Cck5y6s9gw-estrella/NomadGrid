@@ -10,7 +10,7 @@ Praga es una de las ciudades más fotografiadas de Europa, con su puente de Carl
 
 Coste de vida: Praga es la más cara
 
-Praga ronda los 836 € al mes sin contar alquiler. Poznań baja a 675 €, Cracovia a 729 € y Breslavia a 749 €. Poznań es un 19% más barata que Praga, unos 161 € menos al mes y casi 1.932 € al año solo en gastos del día a día. Cracovia ahorra un 13%, unos 107 € al mes, y Breslavia un 10%, unos 87 € al mes. Son datos de gasto sin alquiler, así que la diferencia total depende también de lo que pagues por vivir.
+Praga ronda los 836 € al mes sin contar alquiler. Poznań baja a 675 €, Cracovia a 729 € y Breslavia a 749 €. Poznań es un 19% más barata que Praga, unos 161 € menos al mes y 1.932 € al año solo en gastos del día a día. Cracovia ahorra un 13%, unos 107 € al mes, y Breslavia un 10%, unos 87 € al mes. Son datos de gasto sin alquiler, así que la diferencia total depende también de lo que pagues por vivir.
 
 Internet: la gran diferencia
 
@@ -22,7 +22,7 @@ Praga puntúa 7,9 sobre 10 en seguridad percibida, frente a 7,7 de Cracovia y de
 
 Calidad de vida: Praga también gana
 
-En calidad de vida, Praga obtiene un 8,9 sobre 10, mientras que Poznań y Breslavia puntúan 8,2 y Cracovia 8,1. Es la distancia más clara a favor de Praga y refleja sobre todo mejores valoraciones en servicios, clima y poder adquisitivo en los índices de Numbeo, algo que cada persona valora de forma distinta.
+En calidad de vida, Praga obtiene un 8,9 sobre 10, mientras que Poznań y Breslavia puntúan 8,2 y Cracovia 8,1. Es la distancia más clara a favor de Praga según los índices cruzados de Numbeo que usa Roavio.
 
 Clima y mejor época
 
@@ -34,7 +34,7 @@ República Checa y Polonia forman parte de la UE y del espacio Schengen, así qu
 
 Entonces, ¿está sobrevalorada Praga?
 
-Depende de qué valores. Si lo que buscas es seguridad, ambiente y una ciudad con mucha oferta cultural, Praga se justifica, y la diferencia de coste con las ciudades polacas es moderada. Pero si el gasto mensual y el internet pesan en tu decisión, Poznań destaca: es la más barata, con un 19% menos de gasto, y tiene más del doble de velocidad de internet, aunque con una calidad de vida algo inferior en los índices. Cracovia y Breslavia son opciones intermedias, con un casco histórico muy conocido y más oferta de coworking y comunidad. La mejor forma de decidir es comparar con tu propio presupuesto: el comparador de Roavio pone lado a lado las cuatro ciudades, y la calculadora te dice cuánto te queda cada mes en cada una.
+Depende de qué valores. Si lo que buscas es seguridad, ambiente y una ciudad con mucha oferta cultural, Praga se justifica, y la diferencia de coste con las ciudades polacas es moderada. Pero si el gasto mensual y el internet pesan en tu decisión, Poznań destaca: es la más barata, con un 19% menos de gasto, y tiene más del doble de velocidad de internet, aunque con una calidad de vida algo inferior en los índices. Cracovia y Breslavia son opciones intermedias, con un casco histórico muy conocido. La mejor forma de decidir es comparar con tu propio presupuesto: el comparador de Roavio pone lado a lado las cuatro ciudades, y la calculadora te dice cuánto te queda cada mes en cada una.
 
 ---EN---
 
@@ -42,7 +42,7 @@ Prague is one of the most photographed cities in Europe, with its Charles Bridge
 
 Cost of living: Prague is the most expensive
 
-Prague runs around €836 a month excluding rent. Poznań drops to €675, Kraków to €729, and Wrocław to €749. Poznań is 19% cheaper than Prague, about €161 less a month and almost €1,932 a year on day-to-day spending alone. Kraków saves 13%, about €107 a month, and Wrocław 10%, about €87 a month. These are figures without rent, so the total difference also depends on what you pay to live.
+Prague runs around €836 a month excluding rent. Poznań drops to €675, Kraków to €729, and Wrocław to €749. Poznań is 19% cheaper than Prague, about €161 less a month and €1,932 a year on day-to-day spending alone. Kraków saves 13%, about €107 a month, and Wrocław 10%, about €87 a month. These are figures without rent, so the total difference also depends on what you pay to live.
 
 Internet: the big difference
 
@@ -54,7 +54,7 @@ Prague scores 7.9 out of 10 on perceived safety, against 7.7 for Kraków and Wro
 
 Quality of life: Prague wins here too
 
-On quality of life, Prague gets 8.9 out of 10, while Poznań and Wrocław score 8.2 and Kraków 8.1. It is the clearest gap in Prague's favor and mostly reflects better ratings for services, climate, and purchasing power in Numbeo's indices, which each person values differently.
+On quality of life, Prague gets 8.9 out of 10, while Poznań and Wrocław score 8.2 and Kraków 8.1. It is the clearest gap in Prague's favor per the cross-referenced Numbeo indices Roavio uses.
 
 Climate and best season
 
@@ -66,4 +66,4 @@ The Czech Republic and Poland are part of the EU and the Schengen area, so a Spa
 
 So, is Prague overrated?
 
-It depends on what you value. If you are looking for safety, atmosphere, and a city with a lot of cultural offerings, Prague is justified, and the cost gap with the Polish cities is moderate. But if monthly spending and internet weigh in your decision, Poznań stands out: it is the cheapest, with 19% less spending, and has more than double the internet speed, although with a somewhat lower quality of life in the indices. Kraków and Wrocław are middle options, with a well-known old town and more coworking and community options. The best way to decide is to compare against your own budget: Roavio's comparator puts the four cities side by side, and the calculator tells you how much you have left each month in each one.
+It depends on what you value. If you are looking for safety, atmosphere, and a city with a lot of cultural offerings, Prague is justified, and the cost gap with the Polish cities is moderate. But if monthly spending and internet weigh in your decision, Poznań stands out: it is the cheapest, with 19% less spending, and has more than double the internet speed, although with a somewhat lower quality of life in the indices. Kraków and Wrocław are middle options, with a well-known old town. The best way to decide is to compare against your own budget: Roavio's comparator puts the four cities side by side, and the calculator tells you how much you have left each month in each one.
