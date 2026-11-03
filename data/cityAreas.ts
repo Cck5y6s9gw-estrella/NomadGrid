@@ -285,4 +285,9 @@ export const cityAreas: Record<string, { area: number }> = {
   "belfast": { area: 132 },
   "valladolid": { area: 198 },
   "poznan": { area: 262 },
+  "lausana": { area: 41 },
+  "hobart": { area: 78 },
+  "malmo": { area: 156 },
+  "trondheim": { area: 342 },
+  "tampere": { area: 525 },
 };
