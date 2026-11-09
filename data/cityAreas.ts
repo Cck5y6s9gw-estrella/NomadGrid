@@ -295,4 +295,9 @@ export const cityAreas: Record<string, { area: number }> = {
   "turku": { area: 246 },
   "bremen": { area: 318 },
   "groningen": { area: 183 },
+  "victoria-canada": { area: 20 },
+  "coimbra": { area: 319 },
+  "heraklion": { area: 105 },
+  "plovdiv": { area: 102 },
+  "faro": { area: 202 },
 };
