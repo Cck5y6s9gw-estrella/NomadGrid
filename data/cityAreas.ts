@@ -300,4 +300,9 @@ export const cityAreas: Record<string, { area: number }> = {
   "heraklion": { area: 105 },
   "plovdiv": { area: 102 },
   "faro": { area: 202 },
+  "aarhus": { area: 91 },
+  "gante": { area: 156 },
+  "verona": { area: 207 },
+  "kaunas": { area: 157 },
+  "cagliari": { area: 85 },
 };
