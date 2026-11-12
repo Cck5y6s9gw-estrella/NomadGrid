@@ -305,4 +305,9 @@ export const cityAreas: Record<string, { area: number }> = {
   "verona": { area: 207 },
   "kaunas": { area: 157 },
   "cagliari": { area: 85 },
+  "catania": { area: 183 },
+  "larnaca": { area: 26 },
+  "trieste": { area: 85 },
+  "odense": { area: 79 },
+  "aalborg": { area: 138 },
 };
