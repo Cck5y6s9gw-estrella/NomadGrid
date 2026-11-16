@@ -310,4 +310,9 @@ export const cityAreas: Record<string, { area: number }> = {
   "trieste": { area: 85 },
   "odense": { area: 79 },
   "aalborg": { area: 138 },
+  "heidelberg": { area: 109 },
+  "friburgo": { area: 153 },
+  "munster": { area: 303 },
+  "aveiro": { area: 198 },
+  "limerick": { area: 59 },
 };
