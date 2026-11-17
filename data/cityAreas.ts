@@ -315,4 +315,9 @@ export const cityAreas: Record<string, { area: number }> = {
   "munster": { area: 303 },
   "aveiro": { area: 198 },
   "limerick": { area: 59 },
+  "la-haya": { area: 98 },
+  "lucerna": { area: 37 },
+  "lugano": { area: 32 },
+  "pisa": { area: 187 },
+  "brno": { area: 230 },
 };
