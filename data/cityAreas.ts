@@ -320,4 +320,9 @@ export const cityAreas: Record<string, { area: number }> = {
   "lugano": { area: 32 },
   "pisa": { area: 187 },
   "brno": { area: 230 },
+  "nicosia": { area: 111 },
+  "murcia": { area: 882 },
+  "queretaro": { area: 759 },
+  "kelowna": { area: 212 },
+  "hua-hin": { area: 911 },
 };
