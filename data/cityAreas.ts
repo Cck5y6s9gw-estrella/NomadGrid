@@ -325,4 +325,9 @@ export const cityAreas: Record<string, { area: number }> = {
   "queretaro": { area: 759 },
   "kelowna": { area: 212 },
   "hua-hin": { area: 911 },
+  "nantes": { area: 65 },
+  "timisoara": { area: 130 },
+  "cardiff": { area: 140 },
+  "pune": { area: 516 },
+  "porto-alegre": { area: 496 },
 };
