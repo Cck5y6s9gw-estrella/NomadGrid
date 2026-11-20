@@ -330,4 +330,9 @@ export const cityAreas: Record<string, { area: number }> = {
   "cardiff": { area: 140 },
   "pune": { area: 516 },
   "porto-alegre": { area: 496 },
+  "rennes": { area: 50 },
+  "debrecen": { area: 462 },
+  "katowice": { area: 165 },
+  "lublin": { area: 148 },
+  "recife": { area: 218 },
 };
