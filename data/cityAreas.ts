@@ -335,4 +335,9 @@ export const cityAreas: Record<string, { area: number }> = {
   "katowice": { area: 165 },
   "lublin": { area: 148 },
   "recife": { area: 218 },
+  "novi-sad": { area: 129 },
+  "kaohsiung": { area: 2952 },
+  "varna": { area: 238 },
+  "maribor": { area: 147 },
+  "rijeka": { area: 44 },
 };
