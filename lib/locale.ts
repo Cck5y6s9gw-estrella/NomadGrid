@@ -1,6 +1,6 @@
 // Rutas que tienen versión en inglés bajo /en
 const EXACT = ["/", "/cities", "/rankings", "/articulos", "/compare", "/mapa", "/match", "/calculadora"];
-const ONE_LEVEL = ["/cities/", "/rankings/", "/articulos/"];
+const ONE_LEVEL = ["/cities/", "/rankings/", "/articulos/", "/compare/"];
 
 export function isEnPath(pathname: string): boolean {
   return pathname === "/en" || pathname.startsWith("/en/");
@@ -17,7 +17,6 @@ export function enPath(pathname: string): string | null {
   if (isEnPath(p)) return p;
   if (EXACT.includes(p)) return p === "/" ? "/en" : `/en${p}`;
   if (ONE_LEVEL.some((pre) => p.startsWith(pre) && p.indexOf("/", pre.length) === -1 && p.length > pre.length)) {
-    if (p.startsWith("/compare/")) return null;
     return `/en${p}`;
   }
   return null;

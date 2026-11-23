@@ -64,7 +64,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...withEn(cityRoutes, cities.map((c) => `/cities/${c.slug}`)),
     ...withEn(articleRoutes, getAllArticles().map((a) => `/articulos/${a.slug}`)),
     ...withEn(rankingRoutes, rankings.map((r) => `/rankings/${r.slug}`)),
-    ...pairRoutes,
+    ...withEn(pairRoutes, [...allPairs()].map((p) => `/compare/${p}`)),
   ];
   return all;
 }
