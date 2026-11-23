@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { cities } from "@/data/cities";
 import { getAllArticles } from "@/lib/articles";
 import { rankings } from "@/lib/rankings";
+import { allPairs } from "@/lib/pairs";
 
 const BASE_URL = "https://www.roavio.es";
 
@@ -37,5 +38,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }));
 
-  return [...staticRoutes, ...cityRoutes, ...articleRoutes, ...rankingRoutes];
+  const pairRoutes: MetadataRoute.Sitemap = [...allPairs()].map((pair) => ({
+    url: `${BASE_URL}/compare/${pair}`,
+    changeFrequency: "monthly",
+    priority: 0.6,
+  }));
+
+  return [...staticRoutes, ...cityRoutes, ...articleRoutes, ...rankingRoutes, ...pairRoutes];
 }

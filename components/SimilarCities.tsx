@@ -1,31 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { cities, type City } from "@/data/cities";
+import type { City } from "@/data/cities";
+import { similarCities, hasPair, pairSlug } from "@/lib/pairs";
 import { useLanguage } from "@/lib/i18n";
 import { tCity, tCountry, formatMoney } from "@/lib/dictionary";
 
-function similar(city: City, n: number): City[] {
-  return cities
-    .filter((c) => c.slug !== city.slug)
-    .map((c) => ({
-      c,
-      score:
-        Math.abs(c.costPerMonth - city.costPerMonth) / Math.max(city.costPerMonth, 1) +
-        Math.abs(c.safetyScore - city.safetyScore) / 10 +
-        Math.abs(c.qualityOfLife - city.qualityOfLife) / 10 +
-        (c.country === city.country ? -0.35 : 0) +
-        (c.continent === city.continent ? -0.1 : 0) +
-        (c.hasBeach === city.hasBeach ? -0.05 : 0),
-    }))
-    .sort((a, b) => a.score - b.score)
-    .slice(0, n)
-    .map((x) => x.c);
-}
-
 export default function SimilarCities({ city }: { city: City }) {
   const { lang } = useLanguage();
-  const list = similar(city, 6);
+  const list = similarCities(city, 6);
   const name = tCity(city.name, lang);
   return (
     <section aria-labelledby="similar-cities">
@@ -48,6 +31,17 @@ export default function SimilarCities({ city }: { city: City }) {
           </li>
         ))}
       </ul>
+      <p className="mt-4 text-sm text-muted">
+        {lang === "en" ? "Compare: " : "Comparar: "}
+        {list.filter((c) => hasPair(city.slug, c.slug)).slice(0, 3).map((c, i) => (
+          <span key={c.slug}>
+            {i > 0 && " · "}
+            <Link href={`/compare/${pairSlug(city.slug, c.slug)}`} className="text-accent hover:underline">
+              {tCity(city.name, lang)} vs {tCity(c.name, lang)}
+            </Link>
+          </span>
+        ))}
+      </p>
     </section>
   );
 }
