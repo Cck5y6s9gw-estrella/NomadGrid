@@ -6,6 +6,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import { LanguageProvider } from "@/lib/i18n";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import JsonLd from "@/components/JsonLd";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,7 +26,6 @@ const anton = Anton({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.roavio.es"),
-  alternates: { canonical: "https://www.roavio.es" },
   title: "Roavio · Rankings · Ciudades · Libertad",
   description: "Compara coste de vida, internet, seguridad y calidad de vida en las mejores ciudades del mundo para trabajar en remoto.",
   openGraph: {
@@ -97,6 +97,24 @@ export default function RootLayout({
           />
         </head>
         <body className="min-h-full flex flex-col">
+          <JsonLd
+            data={[
+              {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                name: "Roavio",
+                url: "https://www.roavio.es",
+                logo: "https://www.roavio.es/logo-icon.png",
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                name: "Roavio",
+                url: "https://www.roavio.es",
+                inLanguage: ["es", "en"],
+              },
+            ]}
+          />
           <ThemeProvider>
             <LanguageProvider>{children}</LanguageProvider>
           </ThemeProvider>

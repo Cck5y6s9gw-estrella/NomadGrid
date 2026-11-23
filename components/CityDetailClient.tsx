@@ -5,6 +5,8 @@ import Navbar from "./Navbar";
 import FavoriteButton from "./FavoriteButton";
 import CityGuideSection from "./CityGuideSection";
 import CityEsimSection from "./CityEsimSection";
+import Breadcrumbs from "./Breadcrumbs";
+import SimilarCities from "./SimilarCities";
 import { cities, type City } from "@/data/cities";
 import { visaDisclaimer, visaDisclaimerEn, type CityGuide } from "@/data/cityGuides";
 import { cityGuidesEn } from "@/data/cityGuidesEn";
@@ -77,6 +79,13 @@ export default function CityDetailClient({ city, guide }: { city: City; guide: C
       </div>
 
       <div className="max-w-7xl mx-auto px-6 py-12">
+        <Breadcrumbs
+          items={[
+            { es: "Inicio", en: "Home", href: "/" },
+            { es: "Ciudades", en: "Cities", href: "/cities" },
+            { es: tCity(city.name, "es"), en: tCity(city.name, "en") },
+          ]}
+        />
         {/* Stats grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-12">
           {stats.map((s, i) => (
@@ -180,6 +189,8 @@ export default function CityDetailClient({ city, guide }: { city: City; guide: C
                 ))}
               </div>
             </section>
+
+            <SimilarCities city={city} />
           </div>
 
           {/* Right column */}
