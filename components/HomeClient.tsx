@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/LocaleLink";
 import { useUser } from "@clerk/nextjs";
 import Navbar from "@/components/Navbar";
 import { cities } from "@/data/cities";

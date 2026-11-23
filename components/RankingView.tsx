@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import Link from "next/link";
+import Link from "@/components/LocaleLink";
 import Navbar from "./Navbar";
 import FavoriteButton from "./FavoriteButton";
 import { useLanguage } from "@/lib/i18n";

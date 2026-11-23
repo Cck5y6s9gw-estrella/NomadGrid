@@ -2,7 +2,7 @@
 
 import { Suspense, useEffect, useRef, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import Link from "next/link";
+import Link from "@/components/LocaleLink";
 import dynamic from "next/dynamic";
 import { useUser } from "@clerk/nextjs";
 import Navbar from "@/components/Navbar";
@@ -53,7 +53,7 @@ function slugsFromParam(param: string | null): string[] {
 }
 
 function ComparePageInner() {
-  const { lang } = useLanguage();
+  const { lang, prefix } = useLanguage();
   const { theme } = useTheme();
   const d = t(lang);
   const metrics = buildMetrics(lang);
@@ -92,7 +92,7 @@ function ComparePageInner() {
   useEffect(() => {
     if (!hydrated) return;
     const query = selected.length > 0 ? `?cities=${selected.join(",")}` : "";
-    router.replace(`/compare${query}`, { scroll: false });
+    router.replace(`${prefix}/compare${query}`, { scroll: false });
     try {
       window.localStorage.setItem(STORAGE_KEY, JSON.stringify(selected));
     } catch {

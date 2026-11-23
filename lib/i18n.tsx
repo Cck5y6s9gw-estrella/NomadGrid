@@ -1,21 +1,27 @@
 "use client";
 
 import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
+import { usePathname, useRouter } from "next/navigation";
+import { enPath, isEnPath, stripEn } from "@/lib/locale";
 
 export type Lang = "es" | "en";
 
 type LanguageContextValue = {
   lang: Lang;
   setLang: (lang: Lang) => void;
+  /** "/en" cuando la URL es la versión inglesa, "" en el resto. */
+  prefix: "" | "/en";
 };
 
 const LanguageContext = createContext<LanguageContextValue>({
   lang: "es",
   setLang: () => {},
+  prefix: "",
 });
 
 const STORAGE_KEY = "roavio_lang";
 const GEO_COOKIE_KEY = "roavio_geo_lang";
+const BOT_RE = /bot|crawl|spider|google|bing|slurp|baidu|yandex|duckduck|facebookexternalhit|twitter|lighthouse|headless|preview/i;
 
 function readCookie(name: string): string | null {
   const match = document.cookie
@@ -25,46 +31,78 @@ function readCookie(name: string): string | null {
 }
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [lang, setLangState] = useState<Lang>("es");
+  const pathname = usePathname() || "/";
+  const router = useRouter();
+  const forced: Lang | null = isEnPath(pathname) ? "en" : null;
+  const [lang, setLangState] = useState<Lang>(forced ?? "es");
+  const effLang: Lang = forced ?? lang;
 
   useEffect(() => {
+    document.documentElement.lang = effLang;
+  }, [effLang]);
+
+  useEffect(() => {
+    // En /en/* el idioma lo fija la URL.
+    if (forced) return;
     try {
-      // 1. Explicit choice the user already made on this device wins.
+      let pref: Lang | null = null;
       const stored = window.localStorage.getItem(STORAGE_KEY);
       if (stored === "es" || stored === "en") {
-        setLangState(stored);
-        return;
+        pref = stored;
+      } else if (!BOT_RE.test(window.navigator.userAgent)) {
+        // Sin elección previa: geolocalización (inglés fuera de España) y,
+        // si no, el idioma del navegador. Los bots se quedan siempre en español.
+        const geoLang = readCookie(GEO_COOKIE_KEY);
+        if (geoLang === "es" || geoLang === "en") {
+          pref = geoLang;
+        } else if ((window.navigator.language || "").toLowerCase().startsWith("en")) {
+          pref = "en";
+        }
       }
-
-      // 2. Otherwise, fall back to the IP-based geolocation cookie set by
-      // the server (English by default outside Spain).
-      const geoLang = readCookie(GEO_COOKIE_KEY);
-      if (geoLang === "es" || geoLang === "en") {
-        setLangState(geoLang);
-        return;
-      }
-
-      // 3. Last resort: the browser's own language setting.
-      const browserLang = window.navigator.language || "";
-      if (browserLang.toLowerCase().startsWith("en")) {
+      if (pref === "en") {
+        const target = enPath(pathname);
+        if (target) {
+          router.replace(target + window.location.search);
+          return;
+        }
         setLangState("en");
+      } else {
+        setLangState("es");
       }
     } catch {
       // localStorage/cookies unavailable — keep default "es"
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [forced, pathname]);
 
   function setLang(next: Lang) {
-    setLangState(next);
     try {
       window.localStorage.setItem(STORAGE_KEY, next);
     } catch {
       // ignore
     }
+    const search = typeof window !== "undefined" ? window.location.search : "";
+    if (next === "en") {
+      const target = enPath(pathname);
+      if (target && target !== pathname) {
+        router.push(target + search);
+        return;
+      }
+      setLangState("en");
+    } else {
+      if (forced) {
+        router.push(stripEn(pathname) + search);
+        return;
+      }
+      setLangState("es");
+    }
   }
 
-  return <LanguageContext.Provider value={{ lang, setLang }}>{children}</LanguageContext.Provider>;
+  return (
+    <LanguageContext.Provider value={{ lang: effLang, setLang, prefix: forced ? "/en" : "" }}>
+      {children}
+    </LanguageContext.Provider>
+  );
 }
 
 export function useLanguage() {

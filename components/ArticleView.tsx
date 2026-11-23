@@ -1,14 +1,16 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
+import Link from "@/components/LocaleLink";
 import Navbar from "./Navbar";
+import { useLanguage } from "@/lib/i18n";
 import type { Article } from "../lib/articles";
 
 type Lang = "es" | "en";
 
 export default function ArticleView({ article }: { article: Article }) {
-  const [lang, setLang] = useState<Lang>("es");
+  const { lang: ctxLang } = useLanguage();
+  const [lang, setLang] = useState<Lang>(ctxLang);
 
   return (
     <>

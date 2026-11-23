@@ -44,5 +44,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticRoutes, ...cityRoutes, ...articleRoutes, ...rankingRoutes, ...pairRoutes];
+  const both = (path: string) => ({
+    languages: { es: `${BASE_URL}${path === "/" ? "" : path}`, en: `${BASE_URL}/en${path === "/" ? "" : path}` },
+  });
+  const withEn = (items: MetadataRoute.Sitemap, paths: string[]): MetadataRoute.Sitemap =>
+    items.flatMap((item, i) => {
+      const path = paths[i];
+      if (!path) return [item];
+      const alternates = both(path);
+      return [
+        { ...item, alternates },
+        { ...item, url: `${BASE_URL}/en${path === "/" ? "" : path}`, alternates },
+      ];
+    });
+
+  const staticPaths = ["/", "/cities", "/compare", "/rankings", "/match", "/calculadora", "/mapa", "/articulos", ""];
+  const all = [
+    ...withEn(staticRoutes, staticPaths),
+    ...withEn(cityRoutes, cities.map((c) => `/cities/${c.slug}`)),
+    ...withEn(articleRoutes, getAllArticles().map((a) => `/articulos/${a.slug}`)),
+    ...withEn(rankingRoutes, rankings.map((r) => `/rankings/${r.slug}`)),
+    ...pairRoutes,
+  ];
+  return all;
 }

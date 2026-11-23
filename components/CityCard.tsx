@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/LocaleLink";
 import FavoriteButton from "@/components/FavoriteButton";
 import { City } from "@/data/cities";
 import { useLanguage } from "@/lib/i18n";

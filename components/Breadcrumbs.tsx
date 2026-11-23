@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/LocaleLink";
 import { useLanguage } from "@/lib/i18n";
 
 export type BreadcrumbItem = { es: string; en: string; href?: string };

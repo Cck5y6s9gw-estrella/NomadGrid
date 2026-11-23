@@ -19,3 +19,14 @@ export function breadcrumbLd(crumbs: Crumb[]) {
     })),
   };
 }
+
+/** Canonical + hreflang. `path` es la ruta en español ("/" para la home). */
+export function alts(path: string, locale: "es" | "en") {
+  const suffix = path === "/" ? "" : path;
+  const es = `${SITE_URL}${suffix}`;
+  const en = `${SITE_URL}/en${suffix}`;
+  return {
+    canonical: locale === "en" ? en : es,
+    languages: { es, en, "x-default": es },
+  };
+}

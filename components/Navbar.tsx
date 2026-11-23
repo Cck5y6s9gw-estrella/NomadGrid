@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import Link from "next/link";
+import Link from "@/components/LocaleLink";
 import { usePathname } from "next/navigation";
 import { Show, SignInButton, UserButton, useUser } from "@clerk/nextjs";
 import { useLanguage } from "@/lib/i18n";

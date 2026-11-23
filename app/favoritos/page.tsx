@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/LocaleLink";
 import { useUser, SignUpButton } from "@clerk/nextjs";
 import Navbar from "@/components/Navbar";
 import FavoriteButton from "@/components/FavoriteButton";

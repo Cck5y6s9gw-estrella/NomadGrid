@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import { alts } from "@/lib/seo";
 import HomeClient from "@/components/HomeClient";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "https://www.roavio.es" },
+  alternates: alts("/", "es"),
 };
 
 export default function Home() {

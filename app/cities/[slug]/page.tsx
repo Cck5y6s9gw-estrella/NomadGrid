@@ -4,7 +4,7 @@ import { cityGuides } from "@/data/cityGuides";
 import { notFound } from "next/navigation";
 import CityDetailClient from "@/components/CityDetailClient";
 import JsonLd from "@/components/JsonLd";
-import { breadcrumbLd, absUrl } from "@/lib/seo";
+import { breadcrumbLd, absUrl, alts } from "@/lib/seo";
 import { cityFaq } from "@/lib/cityFaq";
 
 export async function generateStaticParams() {
@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title,
     description,
-    alternates: { canonical: `https://www.roavio.es/cities/${city.slug}` },
+    alternates: alts(`/cities/${city.slug}`, "es"),
     openGraph: {
       title,
       description,

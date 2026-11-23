@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/LocaleLink";
 import type { City } from "@/data/cities";
 import { similarCities, hasPair, pairSlug } from "@/lib/pairs";
 import { useLanguage } from "@/lib/i18n";

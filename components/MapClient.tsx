@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo, useRef, useEffect } from "react";
-import Link from "next/link";
+import Link from "@/components/LocaleLink";
 import { Map as MaplibreMap, Marker, Popup, NavigationControl, config as maplibreConfig } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { cities, type City } from "@/data/cities";

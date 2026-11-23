@@ -1,7 +1,7 @@
 "use client";
 
 import { Suspense, useEffect, useState } from "react";
-import Link from "next/link";
+import Link from "@/components/LocaleLink";
 import { useSearchParams } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import { trackEvent } from "@/lib/gtag";

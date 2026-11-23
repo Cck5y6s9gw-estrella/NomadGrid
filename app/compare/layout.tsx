@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
+import { alts } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "https://www.roavio.es/compare" },
+  alternates: alts("/compare", "es"),
   title: "Comparar ciudades para nómadas digitales | Roavio",
   description: "Compara varias ciudades a la vez en coste de vida, internet, seguridad y calidad de vida para elegir tu próximo destino como nómada digital.",
 };

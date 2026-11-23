@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import { alts } from "../../lib/seo";
 import { getAllArticles } from "../../lib/articles";
 import ArticlesList from "../../components/ArticlesList";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "https://www.roavio.es/articulos" },
+  alternates: alts("/articulos", "es"),
   title: "Artículos | Roavio",
   description:
     "Guías y artículos sobre nomadismo digital, ciudades, visados e impuestos.",

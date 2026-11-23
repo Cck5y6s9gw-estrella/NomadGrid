@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/LocaleLink";
 import Navbar from "./Navbar";
 import { useLanguage } from "@/lib/i18n";
 import { tCountry, tCity } from "@/lib/dictionary";

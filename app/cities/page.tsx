@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
+import Link from "@/components/LocaleLink";
 import Navbar from "@/components/Navbar";
 import CityCard from "@/components/CityCard";
 import { cities } from "@/data/cities";

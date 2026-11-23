@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { getArticleBySlug, getAllArticles } from "../../../lib/articles";
 import ArticleView from "../../../components/ArticleView";
 import JsonLd from "../../../components/JsonLd";
-import { breadcrumbLd, absUrl } from "../../../lib/seo";
+import { breadcrumbLd, absUrl, alts } from "../../../lib/seo";
 
 export async function generateStaticParams() {
   return getAllArticles().map((article) => ({ slug: article.slug }));
@@ -20,7 +20,7 @@ export async function generateMetadata({
   return {
     title: `${article.title.es} | Roavio`,
     description: article.dek.es,
-    alternates: { canonical: `https://www.roavio.es/articulos/${article.slug}` },
+    alternates: alts(`/articulos/${article.slug}`, "es"),
     openGraph: {
       title: article.title.es,
       description: article.dek.es,

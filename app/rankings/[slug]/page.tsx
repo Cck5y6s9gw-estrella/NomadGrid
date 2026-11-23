@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { rankings, getRankingBySlug, getSortedCities } from "@/lib/rankings";
 import RankingView from "@/components/RankingView";
 import JsonLd from "@/components/JsonLd";
-import { breadcrumbLd, absUrl } from "@/lib/seo";
+import { breadcrumbLd, absUrl, alts } from "@/lib/seo";
 
 export async function generateStaticParams() {
   return rankings.map((r) => ({ slug: r.slug }));
@@ -20,7 +20,7 @@ export async function generateMetadata({
   return {
     title: `${config.titleEs} | Roavio`,
     description: config.descriptionEs,
-    alternates: { canonical: `https://www.roavio.es/rankings/${config.slug}` },
+    alternates: alts(`/rankings/${config.slug}`, "es"),
     openGraph: {
       title: config.titleEs,
       description: config.descriptionEs,
