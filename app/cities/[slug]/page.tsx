@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import CityDetailClient from "@/components/CityDetailClient";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbLd, absUrl } from "@/lib/seo";
+import { cityFaq } from "@/lib/cityFaq";
 
 export async function generateStaticParams() {
   return cities.map((c) => ({ slug: c.slug }));
@@ -59,6 +60,15 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
       url: absUrl(`/cities/${city.slug}`),
       geo: { "@type": "GeoCoordinates", latitude: city.coords.lat, longitude: city.coords.lng },
       containedInPlace: { "@type": "Country", name: city.country },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: cityFaq(city, "es").map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
     },
   ];
 
