@@ -19,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/calculadora`, changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/mapa`, changeFrequency: "weekly", priority: 0.7 },
     { url: `${BASE_URL}/articulos`, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${BASE_URL}/metodologia`, changeFrequency: "monthly", priority: 0.5 },
     { url: `${BASE_URL}/feedback`, changeFrequency: "yearly", priority: 0.3 },
   ];
 
@@ -64,7 +65,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       ];
     });
 
-  const staticPaths = ["/", "/cities", "/compare", "/rankings", "/match", "/calculadora", "/mapa", "/articulos", ""];
+  const staticPaths = ["/", "/cities", "/compare", "/rankings", "/match", "/calculadora", "/mapa", "/articulos", "/metodologia", ""];
   const all = [
     ...withEn(staticRoutes, staticPaths),
     ...withEn(cityRoutes, cities.map((c) => `/cities/${c.slug}`)),

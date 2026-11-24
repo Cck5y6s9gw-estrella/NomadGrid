@@ -53,7 +53,9 @@ export default function ArticleView({ article }: { article: Article }) {
             // eslint-disable-next-line @next/next/no-img-element
             <img
               src={article.cover}
-              alt=""
+              alt={article.title[lang]}
+              fetchPriority="high"
+              decoding="async"
               className="w-full h-72 object-cover rounded-3xl border border-border shadow-lg shadow-black/20 mb-8"
             />
           )}

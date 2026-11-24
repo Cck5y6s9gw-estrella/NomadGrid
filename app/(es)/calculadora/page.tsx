@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { imgW, imgSet } from "@/lib/img";
 import Link from "@/components/LocaleLink";
 import Navbar from "@/components/Navbar";
 import { cities, City } from "@/data/cities";
@@ -336,7 +337,7 @@ export default function PresupuestoPage() {
                 i === 0 && r.affordable ? "border-accent bg-accent/5 shadow-lg shadow-accent/10" : "border-white/10 bg-card"
               }`}
             >
-              <img src={r.city.imageUrl} alt={tCity(r.city.name, lang)} className="h-16 w-16 rounded-2xl object-cover shrink-0" />
+              <img src={imgW(r.city.imageUrl, 160)} width={64} height={64} loading="lazy" decoding="async" alt={tCity(r.city.name, lang)} className="h-16 w-16 rounded-2xl object-cover shrink-0" />
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-2 flex-wrap">
                   <span className="font-serif text-foreground">{tCity(r.city.name, lang)}</span>

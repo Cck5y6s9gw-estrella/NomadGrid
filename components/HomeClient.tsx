@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "@/components/LocaleLink";
+import { imgW, imgSet } from "@/lib/img";
 import { useUser } from "@clerk/nextjs";
 import Navbar from "@/components/Navbar";
 import { cities } from "@/data/cities";
@@ -74,7 +75,7 @@ export default function HomeClient() {
               style={{ animationDelay: `${i * 140}ms`, ...collagePos[i] }}
               className="animate-pop-in absolute rounded-[22px] overflow-hidden border border-line shadow-2xl shadow-black/40"
             >
-              <img src={c.imageUrl} alt="" className="w-full h-full object-cover" />
+              <img src={imgW(c.imageUrl, 600)} width={600} height={450} decoding="async" alt="" className="w-full h-full object-cover" />
               <div className="absolute left-2.5 bottom-2.5 flex items-center gap-2 bg-glass backdrop-blur-md border border-line rounded-full px-2.5 py-1 text-xs text-foreground">
                 <span>{tCity(c.name, lang)}</span>
                 <span className="font-mono text-accent">{formatMoney(c.costPerMonth, lang)} €</span>

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "@/components/LocaleLink";
+import { imgW, imgSet } from "@/lib/img";
 import Navbar from "./Navbar";
 import FavoriteButton from "./FavoriteButton";
 import CityGuideSection from "./CityGuideSection";
@@ -68,7 +69,17 @@ export default function CityDetailClient({ city, guide }: { city: City; guide: C
 
       {/* Hero image */}
       <div className="relative h-80 pt-14">
-        <img src={city.imageUrl} alt={tCity(city.name, lang)} className="w-full h-full object-cover" />
+        <img
+          src={imgW(city.imageUrl, 1600, 75)}
+          srcSet={imgSet(city.imageUrl, [800, 1200, 1600])}
+          sizes="100vw"
+          width={1600}
+          height={320}
+          fetchPriority="high"
+          decoding="async"
+          alt={tCity(city.name, lang)}
+          className="w-full h-full object-cover"
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
         <div className="absolute bottom-0 left-0 right-0 max-w-7xl mx-auto px-6 pb-8">
           <p className="text-sm text-white/70 mb-1">{tCountry(city.country, lang)} · {tContinent(city.continent, lang)}</p>
@@ -172,7 +183,7 @@ export default function CityDetailClient({ city, guide }: { city: City; guide: C
             {/* Sources */}
             <section>
               <h2 className="text-3xl mb-1">{d.dataSources}</h2>
-              <p className="text-sm text-muted mb-4">{d.dataSourcesSubtitle}</p>
+              <p className="text-sm text-muted mb-4">{d.dataSourcesSubtitle}{" "}<Link href="/metodologia" className="text-accent hover:underline">{lang === "en" ? "Methodology" : "Metodología"}</Link></p>
               <div className="bg-card border border-border rounded-2xl divide-y divide-border">
                 {sourceRows.map((row) => (
                   <div key={row.label} className="p-5 flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">

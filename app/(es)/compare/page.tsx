@@ -1,6 +1,7 @@
 "use client";
 
 import { Suspense, useEffect, useRef, useState } from "react";
+import { imgW, imgSet } from "@/lib/img";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "@/components/LocaleLink";
 import dynamic from "next/dynamic";
@@ -238,7 +239,11 @@ function ComparePageInner() {
                     className="animate-pop-in group relative overflow-hidden rounded-xl border border-transparent hover:border-accent/50 transition-colors touch-manipulation"
                   >
                     <img
-                      src={city.imageUrl}
+                      src={imgW(city.imageUrl, 400)}
+                      width={400}
+                      height={80}
+                      loading="lazy"
+                      decoding="async"
                       alt={tCity(city.name, lang)}
                       className="w-full h-20 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
@@ -304,7 +309,7 @@ function ComparePageInner() {
                   {selectedCities.map((city) => (
                     <div key={city.slug} className="border-l border-line">
                       <div className="relative h-28 overflow-hidden">
-                        <img src={city.imageUrl} alt={tCity(city.name, lang)} className="w-full h-full object-cover" />
+                        <img src={imgW(city.imageUrl, 400)} loading="lazy" decoding="async" alt={tCity(city.name, lang)} className="w-full h-full object-cover" />
                         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/10 to-transparent" />
                       </div>
                       <div className="py-4 px-5">
@@ -446,7 +451,7 @@ function ComparePageInner() {
                     className="animate-pop-in bg-card border border-line rounded-[24px] overflow-hidden"
                   >
                     <div className="relative h-36 overflow-hidden">
-                      <img src={city.imageUrl} alt={tCity(city.name, lang)} className="w-full h-full object-cover" />
+                      <img src={imgW(city.imageUrl, 400)} loading="lazy" decoding="async" alt={tCity(city.name, lang)} className="w-full h-full object-cover" />
                       <div className="absolute inset-0 bg-gradient-to-t from-background via-background/10 to-transparent" />
                       <div className="absolute bottom-0 left-0 right-0 p-4">
                         <div className="font-semibold text-foreground text-lg">{tCity(city.name, lang)}</div>

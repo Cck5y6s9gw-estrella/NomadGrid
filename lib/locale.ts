@@ -1,5 +1,5 @@
 // Rutas que tienen versión en inglés bajo /en
-const EXACT = ["/", "/cities", "/rankings", "/articulos", "/compare", "/mapa", "/match", "/calculadora"];
+const EXACT = ["/", "/cities", "/rankings", "/articulos", "/compare", "/mapa", "/match", "/calculadora", "/metodologia"];
 const ONE_LEVEL = ["/cities/", "/rankings/", "/articulos/", "/compare/"];
 
 export function isEnPath(pathname: string): boolean {

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "@/components/LocaleLink";
+import { imgW, imgSet } from "@/lib/img";
 import { useUser, SignUpButton } from "@clerk/nextjs";
 import Navbar from "@/components/Navbar";
 import FavoriteButton from "@/components/FavoriteButton";
@@ -67,7 +68,11 @@ export default function FavoritesPage() {
               >
                 <Link href={`/cities/${city.slug}`}>
                   <img
-                    src={city.imageUrl}
+                    src={imgW(city.imageUrl, 600)}
+                    width={600}
+                    height={176}
+                    loading="lazy"
+                    decoding="async"
                     alt={tCity(city.name, lang)}
                     className="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-500"
                   />

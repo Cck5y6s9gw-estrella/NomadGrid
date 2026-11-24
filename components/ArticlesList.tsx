@@ -76,7 +76,9 @@ export default function ArticlesList({ articles }: { articles: Article[] }) {
                     // eslint-disable-next-line @next/next/no-img-element
                     <img
                       src={article.cover}
-                      alt=""
+                      alt={article.title[lang]}
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-40 object-cover"
                     />
                   ) : (

@@ -3,7 +3,8 @@ import Navbar from "@/components/Navbar";
 import JsonLd from "@/components/JsonLd";
 import { allPairs, parsePair, pairSlug, similarCities } from "@/lib/pairs";
 import { breadcrumbLd, absUrl } from "@/lib/seo";
-import { tCity } from "@/lib/dictionary";
+import { tCity, tClimate, tBestTime } from "@/lib/dictionary";
+import { visaSnippet, neighborhoods } from "@/lib/pairGuide";
 import type { City } from "@/data/cities";
 import type { Lang } from "@/lib/i18n";
 
@@ -74,6 +75,7 @@ export default function PairPage({ pair, lang }: { pair: string; lang: Lang }) {
   const es = lang === "es";
   const pre = es ? "" : "/en";
   const { a, b, na, nb, costAns, safeAns, netAns, qolAns, eur, num } = t;
+  const tt = { na_cheap: a.costPerMonth <= b.costPerMonth ? na : nb };
   const lower = (x: number, y: number): Row["winner"] => (x === y ? "tie" : x < y ? "a" : "b");
   const higher = (x: number, y: number): Row["winner"] => (x === y ? "tie" : x > y ? "a" : "b");
   const yes = es ? "Sí" : "Yes";
@@ -154,9 +156,93 @@ export default function PairPage({ pair, lang }: { pair: string; lang: Lang }) {
           <p className="text-xs text-muted mt-3">
             {es
               ? "Datos de Numbeo, Speedtest Global Index, Global Peace Index y el Índice de Desarrollo Humano de la ONU. Cada ciudad muestra su fuente original en su ficha."
-              : "Data from Numbeo, Speedtest Global Index, the Global Peace Index and the UN Human Development Index. Each city page shows its original source."}
+              : "Data from Numbeo, Speedtest Global Index, the Global Peace Index and the UN Human Development Index. Each city page shows its original source."}{" "}
+            <Link href={`${pre}/metodologia`} className="text-accent hover:underline">{es ? "Cómo calculamos los datos" : "How we calculate the data"}</Link>
           </p>
         </div>
+
+
+        <section className="mb-10">
+          <h2 className="text-2xl mb-4">{es ? "Clima y mejor época" : "Climate and best time to go"}</h2>
+          <div className="grid sm:grid-cols-2 gap-4 text-sm text-muted leading-relaxed">
+            {[a, b].map((c) => (
+              <p key={c.slug}>
+                <span className="text-foreground font-medium">{tCity(c.name, lang)}: </span>
+                {es
+                  ? `clima ${tClimate(c.climateType, lang).toLowerCase()}. Mejor época: ${tBestTime(c.bestTimeToVisit, lang)}. ${c.hasBeach ? "Tiene playa." : "No tiene playa."}`
+                  : `${tClimate(c.climateType, lang).toLowerCase()} climate. Best time: ${tBestTime(c.bestTimeToVisit, lang)}. ${c.hasBeach ? "It has a beach." : "No beach."}`}
+              </p>
+            ))}
+          </div>
+        </section>
+
+        {(visaSnippet(a.slug, lang) || visaSnippet(b.slug, lang)) && (
+          <section className="mb-10">
+            <h2 className="text-2xl mb-4">{es ? "Visado e impuestos" : "Visa and taxes"}</h2>
+            <div className="space-y-4 text-sm text-muted leading-relaxed">
+              {[a, b].map((c) => {
+                const v = visaSnippet(c.slug, lang);
+                return v ? (
+                  <p key={c.slug}>
+                    <span className="text-foreground font-medium">{tCity(c.name, lang)}: </span>
+                    {v}{" "}
+                    <Link href={`${pre}/cities/${c.slug}`} className="text-accent hover:underline">
+                      {es ? "Ver guía completa" : "Read the full guide"}
+                    </Link>
+                  </p>
+                ) : null;
+              })}
+            </div>
+          </section>
+        )}
+
+        {(neighborhoods(a.slug, lang).length > 0 || neighborhoods(b.slug, lang).length > 0) && (
+          <section className="mb-10">
+            <h2 className="text-2xl mb-4">{es ? "Barrios recomendados" : "Recommended neighborhoods"}</h2>
+            <div className="grid sm:grid-cols-2 gap-4 text-sm text-muted leading-relaxed">
+              {[a, b].map((c) => {
+                const n = neighborhoods(c.slug, lang);
+                return n.length ? (
+                  <p key={c.slug}>
+                    <span className="text-foreground font-medium">{tCity(c.name, lang)}: </span>
+                    {n.join(", ")}.
+                  </p>
+                ) : null;
+              })}
+            </div>
+          </section>
+        )}
+
+        <section className="mb-10">
+          <h2 className="text-2xl mb-4">{es ? "¿Cuál te conviene?" : "Which one suits you?"}</h2>
+          <ul className="space-y-2 text-sm text-muted leading-relaxed list-disc pl-5">
+            <li>
+              {es
+                ? a.costPerMonth === b.costPerMonth
+                  ? "Si miras el presupuesto: empatan."
+                  : `Si miras el presupuesto: ${tt.na_cheap} cuesta menos al mes.`
+                : a.costPerMonth === b.costPerMonth
+                  ? "On budget: they tie."
+                  : `On budget: ${tt.na_cheap} costs less per month.`}
+            </li>
+            <li>
+              {es
+                ? a.safetyScore === b.safetyScore
+                  ? "Si priorizas seguridad: empatan."
+                  : `Si priorizas seguridad: ${tCity((a.safetyScore > b.safetyScore ? a : b).name, lang)} puntúa más alto.`
+                : a.safetyScore === b.safetyScore
+                  ? "If safety is your priority: they tie."
+                  : `If safety is your priority: ${tCity((a.safetyScore > b.safetyScore ? a : b).name, lang)} scores higher.`}
+            </li>
+            {a.hasBeach !== b.hasBeach && (
+              <li>
+                {es
+                  ? `Si quieres playa: ${tCity((a.hasBeach ? a : b).name, lang)}.`
+                  : `If you want a beach: ${tCity((a.hasBeach ? a : b).name, lang)}.`}
+              </li>
+            )}
+          </ul>
+        </section>
 
         <section className="mb-10">
           <h2 className="text-2xl mb-4">{es ? "Preguntas frecuentes" : "Frequently asked questions"}</h2>

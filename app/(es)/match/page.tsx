@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { imgW, imgSet } from "@/lib/img";
 import Link from "@/components/LocaleLink";
 import Navbar from "@/components/Navbar";
 import { cities, City } from "@/data/cities";
@@ -251,7 +252,10 @@ export default function MatchPage() {
               {previewCities.map((city, i) => (
                 <img
                   key={city.slug}
-                  src={city.imageUrl}
+                  src={imgW(city.imageUrl, 160)}
+                  width={56}
+                  height={56}
+                  decoding="async"
                   alt={tCity(city.name, lang)}
                   style={{ zIndex: previewCities.length - i, animationDelay: `${i * 60}ms` }}
                   className="match-pop-in w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover border-2 border-background shadow-lg"
@@ -403,7 +407,7 @@ export default function MatchPage() {
                         #1
                       </span>
                     )}
-                    <img src={city.imageUrl} alt={tCity(city.name, lang)} className="h-16 w-16 rounded-2xl object-cover shrink-0" />
+                    <img src={imgW(city.imageUrl, 160)} width={64} height={64} loading="lazy" decoding="async" alt={tCity(city.name, lang)} className="h-16 w-16 rounded-2xl object-cover shrink-0" />
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 flex-wrap">
                         <span className="font-serif text-foreground">{tCity(city.name, lang)}</span>

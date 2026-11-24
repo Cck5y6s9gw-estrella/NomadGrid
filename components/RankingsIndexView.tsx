@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "@/components/LocaleLink";
+import { imgW, imgSet } from "@/lib/img";
 import Navbar from "./Navbar";
 import { useLanguage } from "@/lib/i18n";
 import { tCountry, tCity } from "@/lib/dictionary";
@@ -77,7 +78,7 @@ export default function RankingsIndexView() {
                         <span className={`w-5 text-sm font-medium shrink-0 ${i === 0 ? "text-accent" : "text-muted"}`}>
                           {i === 0 ? <IconTrophy className="w-4 h-4" /> : i + 1}
                         </span>
-                        <img src={city.imageUrl} alt={tCity(city.name, lang)} className="w-7 h-7 rounded-full object-cover shrink-0 border border-white/10" />
+                        <img src={imgW(city.imageUrl, 64)} width={28} height={28} loading="lazy" decoding="async" alt={tCity(city.name, lang)} className="w-7 h-7 rounded-full object-cover shrink-0 border border-white/10" />
                         <span className="text-sm text-foreground truncate flex-1">{tCity(city.name, lang)}</span>
                         <span className="text-xs text-muted shrink-0">{tCountry(city.country, lang)}</span>
                         <span className="text-sm font-medium text-foreground shrink-0">{formatRankingValue(r, city)}</span>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { imgW, imgSet } from "@/lib/img";
 import Link from "@/components/LocaleLink";
 import Navbar from "./Navbar";
 import FavoriteButton from "./FavoriteButton";
@@ -127,7 +128,11 @@ export default function RankingView({
                     {rank === 1 ? <IconTrophy className="w-4 h-4 inline -mt-0.5" /> : rank}
                   </span>
                   <img
-                    src={city.imageUrl}
+                    src={imgW(city.imageUrl, 96)}
+                    width={40}
+                    height={40}
+                    loading="lazy"
+                    decoding="async"
                     alt={tCity(city.name, lang)}
                     className="w-10 h-10 rounded-lg object-cover shrink-0"
                   />

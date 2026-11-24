@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { marked } from "marked";
+import { autolinkCities } from "@/lib/autolink";
 
 const ARTICLES_DIR = path.join(process.cwd(), "content", "articles");
 
@@ -44,8 +45,8 @@ function readArticleFile(filename: string): Article {
     date: formatDate(data.date),
     cover: data.cover ?? "",
     bodyHtml: {
-      es: marked.parse(es) as string,
-      en: marked.parse(en) as string,
+      es: autolinkCities(marked.parse(es) as string, "es"),
+      en: autolinkCities(marked.parse(en) as string, "en"),
     },
   };
 }

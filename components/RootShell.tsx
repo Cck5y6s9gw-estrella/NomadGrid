@@ -67,6 +67,7 @@ export default function RootShell({
         className={`${geistSans.variable} ${geistMono.variable} ${anton.variable} h-full antialiased`}
       >
         <head>
+          <link rel="preconnect" href="https://images.unsplash.com" crossOrigin="anonymous" />
           {/* Evita el parpadeo de tema: fija data-theme antes del primer
               pintado si el usuario ya había elegido "light" en este navegador. */}
           <script
@@ -85,6 +86,7 @@ export default function RootShell({
                 name: "Roavio",
                 url: "https://www.roavio.es",
                 logo: "https://www.roavio.es/logo-icon.png",
+                sameAs: ["https://x.com/Roavio"],
               },
               {
                 "@context": "https://schema.org",
