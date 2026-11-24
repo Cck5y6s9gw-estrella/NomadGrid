@@ -345,4 +345,9 @@ export const cityAreas: Record<string, { area: number }> = {
   "yogyakarta": { area: 33 },
   "izmir": { area: 7340 },
   "kuching": { area: 431 },
+  "girona": { area: 39 },
+  "lviv": { area: 182 },
+  "chisinau": { area: 123 },
+  "bursa": { area: 1038 },
+  "podgorica": { area: 108 },
 };
