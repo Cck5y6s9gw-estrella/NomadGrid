@@ -1,9 +1,8 @@
-import type { Metadata } from "next";
 import { Geist, Geist_Mono, Anton } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Analytics } from "@vercel/analytics/next";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import "./globals.css";
+import "@/app/globals.css";
 import { LanguageProvider } from "@/lib/i18n";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import JsonLd from "@/components/JsonLd";
@@ -24,31 +23,12 @@ const anton = Anton({
   weight: ["400"],
 });
 
-export const metadata: Metadata = {
-  metadataBase: new URL("https://www.roavio.es"),
-  title: "Roavio · Rankings · Ciudades · Libertad",
-  description: "Compara coste de vida, internet, seguridad y calidad de vida en las mejores ciudades del mundo para trabajar en remoto.",
-  openGraph: {
-    title: "Roavio — Encuentra tu próxima ciudad nómada",
-    description: "Compara coste de vida, internet, seguridad y clima en las mejores ciudades del mundo para trabajar en remoto.",
-    url: "https://www.roavio.es",
-    siteName: "Roavio",
-    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
-    locale: "es_ES",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Roavio — Encuentra tu próxima ciudad nómada",
-    description: "Compara coste de vida, internet, seguridad y clima en las mejores ciudades del mundo para trabajar en remoto.",
-    images: ["/og-image.png"],
-  },
-};
-
-export default function RootLayout({
+export default function RootShell({
   children,
+  lang,
 }: Readonly<{
   children: React.ReactNode;
+  lang: "es" | "en";
 }>) {
   return (
     <ClerkProvider
@@ -82,7 +62,7 @@ export default function RootLayout({
       }}
     >
       <html
-        lang="es"
+        lang={lang}
         data-theme="dark"
         className={`${geistSans.variable} ${geistMono.variable} ${anton.variable} h-full antialiased`}
       >

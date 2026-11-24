@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getArticleBySlug, getAllArticles } from "../../../lib/articles";
-import ArticleView from "../../../components/ArticleView";
-import JsonLd from "../../../components/JsonLd";
-import { breadcrumbLd, absUrl, alts } from "../../../lib/seo";
+import { getArticleBySlug, getAllArticles } from "../../../../lib/articles";
+import ArticleView from "../../../../components/ArticleView";
+import JsonLd from "../../../../components/JsonLd";
+import { breadcrumbLd, absUrl, alts } from "../../../../lib/seo";
 
 export async function generateStaticParams() {
   return getAllArticles().map((article) => ({ slug: article.slug }));

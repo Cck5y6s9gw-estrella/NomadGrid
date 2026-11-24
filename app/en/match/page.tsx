@@ -7,4 +7,4 @@ export const metadata: Metadata = {
   alternates: alts('/match', "en"),
 };
 
-export { default } from "@/app/match/page";
+export { default } from "@/app/(es)/match/page";

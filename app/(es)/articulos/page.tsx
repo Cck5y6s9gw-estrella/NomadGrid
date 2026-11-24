@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import { alts } from "../../lib/seo";
-import { getAllArticles } from "../../lib/articles";
-import ArticlesList from "../../components/ArticlesList";
+import { alts } from "../../../lib/seo";
+import { getAllArticles } from "../../../lib/articles";
+import ArticlesList from "../../../components/ArticlesList";
 
 export const metadata: Metadata = {
   alternates: alts("/articulos", "es"),

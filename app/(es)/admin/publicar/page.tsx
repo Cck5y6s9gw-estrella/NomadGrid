@@ -3,8 +3,8 @@ import { currentUser } from "@clerk/nextjs/server";
 
 export const metadata: Metadata = { robots: { index: false, follow: false } };
 import { redirect } from "next/navigation";
-import Navbar from "../../../components/Navbar";
-import PublishForm from "../../../components/PublishForm";
+import Navbar from "../../../../components/Navbar";
+import PublishForm from "../../../../components/PublishForm";
 
 export default async function PublicarPage() {
   const user = await currentUser();

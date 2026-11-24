@@ -7,4 +7,4 @@ export const metadata: Metadata = {
   alternates: alts('/calculadora', "en"),
 };
 
-export { default } from "@/app/calculadora/page";
+export { default } from "@/app/(es)/calculadora/page";

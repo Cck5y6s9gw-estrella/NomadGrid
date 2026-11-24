@@ -7,4 +7,4 @@ export const metadata: Metadata = {
   alternates: alts('/mapa', "en"),
 };
 
-export { default } from "@/app/mapa/page";
+export { default } from "@/app/(es)/mapa/page";

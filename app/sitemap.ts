@@ -3,10 +3,13 @@ import { cities } from "@/data/cities";
 import { getAllArticles } from "@/lib/articles";
 import { rankings } from "@/lib/rankings";
 import { allPairs } from "@/lib/pairs";
+import { dataLastModified } from "@/lib/dataDate";
 
 const BASE_URL = "https://www.roavio.es";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const dataDate = dataLastModified();
+  const lm = dataDate ? { lastModified: dataDate } : {};
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: `${BASE_URL}/`, changeFrequency: "weekly", priority: 1 },
     { url: `${BASE_URL}/cities`, changeFrequency: "weekly", priority: 0.9 },
@@ -21,6 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const cityRoutes: MetadataRoute.Sitemap = cities.map((city) => ({
     url: `${BASE_URL}/cities/${city.slug}`,
+    ...lm,
     changeFrequency: "monthly",
     priority: 0.8,
   }));
@@ -34,12 +38,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const rankingRoutes: MetadataRoute.Sitemap = rankings.map((r) => ({
     url: `${BASE_URL}/rankings/${r.slug}`,
+    ...lm,
     changeFrequency: "weekly",
     priority: 0.75,
   }));
 
   const pairRoutes: MetadataRoute.Sitemap = [...allPairs()].map((pair) => ({
     url: `${BASE_URL}/compare/${pair}`,
+    ...lm,
     changeFrequency: "monthly",
     priority: 0.6,
   }));

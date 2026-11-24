@@ -8,4 +8,4 @@ export const metadata: Metadata = {
   alternates: alts('/cities', "en"),
 };
 
-export { default } from "@/app/cities/page";
+export { default } from "@/app/(es)/cities/page";
