@@ -355,4 +355,9 @@ export const cityAreas: Record<string, { area: number }> = {
   "dushanbe": { area: 125 },
   "male": { area: 8 },
   "harare": { area: 960 },
+  "skopie": { area: 571 },
+  "puerto-espana": { area: 13 },
+  "minsk": { area: 348 },
+  "georgetown-guyana": { area: 70 },
+  "erbil": { area: 115 },
 };
