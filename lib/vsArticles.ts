@@ -27,6 +27,7 @@ export const vsArticles: VsArticleEntry[] = [
   { slugs: ["ginebra", "zurich"], article: "ginebra-vs-zurich" },
   { slugs: ["gotemburgo", "estocolmo"], article: "gotemburgo-vs-estocolmo" },
   { slugs: ["jerusalen", "tel-aviv"], article: "jerusalen-vs-tel-aviv" },
+  { slugs: ["las-palmas", "santa-cruz-de-tenerife"], article: "las-palmas-vs-santa-cruz-de-tenerife" },
   { slugs: ["katmandu", "pokhara"], article: "katmandu-vs-pokhara" },
   { slugs: ["kioto", "tokio"], article: "kioto-vs-tokio" },
   { slugs: ["lucerna", "lugano"], article: "lucerna-vs-lugano" },
