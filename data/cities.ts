@@ -9142,7 +9142,7 @@ export const cities: City[] = [
     imageUrl: "https://images.unsplash.com/photo-1605259386010-d7003729af98?w=800&q=80",
     costPerMonth: 589,
     currency: "EUR",
-    internetSpeed: 50,
+    internetSpeed: 69,
     safetyScore: 5.8,
     climateType: "Continental semiárido",
     qualityOfLife: 7.4,
