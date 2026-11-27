@@ -360,4 +360,9 @@ export const cityAreas: Record<string, { area: number }> = {
   "minsk": { area: 348 },
   "georgetown-guyana": { area: 70 },
   "erbil": { area: 115 },
+  "chennai": { area: 426 },
+  "ankara": { area: 2516 },
+  "karachi": { area: 3780 },
+  "dar-es-salaam": { area: 1590 },
+  "fortaleza": { area: 313 },
 };
