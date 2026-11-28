@@ -9117,7 +9117,7 @@ export const cities: City[] = [
     imageUrl: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800&q=80",
     costPerMonth: 291,
     currency: "EUR",
-    internetSpeed: 60,
+    internetSpeed: 62,
     safetyScore: 5.6,
     climateType: "Tropical monzónico",
     qualityOfLife: 6.6,
