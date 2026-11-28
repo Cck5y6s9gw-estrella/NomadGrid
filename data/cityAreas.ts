@@ -365,4 +365,9 @@ export const cityAreas: Record<string, { area: number }> = {
   "karachi": { area: 3780 },
   "dar-es-salaam": { area: 1590 },
   "fortaleza": { area: 313 },
+  "kiev": { area: 839 },
+  "astana": { area: 797 },
+  "alejandria": { area: 2679 },
+  "surabaya": { area: 351 },
+  "durban": { area: 2556 },
 };
